@@ -1,0 +1,10 @@
+C:\Users\LIKELIAS\source\repos\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\ProyectoRestaurante.exe.config
+C:\Users\LIKELIAS\source\repos\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\ProyectoRestaurante.exe
+C:\Users\LIKELIAS\source\repos\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\ProyectoRestaurante.pdb
+C:\Users\LIKELIAS\source\repos\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.csproj.AssemblyReference.cache
+C:\Users\LIKELIAS\source\repos\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Properties.Resources.resources
+C:\Users\LIKELIAS\source\repos\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.csproj.GenerateResource.cache
+C:\Users\LIKELIAS\source\repos\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.csproj.CoreCompileInputs.cache
+C:\Users\LIKELIAS\source\repos\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.exe
+C:\Users\LIKELIAS\source\repos\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.pdb
+C:\Users\LIKELIAS\source\repos\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.login.resources

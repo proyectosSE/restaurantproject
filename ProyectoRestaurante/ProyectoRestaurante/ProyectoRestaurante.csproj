@@ -53,6 +53,13 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="menuprincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuprincipal.Designer.cs">
+      <DependentUpon>menuprincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>

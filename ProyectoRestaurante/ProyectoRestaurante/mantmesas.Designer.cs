@@ -28,17 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Editar = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Eliminar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textcat = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtmesa = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.cbbsala = new System.Windows.Forms.ComboBox();
+            this.proyectoRestauranteDataSet = new ProyectoRestaurante.ProyectoRestauranteDataSet();
+            this.salasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.salasTableAdapter = new ProyectoRestaurante.ProyectoRestauranteDataSetTableAdapters.salasTableAdapter();
+            this.proyectoRestauranteDataSet1 = new ProyectoRestaurante.ProyectoRestauranteDataSet1();
+            this.salasBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.salasTableAdapter1 = new ProyectoRestaurante.ProyectoRestauranteDataSet1TableAdapters.salasTableAdapter();
+            this.label4 = new System.Windows.Forms.Label();
+            this.fechamesa = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtestado = new System.Windows.Forms.TextBox();
+            this.txtasientos = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -53,6 +68,7 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(587, 535);
             this.dataGridView1.TabIndex = 10;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Editar
             // 
@@ -68,17 +84,10 @@
             this.Eliminar.Name = "Eliminar";
             this.Eliminar.Width = 150;
             // 
-            // textcat
-            // 
-            this.textcat.Location = new System.Drawing.Point(53, 153);
-            this.textcat.Name = "textcat";
-            this.textcat.Size = new System.Drawing.Size(235, 26);
-            this.textcat.TabIndex = 9;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(53, 104);
+            this.label1.Location = new System.Drawing.Point(53, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(136, 20);
             this.label1.TabIndex = 12;
@@ -86,7 +95,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(53, 523);
+            this.button2.Location = new System.Drawing.Point(57, 558);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 32);
             this.button2.TabIndex = 14;
@@ -94,18 +103,18 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox1
+            // txtmesa
             // 
-            this.textBox1.Location = new System.Drawing.Point(53, 297);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(235, 26);
-            this.textBox1.TabIndex = 13;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtmesa.Location = new System.Drawing.Point(53, 177);
+            this.txtmesa.Name = "txtmesa";
+            this.txtmesa.Size = new System.Drawing.Size(235, 26);
+            this.txtmesa.TabIndex = 13;
+            this.txtmesa.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(49, 255);
+            this.label2.Location = new System.Drawing.Point(49, 135);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(146, 20);
             this.label2.TabIndex = 15;
@@ -114,36 +123,117 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(53, 395);
+            this.label3.Location = new System.Drawing.Point(53, 238);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(159, 20);
             this.label3.TabIndex = 17;
             this.label3.Text = "Cantidad de asientos";
             // 
-            // textBox2
+            // cbbsala
             // 
-            this.textBox2.Location = new System.Drawing.Point(57, 437);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(235, 26);
-            this.textBox2.TabIndex = 16;
+            this.cbbsala.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.salasBindingSource1, "id_sala", true));
+            this.cbbsala.DataSource = this.salasBindingSource1;
+            this.cbbsala.DisplayMember = "nomsala";
+            this.cbbsala.FormattingEnabled = true;
+            this.cbbsala.Location = new System.Drawing.Point(57, 70);
+            this.cbbsala.Name = "cbbsala";
+            this.cbbsala.Size = new System.Drawing.Size(231, 28);
+            this.cbbsala.TabIndex = 18;
+            this.cbbsala.ValueMember = "id_sala";
+            // 
+            // proyectoRestauranteDataSet
+            // 
+            this.proyectoRestauranteDataSet.DataSetName = "ProyectoRestauranteDataSet";
+            this.proyectoRestauranteDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // salasBindingSource
+            // 
+            this.salasBindingSource.DataMember = "salas";
+            this.salasBindingSource.DataSource = this.proyectoRestauranteDataSet;
+            // 
+            // salasTableAdapter
+            // 
+            this.salasTableAdapter.ClearBeforeFill = true;
+            // 
+            // proyectoRestauranteDataSet1
+            // 
+            this.proyectoRestauranteDataSet1.DataSetName = "ProyectoRestauranteDataSet1";
+            this.proyectoRestauranteDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // salasBindingSource1
+            // 
+            this.salasBindingSource1.DataMember = "salas";
+            this.salasBindingSource1.DataSource = this.proyectoRestauranteDataSet1;
+            // 
+            // salasTableAdapter1
+            // 
+            this.salasTableAdapter1.ClearBeforeFill = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(57, 333);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(54, 20);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "Fecha";
+            // 
+            // fechamesa
+            // 
+            this.fechamesa.Location = new System.Drawing.Point(57, 367);
+            this.fechamesa.Name = "fechamesa";
+            this.fechamesa.Size = new System.Drawing.Size(200, 26);
+            this.fechamesa.TabIndex = 21;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(57, 419);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(60, 20);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "Estado";
+            // 
+            // txtestado
+            // 
+            this.txtestado.Location = new System.Drawing.Point(61, 460);
+            this.txtestado.Name = "txtestado";
+            this.txtestado.Size = new System.Drawing.Size(85, 26);
+            this.txtestado.TabIndex = 23;
+            // 
+            // txtasientos
+            // 
+            this.txtasientos.Location = new System.Drawing.Point(57, 275);
+            this.txtasientos.Name = "txtasientos";
+            this.txtasientos.Size = new System.Drawing.Size(155, 26);
+            this.txtasientos.TabIndex = 24;
             // 
             // mantmesas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(978, 644);
+            this.Controls.Add(this.txtasientos);
+            this.Controls.Add(this.txtestado);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.fechamesa);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.cbbsala);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtmesa);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textcat);
             this.Name = "mantmesas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mesas";
+            this.Load += new System.EventHandler(this.mantmesas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,12 +243,22 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Editar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Eliminar;
-        private System.Windows.Forms.TextBox textcat;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtmesa;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ComboBox cbbsala;
+        private ProyectoRestauranteDataSet proyectoRestauranteDataSet;
+        private System.Windows.Forms.BindingSource salasBindingSource;
+        private ProyectoRestauranteDataSetTableAdapters.salasTableAdapter salasTableAdapter;
+        private ProyectoRestauranteDataSet1 proyectoRestauranteDataSet1;
+        private System.Windows.Forms.BindingSource salasBindingSource1;
+        private ProyectoRestauranteDataSet1TableAdapters.salasTableAdapter salasTableAdapter1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DateTimePicker fechamesa;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtestado;
+        private System.Windows.Forms.TextBox txtasientos;
     }
 }

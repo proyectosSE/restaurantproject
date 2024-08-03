@@ -15,16 +15,34 @@ namespace ProyectoRestaurante
         public mantmesas()
         {
             InitializeComponent();
+            fechamesa.Format = DateTimePickerFormat.Short;
         }
 
         
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Conectar cls = new Conectar();
+            string datos = ""+cbbsala.Text+",'"+txtmesa.Text+"',"+txtasientos.Text+",'"+fechamesa.Text+"',"+txtestado.Text+"";
+            string tabla = "mesas";
+            cls.Agregar(datos, tabla);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mantmesas_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'proyectoRestauranteDataSet1.salas' Puede moverla o quitarla según sea necesario.
+            this.salasTableAdapter1.Fill(this.proyectoRestauranteDataSet1.salas);
+            // TODO: esta línea de código carga datos en la tabla 'proyectoRestauranteDataSet.salas' Puede moverla o quitarla según sea necesario.
+            this.salasTableAdapter.Fill(this.proyectoRestauranteDataSet.salas);
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

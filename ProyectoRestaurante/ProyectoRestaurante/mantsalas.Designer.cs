@@ -32,19 +32,22 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Editar = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Eliminar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textcat = new System.Windows.Forms.TextBox();
+            this.txtsalas = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.fechasala = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(53, 212);
+            this.button1.Location = new System.Drawing.Point(53, 302);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 32);
             this.button1.TabIndex = 7;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
@@ -73,12 +76,12 @@
             this.Eliminar.Name = "Eliminar";
             this.Eliminar.Width = 150;
             // 
-            // textcat
+            // txtsalas
             // 
-            this.textcat.Location = new System.Drawing.Point(53, 153);
-            this.textcat.Name = "textcat";
-            this.textcat.Size = new System.Drawing.Size(235, 26);
-            this.textcat.TabIndex = 5;
+            this.txtsalas.Location = new System.Drawing.Point(53, 153);
+            this.txtsalas.Name = "txtsalas";
+            this.txtsalas.Size = new System.Drawing.Size(235, 26);
+            this.txtsalas.TabIndex = 5;
             // 
             // label1
             // 
@@ -89,14 +92,32 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Nombre de la sala";
             // 
+            // fechasala
+            // 
+            this.fechasala.Location = new System.Drawing.Point(53, 243);
+            this.fechasala.Name = "fechasala";
+            this.fechasala.Size = new System.Drawing.Size(200, 26);
+            this.fechasala.TabIndex = 8;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(53, 217);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(54, 20);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Fecha";
+            // 
             // mantsalas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(978, 644);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.fechasala);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textcat);
+            this.Controls.Add(this.txtsalas);
             this.Controls.Add(this.label1);
             this.Name = "mantsalas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -113,7 +134,9 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Editar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Eliminar;
-        private System.Windows.Forms.TextBox textcat;
+        private System.Windows.Forms.TextBox txtsalas;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker fechasala;
+        private System.Windows.Forms.Label label2;
     }
 }

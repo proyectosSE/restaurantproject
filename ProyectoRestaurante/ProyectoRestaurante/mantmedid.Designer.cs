@@ -32,7 +32,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Editar = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Eliminar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textcat = new System.Windows.Forms.TextBox();
+            this.txtmedida = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -45,6 +45,7 @@
             this.button1.TabIndex = 15;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
@@ -73,12 +74,12 @@
             this.Eliminar.Name = "Eliminar";
             this.Eliminar.Width = 150;
             // 
-            // textcat
+            // txtmedida
             // 
-            this.textcat.Location = new System.Drawing.Point(53, 153);
-            this.textcat.Name = "textcat";
-            this.textcat.Size = new System.Drawing.Size(235, 26);
-            this.textcat.TabIndex = 13;
+            this.txtmedida.Location = new System.Drawing.Point(53, 153);
+            this.txtmedida.Name = "txtmedida";
+            this.txtmedida.Size = new System.Drawing.Size(235, 26);
+            this.txtmedida.TabIndex = 13;
             // 
             // label1
             // 
@@ -96,7 +97,7 @@
             this.ClientSize = new System.Drawing.Size(978, 644);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textcat);
+            this.Controls.Add(this.txtmedida);
             this.Controls.Add(this.label1);
             this.Name = "mantmedid";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -113,7 +114,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Editar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Eliminar;
-        private System.Windows.Forms.TextBox textcat;
+        private System.Windows.Forms.TextBox txtmedida;
         private System.Windows.Forms.Label label1;
     }
 }

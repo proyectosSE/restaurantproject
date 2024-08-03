@@ -32,19 +32,22 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Editar = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Eliminar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textcat = new System.Windows.Forms.TextBox();
+            this.txtdepart = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtprovincia = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(53, 212);
+            this.button1.Location = new System.Drawing.Point(53, 274);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 32);
             this.button1.TabIndex = 11;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
@@ -73,12 +76,12 @@
             this.Eliminar.Name = "Eliminar";
             this.Eliminar.Width = 150;
             // 
-            // textcat
+            // txtdepart
             // 
-            this.textcat.Location = new System.Drawing.Point(53, 153);
-            this.textcat.Name = "textcat";
-            this.textcat.Size = new System.Drawing.Size(235, 26);
-            this.textcat.TabIndex = 9;
+            this.txtdepart.Location = new System.Drawing.Point(53, 153);
+            this.txtdepart.Name = "txtdepart";
+            this.txtdepart.Size = new System.Drawing.Size(235, 26);
+            this.txtdepart.TabIndex = 9;
             // 
             // label1
             // 
@@ -89,14 +92,32 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Nombre de Departamento";
             // 
+            // txtprovincia
+            // 
+            this.txtprovincia.Location = new System.Drawing.Point(53, 227);
+            this.txtprovincia.Name = "txtprovincia";
+            this.txtprovincia.Size = new System.Drawing.Size(235, 26);
+            this.txtprovincia.TabIndex = 12;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(49, 204);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(112, 20);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Id de Provincia";
+            // 
             // mantdepar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(978, 644);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtprovincia);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textcat);
+            this.Controls.Add(this.txtdepart);
             this.Controls.Add(this.label1);
             this.Name = "mantdepar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -113,7 +134,9 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Editar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Eliminar;
-        private System.Windows.Forms.TextBox textcat;
+        private System.Windows.Forms.TextBox txtdepart;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtprovincia;
+        private System.Windows.Forms.Label label2;
     }
 }

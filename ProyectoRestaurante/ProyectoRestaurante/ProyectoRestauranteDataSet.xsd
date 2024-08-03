@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ProyectoRestauranteDataSet" targetNamespace="http://tempuri.org/ProyectoRestauranteDataSet.xsd" xmlns:mstns="http://tempuri.org/ProyectoRestauranteDataSet.xsd" xmlns="http://tempuri.org/ProyectoRestauranteDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ProyectoRestauranteConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ProyectoRestauranteConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ProyectoRestaurante.Properties.Settings.GlobalReference.Default.ProyectoRestauranteConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="salasTableAdapter" GeneratorDataComponentClassName="salasTableAdapter" Name="salas" UserDataComponentName="salasTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ProyectoRestauranteConnectionString (Settings)" DbObjectName="ProyectoRestaurante.dbo.salas" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT nomsala FROM dbo.salas</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="nomsala" DataSetColumn="nomsala" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ProyectoRestauranteDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="ProyectoRestauranteDataSet" msprop:Generator_DataSetName="ProyectoRestauranteDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="salas" msprop:Generator_RowEvHandlerName="salasRowChangeEventHandler" msprop:Generator_RowDeletedName="salasRowDeleted" msprop:Generator_RowDeletingName="salasRowDeleting" msprop:Generator_RowEvArgName="salasRowChangeEvent" msprop:Generator_TablePropName="salas" msprop:Generator_RowChangedName="salasRowChanged" msprop:Generator_RowChangingName="salasRowChanging" msprop:Generator_TableClassName="salasDataTable" msprop:Generator_RowClassName="salasRow" msprop:Generator_TableVarName="tablesalas" msprop:Generator_UserTableName="salas">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nomsala" msprop:Generator_ColumnPropNameInRow="nomsala" msprop:Generator_ColumnPropNameInTable="nomsalaColumn" msprop:Generator_ColumnVarNameInTable="columnnomsala" msprop:Generator_UserColumnName="nomsala">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

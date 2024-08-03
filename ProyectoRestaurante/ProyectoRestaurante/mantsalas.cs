@@ -15,6 +15,15 @@ namespace ProyectoRestaurante
         public mantsalas()
         {
             InitializeComponent();
+            fechasala.Format = DateTimePickerFormat.Short;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Conectar cls = new Conectar();
+            string datos = "'"+txtsalas.Text+"','"+fechasala.Text+"'";
+            string tabla = "salas";
+            cls.Agregar(datos, tabla);
         }
     }
 }

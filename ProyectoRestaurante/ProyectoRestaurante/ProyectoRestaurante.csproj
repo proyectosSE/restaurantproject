@@ -110,6 +110,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProyectoRestauranteDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoRestauranteDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoRestauranteDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoRestauranteDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoRestauranteDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoRestauranteDataSet2.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +171,39 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="ProyectoRestauranteDataSet.xsc">
+      <DependentUpon>ProyectoRestauranteDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProyectoRestauranteDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProyectoRestauranteDataSet.xss">
+      <DependentUpon>ProyectoRestauranteDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet1.xsc">
+      <DependentUpon>ProyectoRestauranteDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProyectoRestauranteDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProyectoRestauranteDataSet1.xss">
+      <DependentUpon>ProyectoRestauranteDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet2.xsc">
+      <DependentUpon>ProyectoRestauranteDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProyectoRestauranteDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProyectoRestauranteDataSet2.xss">
+      <DependentUpon>ProyectoRestauranteDataSet2.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

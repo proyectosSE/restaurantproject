@@ -17,22 +17,15 @@ namespace ProyectoRestaurante
         public mantcli()
         {
             InitializeComponent();
+            fechain.Format = DateTimePickerFormat.Short;
         }
 
         private void buttAgregar_Click(object sender, EventArgs e)
         {
-            String cadena = $"INSERT INTO clientes VALUES('{textNomb.Text}','{textApell.Text}','{textDirec.Text}',{textEmail.Text}',{textLimcre.Text}','{dateTime.Text}')";
-            SqlCommand comando = new SqlCommand(cadena,conexion);
-            comando.ExecuteNonQuery();
-
-            MessageBox.Show("agregado exitosamente");
-
-            textNomb.Text = "";
-            textApell.Text = "";
-            textDirec.Text = "";
-            textEmail.Text = "";
-            textLimcre.Text = "";
-            
+            Conectar cls = new Conectar();
+            string datos = "'"+txtnom.Text+"','"+txtapell.Text+"','"+txtdirec.Text+"','"+txtemail.Text+"',"+txtlimicre.Text+",'"+fechain.Text+"'";
+            string tabla = "clientes";
+            cls.Agregar(datos,tabla);
         }
     }
 }

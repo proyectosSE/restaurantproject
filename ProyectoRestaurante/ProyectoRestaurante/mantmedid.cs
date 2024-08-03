@@ -16,5 +16,13 @@ namespace ProyectoRestaurante
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Conectar cls = new Conectar();
+            string datos = "'"+txtmedida.Text+"'";
+            string tabla = "medidas";
+            cls.Agregar(datos, tabla);
+        }
     }
 }

@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textNomb = new System.Windows.Forms.TextBox();
+            this.txtnom = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textApell = new System.Windows.Forms.TextBox();
-            this.textDirec = new System.Windows.Forms.TextBox();
+            this.txtapell = new System.Windows.Forms.TextBox();
+            this.txtdirec = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textLimcre = new System.Windows.Forms.TextBox();
+            this.txtlimicre = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textEmail = new System.Windows.Forms.TextBox();
+            this.txtemail = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.buttAgregar = new System.Windows.Forms.Button();
-            this.dateTime = new System.Windows.Forms.DateTimePicker();
+            this.fechain = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -52,12 +52,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre";
             // 
-            // textNomb
+            // txtnom
             // 
-            this.textNomb.Location = new System.Drawing.Point(76, 98);
-            this.textNomb.Name = "textNomb";
-            this.textNomb.Size = new System.Drawing.Size(133, 26);
-            this.textNomb.TabIndex = 1;
+            this.txtnom.Location = new System.Drawing.Point(76, 98);
+            this.txtnom.Name = "txtnom";
+            this.txtnom.Size = new System.Drawing.Size(133, 26);
+            this.txtnom.TabIndex = 1;
             // 
             // label2
             // 
@@ -68,19 +68,19 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Apellido";
             // 
-            // textApell
+            // txtapell
             // 
-            this.textApell.Location = new System.Drawing.Point(76, 215);
-            this.textApell.Name = "textApell";
-            this.textApell.Size = new System.Drawing.Size(133, 26);
-            this.textApell.TabIndex = 3;
+            this.txtapell.Location = new System.Drawing.Point(76, 215);
+            this.txtapell.Name = "txtapell";
+            this.txtapell.Size = new System.Drawing.Size(133, 26);
+            this.txtapell.TabIndex = 3;
             // 
-            // textDirec
+            // txtdirec
             // 
-            this.textDirec.Location = new System.Drawing.Point(76, 354);
-            this.textDirec.Name = "textDirec";
-            this.textDirec.Size = new System.Drawing.Size(133, 26);
-            this.textDirec.TabIndex = 4;
+            this.txtdirec.Location = new System.Drawing.Point(76, 354);
+            this.txtdirec.Name = "txtdirec";
+            this.txtdirec.Size = new System.Drawing.Size(133, 26);
+            this.txtdirec.TabIndex = 4;
             // 
             // label3
             // 
@@ -100,12 +100,12 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "Fecha de ingreso";
             // 
-            // textLimcre
+            // txtlimicre
             // 
-            this.textLimcre.Location = new System.Drawing.Point(439, 215);
-            this.textLimcre.Name = "textLimcre";
-            this.textLimcre.Size = new System.Drawing.Size(133, 26);
-            this.textLimcre.TabIndex = 9;
+            this.txtlimicre.Location = new System.Drawing.Point(439, 215);
+            this.txtlimicre.Name = "txtlimicre";
+            this.txtlimicre.Size = new System.Drawing.Size(133, 26);
+            this.txtlimicre.TabIndex = 9;
             // 
             // label5
             // 
@@ -116,12 +116,12 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Limite de credito";
             // 
-            // textEmail
+            // txtemail
             // 
-            this.textEmail.Location = new System.Drawing.Point(439, 98);
-            this.textEmail.Name = "textEmail";
-            this.textEmail.Size = new System.Drawing.Size(133, 26);
-            this.textEmail.TabIndex = 7;
+            this.txtemail.Location = new System.Drawing.Point(439, 98);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(133, 26);
+            this.txtemail.TabIndex = 7;
             // 
             // label6
             // 
@@ -142,31 +142,31 @@
             this.buttAgregar.UseVisualStyleBackColor = true;
             this.buttAgregar.Click += new System.EventHandler(this.buttAgregar_Click);
             // 
-            // dateTime
+            // fechain
             // 
-            this.dateTime.Location = new System.Drawing.Point(439, 354);
-            this.dateTime.Name = "dateTime";
-            this.dateTime.Size = new System.Drawing.Size(219, 26);
-            this.dateTime.TabIndex = 13;
-            this.dateTime.Value = new System.DateTime(2024, 8, 3, 10, 29, 11, 0);
+            this.fechain.Location = new System.Drawing.Point(439, 354);
+            this.fechain.Name = "fechain";
+            this.fechain.Size = new System.Drawing.Size(219, 26);
+            this.fechain.TabIndex = 13;
+            this.fechain.Value = new System.DateTime(2024, 8, 3, 10, 29, 11, 0);
             // 
             // mantcli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(978, 644);
-            this.Controls.Add(this.dateTime);
+            this.Controls.Add(this.fechain);
             this.Controls.Add(this.buttAgregar);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textLimcre);
+            this.Controls.Add(this.txtlimicre);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textEmail);
+            this.Controls.Add(this.txtemail);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textDirec);
-            this.Controls.Add(this.textApell);
+            this.Controls.Add(this.txtdirec);
+            this.Controls.Add(this.txtapell);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textNomb);
+            this.Controls.Add(this.txtnom);
             this.Controls.Add(this.label1);
             this.Name = "mantcli";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -179,17 +179,17 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textNomb;
+        private System.Windows.Forms.TextBox txtnom;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textApell;
-        private System.Windows.Forms.TextBox textDirec;
+        private System.Windows.Forms.TextBox txtapell;
+        private System.Windows.Forms.TextBox txtdirec;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textLimcre;
+        private System.Windows.Forms.TextBox txtlimicre;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textEmail;
+        private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button buttAgregar;
-        private System.Windows.Forms.DateTimePicker dateTime;
+        private System.Windows.Forms.DateTimePicker fechain;
     }
 }

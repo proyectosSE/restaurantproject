@@ -57,7 +57,7 @@
             this.consultasToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1236, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1228, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -83,6 +83,7 @@
             this.iconMenuItem1.Name = "iconMenuItem1";
             this.iconMenuItem1.Size = new System.Drawing.Size(270, 34);
             this.iconMenuItem1.Text = "Clientes";
+            this.iconMenuItem1.Click += new System.EventHandler(this.iconMenuItem1_Click);
             // 
             // iconMenuItem2
             // 
@@ -100,7 +101,7 @@
             this.iconMenuItem3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem3.Name = "iconMenuItem3";
             this.iconMenuItem3.Size = new System.Drawing.Size(270, 34);
-            this.iconMenuItem3.Text = "iconMenuItem3";
+            this.iconMenuItem3.Text = "Salas";
             // 
             // iconMenuItem4
             // 
@@ -109,7 +110,7 @@
             this.iconMenuItem4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem4.Name = "iconMenuItem4";
             this.iconMenuItem4.Size = new System.Drawing.Size(270, 34);
-            this.iconMenuItem4.Text = "iconMenuItem4";
+            this.iconMenuItem4.Text = "Mesas";
             // 
             // iconMenuItem5
             // 
@@ -118,7 +119,7 @@
             this.iconMenuItem5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem5.Name = "iconMenuItem5";
             this.iconMenuItem5.Size = new System.Drawing.Size(270, 34);
-            this.iconMenuItem5.Text = "iconMenuItem5";
+            this.iconMenuItem5.Text = "Usuarios";
             // 
             // iconMenuItem6
             // 
@@ -127,7 +128,7 @@
             this.iconMenuItem6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem6.Name = "iconMenuItem6";
             this.iconMenuItem6.Size = new System.Drawing.Size(270, 34);
-            this.iconMenuItem6.Text = "iconMenuItem6";
+            this.iconMenuItem6.Text = "Departamentos";
             // 
             // iconMenuItem7
             // 
@@ -136,7 +137,7 @@
             this.iconMenuItem7.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem7.Name = "iconMenuItem7";
             this.iconMenuItem7.Size = new System.Drawing.Size(270, 34);
-            this.iconMenuItem7.Text = "iconMenuItem7";
+            this.iconMenuItem7.Text = "Medidas";
             // 
             // consultasToolStripMenuItem
             // 
@@ -177,7 +178,7 @@
             this.iconMenuItem10.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem10.Name = "iconMenuItem10";
             this.iconMenuItem10.Size = new System.Drawing.Size(270, 34);
-            this.iconMenuItem10.Text = "iconMenuItem10";
+            this.iconMenuItem10.Text = "Salas";
             // 
             // iconMenuItem11
             // 
@@ -186,7 +187,7 @@
             this.iconMenuItem11.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem11.Name = "iconMenuItem11";
             this.iconMenuItem11.Size = new System.Drawing.Size(270, 34);
-            this.iconMenuItem11.Text = "iconMenuItem11";
+            this.iconMenuItem11.Text = "Mesas";
             // 
             // iconMenuItem12
             // 
@@ -195,7 +196,7 @@
             this.iconMenuItem12.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem12.Name = "iconMenuItem12";
             this.iconMenuItem12.Size = new System.Drawing.Size(270, 34);
-            this.iconMenuItem12.Text = "iconMenuItem12";
+            this.iconMenuItem12.Text = "Usuarios";
             // 
             // iconMenuItem13
             // 
@@ -204,7 +205,7 @@
             this.iconMenuItem13.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem13.Name = "iconMenuItem13";
             this.iconMenuItem13.Size = new System.Drawing.Size(270, 34);
-            this.iconMenuItem13.Text = "iconMenuItem13";
+            this.iconMenuItem13.Text = "Departamentos";
             // 
             // iconMenuItem14
             // 
@@ -213,13 +214,13 @@
             this.iconMenuItem14.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem14.Name = "iconMenuItem14";
             this.iconMenuItem14.Size = new System.Drawing.Size(270, 34);
-            this.iconMenuItem14.Text = "iconMenuItem14";
+            this.iconMenuItem14.Text = "Medidas";
             // 
             // menuprincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1236, 645);
+            this.ClientSize = new System.Drawing.Size(1228, 644);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "menuprincipal";

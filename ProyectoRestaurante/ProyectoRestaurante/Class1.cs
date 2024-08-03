@@ -9,7 +9,7 @@ namespace ProyectoRestaurante
 {
     internal class Conectar
     {
-        private SqlConnection conexion = new SqlConnection("server=ELIASPC;Database=restaurantpj;Integrated Security=true");
+        private SqlConnection conexion = new SqlConnection("server=LAPTOP-ASISTENT;ProyectoRestaurante;Integrated Security=true");
         
         public void Agregar()
         {
@@ -22,5 +22,7 @@ namespace ProyectoRestaurante
             conexion.Open();
             conexion.Close();
         }
+
+       
     }
 }

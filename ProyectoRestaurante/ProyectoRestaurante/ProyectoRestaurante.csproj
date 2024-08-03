@@ -54,6 +54,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="mantcli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantcli.Designer.cs">
+      <DependentUpon>mantcli.cs</DependentUpon>
+    </Compile>
     <Compile Include="menuprincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantcli.resx">
+      <DependentUpon>mantcli.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="menuprincipal.resx">
       <DependentUpon>menuprincipal.cs</DependentUpon>

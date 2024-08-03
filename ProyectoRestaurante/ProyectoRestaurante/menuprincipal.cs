@@ -16,5 +16,12 @@ namespace ProyectoRestaurante
         {
             InitializeComponent();
         }
+
+        private void iconMenuItem1_Click(object sender, EventArgs e)
+        {
+            mantcli mantenicli = new mantcli(); 
+            mantenicli.Show();
+
+        }
     }
 }

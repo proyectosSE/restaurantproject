@@ -14,7 +14,7 @@ namespace ProyectoRestaurante
     public partial class login : Form
     {
 
-        public static SqlConnection conexion = new SqlConnection("server=ELIASPC;Database=ProyectoRestaurante;Integrated Security=true");
+        public static SqlConnection conexion = new SqlConnection("server=LAPTOP-ASISTENT;Database=ProyectoRestaurante;Integrated Security=true");
 
         public login()
         {
@@ -29,7 +29,7 @@ namespace ProyectoRestaurante
         private void btentrar_Click(object sender, EventArgs e)
         {
             conexion.Open();
-            string entrar = "SELECT * FROM usuarios WHERE usuario='" + txtlogin.Text + "' AND password='" + txtpassword.Text + "'";
+            string entrar = "SELECT * FROM usuarios WHERE usuario='" + txtlogin.Text + "' AND password ='" + txtpassword.Text + "'";
             SqlCommand comando = new SqlCommand(entrar, conexion);
             SqlDataReader lector;
             lector = comando.ExecuteReader();

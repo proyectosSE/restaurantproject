@@ -59,5 +59,11 @@ namespace ProyectoRestaurante
             mantmedid mantenimedid = new mantmedid();
             mantenimedid.Show();
         }
+
+        private void menuprincipal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            login lg = new login();
+            lg.Show();
+        }
     }
 }

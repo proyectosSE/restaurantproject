@@ -21,7 +21,7 @@ namespace ProyectoRestaurante
 
         private void buttAgregar_Click(object sender, EventArgs e)
         {
-            String cadena = $"INSERT INTO clientes VALUES('{textNomb}','{textApell}','{textDirec}',{textEmail}',{textLimcre}','{dateTime}')";
+            String cadena = $"INSERT INTO clientes VALUES('{textNomb.Text}','{textApell.Text}','{textDirec.Text}',{textEmail.Text}',{textLimcre.Text}','{dateTime.Text}')";
             SqlCommand comando = new SqlCommand(cadena,conexion);
             comando.ExecuteNonQuery();
 

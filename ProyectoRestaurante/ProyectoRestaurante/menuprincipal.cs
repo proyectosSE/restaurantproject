@@ -23,5 +23,23 @@ namespace ProyectoRestaurante
             mantenicli.Show();
 
         }
+
+        private void iconMenuItem2_Click(object sender, EventArgs e)
+        {
+            mantcat mantenicat = new mantcat();
+            mantenicat.Show();
+        }
+
+        private void iconMenuItem3_Click(object sender, EventArgs e)
+        {
+            mantsalas mantenisalas = new mantsalas();
+            mantenisalas.Show();
+        }
+
+        private void iconMenuItem4_Click(object sender, EventArgs e)
+        {
+            mantmesas mantenimesas = new mantmesas();
+            mantenimesas.Show();
+        }
     }
 }

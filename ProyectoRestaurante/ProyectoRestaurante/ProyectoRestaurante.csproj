@@ -54,6 +54,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="mantmesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantmesas.Designer.cs">
+      <DependentUpon>mantmesas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantsalas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantsalas.Designer.cs">
+      <DependentUpon>mantsalas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantcat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantcat.Designer.cs">
+      <DependentUpon>mantcat.cs</DependentUpon>
+    </Compile>
     <Compile Include="mantcli.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,8 +95,17 @@
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mantcat.resx">
+      <DependentUpon>mantcat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mantcli.resx">
       <DependentUpon>mantcli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantmesas.resx">
+      <DependentUpon>mantmesas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantsalas.resx">
+      <DependentUpon>mantsalas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="menuprincipal.resx">
       <DependentUpon>menuprincipal.cs</DependentUpon>

@@ -93,6 +93,7 @@
             this.iconMenuItem2.Name = "iconMenuItem2";
             this.iconMenuItem2.Size = new System.Drawing.Size(270, 34);
             this.iconMenuItem2.Text = "Categorías";
+            this.iconMenuItem2.Click += new System.EventHandler(this.iconMenuItem2_Click);
             // 
             // iconMenuItem3
             // 
@@ -102,6 +103,7 @@
             this.iconMenuItem3.Name = "iconMenuItem3";
             this.iconMenuItem3.Size = new System.Drawing.Size(270, 34);
             this.iconMenuItem3.Text = "Salas";
+            this.iconMenuItem3.Click += new System.EventHandler(this.iconMenuItem3_Click);
             // 
             // iconMenuItem4
             // 
@@ -111,6 +113,7 @@
             this.iconMenuItem4.Name = "iconMenuItem4";
             this.iconMenuItem4.Size = new System.Drawing.Size(270, 34);
             this.iconMenuItem4.Text = "Mesas";
+            this.iconMenuItem4.Click += new System.EventHandler(this.iconMenuItem4_Click);
             // 
             // iconMenuItem5
             // 
@@ -159,7 +162,7 @@
             this.iconMenuItem8.IconColor = System.Drawing.Color.Black;
             this.iconMenuItem8.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem8.Name = "iconMenuItem8";
-            this.iconMenuItem8.Size = new System.Drawing.Size(270, 34);
+            this.iconMenuItem8.Size = new System.Drawing.Size(237, 34);
             this.iconMenuItem8.Text = "Clientes";
             // 
             // iconMenuItem9
@@ -168,7 +171,7 @@
             this.iconMenuItem9.IconColor = System.Drawing.Color.Black;
             this.iconMenuItem9.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem9.Name = "iconMenuItem9";
-            this.iconMenuItem9.Size = new System.Drawing.Size(270, 34);
+            this.iconMenuItem9.Size = new System.Drawing.Size(237, 34);
             this.iconMenuItem9.Text = "Categorías";
             // 
             // iconMenuItem10
@@ -177,7 +180,7 @@
             this.iconMenuItem10.IconColor = System.Drawing.Color.Black;
             this.iconMenuItem10.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem10.Name = "iconMenuItem10";
-            this.iconMenuItem10.Size = new System.Drawing.Size(270, 34);
+            this.iconMenuItem10.Size = new System.Drawing.Size(237, 34);
             this.iconMenuItem10.Text = "Salas";
             // 
             // iconMenuItem11
@@ -186,7 +189,7 @@
             this.iconMenuItem11.IconColor = System.Drawing.Color.Black;
             this.iconMenuItem11.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem11.Name = "iconMenuItem11";
-            this.iconMenuItem11.Size = new System.Drawing.Size(270, 34);
+            this.iconMenuItem11.Size = new System.Drawing.Size(237, 34);
             this.iconMenuItem11.Text = "Mesas";
             // 
             // iconMenuItem12
@@ -195,7 +198,7 @@
             this.iconMenuItem12.IconColor = System.Drawing.Color.Black;
             this.iconMenuItem12.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem12.Name = "iconMenuItem12";
-            this.iconMenuItem12.Size = new System.Drawing.Size(270, 34);
+            this.iconMenuItem12.Size = new System.Drawing.Size(237, 34);
             this.iconMenuItem12.Text = "Usuarios";
             // 
             // iconMenuItem13
@@ -204,7 +207,7 @@
             this.iconMenuItem13.IconColor = System.Drawing.Color.Black;
             this.iconMenuItem13.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem13.Name = "iconMenuItem13";
-            this.iconMenuItem13.Size = new System.Drawing.Size(270, 34);
+            this.iconMenuItem13.Size = new System.Drawing.Size(237, 34);
             this.iconMenuItem13.Text = "Departamentos";
             // 
             // iconMenuItem14
@@ -213,7 +216,7 @@
             this.iconMenuItem14.IconColor = System.Drawing.Color.Black;
             this.iconMenuItem14.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem14.Name = "iconMenuItem14";
-            this.iconMenuItem14.Size = new System.Drawing.Size(270, 34);
+            this.iconMenuItem14.Size = new System.Drawing.Size(237, 34);
             this.iconMenuItem14.Text = "Medidas";
             // 
             // menuprincipal

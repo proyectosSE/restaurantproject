@@ -48,3 +48,6 @@ C:\Users\Asistente\Desktop\lab Programacion3\restaurant\ProyectoRestaurante\Proy
 C:\Users\Asistente\Desktop\lab Programacion3\restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\Proyecto.CE3A958B.Up2Date
 C:\Users\Asistente\Desktop\lab Programacion3\restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.exe
 C:\Users\Asistente\Desktop\lab Programacion3\restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.pdb
+C:\Users\Asistente\Desktop\lab Programacion3\restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantcat.resources
+C:\Users\Asistente\Desktop\lab Programacion3\restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantmesas.resources
+C:\Users\Asistente\Desktop\lab Programacion3\restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantsalas.resources

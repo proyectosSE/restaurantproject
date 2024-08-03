@@ -13,15 +13,38 @@ namespace ProyectoRestaurante
 {
     public partial class login : Form
     {
-                
+
+        public static SqlConnection conexion = new SqlConnection("server=ELIASPC;Database=ProyectoRestaurante;Integrated Security=true");
+
         public login()
         {
             InitializeComponent();
         }
 
-        private void btsalir_Click(object sender, EventArgs e)
+        private void btsalir_Click_1(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void btentrar_Click(object sender, EventArgs e)
+        {
+            conexion.Open();
+            string entrar = "SELECT * FROM usuarios WHERE usuario='" + txtlogin.Text + "' AND password='" + txtpassword.Text + "'";
+            SqlCommand comando = new SqlCommand(entrar, conexion);
+            SqlDataReader lector;
+            lector = comando.ExecuteReader();
+
+            if (lector.HasRows == true)
+            {
+                menuprincipal men = new menuprincipal();
+                men.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Usuario o Contraseña incorrectos");
+            }
+            conexion.Close();
         }
     }
 }

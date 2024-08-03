@@ -51,3 +51,5 @@ C:\Users\Asistente\Desktop\lab Programacion3\restaurant\ProyectoRestaurante\Proy
 C:\Users\Asistente\Desktop\lab Programacion3\restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantcat.resources
 C:\Users\Asistente\Desktop\lab Programacion3\restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantmesas.resources
 C:\Users\Asistente\Desktop\lab Programacion3\restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantsalas.resources
+C:\Users\Asistente\Desktop\lab Programacion3\restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantdepar.resources
+C:\Users\Asistente\Desktop\lab Programacion3\restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantmedid.resources

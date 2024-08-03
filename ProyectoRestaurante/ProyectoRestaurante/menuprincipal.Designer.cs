@@ -123,6 +123,7 @@
             this.iconMenuItem5.Name = "iconMenuItem5";
             this.iconMenuItem5.Size = new System.Drawing.Size(270, 34);
             this.iconMenuItem5.Text = "Usuarios";
+            this.iconMenuItem5.Click += new System.EventHandler(this.iconMenuItem5_Click);
             // 
             // iconMenuItem6
             // 
@@ -132,6 +133,7 @@
             this.iconMenuItem6.Name = "iconMenuItem6";
             this.iconMenuItem6.Size = new System.Drawing.Size(270, 34);
             this.iconMenuItem6.Text = "Departamentos";
+            this.iconMenuItem6.Click += new System.EventHandler(this.iconMenuItem6_Click);
             // 
             // iconMenuItem7
             // 
@@ -141,6 +143,7 @@
             this.iconMenuItem7.Name = "iconMenuItem7";
             this.iconMenuItem7.Size = new System.Drawing.Size(270, 34);
             this.iconMenuItem7.Text = "Medidas";
+            this.iconMenuItem7.Click += new System.EventHandler(this.iconMenuItem7_Click);
             // 
             // consultasToolStripMenuItem
             // 

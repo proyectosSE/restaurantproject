@@ -231,7 +231,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "menuprincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Menu Principal";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.menuprincipal_FormClosed);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

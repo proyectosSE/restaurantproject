@@ -4,16 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Windows;
 
 namespace ProyectoRestaurante
 {
     internal class Conectar
     {
-        private SqlConnection conexion = new SqlConnection("server=LAPTOP-ASISTENT;ProyectoRestaurante;Integrated Security=true");
+        public static SqlConnection conexion = new SqlConnection("server=ELIASPC;Database=ProyectoRestaurante;Integrated Security=true");
         
-        public void Agregar()
+        public void Agregar(string datos, string tabla)
         {
             conexion.Open();
+            string cadena = $"INSERT INTO {tabla} VALUES({datos});";
+            SqlCommand comando = new SqlCommand(cadena,conexion);
+            comando.ExecuteNonQuery();
+            MessageBox.Show("Datos guardados");
             conexion.Close();
         }
 

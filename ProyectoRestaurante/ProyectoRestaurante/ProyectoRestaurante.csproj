@@ -131,6 +131,9 @@
     <EmbeddedResource Include="mantsalas.resx">
       <DependentUpon>mantsalas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mantusua.resx">
+      <DependentUpon>mantusua.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="menuprincipal.resx">
       <DependentUpon>menuprincipal.cs</DependentUpon>
     </EmbeddedResource>

@@ -141,7 +141,8 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textcat);
             this.Name = "mantmesas";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Mesas";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

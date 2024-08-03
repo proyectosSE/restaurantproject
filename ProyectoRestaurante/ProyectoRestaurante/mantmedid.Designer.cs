@@ -99,7 +99,8 @@
             this.Controls.Add(this.textcat);
             this.Controls.Add(this.label1);
             this.Name = "mantmedid";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Medidas";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

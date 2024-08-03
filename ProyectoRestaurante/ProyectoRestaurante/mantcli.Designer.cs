@@ -169,7 +169,8 @@
             this.Controls.Add(this.textNomb);
             this.Controls.Add(this.label1);
             this.Name = "mantcli";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Clientes";
             this.ResumeLayout(false);
             this.PerformLayout();
 

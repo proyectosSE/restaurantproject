@@ -14,7 +14,7 @@ namespace ProyectoRestaurante
     public partial class login : Form
     {
 
-        public static SqlConnection conexion = new SqlConnection("server=ELIASPC;Database=ProyectoRestaurante;Integrated Security=true");
+        public static SqlConnection conexion = new SqlConnection("server=LAPTOP-ASISTENT;Database=ProyectoRestaurante;Integrated Security=true");
 
         public login()
         {

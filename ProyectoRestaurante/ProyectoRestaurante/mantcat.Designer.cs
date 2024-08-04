@@ -31,9 +31,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textcat = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Editar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Eliminar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttAgreg = new System.Windows.Forms.Button();
+            this.buttEdit = new System.Windows.Forms.Button();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Editar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Eliminar = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,37 +68,75 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(587, 535);
             this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // buttAgreg
+            // 
+            this.buttAgreg.Location = new System.Drawing.Point(90, 226);
+            this.buttAgreg.Name = "buttAgreg";
+            this.buttAgreg.Size = new System.Drawing.Size(75, 32);
+            this.buttAgreg.TabIndex = 3;
+            this.buttAgreg.Text = "Agregar";
+            this.buttAgreg.UseVisualStyleBackColor = true;
+            this.buttAgreg.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // buttEdit
+            // 
+            this.buttEdit.Location = new System.Drawing.Point(250, 226);
+            this.buttEdit.Name = "buttEdit";
+            this.buttEdit.Size = new System.Drawing.Size(75, 32);
+            this.buttEdit.TabIndex = 4;
+            this.buttEdit.Text = "Editar";
+            this.buttEdit.UseVisualStyleBackColor = true;
+            this.buttEdit.Click += new System.EventHandler(this.buttEdit_Click);
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.HeaderText = "Editar";
+            this.dataGridViewImageColumn1.Image = global::ProyectoRestaurante.Properties.Resources.deleRoj;
+            this.dataGridViewImageColumn1.MinimumWidth = 8;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewImageColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewImageColumn1.Width = 75;
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.HeaderText = "Eliminar";
+            this.dataGridViewImageColumn2.Image = global::ProyectoRestaurante.Properties.Resources.editVer;
+            this.dataGridViewImageColumn2.MinimumWidth = 8;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewImageColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewImageColumn2.Width = 75;
             // 
             // Editar
             // 
             this.Editar.HeaderText = "Editar";
+            this.Editar.Image = global::ProyectoRestaurante.Properties.Resources.editVer;
             this.Editar.MinimumWidth = 8;
             this.Editar.Name = "Editar";
-            this.Editar.Width = 150;
+            this.Editar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Editar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Editar.Width = 75;
             // 
             // Eliminar
             // 
             this.Eliminar.HeaderText = "Eliminar";
+            this.Eliminar.Image = global::ProyectoRestaurante.Properties.Resources.deleRoj;
             this.Eliminar.MinimumWidth = 8;
             this.Eliminar.Name = "Eliminar";
-            this.Eliminar.Width = 150;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(90, 226);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 32);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Eliminar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Eliminar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Eliminar.Width = 75;
             // 
             // mantcat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1231, 644);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttEdit);
+            this.Controls.Add(this.buttAgreg);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textcat);
             this.Controls.Add(this.label1);
@@ -113,8 +154,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textcat;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Editar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Eliminar;
+        private System.Windows.Forms.Button buttAgreg;
+        private System.Windows.Forms.Button buttEdit;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
+        private System.Windows.Forms.DataGridViewImageColumn Editar;
+        private System.Windows.Forms.DataGridViewImageColumn Eliminar;
     }
 }

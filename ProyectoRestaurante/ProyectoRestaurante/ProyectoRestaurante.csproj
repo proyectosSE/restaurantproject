@@ -54,6 +54,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="mensaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mensaje.Designer.cs">
+      <DependentUpon>mensaje.cs</DependentUpon>
+    </Compile>
     <Compile Include="mantmedid.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProyectoRestauranteDataSet2.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="mensaje.resx">
+      <DependentUpon>mensaje.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
@@ -160,6 +169,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -207,6 +217,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deleRoj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editVer.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

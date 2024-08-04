@@ -10,7 +10,7 @@ namespace ProyectoRestaurante
 {
     internal class Conectar
     {
-        public static SqlConnection conexion = new SqlConnection("server=ELIASPC;Database=ProyectoRestaurante;Integrated Security=true");
+        public static SqlConnection conexion = new SqlConnection("server=LAPTOP-ASISTENT;Database=ProyectoRestaurante;Integrated Security=true");
         
         public void Agregar(string datos, string tabla)
         {
@@ -22,12 +22,27 @@ namespace ProyectoRestaurante
             conexion.Close();
         }
 
-        public void Actualizar()
+        public void Actualizar(string datos,string tabla,string id)
         {
             conexion.Open();
+            string cadena = $"UPDATE {tabla} SET {datos} WHERE {id};";
+            SqlCommand comando = new SqlCommand(cadena, conexion);
+            comando.ExecuteNonQuery();
+            MessageBox.Show("Datos editados");
+            conexion.Close();
+        }
+
+        public void eliminar (string tabla, string id)
+        {
+            conexion.Open();
+            string cadena = $"DELETE FROM {tabla} WHERE {id};";
+            SqlCommand comando = new SqlCommand(cadena, conexion);
+            comando.ExecuteNonQuery();
+            MessageBox.Show("Elimando correctamente");
             conexion.Close();
         }
 
        
+    
     }
 }

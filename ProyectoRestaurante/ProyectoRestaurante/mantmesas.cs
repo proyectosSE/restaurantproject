@@ -23,7 +23,7 @@ namespace ProyectoRestaurante
         private void button2_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();
-            string datos = ""+cbbsala.Text+",'"+txtmesa.Text+"',"+txtasientos.Text+",'"+fechamesa.Text+"',"+txtestado.Text+"";
+            string datos = ""+cbbsala.SelectedValue+",'"+txtmesa.Text+"',"+txtasientos.Text+",'"+fechamesa.Text+"',"+txtestado.Text+"";
             string tabla = "mesas";
             cls.Agregar(datos, tabla);
         }
@@ -35,6 +35,10 @@ namespace ProyectoRestaurante
 
         private void mantmesas_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'proyectoRestauranteDataSet4.salas' Puede moverla o quitarla según sea necesario.
+            this.salasTableAdapter3.Fill(this.proyectoRestauranteDataSet4.salas);
+            // TODO: esta línea de código carga datos en la tabla 'proyectoRestauranteDataSet3.salas' Puede moverla o quitarla según sea necesario.
+            this.salasTableAdapter2.Fill(this.proyectoRestauranteDataSet3.salas);
             // TODO: esta línea de código carga datos en la tabla 'proyectoRestauranteDataSet1.salas' Puede moverla o quitarla según sea necesario.
             this.salasTableAdapter1.Fill(this.proyectoRestauranteDataSet1.salas);
             // TODO: esta línea de código carga datos en la tabla 'proyectoRestauranteDataSet.salas' Puede moverla o quitarla según sea necesario.

@@ -56,7 +56,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(117, 55);
+            this.label1.Location = new System.Drawing.Point(130, 70);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(241, 20);
             this.label1.TabIndex = 2;
@@ -71,7 +71,8 @@
             this.Controls.Add(this.buttCan);
             this.Controls.Add(this.buttCon);
             this.Name = "mensaje";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "CONFIRMAR?";
             this.ResumeLayout(false);
             this.PerformLayout();
 

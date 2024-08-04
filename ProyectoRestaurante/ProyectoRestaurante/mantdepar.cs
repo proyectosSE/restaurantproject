@@ -33,7 +33,7 @@ namespace ProyectoRestaurante
         private void cargardatos()
         {
             String consulta = "SELECT * FROM departamentos";
-            string connectionString = "server=LAPTOP-ASISTENT;Database=ProyectoRestaurante;Integrated Security=true";
+            string connectionString = "server=ELIASPC;Database=ProyectoRestaurante;Integrated Security=true";
             try
             {
                 using (SqlConnection conexion = new SqlConnection(connectionString))

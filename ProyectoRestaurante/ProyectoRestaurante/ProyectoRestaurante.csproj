@@ -131,6 +131,36 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProyectoRestauranteDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProyectoRestauranteDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoRestauranteDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoRestauranteDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoRestauranteDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoRestauranteDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoRestauranteDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoRestauranteDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoRestauranteDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoRestauranteDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoRestauranteDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoRestauranteDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoRestauranteDataSet8.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="mensaje.resx">
       <DependentUpon>mensaje.cs</DependentUpon>
     </EmbeddedResource>
@@ -219,6 +249,72 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ProyectoRestauranteDataSet3.xsc">
+      <DependentUpon>ProyectoRestauranteDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProyectoRestauranteDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProyectoRestauranteDataSet3.xss">
+      <DependentUpon>ProyectoRestauranteDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet4.xsc">
+      <DependentUpon>ProyectoRestauranteDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProyectoRestauranteDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProyectoRestauranteDataSet4.xss">
+      <DependentUpon>ProyectoRestauranteDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet5.xsc">
+      <DependentUpon>ProyectoRestauranteDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProyectoRestauranteDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProyectoRestauranteDataSet5.xss">
+      <DependentUpon>ProyectoRestauranteDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet6.xsc">
+      <DependentUpon>ProyectoRestauranteDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProyectoRestauranteDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProyectoRestauranteDataSet6.xss">
+      <DependentUpon>ProyectoRestauranteDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet7.xsc">
+      <DependentUpon>ProyectoRestauranteDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProyectoRestauranteDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProyectoRestauranteDataSet7.xss">
+      <DependentUpon>ProyectoRestauranteDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet8.xsc">
+      <DependentUpon>ProyectoRestauranteDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProyectoRestauranteDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProyectoRestauranteDataSet8.xss">
+      <DependentUpon>ProyectoRestauranteDataSet8.xsd</DependentUpon>
+    </None>
     <None Include="Resources\deleRoj.png" />
   </ItemGroup>
   <ItemGroup>

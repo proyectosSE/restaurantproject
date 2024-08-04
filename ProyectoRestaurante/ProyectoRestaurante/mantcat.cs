@@ -30,7 +30,7 @@ namespace ProyectoRestaurante
             cls.Agregar(categoria,tbcat);
         }
 
-        public static SqlConnection conexion = new SqlConnection("server=LAPTOP-ASISTENT;Database=ProyectoRestaurante;Integrated Security=true");
+        public static SqlConnection conexion = new SqlConnection("server=ELIASPC;Database=ProyectoRestaurante;Integrated Security=true");
         private void cargardatos()
         {
            

@@ -10,7 +10,7 @@ namespace ProyectoRestaurante
 {
     internal class Conectar
     {
-        public static SqlConnection conexion = new SqlConnection("server=LAPTOP-ASISTENT;Database=ProyectoRestaurante;Integrated Security=true");
+        public static SqlConnection conexion = new SqlConnection("server=ELIASPC;Database=ProyectoRestaurante;Integrated Security=true");
         
         public void Agregar(string datos, string tabla)
         {

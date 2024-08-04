@@ -85,6 +85,18 @@
     <Compile Include="consultas\consalas.Designer.cs">
       <DependentUpon>consalas.cs</DependentUpon>
     </Compile>
+    <Compile Include="consultas\conmedidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultas\conmedidas.Designer.cs">
+      <DependentUpon>conmedidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consultas\conusua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultas\conusua.Designer.cs">
+      <DependentUpon>conusua.cs</DependentUpon>
+    </Compile>
     <Compile Include="login y ventanas\mensaje.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -231,11 +243,17 @@
     <EmbeddedResource Include="consultas\condepart.resx">
       <DependentUpon>condepart.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="consultas\conmedidas.resx">
+      <DependentUpon>conmedidas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="consultas\conmesa.resx">
       <DependentUpon>conmesa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="consultas\consalas.resx">
       <DependentUpon>consalas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consultas\conusua.resx">
+      <DependentUpon>conusua.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login y ventanas\mensaje.resx">
       <DependentUpon>mensaje.cs</DependentUpon>

@@ -207,6 +207,7 @@
             this.iconMenuItem12.Name = "iconMenuItem12";
             this.iconMenuItem12.Size = new System.Drawing.Size(270, 34);
             this.iconMenuItem12.Text = "Usuarios";
+            this.iconMenuItem12.Click += new System.EventHandler(this.iconMenuItem12_Click_1);
             // 
             // iconMenuItem13
             // 
@@ -226,6 +227,7 @@
             this.iconMenuItem14.Name = "iconMenuItem14";
             this.iconMenuItem14.Size = new System.Drawing.Size(270, 34);
             this.iconMenuItem14.Text = "Medidas";
+            this.iconMenuItem14.Click += new System.EventHandler(this.iconMenuItem14_Click);
             // 
             // menuprincipal
             // 

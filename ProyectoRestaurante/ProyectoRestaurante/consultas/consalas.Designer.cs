@@ -28,16 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idsalaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomsalaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.salasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.proyectoRestauranteDataSet13 = new ProyectoRestaurante.ProyectoRestauranteDataSet13();
             this.salasTableAdapter = new ProyectoRestaurante.ProyectoRestauranteDataSet13TableAdapters.salasTableAdapter();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtsala = new System.Windows.Forms.TextBox();
+            this.btbuscar = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet13)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,52 +42,14 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idsalaDataGridViewTextBoxColumn,
-            this.nomsalaDataGridViewTextBoxColumn,
-            this.fechaDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.salasBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(349, 28);
+            this.dataGridView1.Location = new System.Drawing.Point(102, 96);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(541, 585);
+            this.dataGridView1.Size = new System.Drawing.Size(1022, 512);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // idsalaDataGridViewTextBoxColumn
-            // 
-            this.idsalaDataGridViewTextBoxColumn.DataPropertyName = "id_sala";
-            this.idsalaDataGridViewTextBoxColumn.HeaderText = "id_sala";
-            this.idsalaDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.idsalaDataGridViewTextBoxColumn.Name = "idsalaDataGridViewTextBoxColumn";
-            this.idsalaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idsalaDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // nomsalaDataGridViewTextBoxColumn
-            // 
-            this.nomsalaDataGridViewTextBoxColumn.DataPropertyName = "nomsala";
-            this.nomsalaDataGridViewTextBoxColumn.HeaderText = "nomsala";
-            this.nomsalaDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.nomsalaDataGridViewTextBoxColumn.Name = "nomsalaDataGridViewTextBoxColumn";
-            this.nomsalaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nomsalaDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // fechaDataGridViewTextBoxColumn
-            // 
-            this.fechaDataGridViewTextBoxColumn.DataPropertyName = "fecha";
-            this.fechaDataGridViewTextBoxColumn.HeaderText = "fecha";
-            this.fechaDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.fechaDataGridViewTextBoxColumn.Name = "fechaDataGridViewTextBoxColumn";
-            this.fechaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.fechaDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // salasBindingSource
-            // 
-            this.salasBindingSource.DataMember = "salas";
-            this.salasBindingSource.DataSource = this.proyectoRestauranteDataSet13;
             // 
             // proyectoRestauranteDataSet13
             // 
@@ -101,20 +60,53 @@
             // 
             this.salasTableAdapter.ClearBeforeFill = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(365, 43);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 20);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Sala";
+            // 
+            // txtsala
+            // 
+            this.txtsala.Location = new System.Drawing.Point(412, 40);
+            this.txtsala.Name = "txtsala";
+            this.txtsala.Size = new System.Drawing.Size(338, 26);
+            this.txtsala.TabIndex = 2;
+            // 
+            // btbuscar
+            // 
+            this.btbuscar.IconChar = FontAwesome.Sharp.IconChar.Sistrix;
+            this.btbuscar.IconColor = System.Drawing.Color.Black;
+            this.btbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btbuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btbuscar.Location = new System.Drawing.Point(767, 30);
+            this.btbuscar.Name = "btbuscar";
+            this.btbuscar.Size = new System.Drawing.Size(107, 47);
+            this.btbuscar.TabIndex = 3;
+            this.btbuscar.Text = "Buscar";
+            this.btbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btbuscar.UseVisualStyleBackColor = true;
+            // 
             // consalas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1231, 644);
+            this.Controls.Add(this.btbuscar);
+            this.Controls.Add(this.txtsala);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "consalas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Salas";
             this.Load += new System.EventHandler(this.consalas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet13)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -122,10 +114,9 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private ProyectoRestauranteDataSet13 proyectoRestauranteDataSet13;
-        private System.Windows.Forms.BindingSource salasBindingSource;
         private ProyectoRestauranteDataSet13TableAdapters.salasTableAdapter salasTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idsalaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomsalaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fechaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtsala;
+        private FontAwesome.Sharp.IconButton btbuscar;
     }
 }

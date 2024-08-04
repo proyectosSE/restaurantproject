@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoRestaurante.consultas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -94,6 +95,23 @@ namespace ProyectoRestaurante
         {
             condepart condepart = new condepart();
             condepart.Show();
+        }
+
+        private void iconMenuItem12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconMenuItem12_Click_1(object sender, EventArgs e)
+        {
+            conusua conusua = new conusua();
+            conusua.Show();
+        }
+
+        private void iconMenuItem14_Click(object sender, EventArgs e)
+        {
+            conmedidas conmedidas = new conmedidas();
+            conmedidas.Show();
         }
     }
 }

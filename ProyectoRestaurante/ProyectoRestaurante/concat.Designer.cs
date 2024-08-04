@@ -30,14 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.proyectoRestauranteDataSet11 = new ProyectoRestaurante.ProyectoRestauranteDataSet11();
-            this.categoriasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.categoriasTableAdapter = new ProyectoRestaurante.ProyectoRestauranteDataSet11TableAdapters.categoriasTableAdapter();
             this.idcategoriaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoriasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.proyectoRestauranteDataSet11 = new ProyectoRestaurante.ProyectoRestauranteDataSet11();
+            this.categoriasTableAdapter = new ProyectoRestaurante.ProyectoRestauranteDataSet11TableAdapters.categoriasTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet11)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -58,20 +58,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(396, 597);
             this.dataGridView1.TabIndex = 0;
             // 
-            // proyectoRestauranteDataSet11
-            // 
-            this.proyectoRestauranteDataSet11.DataSetName = "ProyectoRestauranteDataSet11";
-            this.proyectoRestauranteDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // categoriasBindingSource
-            // 
-            this.categoriasBindingSource.DataMember = "categorias";
-            this.categoriasBindingSource.DataSource = this.proyectoRestauranteDataSet11;
-            // 
-            // categoriasTableAdapter
-            // 
-            this.categoriasTableAdapter.ClearBeforeFill = true;
-            // 
             // idcategoriaDataGridViewTextBoxColumn
             // 
             this.idcategoriaDataGridViewTextBoxColumn.DataPropertyName = "id_categoria";
@@ -90,6 +76,20 @@
             this.descripcionDataGridViewTextBoxColumn.ReadOnly = true;
             this.descripcionDataGridViewTextBoxColumn.Width = 150;
             // 
+            // categoriasBindingSource
+            // 
+            this.categoriasBindingSource.DataMember = "categorias";
+            this.categoriasBindingSource.DataSource = this.proyectoRestauranteDataSet11;
+            // 
+            // proyectoRestauranteDataSet11
+            // 
+            this.proyectoRestauranteDataSet11.DataSetName = "ProyectoRestauranteDataSet11";
+            this.proyectoRestauranteDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // categoriasTableAdapter
+            // 
+            this.categoriasTableAdapter.ClearBeforeFill = true;
+            // 
             // concat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -97,11 +97,12 @@
             this.ClientSize = new System.Drawing.Size(1231, 644);
             this.Controls.Add(this.dataGridView1);
             this.Name = "concat";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Categorias";
             this.Load += new System.EventHandler(this.concat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet11)).EndInit();
             this.ResumeLayout(false);
 
         }

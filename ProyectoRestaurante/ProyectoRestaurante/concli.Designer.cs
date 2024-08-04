@@ -30,9 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.proyectoRestauranteDataSet10 = new ProyectoRestaurante.ProyectoRestauranteDataSet10();
-            this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clientesTableAdapter = new ProyectoRestaurante.ProyectoRestauranteDataSet10TableAdapters.clientesTableAdapter();
             this.idclienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomclienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.apellidoclienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,9 +37,12 @@
             this.emailclienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.limitecreditoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaingresoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.proyectoRestauranteDataSet10 = new ProyectoRestaurante.ProyectoRestauranteDataSet10();
+            this.clientesTableAdapter = new ProyectoRestaurante.ProyectoRestauranteDataSet10TableAdapters.clientesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet10)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -68,20 +68,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1135, 577);
             this.dataGridView1.TabIndex = 0;
             // 
-            // proyectoRestauranteDataSet10
-            // 
-            this.proyectoRestauranteDataSet10.DataSetName = "ProyectoRestauranteDataSet10";
-            this.proyectoRestauranteDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // clientesBindingSource
-            // 
-            this.clientesBindingSource.DataMember = "clientes";
-            this.clientesBindingSource.DataSource = this.proyectoRestauranteDataSet10;
-            // 
-            // clientesTableAdapter
-            // 
-            this.clientesTableAdapter.ClearBeforeFill = true;
-            // 
             // idclienteDataGridViewTextBoxColumn
             // 
             this.idclienteDataGridViewTextBoxColumn.DataPropertyName = "id_cliente";
@@ -97,6 +83,7 @@
             this.nomclienteDataGridViewTextBoxColumn.HeaderText = "nomcliente";
             this.nomclienteDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.nomclienteDataGridViewTextBoxColumn.Name = "nomclienteDataGridViewTextBoxColumn";
+            this.nomclienteDataGridViewTextBoxColumn.ReadOnly = true;
             this.nomclienteDataGridViewTextBoxColumn.Width = 150;
             // 
             // apellidoclienteDataGridViewTextBoxColumn
@@ -105,6 +92,7 @@
             this.apellidoclienteDataGridViewTextBoxColumn.HeaderText = "apellidocliente";
             this.apellidoclienteDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.apellidoclienteDataGridViewTextBoxColumn.Name = "apellidoclienteDataGridViewTextBoxColumn";
+            this.apellidoclienteDataGridViewTextBoxColumn.ReadOnly = true;
             this.apellidoclienteDataGridViewTextBoxColumn.Width = 150;
             // 
             // direcclienteDataGridViewTextBoxColumn
@@ -113,6 +101,7 @@
             this.direcclienteDataGridViewTextBoxColumn.HeaderText = "direccliente";
             this.direcclienteDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.direcclienteDataGridViewTextBoxColumn.Name = "direcclienteDataGridViewTextBoxColumn";
+            this.direcclienteDataGridViewTextBoxColumn.ReadOnly = true;
             this.direcclienteDataGridViewTextBoxColumn.Width = 150;
             // 
             // emailclienteDataGridViewTextBoxColumn
@@ -121,6 +110,7 @@
             this.emailclienteDataGridViewTextBoxColumn.HeaderText = "emailcliente";
             this.emailclienteDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.emailclienteDataGridViewTextBoxColumn.Name = "emailclienteDataGridViewTextBoxColumn";
+            this.emailclienteDataGridViewTextBoxColumn.ReadOnly = true;
             this.emailclienteDataGridViewTextBoxColumn.Width = 150;
             // 
             // limitecreditoDataGridViewTextBoxColumn
@@ -129,6 +119,7 @@
             this.limitecreditoDataGridViewTextBoxColumn.HeaderText = "limitecredito";
             this.limitecreditoDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.limitecreditoDataGridViewTextBoxColumn.Name = "limitecreditoDataGridViewTextBoxColumn";
+            this.limitecreditoDataGridViewTextBoxColumn.ReadOnly = true;
             this.limitecreditoDataGridViewTextBoxColumn.Width = 150;
             // 
             // fechaingresoDataGridViewTextBoxColumn
@@ -137,7 +128,22 @@
             this.fechaingresoDataGridViewTextBoxColumn.HeaderText = "fechaingreso";
             this.fechaingresoDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.fechaingresoDataGridViewTextBoxColumn.Name = "fechaingresoDataGridViewTextBoxColumn";
+            this.fechaingresoDataGridViewTextBoxColumn.ReadOnly = true;
             this.fechaingresoDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // clientesBindingSource
+            // 
+            this.clientesBindingSource.DataMember = "clientes";
+            this.clientesBindingSource.DataSource = this.proyectoRestauranteDataSet10;
+            // 
+            // proyectoRestauranteDataSet10
+            // 
+            this.proyectoRestauranteDataSet10.DataSetName = "ProyectoRestauranteDataSet10";
+            this.proyectoRestauranteDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // clientesTableAdapter
+            // 
+            this.clientesTableAdapter.ClearBeforeFill = true;
             // 
             // concli
             // 
@@ -146,11 +152,12 @@
             this.ClientSize = new System.Drawing.Size(1231, 644);
             this.Controls.Add(this.dataGridView1);
             this.Name = "concli";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Clientes";
             this.Load += new System.EventHandler(this.concli_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet10)).EndInit();
             this.ResumeLayout(false);
 
         }

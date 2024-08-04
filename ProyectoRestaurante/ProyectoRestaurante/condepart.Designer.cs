@@ -30,15 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.proyectoRestauranteDataSet12 = new ProyectoRestaurante.ProyectoRestauranteDataSet12();
-            this.departamentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.departamentosTableAdapter = new ProyectoRestaurante.ProyectoRestauranteDataSet12TableAdapters.departamentosTableAdapter();
             this.iddepartamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.departamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idprovinciaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.departamentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.proyectoRestauranteDataSet12 = new ProyectoRestaurante.ProyectoRestauranteDataSet12();
+            this.departamentosTableAdapter = new ProyectoRestaurante.ProyectoRestauranteDataSet12TableAdapters.departamentosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.departamentosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet12)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -59,20 +59,6 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(527, 576);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // proyectoRestauranteDataSet12
-            // 
-            this.proyectoRestauranteDataSet12.DataSetName = "ProyectoRestauranteDataSet12";
-            this.proyectoRestauranteDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // departamentosBindingSource
-            // 
-            this.departamentosBindingSource.DataMember = "departamentos";
-            this.departamentosBindingSource.DataSource = this.proyectoRestauranteDataSet12;
-            // 
-            // departamentosTableAdapter
-            // 
-            this.departamentosTableAdapter.ClearBeforeFill = true;
             // 
             // iddepartamentoDataGridViewTextBoxColumn
             // 
@@ -101,6 +87,20 @@
             this.idprovinciaDataGridViewTextBoxColumn.ReadOnly = true;
             this.idprovinciaDataGridViewTextBoxColumn.Width = 150;
             // 
+            // departamentosBindingSource
+            // 
+            this.departamentosBindingSource.DataMember = "departamentos";
+            this.departamentosBindingSource.DataSource = this.proyectoRestauranteDataSet12;
+            // 
+            // proyectoRestauranteDataSet12
+            // 
+            this.proyectoRestauranteDataSet12.DataSetName = "ProyectoRestauranteDataSet12";
+            this.proyectoRestauranteDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // departamentosTableAdapter
+            // 
+            this.departamentosTableAdapter.ClearBeforeFill = true;
+            // 
             // condepart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -108,11 +108,12 @@
             this.ClientSize = new System.Drawing.Size(1231, 644);
             this.Controls.Add(this.dataGridView1);
             this.Name = "condepart";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Departamentos";
             this.Load += new System.EventHandler(this.condepart_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.departamentosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet12)).EndInit();
             this.ResumeLayout(false);
 
         }

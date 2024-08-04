@@ -30,15 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.proyectoRestauranteDataSet13 = new ProyectoRestaurante.ProyectoRestauranteDataSet13();
-            this.salasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.salasTableAdapter = new ProyectoRestaurante.ProyectoRestauranteDataSet13TableAdapters.salasTableAdapter();
             this.idsalaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomsalaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.proyectoRestauranteDataSet13 = new ProyectoRestaurante.ProyectoRestauranteDataSet13();
+            this.salasTableAdapter = new ProyectoRestaurante.ProyectoRestauranteDataSet13TableAdapters.salasTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet13)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -59,20 +59,6 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(541, 585);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // proyectoRestauranteDataSet13
-            // 
-            this.proyectoRestauranteDataSet13.DataSetName = "ProyectoRestauranteDataSet13";
-            this.proyectoRestauranteDataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // salasBindingSource
-            // 
-            this.salasBindingSource.DataMember = "salas";
-            this.salasBindingSource.DataSource = this.proyectoRestauranteDataSet13;
-            // 
-            // salasTableAdapter
-            // 
-            this.salasTableAdapter.ClearBeforeFill = true;
             // 
             // idsalaDataGridViewTextBoxColumn
             // 
@@ -101,6 +87,20 @@
             this.fechaDataGridViewTextBoxColumn.ReadOnly = true;
             this.fechaDataGridViewTextBoxColumn.Width = 150;
             // 
+            // salasBindingSource
+            // 
+            this.salasBindingSource.DataMember = "salas";
+            this.salasBindingSource.DataSource = this.proyectoRestauranteDataSet13;
+            // 
+            // proyectoRestauranteDataSet13
+            // 
+            this.proyectoRestauranteDataSet13.DataSetName = "ProyectoRestauranteDataSet13";
+            this.proyectoRestauranteDataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // salasTableAdapter
+            // 
+            this.salasTableAdapter.ClearBeforeFill = true;
+            // 
             // consalas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -108,11 +108,12 @@
             this.ClientSize = new System.Drawing.Size(1231, 644);
             this.Controls.Add(this.dataGridView1);
             this.Name = "consalas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Salas";
             this.Load += new System.EventHandler(this.consalas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet13)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -141,6 +141,7 @@
             this.ClientSize = new System.Drawing.Size(1231, 644);
             this.Controls.Add(this.dataGridView1);
             this.Name = "conmesa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Mesas";
             this.Load += new System.EventHandler(this.conmesa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

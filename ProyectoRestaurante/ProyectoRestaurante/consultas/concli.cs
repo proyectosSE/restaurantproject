@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,13 +16,49 @@ namespace ProyectoRestaurante
         public concli()
         {
             InitializeComponent();
+            cargardatos();
         }
 
-        private void concli_Load(object sender, EventArgs e)
+        private void cargardatos()
         {
-            // TODO: esta línea de código carga datos en la tabla 'proyectoRestauranteDataSet10.clientes' Puede moverla o quitarla según sea necesario.
-            this.clientesTableAdapter.Fill(this.proyectoRestauranteDataSet10.clientes);
 
+            String consulta = "SELECT * FROM clientes";
+            try
+            {
+                using (SqlConnection conexion = new SqlConnection(rutadb.conexion))
+                {
+                    conexion.Open();
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(consulta, conexion))
+                    {
+                        DataTable dt = new DataTable();
+                        adapter.Fill(dt);
+                        dataGridView1.DataSource = dt;
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Manejo de errores
+                MessageBox.Show("Error al cargar datos: " + ex.Message);
+            }
+
+        }
+
+        private void btbuscar_Click(object sender, EventArgs e)
+        {
+            string valorABuscar = txtcli.Text;
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (row.Cells[1].Value != null &&
+                row.Cells[1].Value.ToString().Equals(valorABuscar, StringComparison.OrdinalIgnoreCase))
+                {
+                    // Encontrar coincidencia, enfocar la fila
+                    dataGridView1.CurrentCell = row.Cells[1];
+                    dataGridView1.FirstDisplayedScrollingRowIndex = row.Index; // Opcional: desplaza la fila al visible
+                    break;
+                }
+            }
         }
     }
 }

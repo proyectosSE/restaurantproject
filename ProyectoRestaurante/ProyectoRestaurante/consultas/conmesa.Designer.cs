@@ -89,6 +89,7 @@
             this.btbuscar.Text = "Buscar";
             this.btbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btbuscar.UseVisualStyleBackColor = true;
+            this.btbuscar.Click += new System.EventHandler(this.btbuscar_Click);
             // 
             // conmesa
             // 
@@ -102,7 +103,6 @@
             this.Name = "conmesa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Mesas";
-            this.Load += new System.EventHandler(this.conmesa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet9)).EndInit();
             this.ResumeLayout(false);

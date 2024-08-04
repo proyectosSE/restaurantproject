@@ -86,6 +86,7 @@
             this.btbuscar.Text = "Buscar";
             this.btbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btbuscar.UseVisualStyleBackColor = true;
+            this.btbuscar.Click += new System.EventHandler(this.btbuscar_Click);
             // 
             // concat
             // 
@@ -99,7 +100,6 @@
             this.Name = "concat";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Categorias";
-            this.Load += new System.EventHandler(this.concat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

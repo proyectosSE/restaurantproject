@@ -89,6 +89,7 @@
             this.btbuscar.Text = "Buscar";
             this.btbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btbuscar.UseVisualStyleBackColor = true;
+            this.btbuscar.Click += new System.EventHandler(this.btbuscar_Click);
             // 
             // consalas
             // 
@@ -102,7 +103,6 @@
             this.Name = "consalas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Salas";
-            this.Load += new System.EventHandler(this.consalas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet13)).EndInit();
             this.ResumeLayout(false);

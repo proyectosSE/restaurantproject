@@ -58,6 +58,7 @@
             this.btbuscar.Text = "Buscar";
             this.btbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btbuscar.UseVisualStyleBackColor = true;
+            this.btbuscar.Click += new System.EventHandler(this.btbuscar_Click);
             // 
             // label1
             // 

@@ -89,6 +89,7 @@
             this.btbuscar.Text = "Buscar";
             this.btbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btbuscar.UseVisualStyleBackColor = true;
+            this.btbuscar.Click += new System.EventHandler(this.btbuscar_Click);
             // 
             // concli
             // 
@@ -102,7 +103,6 @@
             this.Name = "concli";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Clientes";
-            this.Load += new System.EventHandler(this.concli_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet10)).EndInit();
             this.ResumeLayout(false);

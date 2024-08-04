@@ -56,13 +56,13 @@
             // 
             this.txtnom.Location = new System.Drawing.Point(76, 98);
             this.txtnom.Name = "txtnom";
-            this.txtnom.Size = new System.Drawing.Size(133, 26);
+            this.txtnom.Size = new System.Drawing.Size(216, 26);
             this.txtnom.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(72, 163);
+            this.label2.Location = new System.Drawing.Point(72, 154);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 20);
             this.label2.TabIndex = 2;
@@ -70,22 +70,22 @@
             // 
             // txtapell
             // 
-            this.txtapell.Location = new System.Drawing.Point(76, 215);
+            this.txtapell.Location = new System.Drawing.Point(76, 186);
             this.txtapell.Name = "txtapell";
-            this.txtapell.Size = new System.Drawing.Size(133, 26);
+            this.txtapell.Size = new System.Drawing.Size(216, 26);
             this.txtapell.TabIndex = 3;
             // 
             // txtdirec
             // 
-            this.txtdirec.Location = new System.Drawing.Point(76, 354);
+            this.txtdirec.Location = new System.Drawing.Point(76, 275);
             this.txtdirec.Name = "txtdirec";
-            this.txtdirec.Size = new System.Drawing.Size(133, 26);
+            this.txtdirec.Size = new System.Drawing.Size(216, 26);
             this.txtdirec.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(72, 297);
+            this.label3.Location = new System.Drawing.Point(72, 246);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 20);
             this.label3.TabIndex = 5;
@@ -94,7 +94,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(435, 297);
+            this.label4.Location = new System.Drawing.Point(350, 246);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(132, 20);
             this.label4.TabIndex = 11;
@@ -102,15 +102,15 @@
             // 
             // txtlimicre
             // 
-            this.txtlimicre.Location = new System.Drawing.Point(439, 215);
+            this.txtlimicre.Location = new System.Drawing.Point(354, 186);
             this.txtlimicre.Name = "txtlimicre";
-            this.txtlimicre.Size = new System.Drawing.Size(133, 26);
+            this.txtlimicre.Size = new System.Drawing.Size(219, 26);
             this.txtlimicre.TabIndex = 9;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(435, 163);
+            this.label5.Location = new System.Drawing.Point(350, 154);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(125, 20);
             this.label5.TabIndex = 8;
@@ -118,15 +118,15 @@
             // 
             // txtemail
             // 
-            this.txtemail.Location = new System.Drawing.Point(439, 98);
+            this.txtemail.Location = new System.Drawing.Point(354, 98);
             this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(133, 26);
+            this.txtemail.Size = new System.Drawing.Size(219, 26);
             this.txtemail.TabIndex = 7;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(435, 60);
+            this.label6.Location = new System.Drawing.Point(350, 60);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(48, 20);
             this.label6.TabIndex = 6;
@@ -134,7 +134,7 @@
             // 
             // buttAgregar
             // 
-            this.buttAgregar.Location = new System.Drawing.Point(76, 475);
+            this.buttAgregar.Location = new System.Drawing.Point(76, 365);
             this.buttAgregar.Name = "buttAgregar";
             this.buttAgregar.Size = new System.Drawing.Size(133, 55);
             this.buttAgregar.TabIndex = 12;
@@ -144,7 +144,7 @@
             // 
             // fechain
             // 
-            this.fechain.Location = new System.Drawing.Point(439, 354);
+            this.fechain.Location = new System.Drawing.Point(354, 275);
             this.fechain.Name = "fechain";
             this.fechain.Size = new System.Drawing.Size(219, 26);
             this.fechain.TabIndex = 13;

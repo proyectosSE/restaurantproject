@@ -82,3 +82,8 @@ C:\Users\Asistente\Desktop\lab Programacion3\PjRestaurante\ProyectoRestaurante\P
 C:\Users\Asistente\Desktop\lab Programacion3\PjRestaurante\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.pdb
 C:\Users\Asistente\Desktop\lab Programacion3\PjRestaurante\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mensaje.resources
 C:\Users\LIKELIAS\Desktop\Clases 2-2024\Laboratorio Base de Datos 1\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mensaje.resources
+C:\Users\LIKELIAS\Desktop\Clases 2-2024\Laboratorio Base de Datos 1\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.concli.resources
+C:\Users\LIKELIAS\Desktop\Clases 2-2024\Laboratorio Base de Datos 1\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.conmesa.resources
+C:\Users\LIKELIAS\Desktop\Clases 2-2024\Laboratorio Base de Datos 1\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.concat.resources
+C:\Users\LIKELIAS\Desktop\Clases 2-2024\Laboratorio Base de Datos 1\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.condepart.resources
+C:\Users\LIKELIAS\Desktop\Clases 2-2024\Laboratorio Base de Datos 1\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.consalas.resources

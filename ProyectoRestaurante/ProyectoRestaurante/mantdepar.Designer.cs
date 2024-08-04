@@ -62,6 +62,7 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(587, 535);
             this.dataGridView1.TabIndex = 10;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // txtdepart
             // 
@@ -123,6 +124,7 @@
             this.buttEdit.TabIndex = 14;
             this.buttEdit.Text = "Editar";
             this.buttEdit.UseVisualStyleBackColor = true;
+            this.buttEdit.Click += new System.EventHandler(this.buttEdit_Click);
             // 
             // mantdepar
             // 

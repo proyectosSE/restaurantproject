@@ -16,8 +16,11 @@ namespace ProyectoRestaurante
         public mantdepar()
         {
             InitializeComponent();
+            buttEdit.Visible = false;
             cargardatos();
         }
+
+        private string mivar;
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -58,6 +61,44 @@ namespace ProyectoRestaurante
                 MessageBox.Show("Error al cargar datos: " + ex.Message);
             }
 
+        }
+
+        private void buttEdit_Click(object sender, EventArgs e)
+        {
+            Conectar cls = new Conectar();
+            string up = "departamento ='" + txtdepart.Text + "', id_provincia = "+ txtprovincia.Text+ "";
+            string tbl = "departamentos";
+            string id = "id_departamento = '" + mivar + "'";
+            cls.Actualizar(up, tbl, id);
+            InitializeComponent();
+            buttEdit.Visible = false;
+            cargardatos();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView1.Columns[e.ColumnIndex].Name == "Editar")
+            {
+                txtdepart.Text = dataGridView1.CurrentRow.Cells["departamento"].Value.ToString();
+                txtprovincia.Text = dataGridView1.CurrentRow.Cells["id_provincia"].Value.ToString();
+                mivar = dataGridView1.CurrentRow.Cells["id_departamento"].Value.ToString();
+                buttEdit.Visible = true;
+                button1.Visible = false;
+
+            }
+            if (dataGridView1.Columns[e.ColumnIndex].Name == "Eliminar")
+            {
+                mensaje ms = new mensaje();
+
+                if (ms.ShowDialog() == DialogResult.OK)
+                {
+                    mivar = dataGridView1.CurrentRow.Cells["id_departamento"].Value.ToString();
+                    Conectar cls = new Conectar();
+                    string tbl = "departamentos";
+                    string id = "id_departamento = '" + mivar + "'";
+                    cls.eliminar(tbl, id);
+                }
+            }
         }
     }
 }

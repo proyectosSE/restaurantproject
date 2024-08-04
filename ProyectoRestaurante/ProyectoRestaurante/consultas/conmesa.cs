@@ -51,12 +51,16 @@ namespace ProyectoRestaurante
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
                 if (row.Cells[2].Value != null &&
-                row.Cells[2].Value.ToString().Equals(valorABuscar, StringComparison.OrdinalIgnoreCase))
+                row.Cells[2].Value.ToString().Contains(valorABuscar))
                 {
                     // Encontrar coincidencia, enfocar la fila
                     dataGridView1.CurrentCell = row.Cells[2];
                     dataGridView1.FirstDisplayedScrollingRowIndex = row.Index; // Opcional: desplaza la fila al visible
                     break;
+                }
+                else if (row.Cells[1].Value == null)
+                {
+                    MessageBox.Show("Datos no encontrados");
                 }
             }
         }

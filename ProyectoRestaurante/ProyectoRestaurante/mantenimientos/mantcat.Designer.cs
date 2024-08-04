@@ -31,12 +31,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textcat = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Editar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Eliminar = new System.Windows.Forms.DataGridViewImageColumn();
             this.buttAgreg = new System.Windows.Forms.Button();
             this.buttEdit = new System.Windows.Forms.Button();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Editar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Eliminar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.textBuscar = new System.Windows.Forms.TextBox();
+            this.buttBuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,6 +71,26 @@
             this.dataGridView1.Size = new System.Drawing.Size(587, 535);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // Editar
+            // 
+            this.Editar.HeaderText = "Editar";
+            this.Editar.Image = global::ProyectoRestaurante.Properties.Resources.editVer;
+            this.Editar.MinimumWidth = 8;
+            this.Editar.Name = "Editar";
+            this.Editar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Editar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Editar.Width = 75;
+            // 
+            // Eliminar
+            // 
+            this.Eliminar.HeaderText = "Eliminar";
+            this.Eliminar.Image = global::ProyectoRestaurante.Properties.Resources.deleRoj;
+            this.Eliminar.MinimumWidth = 8;
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Eliminar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Eliminar.Width = 75;
             // 
             // buttAgreg
             // 
@@ -110,31 +132,30 @@
             this.dataGridViewImageColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.dataGridViewImageColumn2.Width = 75;
             // 
-            // Editar
+            // textBuscar
             // 
-            this.Editar.HeaderText = "Editar";
-            this.Editar.Image = global::ProyectoRestaurante.Properties.Resources.editVer;
-            this.Editar.MinimumWidth = 8;
-            this.Editar.Name = "Editar";
-            this.Editar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Editar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Editar.Width = 75;
+            this.textBuscar.Location = new System.Drawing.Point(90, 385);
+            this.textBuscar.Name = "textBuscar";
+            this.textBuscar.Size = new System.Drawing.Size(235, 26);
+            this.textBuscar.TabIndex = 5;
             // 
-            // Eliminar
+            // buttBuscar
             // 
-            this.Eliminar.HeaderText = "Eliminar";
-            this.Eliminar.Image = global::ProyectoRestaurante.Properties.Resources.deleRoj;
-            this.Eliminar.MinimumWidth = 8;
-            this.Eliminar.Name = "Eliminar";
-            this.Eliminar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Eliminar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Eliminar.Width = 75;
+            this.buttBuscar.Location = new System.Drawing.Point(90, 457);
+            this.buttBuscar.Name = "buttBuscar";
+            this.buttBuscar.Size = new System.Drawing.Size(75, 34);
+            this.buttBuscar.TabIndex = 6;
+            this.buttBuscar.Text = "Buscar";
+            this.buttBuscar.UseVisualStyleBackColor = true;
+            this.buttBuscar.Click += new System.EventHandler(this.buttBuscar_Click);
             // 
             // mantcat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1231, 644);
+            this.Controls.Add(this.buttBuscar);
+            this.Controls.Add(this.textBuscar);
             this.Controls.Add(this.buttEdit);
             this.Controls.Add(this.buttAgreg);
             this.Controls.Add(this.dataGridView1);
@@ -160,5 +181,7 @@
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
         private System.Windows.Forms.DataGridViewImageColumn Editar;
         private System.Windows.Forms.DataGridViewImageColumn Eliminar;
+        private System.Windows.Forms.TextBox textBuscar;
+        private System.Windows.Forms.Button buttBuscar;
     }
 }

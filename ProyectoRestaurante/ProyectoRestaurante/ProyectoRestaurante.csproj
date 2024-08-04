@@ -53,96 +53,96 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="rutadb.cs" />
-    <Compile Include="concli.cs">
+    <Compile Include="clases\Class1.cs" />
+    <Compile Include="clases\rutadb.cs" />
+    <Compile Include="consultas\concli.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="concli.Designer.cs">
+    <Compile Include="consultas\concli.Designer.cs">
       <DependentUpon>concli.cs</DependentUpon>
     </Compile>
-    <Compile Include="conmesa.cs">
+    <Compile Include="consultas\conmesa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="conmesa.Designer.cs">
+    <Compile Include="consultas\conmesa.Designer.cs">
       <DependentUpon>conmesa.cs</DependentUpon>
     </Compile>
-    <Compile Include="concat.cs">
+    <Compile Include="consultas\concat.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="concat.Designer.cs">
+    <Compile Include="consultas\concat.Designer.cs">
       <DependentUpon>concat.cs</DependentUpon>
     </Compile>
-    <Compile Include="condepart.cs">
+    <Compile Include="consultas\condepart.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="condepart.Designer.cs">
+    <Compile Include="consultas\condepart.Designer.cs">
       <DependentUpon>condepart.cs</DependentUpon>
     </Compile>
-    <Compile Include="consalas.cs">
+    <Compile Include="consultas\consalas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="consalas.Designer.cs">
+    <Compile Include="consultas\consalas.Designer.cs">
       <DependentUpon>consalas.cs</DependentUpon>
     </Compile>
-    <Compile Include="mensaje.cs">
+    <Compile Include="login y ventanas\mensaje.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mensaje.Designer.cs">
+    <Compile Include="login y ventanas\mensaje.Designer.cs">
       <DependentUpon>mensaje.cs</DependentUpon>
     </Compile>
-    <Compile Include="mantmedid.cs">
+    <Compile Include="mantenimientos\mantmedid.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mantmedid.Designer.cs">
+    <Compile Include="mantenimientos\mantmedid.Designer.cs">
       <DependentUpon>mantmedid.cs</DependentUpon>
     </Compile>
-    <Compile Include="mantdepar.cs">
+    <Compile Include="mantenimientos\mantdepar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mantdepar.Designer.cs">
+    <Compile Include="mantenimientos\mantdepar.Designer.cs">
       <DependentUpon>mantdepar.cs</DependentUpon>
     </Compile>
-    <Compile Include="mantusua.cs">
+    <Compile Include="mantenimientos\mantusua.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mantusua.Designer.cs">
+    <Compile Include="mantenimientos\mantusua.Designer.cs">
       <DependentUpon>mantusua.cs</DependentUpon>
     </Compile>
-    <Compile Include="mantmesas.cs">
+    <Compile Include="mantenimientos\mantmesas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mantmesas.Designer.cs">
+    <Compile Include="mantenimientos\mantmesas.Designer.cs">
       <DependentUpon>mantmesas.cs</DependentUpon>
     </Compile>
-    <Compile Include="mantsalas.cs">
+    <Compile Include="mantenimientos\mantsalas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mantsalas.Designer.cs">
+    <Compile Include="mantenimientos\mantsalas.Designer.cs">
       <DependentUpon>mantsalas.cs</DependentUpon>
     </Compile>
-    <Compile Include="mantcat.cs">
+    <Compile Include="mantenimientos\mantcat.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mantcat.Designer.cs">
+    <Compile Include="mantenimientos\mantcat.Designer.cs">
       <DependentUpon>mantcat.cs</DependentUpon>
     </Compile>
-    <Compile Include="mantcli.cs">
+    <Compile Include="mantenimientos\mantcli.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mantcli.Designer.cs">
+    <Compile Include="mantenimientos\mantcli.Designer.cs">
       <DependentUpon>mantcli.cs</DependentUpon>
     </Compile>
-    <Compile Include="menuprincipal.cs">
+    <Compile Include="login y ventanas\menuprincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="menuprincipal.Designer.cs">
+    <Compile Include="login y ventanas\menuprincipal.Designer.cs">
       <DependentUpon>menuprincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="login.cs">
+    <Compile Include="login y ventanas\login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="login.Designer.cs">
+    <Compile Include="login y ventanas\login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -222,49 +222,49 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProyectoRestauranteDataSet9.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="concat.resx">
+    <EmbeddedResource Include="consultas\concat.resx">
       <DependentUpon>concat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="concli.resx">
+    <EmbeddedResource Include="consultas\concli.resx">
       <DependentUpon>concli.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="condepart.resx">
+    <EmbeddedResource Include="consultas\condepart.resx">
       <DependentUpon>condepart.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="conmesa.resx">
+    <EmbeddedResource Include="consultas\conmesa.resx">
       <DependentUpon>conmesa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="consalas.resx">
+    <EmbeddedResource Include="consultas\consalas.resx">
       <DependentUpon>consalas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mensaje.resx">
+    <EmbeddedResource Include="login y ventanas\mensaje.resx">
       <DependentUpon>mensaje.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="login.resx">
+    <EmbeddedResource Include="login y ventanas\login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mantcat.resx">
+    <EmbeddedResource Include="mantenimientos\mantcat.resx">
       <DependentUpon>mantcat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mantcli.resx">
+    <EmbeddedResource Include="mantenimientos\mantcli.resx">
       <DependentUpon>mantcli.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mantdepar.resx">
+    <EmbeddedResource Include="mantenimientos\mantdepar.resx">
       <DependentUpon>mantdepar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mantmedid.resx">
+    <EmbeddedResource Include="mantenimientos\mantmedid.resx">
       <DependentUpon>mantmedid.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mantmesas.resx">
+    <EmbeddedResource Include="mantenimientos\mantmesas.resx">
       <DependentUpon>mantmesas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mantsalas.resx">
+    <EmbeddedResource Include="mantenimientos\mantsalas.resx">
       <DependentUpon>mantsalas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mantusua.resx">
+    <EmbeddedResource Include="mantenimientos\mantusua.resx">
       <DependentUpon>mantusua.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="menuprincipal.resx">
+    <EmbeddedResource Include="login y ventanas\menuprincipal.resx">
       <DependentUpon>menuprincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -101,5 +101,21 @@ namespace ProyectoRestaurante
 
             }
         }
+
+        private void buttBuscar_Click(object sender, EventArgs e)
+        {
+            string valorABuscar = textBuscar.Text;
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (row.Cells[3].Value != null &&
+                row.Cells[3].Value.ToString().Equals(valorABuscar, StringComparison.OrdinalIgnoreCase))
+                {
+                    // Encontrar coincidencia, enfocar la fila
+                    dataGridView1.CurrentCell = row.Cells[3];
+                    dataGridView1.FirstDisplayedScrollingRowIndex = row.Index; // Opcional: desplaza la fila al visible
+                    break;
+                }
+            }
+        }
     }
 }

@@ -10,7 +10,7 @@ namespace ProyectoRestaurante
 {
     internal class Conectar
     {
-        public static SqlConnection conexion = new SqlConnection("server=ELIASPC;Database=ProyectoRestaurante;Integrated Security=true");
+        public static SqlConnection conexion = new SqlConnection(rutadb.conexion);
         
         public void Agregar(string datos, string tabla)
         {
@@ -22,6 +22,7 @@ namespace ProyectoRestaurante
             conexion.Close();
         }
 
+        
         public void Actualizar(string datos,string tabla,string id)
         {
             conexion.Open();

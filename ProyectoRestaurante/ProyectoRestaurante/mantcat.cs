@@ -30,14 +30,14 @@ namespace ProyectoRestaurante
             cls.Agregar(categoria,tbcat);
         }
 
-        public static SqlConnection conexion = new SqlConnection("server=ELIASPC;Database=ProyectoRestaurante;Integrated Security=true");
+        
         private void cargardatos()
         {
            
             String consulta = "SELECT * FROM categorias";
             try
             {
-
+                using (SqlConnection conexion = new SqlConnection(rutadb.conexion))
                 {
                     conexion.Open();
                     using (SqlDataAdapter adapter = new SqlDataAdapter(consulta, conexion))

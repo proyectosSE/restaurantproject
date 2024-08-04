@@ -37,18 +37,19 @@ namespace ProyectoRestaurante
 
         private void mantmesas_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'proyectoRestauranteDataSet3.salas' Puede moverla o quitarla según sea necesario.
-            this.salasTableAdapter2.Fill(this.proyectoRestauranteDataSet3.salas);
+            // TODO: esta línea de código carga datos en la tabla 'proyectoRestauranteDataSet14.salas' Puede moverla o quitarla según sea necesario.
+            this.salasTableAdapter3.Fill(this.proyectoRestauranteDataSet14.salas);
+
 
 
         }
         private void cargardatos()
         {
             String consulta = "SELECT * FROM mesas";
-            string connectionString = "server=LAPTOP-ASISTENT;Database=ProyectoRestaurante;Integrated Security=true";
+            
             try
             {
-                using (SqlConnection conexion = new SqlConnection(connectionString))
+                using (SqlConnection conexion = new SqlConnection(rutadb.conexion))
                 {
                     conexion.Open();
 

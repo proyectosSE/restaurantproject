@@ -13,7 +13,7 @@ namespace ProyectoRestaurante
 {
     public partial class mantcli : Form
     {
-        public static SqlConnection conexion = new SqlConnection("server=ELIASPC;Database=ProyectoRestaurante;Integrated Security=true");
+        public static SqlConnection conexion = new SqlConnection(rutadb.conexion);
         public mantcli()
         {
             InitializeComponent();

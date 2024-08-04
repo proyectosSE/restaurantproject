@@ -33,10 +33,10 @@ namespace ProyectoRestaurante
         private void cargardatos()
         {
             String consulta = "SELECT * FROM departamentos";
-            string connectionString = "server=ELIASPC;Database=ProyectoRestaurante;Integrated Security=true";
+            
             try
             {
-                using (SqlConnection conexion = new SqlConnection(connectionString))
+                using (SqlConnection conexion = new SqlConnection(rutadb.conexion))
                 {
                     conexion.Open();
                     

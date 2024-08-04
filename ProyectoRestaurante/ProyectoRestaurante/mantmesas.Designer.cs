@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Editar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Eliminar = new System.Windows.Forms.DataGridViewImageColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.txtmesa = new System.Windows.Forms.TextBox();
@@ -38,6 +40,8 @@
             this.cbbsala = new System.Windows.Forms.ComboBox();
             this.salasBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.proyectoRestauranteDataSet1 = new ProyectoRestaurante.ProyectoRestauranteDataSet1();
+            this.salasBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.proyectoRestauranteDataSet3 = new ProyectoRestaurante.ProyectoRestauranteDataSet3();
             this.proyectoRestauranteDataSet = new ProyectoRestaurante.ProyectoRestauranteDataSet();
             this.salasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.salasTableAdapter = new ProyectoRestaurante.ProyectoRestauranteDataSetTableAdapters.salasTableAdapter();
@@ -47,19 +51,20 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtestado = new System.Windows.Forms.TextBox();
             this.txtasientos = new System.Windows.Forms.TextBox();
-            this.proyectoRestauranteDataSet3 = new ProyectoRestaurante.ProyectoRestauranteDataSet3();
-            this.salasBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.salasTableAdapter2 = new ProyectoRestaurante.ProyectoRestauranteDataSet3TableAdapters.salasTableAdapter();
-            this.Editar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Eliminar = new System.Windows.Forms.DataGridViewImageColumn();
             this.buttEdit = new System.Windows.Forms.Button();
+            this.proyectoRestauranteDataSet14 = new ProyectoRestaurante.ProyectoRestauranteDataSet14();
+            this.salasBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.salasTableAdapter3 = new ProyectoRestaurante.ProyectoRestauranteDataSet14TableAdapters.salasTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -75,6 +80,26 @@
             this.dataGridView1.Size = new System.Drawing.Size(587, 535);
             this.dataGridView1.TabIndex = 10;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // Editar
+            // 
+            this.Editar.HeaderText = "Editar";
+            this.Editar.Image = global::ProyectoRestaurante.Properties.Resources.editVer;
+            this.Editar.MinimumWidth = 8;
+            this.Editar.Name = "Editar";
+            this.Editar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Editar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Editar.Width = 75;
+            // 
+            // Eliminar
+            // 
+            this.Eliminar.HeaderText = "Eliminar";
+            this.Eliminar.Image = global::ProyectoRestaurante.Properties.Resources.deleRoj;
+            this.Eliminar.MinimumWidth = 8;
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Eliminar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Eliminar.Width = 75;
             // 
             // label1
             // 
@@ -123,8 +148,8 @@
             // 
             // cbbsala
             // 
-            this.cbbsala.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.salasBindingSource1, "id_sala", true));
-            this.cbbsala.DataSource = this.salasBindingSource2;
+            this.cbbsala.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.salasBindingSource3, "id_sala", true));
+            this.cbbsala.DataSource = this.salasBindingSource3;
             this.cbbsala.DisplayMember = "nomsala";
             this.cbbsala.FormattingEnabled = true;
             this.cbbsala.Location = new System.Drawing.Point(57, 70);
@@ -142,6 +167,16 @@
             // 
             this.proyectoRestauranteDataSet1.DataSetName = "ProyectoRestauranteDataSet1";
             this.proyectoRestauranteDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // salasBindingSource2
+            // 
+            this.salasBindingSource2.DataMember = "salas";
+            this.salasBindingSource2.DataSource = this.proyectoRestauranteDataSet3;
+            // 
+            // proyectoRestauranteDataSet3
+            // 
+            this.proyectoRestauranteDataSet3.DataSetName = "ProyectoRestauranteDataSet3";
+            this.proyectoRestauranteDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // proyectoRestauranteDataSet
             // 
@@ -200,39 +235,9 @@
             this.txtasientos.Size = new System.Drawing.Size(155, 26);
             this.txtasientos.TabIndex = 24;
             // 
-            // proyectoRestauranteDataSet3
-            // 
-            this.proyectoRestauranteDataSet3.DataSetName = "ProyectoRestauranteDataSet3";
-            this.proyectoRestauranteDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // salasBindingSource2
-            // 
-            this.salasBindingSource2.DataMember = "salas";
-            this.salasBindingSource2.DataSource = this.proyectoRestauranteDataSet3;
-            // 
             // salasTableAdapter2
             // 
             this.salasTableAdapter2.ClearBeforeFill = true;
-            // 
-            // Editar
-            // 
-            this.Editar.HeaderText = "Editar";
-            this.Editar.Image = global::ProyectoRestaurante.Properties.Resources.editVer;
-            this.Editar.MinimumWidth = 8;
-            this.Editar.Name = "Editar";
-            this.Editar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Editar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Editar.Width = 75;
-            // 
-            // Eliminar
-            // 
-            this.Eliminar.HeaderText = "Eliminar";
-            this.Eliminar.Image = global::ProyectoRestaurante.Properties.Resources.deleRoj;
-            this.Eliminar.MinimumWidth = 8;
-            this.Eliminar.Name = "Eliminar";
-            this.Eliminar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Eliminar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Eliminar.Width = 75;
             // 
             // buttEdit
             // 
@@ -243,6 +248,20 @@
             this.buttEdit.Text = "Editar";
             this.buttEdit.UseVisualStyleBackColor = true;
             this.buttEdit.Click += new System.EventHandler(this.buttEdit_Click);
+            // 
+            // proyectoRestauranteDataSet14
+            // 
+            this.proyectoRestauranteDataSet14.DataSetName = "ProyectoRestauranteDataSet14";
+            this.proyectoRestauranteDataSet14.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // salasBindingSource3
+            // 
+            this.salasBindingSource3.DataMember = "salas";
+            this.salasBindingSource3.DataSource = this.proyectoRestauranteDataSet14;
+            // 
+            // salasTableAdapter3
+            // 
+            this.salasTableAdapter3.ClearBeforeFill = true;
             // 
             // mantmesas
             // 
@@ -269,10 +288,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -303,5 +324,8 @@
         private System.Windows.Forms.DataGridViewImageColumn Editar;
         private System.Windows.Forms.DataGridViewImageColumn Eliminar;
         private System.Windows.Forms.Button buttEdit;
+        private ProyectoRestauranteDataSet14 proyectoRestauranteDataSet14;
+        private System.Windows.Forms.BindingSource salasBindingSource3;
+        private ProyectoRestauranteDataSet14TableAdapters.salasTableAdapter salasTableAdapter3;
     }
 }

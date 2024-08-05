@@ -103,6 +103,12 @@
     <Compile Include="login y ventanas\mensaje.Designer.cs">
       <DependentUpon>mensaje.cs</DependentUpon>
     </Compile>
+    <Compile Include="mantenimientos\dgvmantcli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientos\dgvmantcli.Designer.cs">
+      <DependentUpon>dgvmantcli.cs</DependentUpon>
+    </Compile>
     <Compile Include="mantenimientos\mantmedid.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -260,6 +266,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="login y ventanas\login.resx">
       <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientos\dgvmantcli.resx">
+      <DependentUpon>dgvmantcli.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mantenimientos\mantcat.resx">
       <DependentUpon>mantcat.cs</DependentUpon>

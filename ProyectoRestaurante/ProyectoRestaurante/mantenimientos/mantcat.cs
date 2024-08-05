@@ -25,8 +25,8 @@ namespace ProyectoRestaurante
         private void button1_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();
-            string categoria ="'"+textcat.Text+"'";
-            string tbcat = "categorias";            
+            string categoria = "'" + textcat.Text + "'";
+            string tbcat = "categorias";
             cls.Agregar(categoria,tbcat);
         }
 

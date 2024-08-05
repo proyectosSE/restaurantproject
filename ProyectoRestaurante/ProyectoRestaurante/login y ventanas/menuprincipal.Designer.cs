@@ -57,7 +57,7 @@
             this.consultasToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1228, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1228, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -71,8 +71,9 @@
             this.iconMenuItem5,
             this.iconMenuItem6,
             this.iconMenuItem7});
+            this.mantenimientosToolStripMenuItem.Image = global::ProyectoRestaurante.Properties.Resources.elipsis;
             this.mantenimientosToolStripMenuItem.Name = "mantenimientosToolStripMenuItem";
-            this.mantenimientosToolStripMenuItem.Size = new System.Drawing.Size(156, 32);
+            this.mantenimientosToolStripMenuItem.Size = new System.Drawing.Size(180, 29);
             this.mantenimientosToolStripMenuItem.Text = "Mantenimientos";
             // 
             // iconMenuItem1
@@ -81,7 +82,7 @@
             this.iconMenuItem1.IconColor = System.Drawing.Color.Black;
             this.iconMenuItem1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem1.Name = "iconMenuItem1";
-            this.iconMenuItem1.Size = new System.Drawing.Size(237, 34);
+            this.iconMenuItem1.Size = new System.Drawing.Size(270, 34);
             this.iconMenuItem1.Text = "Clientes";
             this.iconMenuItem1.Click += new System.EventHandler(this.iconMenuItem1_Click);
             // 
@@ -91,7 +92,7 @@
             this.iconMenuItem2.IconColor = System.Drawing.Color.Black;
             this.iconMenuItem2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem2.Name = "iconMenuItem2";
-            this.iconMenuItem2.Size = new System.Drawing.Size(237, 34);
+            this.iconMenuItem2.Size = new System.Drawing.Size(270, 34);
             this.iconMenuItem2.Text = "Categorías";
             this.iconMenuItem2.Click += new System.EventHandler(this.iconMenuItem2_Click);
             // 
@@ -101,7 +102,7 @@
             this.iconMenuItem3.IconColor = System.Drawing.Color.Black;
             this.iconMenuItem3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem3.Name = "iconMenuItem3";
-            this.iconMenuItem3.Size = new System.Drawing.Size(237, 34);
+            this.iconMenuItem3.Size = new System.Drawing.Size(270, 34);
             this.iconMenuItem3.Text = "Salas";
             this.iconMenuItem3.Click += new System.EventHandler(this.iconMenuItem3_Click);
             // 
@@ -111,7 +112,7 @@
             this.iconMenuItem4.IconColor = System.Drawing.Color.Black;
             this.iconMenuItem4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem4.Name = "iconMenuItem4";
-            this.iconMenuItem4.Size = new System.Drawing.Size(237, 34);
+            this.iconMenuItem4.Size = new System.Drawing.Size(270, 34);
             this.iconMenuItem4.Text = "Mesas";
             this.iconMenuItem4.Click += new System.EventHandler(this.iconMenuItem4_Click);
             // 
@@ -121,7 +122,7 @@
             this.iconMenuItem5.IconColor = System.Drawing.Color.Black;
             this.iconMenuItem5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem5.Name = "iconMenuItem5";
-            this.iconMenuItem5.Size = new System.Drawing.Size(237, 34);
+            this.iconMenuItem5.Size = new System.Drawing.Size(270, 34);
             this.iconMenuItem5.Text = "Usuarios";
             this.iconMenuItem5.Click += new System.EventHandler(this.iconMenuItem5_Click);
             // 
@@ -131,7 +132,7 @@
             this.iconMenuItem6.IconColor = System.Drawing.Color.Black;
             this.iconMenuItem6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem6.Name = "iconMenuItem6";
-            this.iconMenuItem6.Size = new System.Drawing.Size(237, 34);
+            this.iconMenuItem6.Size = new System.Drawing.Size(270, 34);
             this.iconMenuItem6.Text = "Departamentos";
             this.iconMenuItem6.Click += new System.EventHandler(this.iconMenuItem6_Click);
             // 
@@ -141,7 +142,7 @@
             this.iconMenuItem7.IconColor = System.Drawing.Color.Black;
             this.iconMenuItem7.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem7.Name = "iconMenuItem7";
-            this.iconMenuItem7.Size = new System.Drawing.Size(237, 34);
+            this.iconMenuItem7.Size = new System.Drawing.Size(270, 34);
             this.iconMenuItem7.Text = "Medidas";
             this.iconMenuItem7.Click += new System.EventHandler(this.iconMenuItem7_Click);
             // 
@@ -156,7 +157,7 @@
             this.iconMenuItem13,
             this.iconMenuItem14});
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
-            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(105, 32);
+            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(105, 29);
             this.consultasToolStripMenuItem.Text = "Consultas";
             // 
             // iconMenuItem8

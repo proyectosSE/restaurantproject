@@ -206,6 +206,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProyectoRestauranteDataSet141.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProyectoRestauranteDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoRestauranteDataSet15.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ProyectoRestauranteDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -399,6 +404,17 @@
     </None>
     <None Include="ProyectoRestauranteDataSet141.xss">
       <DependentUpon>ProyectoRestauranteDataSet141.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet15.xsc">
+      <DependentUpon>ProyectoRestauranteDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProyectoRestauranteDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProyectoRestauranteDataSet15.xss">
+      <DependentUpon>ProyectoRestauranteDataSet15.xsd</DependentUpon>
     </None>
     <None Include="ProyectoRestauranteDataSet2.xsc">
       <DependentUpon>ProyectoRestauranteDataSet2.xsd</DependentUpon>

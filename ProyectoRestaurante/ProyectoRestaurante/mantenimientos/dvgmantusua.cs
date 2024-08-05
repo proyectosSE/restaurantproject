@@ -19,6 +19,8 @@ namespace ProyectoRestaurante
             cargadatos();
         }
 
+        private string mivar;
+
         private void cargadatos()
         {
             string consulta = "SELECT * FROM usuarios";
@@ -59,6 +61,27 @@ namespace ProyectoRestaurante
 
         private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (dataGridView.Columns[e.ColumnIndex].Name == "editar")
+            {
+                mivar = dataGridView.CurrentRow.Cells["id_usuario"].Value.ToString();
+                int id = Convert.ToInt32(mivar);
+                mantusua mt = new mantusua(id);
+                mt.ShowDialog();
+
+            }
+            if (dataGridView.Columns[e.ColumnIndex].Name == "eliminar")
+            {
+                mensaje ms = new mensaje();
+
+                if (ms.ShowDialog() == DialogResult.OK)
+                {
+                    mivar = dataGridView.CurrentRow.Cells["id_usuario"].Value.ToString();
+                    Conectar cls = new Conectar();
+                    string tbl = "usuarios";
+                    string id = "id_usuario = '" + mivar + "'";
+                    cls.eliminar(tbl, id);
+                }
+            }
 
         }
     }

@@ -53,9 +53,14 @@
             this.proyectoRestauranteDataSet8 = new ProyectoRestaurante.ProyectoRestauranteDataSet8();
             this.nivelTableAdapter = new ProyectoRestaurante.ProyectoRestauranteDataSet7TableAdapters.nivelTableAdapter();
             this.usuariosTableAdapter = new ProyectoRestaurante.ProyectoRestauranteDataSet8TableAdapters.usuariosTableAdapter();
+            this.proyectoRestauranteDataSet15 = new ProyectoRestaurante.ProyectoRestauranteDataSet15();
+            this.nivelBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.nivelTableAdapter1 = new ProyectoRestaurante.ProyectoRestauranteDataSet15TableAdapters.nivelTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.nivelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nivelBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -210,7 +215,7 @@
             // cbbnivel
             // 
             this.cbbnivel.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.nivelBindingSource, "id_nivel", true));
-            this.cbbnivel.DataSource = this.nivelBindingSource;
+            this.cbbnivel.DataSource = this.nivelBindingSource1;
             this.cbbnivel.DisplayMember = "descripcion";
             this.cbbnivel.FormattingEnabled = true;
             this.cbbnivel.Location = new System.Drawing.Point(337, 397);
@@ -241,6 +246,20 @@
             // usuariosTableAdapter
             // 
             this.usuariosTableAdapter.ClearBeforeFill = true;
+            // 
+            // proyectoRestauranteDataSet15
+            // 
+            this.proyectoRestauranteDataSet15.DataSetName = "ProyectoRestauranteDataSet15";
+            this.proyectoRestauranteDataSet15.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // nivelBindingSource1
+            // 
+            this.nivelBindingSource1.DataMember = "nivel";
+            this.nivelBindingSource1.DataSource = this.proyectoRestauranteDataSet15;
+            // 
+            // nivelTableAdapter1
+            // 
+            this.nivelTableAdapter1.ClearBeforeFill = true;
             // 
             // mantusua
             // 
@@ -273,6 +292,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.nivelBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nivelBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,5 +325,8 @@
         private ProyectoRestauranteDataSet7TableAdapters.nivelTableAdapter nivelTableAdapter;
         private ProyectoRestauranteDataSet8 proyectoRestauranteDataSet8;
         private ProyectoRestauranteDataSet8TableAdapters.usuariosTableAdapter usuariosTableAdapter;
+        private ProyectoRestauranteDataSet15 proyectoRestauranteDataSet15;
+        private System.Windows.Forms.BindingSource nivelBindingSource1;
+        private ProyectoRestauranteDataSet15TableAdapters.nivelTableAdapter nivelTableAdapter1;
     }
 }

@@ -91,7 +91,10 @@ namespace ProyectoRestaurante
             }
         }
 
-
-
+        private void txtnom_DoubleClick(object sender, EventArgs e)
+        {
+            dgvmantcli dgv = new dgvmantcli();
+            dgv.Show();
+        }
     }
 }

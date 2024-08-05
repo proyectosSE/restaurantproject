@@ -46,7 +46,6 @@ namespace ProyectoRestaurante
                         adapter.Fill(dt);
                         dataGridView1.DataSource = dt;
 
-                        // Configuración de columnas
                         if (dataGridView1.Columns.Contains("id_categoria")) dataGridView1.Columns["id_categoria"].DisplayIndex = 0;
                         if (dataGridView1.Columns.Contains("descripcion")) dataGridView1.Columns["descripcion"].DisplayIndex = 1;
                         if (dataGridView1.Columns.Contains("editar")) dataGridView1.Columns["editar"].DisplayIndex = 2;
@@ -110,9 +109,8 @@ namespace ProyectoRestaurante
                 if (row.Cells[3].Value != null &&
                 row.Cells[3].Value.ToString().Equals(valorABuscar, StringComparison.OrdinalIgnoreCase))
                 {
-                    // Encontrar coincidencia, enfocar la fila
                     dataGridView1.CurrentCell = row.Cells[3];
-                    dataGridView1.FirstDisplayedScrollingRowIndex = row.Index; // Opcional: desplaza la fila al visible
+                    dataGridView1.FirstDisplayedScrollingRowIndex = row.Index;
                     break;
                 }
             }

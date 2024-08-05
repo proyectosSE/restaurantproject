@@ -33,7 +33,6 @@
             this.clientesTableAdapter = new ProyectoRestaurante.ProyectoRestauranteDataSet10TableAdapters.clientesTableAdapter();
             this.label1 = new System.Windows.Forms.Label();
             this.txtcli = new System.Windows.Forms.TextBox();
-            this.btbuscar = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet10)).BeginInit();
             this.SuspendLayout();
@@ -75,28 +74,12 @@
             this.txtcli.Name = "txtcli";
             this.txtcli.Size = new System.Drawing.Size(338, 26);
             this.txtcli.TabIndex = 2;
-            // 
-            // btbuscar
-            // 
-            this.btbuscar.IconChar = FontAwesome.Sharp.IconChar.Sistrix;
-            this.btbuscar.IconColor = System.Drawing.Color.Black;
-            this.btbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btbuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btbuscar.Location = new System.Drawing.Point(805, 37);
-            this.btbuscar.Name = "btbuscar";
-            this.btbuscar.Size = new System.Drawing.Size(107, 47);
-            this.btbuscar.TabIndex = 3;
-            this.btbuscar.Text = "Buscar";
-            this.btbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btbuscar.UseVisualStyleBackColor = true;
-            this.btbuscar.Click += new System.EventHandler(this.btbuscar_Click);
+            this.txtcli.TextChanged += new System.EventHandler(this.txtcli_TextChanged);
             // 
             // concli
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1231, 644);
-            this.Controls.Add(this.btbuscar);
             this.Controls.Add(this.txtcli);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
@@ -117,6 +100,5 @@
         private ProyectoRestauranteDataSet10TableAdapters.clientesTableAdapter clientesTableAdapter;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtcli;
-        private FontAwesome.Sharp.IconButton btbuscar;
     }
 }

@@ -97,8 +97,7 @@
             // 
             // dgvmantcli
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1372, 572);
             this.Controls.Add(this.dataGridView1);
             this.Name = "dgvmantcli";

@@ -45,7 +45,7 @@ namespace ProyectoRestaurante
 
         }
 
-        private void btbuscar_Click(object sender, EventArgs e)
+        private void txtdepart_TextChanged(object sender, EventArgs e)
         {
             string valorABuscar = txtdepart.Text;
             foreach (DataGridViewRow row in dataGridView1.Rows)

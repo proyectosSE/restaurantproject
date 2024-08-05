@@ -44,7 +44,7 @@ namespace ProyectoRestaurante.consultas
 
         }
 
-        private void btbuscar_Click(object sender, EventArgs e)
+        private void txtusua_TextChanged(object sender, EventArgs e)
         {
             string valorABuscar = txtusua.Text;
             foreach (DataGridViewRow row in dataGridView1.Rows)
@@ -55,7 +55,7 @@ namespace ProyectoRestaurante.consultas
                     dataGridView1.FirstDisplayedScrollingRowIndex = row.Index;
                     break;
                 }
-                else if(row.Cells[1].Value == null)
+                else if (row.Cells[1].Value == null)
                 {
                     MessageBox.Show("Datos no encontrados");
                 }

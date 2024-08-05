@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btbuscar = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
             this.txtmedi = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -48,21 +47,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1022, 512);
             this.dataGridView1.TabIndex = 0;
             // 
-            // btbuscar
-            // 
-            this.btbuscar.IconChar = FontAwesome.Sharp.IconChar.Sistrix;
-            this.btbuscar.IconColor = System.Drawing.Color.Black;
-            this.btbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btbuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btbuscar.Location = new System.Drawing.Point(787, 35);
-            this.btbuscar.Name = "btbuscar";
-            this.btbuscar.Size = new System.Drawing.Size(107, 47);
-            this.btbuscar.TabIndex = 6;
-            this.btbuscar.Text = "Buscar";
-            this.btbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btbuscar.UseVisualStyleBackColor = true;
-            this.btbuscar.Click += new System.EventHandler(this.btbuscar_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -78,13 +62,12 @@
             this.txtmedi.Name = "txtmedi";
             this.txtmedi.Size = new System.Drawing.Size(338, 26);
             this.txtmedi.TabIndex = 4;
+            this.txtmedi.TextChanged += new System.EventHandler(this.txtmedi_TextChanged);
             // 
             // conmedidas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1231, 644);
-            this.Controls.Add(this.btbuscar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtmedi);
             this.Controls.Add(this.dataGridView1);
@@ -100,7 +83,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private FontAwesome.Sharp.IconButton btbuscar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtmedi;
     }

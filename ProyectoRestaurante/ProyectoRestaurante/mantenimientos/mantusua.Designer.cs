@@ -50,17 +50,17 @@
             this.cbbnivel = new System.Windows.Forms.ComboBox();
             this.nivelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.proyectoRestauranteDataSet7 = new ProyectoRestaurante.ProyectoRestauranteDataSet7();
+            this.nivelBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.proyectoRestauranteDataSet15 = new ProyectoRestaurante.ProyectoRestauranteDataSet15();
             this.proyectoRestauranteDataSet8 = new ProyectoRestaurante.ProyectoRestauranteDataSet8();
             this.nivelTableAdapter = new ProyectoRestaurante.ProyectoRestauranteDataSet7TableAdapters.nivelTableAdapter();
             this.usuariosTableAdapter = new ProyectoRestaurante.ProyectoRestauranteDataSet8TableAdapters.usuariosTableAdapter();
-            this.proyectoRestauranteDataSet15 = new ProyectoRestaurante.ProyectoRestauranteDataSet15();
-            this.nivelBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.nivelTableAdapter1 = new ProyectoRestaurante.ProyectoRestauranteDataSet15TableAdapters.nivelTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.nivelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nivelBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet8)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -234,6 +234,16 @@
             this.proyectoRestauranteDataSet7.DataSetName = "ProyectoRestauranteDataSet7";
             this.proyectoRestauranteDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // nivelBindingSource1
+            // 
+            this.nivelBindingSource1.DataMember = "nivel";
+            this.nivelBindingSource1.DataSource = this.proyectoRestauranteDataSet15;
+            // 
+            // proyectoRestauranteDataSet15
+            // 
+            this.proyectoRestauranteDataSet15.DataSetName = "ProyectoRestauranteDataSet15";
+            this.proyectoRestauranteDataSet15.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // proyectoRestauranteDataSet8
             // 
             this.proyectoRestauranteDataSet8.DataSetName = "ProyectoRestauranteDataSet8";
@@ -247,24 +257,13 @@
             // 
             this.usuariosTableAdapter.ClearBeforeFill = true;
             // 
-            // proyectoRestauranteDataSet15
-            // 
-            this.proyectoRestauranteDataSet15.DataSetName = "ProyectoRestauranteDataSet15";
-            this.proyectoRestauranteDataSet15.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // nivelBindingSource1
-            // 
-            this.nivelBindingSource1.DataMember = "nivel";
-            this.nivelBindingSource1.DataSource = this.proyectoRestauranteDataSet15;
-            // 
             // nivelTableAdapter1
             // 
             this.nivelTableAdapter1.ClearBeforeFill = true;
             // 
             // mantusua
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1231, 644);
             this.Controls.Add(this.cbbnivel);
             this.Controls.Add(this.btagregar);
@@ -291,9 +290,9 @@
             this.Load += new System.EventHandler(this.mantusua_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nivelBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nivelBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

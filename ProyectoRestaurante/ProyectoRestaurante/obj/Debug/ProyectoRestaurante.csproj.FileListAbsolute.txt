@@ -200,3 +200,5 @@ C:\Users\Asistente\Desktop\lab Programacion3\newproject\ProyectoRestaurante\Proy
 C:\Users\Asistente\Desktop\lab Programacion3\newproject\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\Proyecto.CE3A958B.Up2Date
 C:\Users\Asistente\Desktop\lab Programacion3\newproject\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.exe
 C:\Users\Asistente\Desktop\lab Programacion3\newproject\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.pdb
+C:\Users\LIKELIAS\Desktop\Clases 2-2024\Proyecto\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantenimientos.dgvmantcli.resources
+C:\Users\LIKELIAS\Desktop\Clases 2-2024\Proyecto\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.dvgmantusua.resources

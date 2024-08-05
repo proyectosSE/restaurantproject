@@ -33,5 +33,12 @@ namespace ProyectoRestaurante
             this.nivelTableAdapter.Fill(this.proyectoRestauranteDataSet7.nivel);
 
         }
+
+        private void txtnom_DoubleClick(object sender, EventArgs e)
+        {
+            dvgmantusua dvgusua = new dvgmantusua();
+            dvgusua.Show();
+
+        }
     }
 }

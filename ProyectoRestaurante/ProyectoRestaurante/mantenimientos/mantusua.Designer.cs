@@ -48,28 +48,14 @@
             this.label9 = new System.Windows.Forms.Label();
             this.btagregar = new System.Windows.Forms.Button();
             this.cbbnivel = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.proyectoRestauranteDataSet7 = new ProyectoRestaurante.ProyectoRestauranteDataSet7();
             this.nivelBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.nivelTableAdapter = new ProyectoRestaurante.ProyectoRestauranteDataSet7TableAdapters.nivelTableAdapter();
+            this.proyectoRestauranteDataSet7 = new ProyectoRestaurante.ProyectoRestauranteDataSet7();
             this.proyectoRestauranteDataSet8 = new ProyectoRestaurante.ProyectoRestauranteDataSet8();
-            this.usuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nivelTableAdapter = new ProyectoRestaurante.ProyectoRestauranteDataSet7TableAdapters.nivelTableAdapter();
             this.usuariosTableAdapter = new ProyectoRestaurante.ProyectoRestauranteDataSet8TableAdapters.usuariosTableAdapter();
-            this.idusuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sexoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.direccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefonoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idnivelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nivelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -87,6 +73,7 @@
             this.txtnom.Name = "txtnom";
             this.txtnom.Size = new System.Drawing.Size(212, 26);
             this.txtnom.TabIndex = 1;
+            this.txtnom.DoubleClick += new System.EventHandler(this.txtnom_DoubleClick);
             // 
             // txtsex
             // 
@@ -232,144 +219,34 @@
             this.cbbnivel.TabIndex = 21;
             this.cbbnivel.ValueMember = "id_nivel";
             // 
-            // dataGridView1
+            // nivelBindingSource
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idusuarioDataGridViewTextBoxColumn,
-            this.nombresDataGridViewTextBoxColumn,
-            this.sexoDataGridViewTextBoxColumn,
-            this.direccionDataGridViewTextBoxColumn,
-            this.telefonoDataGridViewTextBoxColumn,
-            this.emailDataGridViewTextBoxColumn,
-            this.usuarioDataGridViewTextBoxColumn,
-            this.passwordDataGridViewTextBoxColumn,
-            this.idnivelDataGridViewTextBoxColumn,
-            this.statusDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.usuariosBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(621, 119);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(584, 466);
-            this.dataGridView1.TabIndex = 22;
+            this.nivelBindingSource.DataMember = "nivel";
+            this.nivelBindingSource.DataSource = this.proyectoRestauranteDataSet7;
             // 
             // proyectoRestauranteDataSet7
             // 
             this.proyectoRestauranteDataSet7.DataSetName = "ProyectoRestauranteDataSet7";
             this.proyectoRestauranteDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // nivelBindingSource
-            // 
-            this.nivelBindingSource.DataMember = "nivel";
-            this.nivelBindingSource.DataSource = this.proyectoRestauranteDataSet7;
-            // 
-            // nivelTableAdapter
-            // 
-            this.nivelTableAdapter.ClearBeforeFill = true;
-            // 
             // proyectoRestauranteDataSet8
             // 
             this.proyectoRestauranteDataSet8.DataSetName = "ProyectoRestauranteDataSet8";
             this.proyectoRestauranteDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // usuariosBindingSource
+            // nivelTableAdapter
             // 
-            this.usuariosBindingSource.DataMember = "usuarios";
-            this.usuariosBindingSource.DataSource = this.proyectoRestauranteDataSet8;
+            this.nivelTableAdapter.ClearBeforeFill = true;
             // 
             // usuariosTableAdapter
             // 
             this.usuariosTableAdapter.ClearBeforeFill = true;
-            // 
-            // idusuarioDataGridViewTextBoxColumn
-            // 
-            this.idusuarioDataGridViewTextBoxColumn.DataPropertyName = "id_usuario";
-            this.idusuarioDataGridViewTextBoxColumn.HeaderText = "id_usuario";
-            this.idusuarioDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.idusuarioDataGridViewTextBoxColumn.Name = "idusuarioDataGridViewTextBoxColumn";
-            this.idusuarioDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idusuarioDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // nombresDataGridViewTextBoxColumn
-            // 
-            this.nombresDataGridViewTextBoxColumn.DataPropertyName = "nombres";
-            this.nombresDataGridViewTextBoxColumn.HeaderText = "nombres";
-            this.nombresDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.nombresDataGridViewTextBoxColumn.Name = "nombresDataGridViewTextBoxColumn";
-            this.nombresDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // sexoDataGridViewTextBoxColumn
-            // 
-            this.sexoDataGridViewTextBoxColumn.DataPropertyName = "sexo";
-            this.sexoDataGridViewTextBoxColumn.HeaderText = "sexo";
-            this.sexoDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.sexoDataGridViewTextBoxColumn.Name = "sexoDataGridViewTextBoxColumn";
-            this.sexoDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // direccionDataGridViewTextBoxColumn
-            // 
-            this.direccionDataGridViewTextBoxColumn.DataPropertyName = "direccion";
-            this.direccionDataGridViewTextBoxColumn.HeaderText = "direccion";
-            this.direccionDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.direccionDataGridViewTextBoxColumn.Name = "direccionDataGridViewTextBoxColumn";
-            this.direccionDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // telefonoDataGridViewTextBoxColumn
-            // 
-            this.telefonoDataGridViewTextBoxColumn.DataPropertyName = "telefono";
-            this.telefonoDataGridViewTextBoxColumn.HeaderText = "telefono";
-            this.telefonoDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.telefonoDataGridViewTextBoxColumn.Name = "telefonoDataGridViewTextBoxColumn";
-            this.telefonoDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "email";
-            this.emailDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            this.emailDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // usuarioDataGridViewTextBoxColumn
-            // 
-            this.usuarioDataGridViewTextBoxColumn.DataPropertyName = "usuario";
-            this.usuarioDataGridViewTextBoxColumn.HeaderText = "usuario";
-            this.usuarioDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.usuarioDataGridViewTextBoxColumn.Name = "usuarioDataGridViewTextBoxColumn";
-            this.usuarioDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // passwordDataGridViewTextBoxColumn
-            // 
-            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "password";
-            this.passwordDataGridViewTextBoxColumn.HeaderText = "password";
-            this.passwordDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
-            this.passwordDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // idnivelDataGridViewTextBoxColumn
-            // 
-            this.idnivelDataGridViewTextBoxColumn.DataPropertyName = "id_nivel";
-            this.idnivelDataGridViewTextBoxColumn.HeaderText = "id_nivel";
-            this.idnivelDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.idnivelDataGridViewTextBoxColumn.Name = "idnivelDataGridViewTextBoxColumn";
-            this.idnivelDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // statusDataGridViewTextBoxColumn
-            // 
-            this.statusDataGridViewTextBoxColumn.DataPropertyName = "status";
-            this.statusDataGridViewTextBoxColumn.HeaderText = "status";
-            this.statusDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
-            this.statusDataGridViewTextBoxColumn.Width = 150;
             // 
             // mantusua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1231, 644);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.cbbnivel);
             this.Controls.Add(this.btagregar);
             this.Controls.Add(this.txtest);
@@ -393,11 +270,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Usuarios";
             this.Load += new System.EventHandler(this.mantusua_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nivelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -424,22 +299,10 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btagregar;
         private System.Windows.Forms.ComboBox cbbnivel;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private ProyectoRestauranteDataSet7 proyectoRestauranteDataSet7;
         private System.Windows.Forms.BindingSource nivelBindingSource;
         private ProyectoRestauranteDataSet7TableAdapters.nivelTableAdapter nivelTableAdapter;
         private ProyectoRestauranteDataSet8 proyectoRestauranteDataSet8;
-        private System.Windows.Forms.BindingSource usuariosBindingSource;
         private ProyectoRestauranteDataSet8TableAdapters.usuariosTableAdapter usuariosTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idusuarioDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombresDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sexoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn direccionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn telefonoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn usuarioDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idnivelDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
     }
 }

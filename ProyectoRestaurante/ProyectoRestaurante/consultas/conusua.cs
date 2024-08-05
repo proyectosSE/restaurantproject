@@ -39,7 +39,6 @@ namespace ProyectoRestaurante.consultas
             }
             catch (Exception ex)
             {
-                // Manejo de errores
                 MessageBox.Show("Error al cargar datos: " + ex.Message);
             }
 
@@ -52,9 +51,8 @@ namespace ProyectoRestaurante.consultas
             {
                 if (row.Cells[1].Value != null && row.Cells[1].Value.ToString().Contains(valorABuscar))
                 {
-                    // Encontrar coincidencia, enfocar la fila
                     dataGridView1.CurrentCell = row.Cells[1];
-                    dataGridView1.FirstDisplayedScrollingRowIndex = row.Index; // Opcional: desplaza la fila al visible
+                    dataGridView1.FirstDisplayedScrollingRowIndex = row.Index;
                     break;
                 }
                 else if(row.Cells[1].Value == null)

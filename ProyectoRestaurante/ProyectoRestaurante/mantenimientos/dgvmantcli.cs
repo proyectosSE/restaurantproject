@@ -68,9 +68,7 @@ namespace ProyectoRestaurante.mantenimientos
                mivar = dataGridView1.CurrentRow.Cells["id_cliente"].Value.ToString();
                int id = Convert.ToInt32(mivar);
                mantcli mt = new mantcli(id);
-               mt.ShowDialog();
-               
-              
+               mt.ShowDialog();              
               
             }
             if (dataGridView1.Columns[e.ColumnIndex].Name == "Eliminar")

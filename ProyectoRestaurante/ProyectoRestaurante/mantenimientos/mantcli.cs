@@ -48,8 +48,6 @@ namespace ProyectoRestaurante
         private void Buscar(int pId)
         {
            
-            
-            
             string query = "SELECT * FROM clientes WHERE id_cliente = "+pId+"";
 
             using (SqlConnection connection = new SqlConnection(rutadb.conexion))

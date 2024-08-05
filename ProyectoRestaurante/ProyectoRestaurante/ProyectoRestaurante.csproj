@@ -97,6 +97,12 @@
     <Compile Include="consultas\conusua.Designer.cs">
       <DependentUpon>conusua.cs</DependentUpon>
     </Compile>
+    <Compile Include="mantenimientos\dvgmantusua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientos\dvgmantusua.Designer.cs">
+      <DependentUpon>dvgmantusua.cs</DependentUpon>
+    </Compile>
     <Compile Include="login y ventanas\mensaje.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -260,6 +266,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="consultas\conusua.resx">
       <DependentUpon>conusua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientos\dvgmantusua.resx">
+      <DependentUpon>dvgmantusua.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login y ventanas\mensaje.resx">
       <DependentUpon>mensaje.cs</DependentUpon>

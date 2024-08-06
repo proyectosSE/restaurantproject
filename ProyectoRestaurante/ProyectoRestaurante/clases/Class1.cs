@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
-using System.Windows;
+using System.Windows.Forms;
 
 namespace ProyectoRestaurante
 {
@@ -18,7 +18,7 @@ namespace ProyectoRestaurante
             string cadena = $"INSERT INTO {tabla} VALUES({datos});";
             SqlCommand comando = new SqlCommand(cadena,conexion);
             comando.ExecuteNonQuery();
-            MessageBox.Show("Datos guardados");
+            MessageBox.Show("Datos guardados", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             conexion.Close();
         }
 

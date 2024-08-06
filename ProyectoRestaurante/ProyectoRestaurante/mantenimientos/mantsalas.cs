@@ -24,7 +24,7 @@ namespace ProyectoRestaurante
         private void button1_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();
-            string datos = "'"+txtsalas.Text+"','"+fechasala.Text+"'";
+            string datos = "'"+txtsalas.Text+"','"+fechasala.Text+"','"+txtestado.Text+"'";
             string tabla = "salas";
             cls.Agregar(datos, tabla);
             cargardatos();

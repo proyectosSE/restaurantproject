@@ -42,8 +42,6 @@ namespace ProyectoRestaurante
             MessageBox.Show("Elimando correctamente");
             conexion.Close();
         }
-
-       
-    
+           
     }
 }

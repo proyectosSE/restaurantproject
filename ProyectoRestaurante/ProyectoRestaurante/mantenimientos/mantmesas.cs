@@ -17,6 +17,7 @@ namespace ProyectoRestaurante
         {
             InitializeComponent();
             fechamesa.Format = DateTimePickerFormat.Short;
+            buttEdit.Visible = false;
             cargardatos();
         }
 

@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clases\Class1.cs" />
+    <Compile Include="clases\limpiar.cs" />
     <Compile Include="clases\rutadb.cs" />
     <Compile Include="consultas\concli.cs">
       <SubType>Form</SubType>

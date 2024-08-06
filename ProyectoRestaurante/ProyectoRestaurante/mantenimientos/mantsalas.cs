@@ -17,6 +17,7 @@ namespace ProyectoRestaurante
         {
             InitializeComponent();
             fechasala.Format = DateTimePickerFormat.Short;
+            buttEdit.Visible = false;
             cargardatos();
         }
         private string mivar;
@@ -26,6 +27,7 @@ namespace ProyectoRestaurante
             string datos = "'"+txtsalas.Text+"','"+fechasala.Text+"'";
             string tabla = "salas";
             cls.Agregar(datos, tabla);
+            cargardatos();
         }
 
         private void cargardatos()
@@ -96,6 +98,7 @@ namespace ProyectoRestaurante
                     string tbl = "salas";
                     string id = "id_sala = '" + mivar + "'";
                     cls.eliminar(tbl, id);
+                    cargardatos();
                 }
             }
         }

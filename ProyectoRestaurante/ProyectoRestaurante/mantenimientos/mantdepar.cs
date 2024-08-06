@@ -28,6 +28,7 @@ namespace ProyectoRestaurante
             string datos = "'"+txtdepart.Text+"',"+txtprovincia.Text+"";
             string tabla = "departamentos";
             cls.Agregar(datos, tabla);
+            cargardatos();
         }
 
         private void cargardatos()
@@ -70,8 +71,9 @@ namespace ProyectoRestaurante
             string tbl = "departamentos";
             string id = "id_departamento = '" + mivar + "'";
             cls.Actualizar(up, tbl, id);
-            InitializeComponent();
+            
             buttEdit.Visible = false;
+            button1.Visible = true;
             cargardatos();
         }
 
@@ -97,6 +99,7 @@ namespace ProyectoRestaurante
                     string tbl = "departamentos";
                     string id = "id_departamento = '" + mivar + "'";
                     cls.eliminar(tbl, id);
+                    cargardatos();
                 }
             }
         }

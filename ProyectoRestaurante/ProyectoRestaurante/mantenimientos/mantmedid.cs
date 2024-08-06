@@ -16,6 +16,7 @@ namespace ProyectoRestaurante
         public mantmedid()
         {
             InitializeComponent();
+            buttEdit.Visible = false;
             cargardatos();
         }
 

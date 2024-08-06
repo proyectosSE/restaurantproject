@@ -28,6 +28,7 @@ namespace ProyectoRestaurante
             string categoria = "'" + textcat.Text + "'";
             string tbcat = "categorias";
             cls.Agregar(categoria,tbcat);
+            cargardatos();
         }
 
         
@@ -70,7 +71,7 @@ namespace ProyectoRestaurante
             string tbl = "categorias";
             string id = "id_categoria = '"+mivar+"'";
             cls.Actualizar(up, tbl,id);
-            InitializeComponent();
+            buttAgreg.Visible = true;
             buttEdit.Visible = false;
             cargardatos();
         }
@@ -96,6 +97,7 @@ namespace ProyectoRestaurante
                     string tbl = "categorias";
                     string id = "id_categoria = '" + mivar + "'";
                     cls.eliminar(tbl,id);
+                    cargardatos();
                 }
 
             }

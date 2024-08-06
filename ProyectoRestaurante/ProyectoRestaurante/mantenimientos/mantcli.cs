@@ -1,4 +1,5 @@
-﻿using ProyectoRestaurante.mantenimientos;
+﻿using ProyectoRestaurante.clases;
+using ProyectoRestaurante.mantenimientos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,6 +37,7 @@ namespace ProyectoRestaurante
             string datos = "'"+txtnom.Text+"','"+txtapell.Text+"','"+txtdirec.Text+"','"+txtemail.Text+"',"+txtlimicre.Text+",'"+fechain.Text+"'";
             string tabla = "clientes";
             cls.Agregar(datos,tabla);
+            limpiar.LimpiarTextBoxes(this);
         }
 
         private void button1_Click(object sender, EventArgs e)

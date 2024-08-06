@@ -37,12 +37,14 @@
             this.txtprovincia = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.buttEdit = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtest = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(53, 274);
+            this.button1.Location = new System.Drawing.Point(53, 381);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 32);
             this.button1.TabIndex = 11;
@@ -123,7 +125,7 @@
             // 
             // buttEdit
             // 
-            this.buttEdit.Location = new System.Drawing.Point(213, 274);
+            this.buttEdit.Location = new System.Drawing.Point(213, 381);
             this.buttEdit.Name = "buttEdit";
             this.buttEdit.Size = new System.Drawing.Size(75, 32);
             this.buttEdit.TabIndex = 14;
@@ -131,10 +133,28 @@
             this.buttEdit.UseVisualStyleBackColor = true;
             this.buttEdit.Click += new System.EventHandler(this.buttEdit_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(53, 276);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 20);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Estado";
+            // 
+            // txtest
+            // 
+            this.txtest.Location = new System.Drawing.Point(53, 308);
+            this.txtest.Name = "txtest";
+            this.txtest.Size = new System.Drawing.Size(100, 26);
+            this.txtest.TabIndex = 16;
+            // 
             // mantdepar
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1231, 644);
+            this.Controls.Add(this.txtest);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.buttEdit);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtprovincia);
@@ -162,5 +182,7 @@
         private System.Windows.Forms.DataGridViewImageColumn Editar;
         private System.Windows.Forms.DataGridViewImageColumn Eliminar;
         private System.Windows.Forms.Button buttEdit;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtest;
     }
 }

@@ -34,7 +34,7 @@ namespace ProyectoRestaurante
         private void buttAgregar_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();
-            string datos = "'"+txtnom.Text+"','"+txtapell.Text+"','"+txtdirec.Text+"','"+txtemail.Text+"',"+txtlimicre.Text+",'"+fechain.Text+"'";
+            string datos = "'"+txtnom.Text+"','"+txtapell.Text+"','"+txtdirec.Text+"','"+txtemail.Text+"',"+txtlimicre.Text+",'"+fechain.Text+"','"+txtest.Text+"'";
             string tabla = "clientes";
             cls.Agregar(datos,tabla);
             limpiar.LimpiarTextBoxes(this);

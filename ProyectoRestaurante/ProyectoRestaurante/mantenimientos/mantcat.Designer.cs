@@ -37,8 +37,10 @@
             this.buttEdit = new System.Windows.Forms.Button();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.textBuscar = new System.Windows.Forms.TextBox();
             this.buttBuscar = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtest = new System.Windows.Forms.TextBox();
+            this.textBuscar = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,7 +101,7 @@
             // 
             // buttAgreg
             // 
-            this.buttAgreg.Location = new System.Drawing.Point(90, 226);
+            this.buttAgreg.Location = new System.Drawing.Point(90, 309);
             this.buttAgreg.Name = "buttAgreg";
             this.buttAgreg.Size = new System.Drawing.Size(75, 32);
             this.buttAgreg.TabIndex = 3;
@@ -109,7 +111,7 @@
             // 
             // buttEdit
             // 
-            this.buttEdit.Location = new System.Drawing.Point(250, 226);
+            this.buttEdit.Location = new System.Drawing.Point(250, 309);
             this.buttEdit.Name = "buttEdit";
             this.buttEdit.Size = new System.Drawing.Size(75, 32);
             this.buttEdit.TabIndex = 4;
@@ -137,13 +139,6 @@
             this.dataGridViewImageColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.dataGridViewImageColumn2.Width = 75;
             // 
-            // textBuscar
-            // 
-            this.textBuscar.Location = new System.Drawing.Point(90, 385);
-            this.textBuscar.Name = "textBuscar";
-            this.textBuscar.Size = new System.Drawing.Size(235, 26);
-            this.textBuscar.TabIndex = 5;
-            // 
             // buttBuscar
             // 
             this.buttBuscar.Location = new System.Drawing.Point(90, 457);
@@ -154,10 +149,35 @@
             this.buttBuscar.UseVisualStyleBackColor = true;
             this.buttBuscar.Click += new System.EventHandler(this.buttBuscar_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(86, 226);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 20);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Estado";
+            // 
+            // txtest
+            // 
+            this.txtest.Location = new System.Drawing.Point(90, 261);
+            this.txtest.Name = "txtest";
+            this.txtest.Size = new System.Drawing.Size(124, 26);
+            this.txtest.TabIndex = 8;
+            // 
+            // textBuscar
+            // 
+            this.textBuscar.Location = new System.Drawing.Point(90, 385);
+            this.textBuscar.Name = "textBuscar";
+            this.textBuscar.Size = new System.Drawing.Size(235, 26);
+            this.textBuscar.TabIndex = 5;
+            // 
             // mantcat
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1231, 644);
+            this.Controls.Add(this.txtest);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.buttBuscar);
             this.Controls.Add(this.textBuscar);
             this.Controls.Add(this.buttEdit);
@@ -185,7 +205,9 @@
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
         private System.Windows.Forms.DataGridViewImageColumn Editar;
         private System.Windows.Forms.DataGridViewImageColumn Eliminar;
-        private System.Windows.Forms.TextBox textBuscar;
         private System.Windows.Forms.Button buttBuscar;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtest;
+        private System.Windows.Forms.TextBox textBuscar;
     }
 }

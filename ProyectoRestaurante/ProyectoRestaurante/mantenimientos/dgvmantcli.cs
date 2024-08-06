@@ -40,6 +40,11 @@ namespace ProyectoRestaurante.mantenimientos
                         adapter.Fill(dt);
                         dataGridView1.DataSource = dt;
 
+                        foreach (DataGridViewColumn cl in dataGridView1.Columns)
+                        {
+                            cl.Width = 126;
+                        }
+
                         if (dataGridView1.Columns.Contains("id_cliente")) dataGridView1.Columns["id_cliente"].DisplayIndex = 0;
                         if (dataGridView1.Columns.Contains("nomcliente")) dataGridView1.Columns["nomcliente"].DisplayIndex = 1;
                         if (dataGridView1.Columns.Contains("apellidocliente")) dataGridView1.Columns["apellidocliente"].DisplayIndex = 2;

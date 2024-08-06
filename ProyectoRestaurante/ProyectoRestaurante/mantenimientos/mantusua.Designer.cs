@@ -190,7 +190,7 @@
             // 
             this.txtest.Location = new System.Drawing.Point(621, 73);
             this.txtest.Name = "txtest";
-            this.txtest.Size = new System.Drawing.Size(212, 26);
+            this.txtest.Size = new System.Drawing.Size(110, 26);
             this.txtest.TabIndex = 17;
             // 
             // label9

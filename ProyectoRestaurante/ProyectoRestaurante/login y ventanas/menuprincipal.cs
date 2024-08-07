@@ -16,6 +16,7 @@ namespace ProyectoRestaurante
         public menuprincipal()
         {
             InitializeComponent();
+            
         }
 
         private void iconMenuItem1_Click(object sender, EventArgs e)

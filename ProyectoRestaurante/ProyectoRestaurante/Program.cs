@@ -16,7 +16,7 @@ namespace ProyectoRestaurante
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new menuprincipal());
+            Application.Run(new login());
         }
     }
 }

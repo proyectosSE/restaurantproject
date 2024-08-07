@@ -518,5 +518,20 @@
   <ItemGroup>
     <None Include="Resources\elipsis.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo sin fondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-window-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-minimize-window-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Empanadas Caseras Moderno Marrón y Naranja %282%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

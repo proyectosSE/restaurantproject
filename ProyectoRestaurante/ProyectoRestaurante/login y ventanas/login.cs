@@ -20,6 +20,7 @@ namespace ProyectoRestaurante
         public login()
         {
             InitializeComponent();
+            
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]

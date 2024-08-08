@@ -34,10 +34,8 @@ namespace ProyectoRestaurante
 
         private void mantusua_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'proyectoRestauranteDataSet15.nivel' Puede moverla o quitarla según sea necesario.
-            this.nivelTableAdapter1.Fill(this.proyectoRestauranteDataSet15.nivel);
-
-
+            // TODO: esta línea de código carga datos en la tabla 'proyectoRestauranteDataSet17.nivel' Puede moverla o quitarla según sea necesario.
+            this.nivelTableAdapter2.Fill(this.proyectoRestauranteDataSet17.nivel);
         }
 
         private void Buscar(int pId)
@@ -92,8 +90,19 @@ namespace ProyectoRestaurante
         private void txtnom_DoubleClick(object sender, EventArgs e)
         {
             dvgmantusua dvgusua = new dvgmantusua();
+            dvgusua.FormBorderStyle = FormBorderStyle.None;
+            dvgusua.TopLevel = false;
+            dvgusua.Dock = DockStyle.Fill;
+            this.Controls.Add(dvgusua);
+            this.Tag = dvgusua;
+            dvgusua.BringToFront();
             dvgusua.Show();
 
+        }
+
+        private void btcerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

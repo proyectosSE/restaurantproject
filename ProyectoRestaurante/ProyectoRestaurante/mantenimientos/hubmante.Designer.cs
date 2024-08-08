@@ -52,7 +52,17 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.btcerrar = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.btproveedor = new System.Windows.Forms.Button();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.btimpuesto = new System.Windows.Forms.Button();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.btmoneda = new System.Windows.Forms.Button();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.btproducto = new System.Windows.Forms.Button();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -70,6 +80,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.btcerrar)).BeginInit();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -101,7 +117,7 @@
             this.btcli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btcli.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btcli.ForeColor = System.Drawing.Color.Gold;
-            this.btcli.Location = new System.Drawing.Point(0, 132);
+            this.btcli.Location = new System.Drawing.Point(0, 135);
             this.btcli.Name = "btcli";
             this.btcli.Size = new System.Drawing.Size(166, 48);
             this.btcli.TabIndex = 1;
@@ -137,7 +153,7 @@
             this.btmesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btmesa.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btmesa.ForeColor = System.Drawing.Color.Gold;
-            this.btmesa.Location = new System.Drawing.Point(0, 132);
+            this.btmesa.Location = new System.Drawing.Point(0, 135);
             this.btmesa.Name = "btmesa";
             this.btmesa.Size = new System.Drawing.Size(166, 48);
             this.btmesa.TabIndex = 2;
@@ -211,7 +227,7 @@
             this.btcate.Name = "btcate";
             this.btcate.Size = new System.Drawing.Size(166, 48);
             this.btcate.TabIndex = 4;
-            this.btcate.Text = "Categoías";
+            this.btcate.Text = "Categorías";
             this.btcate.UseVisualStyleBackColor = true;
             this.btcate.Click += new System.EventHandler(this.btcate_Click);
             this.btcate.MouseEnter += new System.EventHandler(this.btcate_MouseEnter);
@@ -344,11 +360,26 @@
             // 
             // panel8
             // 
+            this.panel8.Controls.Add(this.btproveedor);
             this.panel8.Controls.Add(this.pictureBox8);
             this.panel8.Location = new System.Drawing.Point(635, 292);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(166, 183);
-            this.panel8.TabIndex = 7;
+            this.panel8.TabIndex = 8;
+            // 
+            // btproveedor
+            // 
+            this.btproveedor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btproveedor.FlatAppearance.BorderSize = 0;
+            this.btproveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btproveedor.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btproveedor.ForeColor = System.Drawing.Color.Gold;
+            this.btproveedor.Location = new System.Drawing.Point(0, 135);
+            this.btproveedor.Name = "btproveedor";
+            this.btproveedor.Size = new System.Drawing.Size(166, 48);
+            this.btproveedor.TabIndex = 7;
+            this.btproveedor.Text = "Proveedores";
+            this.btproveedor.UseVisualStyleBackColor = true;
             // 
             // pictureBox8
             // 
@@ -358,14 +389,110 @@
             this.pictureBox8.TabIndex = 6;
             this.pictureBox8.TabStop = false;
             // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.btimpuesto);
+            this.panel9.Controls.Add(this.pictureBox9);
+            this.panel9.Location = new System.Drawing.Point(436, 500);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(166, 183);
+            this.panel9.TabIndex = 10;
+            // 
+            // btimpuesto
+            // 
+            this.btimpuesto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btimpuesto.FlatAppearance.BorderSize = 0;
+            this.btimpuesto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btimpuesto.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btimpuesto.ForeColor = System.Drawing.Color.Gold;
+            this.btimpuesto.Location = new System.Drawing.Point(0, 135);
+            this.btimpuesto.Name = "btimpuesto";
+            this.btimpuesto.Size = new System.Drawing.Size(166, 48);
+            this.btimpuesto.TabIndex = 7;
+            this.btimpuesto.Text = "Impuestos";
+            this.btimpuesto.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(166, 135);
+            this.pictureBox9.TabIndex = 6;
+            this.pictureBox9.TabStop = false;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.btmoneda);
+            this.panel10.Controls.Add(this.pictureBox10);
+            this.panel10.Location = new System.Drawing.Point(234, 500);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(166, 183);
+            this.panel10.TabIndex = 9;
+            // 
+            // btmoneda
+            // 
+            this.btmoneda.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btmoneda.FlatAppearance.BorderSize = 0;
+            this.btmoneda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btmoneda.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btmoneda.ForeColor = System.Drawing.Color.Gold;
+            this.btmoneda.Location = new System.Drawing.Point(0, 135);
+            this.btmoneda.Name = "btmoneda";
+            this.btmoneda.Size = new System.Drawing.Size(166, 48);
+            this.btmoneda.TabIndex = 6;
+            this.btmoneda.Text = "Monedas";
+            this.btmoneda.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(166, 135);
+            this.pictureBox10.TabIndex = 5;
+            this.pictureBox10.TabStop = false;
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.btproducto);
+            this.panel11.Controls.Add(this.pictureBox11);
+            this.panel11.Location = new System.Drawing.Point(33, 500);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(166, 183);
+            this.panel11.TabIndex = 8;
+            // 
+            // btproducto
+            // 
+            this.btproducto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btproducto.FlatAppearance.BorderSize = 0;
+            this.btproducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btproducto.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btproducto.ForeColor = System.Drawing.Color.Gold;
+            this.btproducto.Location = new System.Drawing.Point(0, 135);
+            this.btproducto.Name = "btproducto";
+            this.btproducto.Size = new System.Drawing.Size(166, 48);
+            this.btproducto.TabIndex = 5;
+            this.btproducto.Text = "Productos";
+            this.btproducto.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(166, 135);
+            this.pictureBox11.TabIndex = 4;
+            this.pictureBox11.TabStop = false;
+            // 
             // hubmante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(828, 544);
+            this.ClientSize = new System.Drawing.Size(828, 732);
+            this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
+            this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
@@ -394,6 +521,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.btcerrar)).EndInit();
             this.panel8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.panel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.panel10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            this.panel11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -420,11 +553,21 @@
         private System.Windows.Forms.Button btcli;
         private System.Windows.Forms.Button btmesa;
         private System.Windows.Forms.Button btsala;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Button btcate;
         private System.Windows.Forms.Button btusua;
         private System.Windows.Forms.Button btdepart;
         private System.Windows.Forms.Button btmedida;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Button btproveedor;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Button btimpuesto;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Button btmoneda;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Button btproducto;
+        private System.Windows.Forms.PictureBox pictureBox11;
     }
 }

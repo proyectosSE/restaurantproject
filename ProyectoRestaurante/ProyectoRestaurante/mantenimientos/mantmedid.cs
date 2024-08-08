@@ -100,5 +100,10 @@ namespace ProyectoRestaurante
                 }
             }
         }
+
+        private void btcerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

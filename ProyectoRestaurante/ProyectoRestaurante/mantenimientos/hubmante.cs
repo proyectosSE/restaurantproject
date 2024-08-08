@@ -49,6 +49,12 @@ namespace ProyectoRestaurante
         private void btsala_Click(object sender, EventArgs e)
         {
             mantsalas mantsala = new mantsalas();
+            mantsala.FormBorderStyle = FormBorderStyle.None;
+            mantsala.TopLevel = false;
+            mantsala.Dock = DockStyle.Fill;
+            this.Controls.Add(mantsala);
+            this.Tag = mantsala;
+            mantsala.BringToFront();
             mantsala.Show();
         }
 
@@ -95,24 +101,48 @@ namespace ProyectoRestaurante
         private void btcate_Click(object sender, EventArgs e)
         {
             mantcat mantcateg = new mantcat();
+            mantcateg.FormBorderStyle = FormBorderStyle.None;
+            mantcateg.TopLevel = false;
+            mantcateg.Dock = DockStyle.Fill;
+            this.Controls.Add(mantcateg);
+            this.Tag = mantcateg;
+            mantcateg.BringToFront();
             mantcateg.Show();
         }
 
         private void btusua_Click(object sender, EventArgs e)
         {
             mantusua mantusua = new mantusua();
+            mantusua.FormBorderStyle = FormBorderStyle.None;
+            mantusua.TopLevel = false;
+            mantusua.Dock = DockStyle.Fill;
+            this.Controls.Add(mantusua);
+            this.Tag = mantusua;
+            mantusua.BringToFront();
             mantusua.Show();
         }
 
         private void btdepart_Click(object sender, EventArgs e)
         {
             mantdepar mantdpt = new mantdepar();
+            mantdpt.FormBorderStyle = FormBorderStyle.None;
+            mantdpt.TopLevel = false;
+            mantdpt.Dock = DockStyle.Fill;
+            this.Controls.Add(mantdpt);
+            this.Tag = mantdpt;
+            mantdpt.BringToFront();
             mantdpt.Show();
         }
 
         private void btmedida_Click(object sender, EventArgs e)
         {
             mantmedid mantmed = new mantmedid();
+            mantmed.FormBorderStyle = FormBorderStyle.None;
+            mantmed.TopLevel = false;
+            mantmed.Dock = DockStyle.Fill;
+            this.Controls.Add( mantmed);
+            this.Tag = mantmed;
+            mantmed.BringToFront();
             mantmed.Show();
         }
 

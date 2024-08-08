@@ -41,21 +41,25 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtest = new System.Windows.Forms.TextBox();
             this.textBuscar = new System.Windows.Forms.TextBox();
+            this.btcerrar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btcerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(86, 123);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gold;
+            this.label1.Location = new System.Drawing.Point(42, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 20);
+            this.label1.Size = new System.Drawing.Size(222, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre de categoria";
             // 
             // textcat
             // 
-            this.textcat.Location = new System.Drawing.Point(90, 167);
+            this.textcat.Location = new System.Drawing.Point(46, 53);
             this.textcat.Name = "textcat";
             this.textcat.Size = new System.Drawing.Size(235, 26);
             this.textcat.TabIndex = 1;
@@ -64,16 +68,19 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Editar,
             this.Eliminar});
-            this.dataGridView1.Location = new System.Drawing.Point(379, 69);
+            this.dataGridView1.Location = new System.Drawing.Point(46, 199);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(587, 535);
+            this.dataGridView1.Size = new System.Drawing.Size(747, 354);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -101,9 +108,10 @@
             // 
             // buttAgreg
             // 
-            this.buttAgreg.Location = new System.Drawing.Point(90, 309);
+            this.buttAgreg.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttAgreg.Location = new System.Drawing.Point(46, 121);
             this.buttAgreg.Name = "buttAgreg";
-            this.buttAgreg.Size = new System.Drawing.Size(75, 32);
+            this.buttAgreg.Size = new System.Drawing.Size(104, 32);
             this.buttAgreg.TabIndex = 3;
             this.buttAgreg.Text = "Agregar";
             this.buttAgreg.UseVisualStyleBackColor = true;
@@ -111,9 +119,10 @@
             // 
             // buttEdit
             // 
-            this.buttEdit.Location = new System.Drawing.Point(250, 309);
+            this.buttEdit.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttEdit.Location = new System.Drawing.Point(160, 121);
             this.buttEdit.Name = "buttEdit";
-            this.buttEdit.Size = new System.Drawing.Size(75, 32);
+            this.buttEdit.Size = new System.Drawing.Size(104, 32);
             this.buttEdit.TabIndex = 4;
             this.buttEdit.Text = "Editar";
             this.buttEdit.UseVisualStyleBackColor = true;
@@ -141,9 +150,10 @@
             // 
             // buttBuscar
             // 
-            this.buttBuscar.Location = new System.Drawing.Point(90, 457);
+            this.buttBuscar.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttBuscar.Location = new System.Drawing.Point(457, 118);
             this.buttBuscar.Name = "buttBuscar";
-            this.buttBuscar.Size = new System.Drawing.Size(75, 34);
+            this.buttBuscar.Size = new System.Drawing.Size(104, 34);
             this.buttBuscar.TabIndex = 6;
             this.buttBuscar.Text = "Buscar";
             this.buttBuscar.UseVisualStyleBackColor = true;
@@ -152,30 +162,47 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(86, 226);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Gold;
+            this.label2.Location = new System.Drawing.Point(293, 30);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 20);
+            this.label2.Size = new System.Drawing.Size(74, 23);
             this.label2.TabIndex = 7;
             this.label2.Text = "Estado";
             // 
             // txtest
             // 
-            this.txtest.Location = new System.Drawing.Point(90, 261);
+            this.txtest.Location = new System.Drawing.Point(297, 53);
             this.txtest.Name = "txtest";
             this.txtest.Size = new System.Drawing.Size(124, 26);
             this.txtest.TabIndex = 8;
             // 
             // textBuscar
             // 
-            this.textBuscar.Location = new System.Drawing.Point(90, 385);
+            this.textBuscar.Location = new System.Drawing.Point(297, 124);
             this.textBuscar.Name = "textBuscar";
-            this.textBuscar.Size = new System.Drawing.Size(235, 26);
+            this.textBuscar.Size = new System.Drawing.Size(154, 26);
             this.textBuscar.TabIndex = 5;
+            // 
+            // btcerrar
+            // 
+            this.btcerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btcerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btcerrar.Image = global::ProyectoRestaurante.Properties.Resources.icons8_close_window_32;
+            this.btcerrar.Location = new System.Drawing.Point(808, 8);
+            this.btcerrar.Name = "btcerrar";
+            this.btcerrar.Size = new System.Drawing.Size(32, 32);
+            this.btcerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btcerrar.TabIndex = 9;
+            this.btcerrar.TabStop = false;
+            this.btcerrar.Click += new System.EventHandler(this.btcerrar_Click);
             // 
             // mantcat
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1231, 644);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(850, 600);
+            this.Controls.Add(this.btcerrar);
             this.Controls.Add(this.txtest);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.buttBuscar);
@@ -185,10 +212,12 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textcat);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "mantcat";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Categorias";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btcerrar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,5 +238,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtest;
         private System.Windows.Forms.TextBox textBuscar;
+        private System.Windows.Forms.PictureBox btcerrar;
     }
 }

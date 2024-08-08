@@ -51,15 +51,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gold;
             this.label1.Location = new System.Drawing.Point(33, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 20);
+            this.label1.Size = new System.Drawing.Size(89, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre";
             // 
             // txtnom
             // 
-            this.txtnom.Location = new System.Drawing.Point(37, 82);
+            this.txtnom.Location = new System.Drawing.Point(37, 67);
             this.txtnom.Name = "txtnom";
             this.txtnom.Size = new System.Drawing.Size(216, 26);
             this.txtnom.TabIndex = 1;
@@ -68,22 +70,24 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 138);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Gold;
+            this.label2.Location = new System.Drawing.Point(33, 125);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 20);
+            this.label2.Size = new System.Drawing.Size(92, 23);
             this.label2.TabIndex = 2;
             this.label2.Text = "Apellido";
             // 
             // txtapell
             // 
-            this.txtapell.Location = new System.Drawing.Point(37, 170);
+            this.txtapell.Location = new System.Drawing.Point(37, 148);
             this.txtapell.Name = "txtapell";
             this.txtapell.Size = new System.Drawing.Size(216, 26);
             this.txtapell.TabIndex = 3;
             // 
             // txtdirec
             // 
-            this.txtdirec.Location = new System.Drawing.Point(37, 259);
+            this.txtdirec.Location = new System.Drawing.Point(37, 231);
             this.txtdirec.Name = "txtdirec";
             this.txtdirec.Size = new System.Drawing.Size(216, 26);
             this.txtdirec.TabIndex = 4;
@@ -91,24 +95,28 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 230);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Gold;
+            this.label3.Location = new System.Drawing.Point(33, 202);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 20);
+            this.label3.Size = new System.Drawing.Size(104, 23);
             this.label3.TabIndex = 5;
             this.label3.Text = "Direccion";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(291, 230);
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Gold;
+            this.label4.Location = new System.Drawing.Point(291, 202);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(132, 20);
+            this.label4.Size = new System.Drawing.Size(180, 23);
             this.label4.TabIndex = 11;
             this.label4.Text = "Fecha de ingreso";
             // 
             // txtlimicre
             // 
-            this.txtlimicre.Location = new System.Drawing.Point(295, 170);
+            this.txtlimicre.Location = new System.Drawing.Point(295, 148);
             this.txtlimicre.Name = "txtlimicre";
             this.txtlimicre.Size = new System.Drawing.Size(219, 26);
             this.txtlimicre.TabIndex = 9;
@@ -116,15 +124,17 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(291, 138);
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Gold;
+            this.label5.Location = new System.Drawing.Point(291, 125);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(125, 20);
+            this.label5.Size = new System.Drawing.Size(174, 23);
             this.label5.TabIndex = 8;
             this.label5.Text = "Limite de credito";
             // 
             // txtemail
             // 
-            this.txtemail.Location = new System.Drawing.Point(295, 82);
+            this.txtemail.Location = new System.Drawing.Point(295, 67);
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(219, 26);
             this.txtemail.TabIndex = 7;
@@ -132,15 +142,18 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Gold;
             this.label6.Location = new System.Drawing.Point(291, 44);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 20);
+            this.label6.Size = new System.Drawing.Size(62, 23);
             this.label6.TabIndex = 6;
             this.label6.Text = "Email";
             // 
             // buttAgregar
             // 
-            this.buttAgregar.Location = new System.Drawing.Point(37, 349);
+            this.buttAgregar.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttAgregar.Location = new System.Drawing.Point(64, 327);
             this.buttAgregar.Name = "buttAgregar";
             this.buttAgregar.Size = new System.Drawing.Size(133, 55);
             this.buttAgregar.TabIndex = 12;
@@ -150,7 +163,7 @@
             // 
             // fechain
             // 
-            this.fechain.Location = new System.Drawing.Point(295, 259);
+            this.fechain.Location = new System.Drawing.Point(295, 231);
             this.fechain.Name = "fechain";
             this.fechain.Size = new System.Drawing.Size(219, 26);
             this.fechain.TabIndex = 13;
@@ -158,7 +171,8 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(315, 349);
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(342, 327);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(108, 55);
             this.button2.TabIndex = 15;
@@ -168,15 +182,17 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Gold;
             this.label7.Location = new System.Drawing.Point(536, 44);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 20);
+            this.label7.Size = new System.Drawing.Size(74, 23);
             this.label7.TabIndex = 16;
             this.label7.Text = "Estado";
             // 
             // txtest
             // 
-            this.txtest.Location = new System.Drawing.Point(540, 82);
+            this.txtest.Location = new System.Drawing.Point(540, 67);
             this.txtest.Name = "txtest";
             this.txtest.Size = new System.Drawing.Size(100, 26);
             this.txtest.TabIndex = 17;
@@ -197,6 +213,7 @@
             // mantcli
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(850, 600);
             this.Controls.Add(this.btcerrar);
             this.Controls.Add(this.txtest);

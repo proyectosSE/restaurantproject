@@ -49,8 +49,6 @@ namespace ProyectoRestaurante
 
                         if (dataGridView1.Columns.Contains("id_categoria")) dataGridView1.Columns["id_categoria"].DisplayIndex = 0;
                         if (dataGridView1.Columns.Contains("descripcion")) dataGridView1.Columns["descripcion"].DisplayIndex = 1;
-                        if (dataGridView1.Columns.Contains("editar")) dataGridView1.Columns["editar"].DisplayIndex = 2;
-                        if (dataGridView1.Columns.Contains("eliminar")) dataGridView1.Columns["eliminar"].DisplayIndex = 3;
                     }
                 }
             }
@@ -67,9 +65,9 @@ namespace ProyectoRestaurante
         private void buttEdit_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();
-            string up = "descripcion ='"+textcat.Text+"'";
+            string up = "descripcion ='"+textcat.Text+"', estado= '"+txtest.Text+"'";
             string tbl = "categorias";
-            string id = "id_categoria = '"+mivar+"'";
+            string id = "id_categoria = '"+mvar+"'";
             cls.Actualizar(up, tbl,id);
             buttAgreg.Visible = true;
             buttEdit.Visible = false;
@@ -121,6 +119,15 @@ namespace ProyectoRestaurante
         private void btcerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        string mvar;
+        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            mvar = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            textcat.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            txtest.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            buttEdit.Visible = true;
         }
     }
 }

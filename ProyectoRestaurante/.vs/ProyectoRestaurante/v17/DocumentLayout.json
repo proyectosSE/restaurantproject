@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ingl\u00E9s 4\\ProyectoRestaurante\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\likelias\\desktop\\clases 2-2024\\ingl\u00E9s 4\\proyectorestaurante\\proyectorestaurante\\mantenimientos\\mantcat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\mantenimientos\\mantcat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\likelias\\desktop\\clases 2-2024\\ingl\u00E9s 4\\proyectorestaurante\\proyectorestaurante\\mantenimientos\\mantcat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\mantenimientos\\mantcat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,6 +35,31 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "mantcat.cs",
+              "DocumentMoniker": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ingl\u00E9s 4\\ProyectoRestaurante\\ProyectoRestaurante\\mantenimientos\\mantcat.cs",
+              "RelativeDocumentMoniker": "ProyectoRestaurante\\mantenimientos\\mantcat.cs",
+              "ToolTip": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ingl\u00E9s 4\\ProyectoRestaurante\\ProyectoRestaurante\\mantenimientos\\mantcat.cs*",
+              "RelativeToolTip": "ProyectoRestaurante\\mantenimientos\\mantcat.cs*",
+              "ViewState": "AQIAADoAAAAAAAAAAAAgwEUAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T02:54:04.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "mantcat.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ingl\u00E9s 4\\ProyectoRestaurante\\ProyectoRestaurante\\mantenimientos\\mantcat.cs",
+              "RelativeDocumentMoniker": "ProyectoRestaurante\\mantenimientos\\mantcat.cs",
+              "ToolTip": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ingl\u00E9s 4\\ProyectoRestaurante\\ProyectoRestaurante\\mantenimientos\\mantcat.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "ProyectoRestaurante\\mantenimientos\\mantcat.cs [Dise\u00F1o]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T02:53:42.31Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

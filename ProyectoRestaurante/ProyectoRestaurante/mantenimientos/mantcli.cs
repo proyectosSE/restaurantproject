@@ -24,14 +24,6 @@ namespace ProyectoRestaurante
                         
         }
 
-        public mantcli(int pId)
-        {
-            InitializeComponent();
-            fechain.Format = DateTimePickerFormat.Short;
-            Buscar(pId);
-
-        }
-
         private void buttAgregar_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();

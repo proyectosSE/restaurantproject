@@ -50,8 +50,8 @@ namespace ProyectoRestaurante
                         if (dataGridView1.Columns.Contains("id_sala")) dataGridView1.Columns["id_sala"].DisplayIndex = 0;
                         if (dataGridView1.Columns.Contains("nomsala")) dataGridView1.Columns["nomsala"].DisplayIndex = 1;
                         if (dataGridView1.Columns.Contains("fecha")) dataGridView1.Columns["fecha"].DisplayIndex = 2;
-                        if (dataGridView1.Columns.Contains("editar")) dataGridView1.Columns["editar"].DisplayIndex = 3;
-                        if (dataGridView1.Columns.Contains("eliminar")) dataGridView1.Columns["eliminar"].DisplayIndex = 4;
+                        if (dataGridView1.Columns.Contains("estado")) dataGridView1.Columns["estado"].DisplayIndex = 3;
+
                     }
                 }
             }
@@ -106,6 +106,15 @@ namespace ProyectoRestaurante
         private void btcerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        string mvar;
+        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            mvar = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            txtsalas.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            fechasala.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            txtestado.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
         }
     }
 }

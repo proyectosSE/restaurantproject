@@ -20,6 +20,7 @@ namespace ProyectoRestaurante
         {
             InitializeComponent();
             fechain.Format = DateTimePickerFormat.Short;
+            bteditar.Visible = false;
                         
         }
 
@@ -38,13 +39,6 @@ namespace ProyectoRestaurante
             string tabla = "clientes";
             cls.Agregar(datos,tabla);
             limpiar.LimpiarTextBoxes(this);
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            dgvmantcli dgv = new dgvmantcli();
-            dgv.Show();
-                        
         }
 
         private void Buscar(int pId)
@@ -96,6 +90,7 @@ namespace ProyectoRestaurante
         private void txtnom_DoubleClick(object sender, EventArgs e)
         {
             dgvmantcli dgv = new dgvmantcli();
+            AddOwnedForm(dgv);
             dgv.FormBorderStyle = FormBorderStyle.None;
             dgv.TopLevel = false;
             dgv.Dock = DockStyle.Fill;
@@ -108,6 +103,20 @@ namespace ProyectoRestaurante
         private void btcerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+
+        public string mvar;
+        private void bteditar_Click(object sender, EventArgs e)
+        {
+            Conectar cls = new Conectar();
+            string up = "nomcliente= '"+txtnom.Text+"', apellidocliente= '"+txtapell.Text+"', direccliente= '"+txtdirec.Text+"', emailcliente= '"+txtemail.Text+"', limitecredito= "+txtlimicre.Text+", fechaingreso= '"+fechain.Text+"', estado= '"+txtest.Text+"'";
+            string tabla = "clientes";
+            string id = "id_cliente= '"+mvar+"'";
+            cls.Actualizar(up,tabla,id);
+            bteditar.Visible = false;
+            buttAgregar.Visible = true;
+            limpiar.LimpiarTextBoxes(this);
         }
     }
 }

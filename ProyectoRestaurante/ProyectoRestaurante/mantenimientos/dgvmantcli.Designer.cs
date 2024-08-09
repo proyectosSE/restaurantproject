@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Editar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Eliminar = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.btcerrar = new System.Windows.Forms.PictureBox();
@@ -46,9 +44,6 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Editar,
-            this.Eliminar});
             this.dataGridView1.Location = new System.Drawing.Point(47, 41);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -56,29 +51,7 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(1273, 508);
             this.dataGridView1.TabIndex = 11;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // Editar
-            // 
-            this.Editar.HeaderText = "Editar";
-            this.Editar.Image = global::ProyectoRestaurante.Properties.Resources.editVer;
-            this.Editar.MinimumWidth = 8;
-            this.Editar.Name = "Editar";
-            this.Editar.ReadOnly = true;
-            this.Editar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Editar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Editar.Width = 75;
-            // 
-            // Eliminar
-            // 
-            this.Eliminar.HeaderText = "Eliminar";
-            this.Eliminar.Image = global::ProyectoRestaurante.Properties.Resources.deleRoj;
-            this.Eliminar.MinimumWidth = 8;
-            this.Eliminar.Name = "Eliminar";
-            this.Eliminar.ReadOnly = true;
-            this.Eliminar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Eliminar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Eliminar.Width = 75;
+            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
             // 
             // dataGridViewImageColumn1
             // 
@@ -115,6 +88,7 @@
             // dgvmantcli
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1372, 572);
             this.Controls.Add(this.btcerrar);
             this.Controls.Add(this.dataGridView1);
@@ -131,8 +105,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewImageColumn Editar;
-        private System.Windows.Forms.DataGridViewImageColumn Eliminar;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
         private System.Windows.Forms.PictureBox btcerrar;

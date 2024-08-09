@@ -52,8 +52,7 @@ namespace ProyectoRestaurante.mantenimientos
                         if (dataGridView1.Columns.Contains("emailcliente")) dataGridView1.Columns["emailcliente"].DisplayIndex = 4;
                         if (dataGridView1.Columns.Contains("limitecredito")) dataGridView1.Columns["limitecredito"].DisplayIndex = 5;
                         if (dataGridView1.Columns.Contains("fechaingreso")) dataGridView1.Columns["fechaingreso"].DisplayIndex = 6;
-                        if (dataGridView1.Columns.Contains("editar")) dataGridView1.Columns["editar"].DisplayIndex = 7;
-                        if (dataGridView1.Columns.Contains("eliminar")) dataGridView1.Columns["eliminar"].DisplayIndex = 8;
+                        if(dataGridView1.Columns.Contains("estado")) dataGridView1.Columns["estado"].DisplayIndex= 7;
                         
                     }
                 }
@@ -66,34 +65,27 @@ namespace ProyectoRestaurante.mantenimientos
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (dataGridView1.Columns[e.ColumnIndex].Name == "Editar")
-            {
-               mivar = dataGridView1.CurrentRow.Cells["id_cliente"].Value.ToString();
-               int id = Convert.ToInt32(mivar);
-               mantcli mt = new mantcli(id);
-               mt.ShowDialog();              
-              
-            }
-            if (dataGridView1.Columns[e.ColumnIndex].Name == "Eliminar")
-            {
-                mensaje ms = new mensaje();
-
-                if (ms.ShowDialog() == DialogResult.OK)
-                {
-                    mivar = dataGridView1.CurrentRow.Cells["id_cliente"].Value.ToString();
-                    Conectar cls = new Conectar();
-                    string tbl = "clientes";
-                    string id = "id_cliente = '" + mivar + "'";
-                    cls.eliminar(tbl, id);
-                }
-            }
-        }
-
         private void btcerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            mantcli mantcli = Owner as mantcli;
+            mivar = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            mantcli.mvar = mivar;
+            mantcli.txtnom.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            mantcli.txtapell.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            mantcli.txtdirec.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            mantcli.txtemail.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            mantcli.txtlimicre.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+            mantcli.fechain.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+            mantcli.txtest.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
+            mantcli.bteditar.Visible = true;
+            mantcli.buttAgregar.Visible = false;
+            this.Close();
+
         }
     }
 }

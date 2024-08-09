@@ -75,7 +75,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(747, 354);
+            this.dataGridView1.Size = new System.Drawing.Size(1097, 454);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
@@ -125,7 +125,7 @@
             // buttBuscar
             // 
             this.buttBuscar.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttBuscar.Location = new System.Drawing.Point(457, 118);
+            this.buttBuscar.Location = new System.Drawing.Point(501, 120);
             this.buttBuscar.Name = "buttBuscar";
             this.buttBuscar.Size = new System.Drawing.Size(104, 34);
             this.buttBuscar.TabIndex = 6;
@@ -155,7 +155,7 @@
             // 
             this.textBuscar.Location = new System.Drawing.Point(297, 124);
             this.textBuscar.Name = "textBuscar";
-            this.textBuscar.Size = new System.Drawing.Size(154, 26);
+            this.textBuscar.Size = new System.Drawing.Size(198, 26);
             this.textBuscar.TabIndex = 5;
             // 
             // btcerrar
@@ -163,7 +163,7 @@
             this.btcerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btcerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btcerrar.Image = global::ProyectoRestaurante.Properties.Resources.icons8_close_window_32;
-            this.btcerrar.Location = new System.Drawing.Point(808, 8);
+            this.btcerrar.Location = new System.Drawing.Point(1158, 8);
             this.btcerrar.Name = "btcerrar";
             this.btcerrar.Size = new System.Drawing.Size(32, 32);
             this.btcerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -175,7 +175,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(850, 600);
+            this.ClientSize = new System.Drawing.Size(1200, 700);
             this.Controls.Add(this.btcerrar);
             this.Controls.Add(this.txtest);
             this.Controls.Add(this.label2);

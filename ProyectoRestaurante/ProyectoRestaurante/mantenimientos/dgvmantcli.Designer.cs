@@ -40,16 +40,13 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(47, 41);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 86);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1273, 508);
+            this.dataGridView1.Size = new System.Drawing.Size(1374, 486);
             this.dataGridView1.TabIndex = 11;
             this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
             // 
@@ -78,7 +75,7 @@
             this.btcerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btcerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btcerrar.Image = global::ProyectoRestaurante.Properties.Resources.icons8_close_window_32;
-            this.btcerrar.Location = new System.Drawing.Point(1332, 7);
+            this.btcerrar.Location = new System.Drawing.Point(1336, 3);
             this.btcerrar.Name = "btcerrar";
             this.btcerrar.Size = new System.Drawing.Size(31, 32);
             this.btcerrar.TabIndex = 18;

@@ -95,7 +95,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gold;
-            this.label1.Location = new System.Drawing.Point(315, 28);
+            this.label1.Location = new System.Drawing.Point(509, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(231, 34);
             this.label1.TabIndex = 0;
@@ -105,7 +105,7 @@
             // 
             this.panel1.Controls.Add(this.btcli);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(33, 85);
+            this.panel1.Location = new System.Drawing.Point(129, 88);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(166, 183);
             this.panel1.TabIndex = 2;
@@ -141,7 +141,7 @@
             // 
             this.panel2.Controls.Add(this.btmesa);
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Location = new System.Drawing.Point(234, 85);
+            this.panel2.Location = new System.Drawing.Point(410, 88);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(166, 183);
             this.panel2.TabIndex = 3;
@@ -177,7 +177,7 @@
             // 
             this.panel3.Controls.Add(this.btsala);
             this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Location = new System.Drawing.Point(436, 85);
+            this.panel3.Location = new System.Drawing.Point(664, 88);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(166, 183);
             this.panel3.TabIndex = 3;
@@ -211,7 +211,7 @@
             // 
             this.panel4.Controls.Add(this.btcate);
             this.panel4.Controls.Add(this.pictureBox4);
-            this.panel4.Location = new System.Drawing.Point(635, 85);
+            this.panel4.Location = new System.Drawing.Point(928, 88);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(166, 183);
             this.panel4.TabIndex = 3;
@@ -245,7 +245,7 @@
             // 
             this.panel5.Controls.Add(this.btusua);
             this.panel5.Controls.Add(this.pictureBox5);
-            this.panel5.Location = new System.Drawing.Point(33, 292);
+            this.panel5.Location = new System.Drawing.Point(129, 295);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(166, 183);
             this.panel5.TabIndex = 4;
@@ -279,7 +279,7 @@
             // 
             this.panel6.Controls.Add(this.btdepart);
             this.panel6.Controls.Add(this.pictureBox6);
-            this.panel6.Location = new System.Drawing.Point(234, 292);
+            this.panel6.Location = new System.Drawing.Point(410, 295);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(166, 183);
             this.panel6.TabIndex = 5;
@@ -313,7 +313,7 @@
             // 
             this.panel7.Controls.Add(this.btmedida);
             this.panel7.Controls.Add(this.pictureBox7);
-            this.panel7.Location = new System.Drawing.Point(436, 292);
+            this.panel7.Location = new System.Drawing.Point(664, 295);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(166, 183);
             this.panel7.TabIndex = 6;
@@ -348,7 +348,7 @@
             this.btcerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btcerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btcerrar.Image = global::ProyectoRestaurante.Properties.Resources.icons8_close_window_32;
-            this.btcerrar.Location = new System.Drawing.Point(784, 8);
+            this.btcerrar.Location = new System.Drawing.Point(1156, 8);
             this.btcerrar.Name = "btcerrar";
             this.btcerrar.Size = new System.Drawing.Size(32, 32);
             this.btcerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -362,7 +362,7 @@
             // 
             this.panel8.Controls.Add(this.btproveedor);
             this.panel8.Controls.Add(this.pictureBox8);
-            this.panel8.Location = new System.Drawing.Point(635, 292);
+            this.panel8.Location = new System.Drawing.Point(928, 295);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(166, 183);
             this.panel8.TabIndex = 8;
@@ -393,7 +393,7 @@
             // 
             this.panel9.Controls.Add(this.btimpuesto);
             this.panel9.Controls.Add(this.pictureBox9);
-            this.panel9.Location = new System.Drawing.Point(436, 500);
+            this.panel9.Location = new System.Drawing.Point(664, 503);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(166, 183);
             this.panel9.TabIndex = 10;
@@ -424,7 +424,7 @@
             // 
             this.panel10.Controls.Add(this.btmoneda);
             this.panel10.Controls.Add(this.pictureBox10);
-            this.panel10.Location = new System.Drawing.Point(234, 500);
+            this.panel10.Location = new System.Drawing.Point(410, 503);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(166, 183);
             this.panel10.TabIndex = 9;
@@ -455,7 +455,7 @@
             // 
             this.panel11.Controls.Add(this.btproducto);
             this.panel11.Controls.Add(this.pictureBox11);
-            this.panel11.Location = new System.Drawing.Point(33, 500);
+            this.panel11.Location = new System.Drawing.Point(129, 503);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(166, 183);
             this.panel11.TabIndex = 8;
@@ -487,7 +487,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(828, 732);
+            this.ClientSize = new System.Drawing.Size(1200, 732);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel10);

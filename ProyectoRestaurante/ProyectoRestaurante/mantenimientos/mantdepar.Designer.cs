@@ -71,7 +71,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(730, 334);
+            this.dataGridView1.Size = new System.Drawing.Size(1080, 434);
             this.dataGridView1.TabIndex = 10;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -117,7 +117,7 @@
             // 
             // txtprovincia
             // 
-            this.txtprovincia.Location = new System.Drawing.Point(355, 52);
+            this.txtprovincia.Location = new System.Drawing.Point(376, 52);
             this.txtprovincia.Name = "txtprovincia";
             this.txtprovincia.Size = new System.Drawing.Size(235, 26);
             this.txtprovincia.TabIndex = 12;
@@ -127,7 +127,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gold;
-            this.label2.Location = new System.Drawing.Point(351, 29);
+            this.label2.Location = new System.Drawing.Point(372, 29);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(156, 23);
             this.label2.TabIndex = 13;
@@ -167,7 +167,7 @@
             this.btcerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btcerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btcerrar.Image = global::ProyectoRestaurante.Properties.Resources.icons8_close_window_32;
-            this.btcerrar.Location = new System.Drawing.Point(808, 9);
+            this.btcerrar.Location = new System.Drawing.Point(1158, 9);
             this.btcerrar.Name = "btcerrar";
             this.btcerrar.Size = new System.Drawing.Size(32, 32);
             this.btcerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -179,7 +179,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(850, 600);
+            this.ClientSize = new System.Drawing.Size(1200, 700);
             this.Controls.Add(this.btcerrar);
             this.Controls.Add(this.txtest);
             this.Controls.Add(this.label3);

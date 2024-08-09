@@ -141,7 +141,7 @@
             // 
             // txtemail
             // 
-            this.txtemail.Location = new System.Drawing.Point(291, 54);
+            this.txtemail.Location = new System.Drawing.Point(350, 54);
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(212, 26);
             this.txtemail.TabIndex = 9;
@@ -151,7 +151,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Gold;
-            this.label5.Location = new System.Drawing.Point(287, 31);
+            this.label5.Location = new System.Drawing.Point(346, 31);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(62, 23);
             this.label5.TabIndex = 8;
@@ -159,7 +159,7 @@
             // 
             // txtusua
             // 
-            this.txtusua.Location = new System.Drawing.Point(291, 128);
+            this.txtusua.Location = new System.Drawing.Point(350, 128);
             this.txtusua.Name = "txtusua";
             this.txtusua.Size = new System.Drawing.Size(212, 26);
             this.txtusua.TabIndex = 11;
@@ -169,7 +169,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Gold;
-            this.label6.Location = new System.Drawing.Point(287, 105);
+            this.label6.Location = new System.Drawing.Point(346, 105);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(81, 23);
             this.label6.TabIndex = 10;
@@ -177,7 +177,7 @@
             // 
             // txtpassw
             // 
-            this.txtpassw.Location = new System.Drawing.Point(291, 205);
+            this.txtpassw.Location = new System.Drawing.Point(350, 205);
             this.txtpassw.Name = "txtpassw";
             this.txtpassw.PasswordChar = '*';
             this.txtpassw.Size = new System.Drawing.Size(212, 26);
@@ -188,7 +188,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Gold;
-            this.label7.Location = new System.Drawing.Point(287, 182);
+            this.label7.Location = new System.Drawing.Point(346, 182);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(100, 23);
             this.label7.TabIndex = 12;
@@ -199,7 +199,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Gold;
-            this.label8.Location = new System.Drawing.Point(287, 257);
+            this.label8.Location = new System.Drawing.Point(346, 257);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(59, 23);
             this.label8.TabIndex = 14;
@@ -207,7 +207,7 @@
             // 
             // txtest
             // 
-            this.txtest.Location = new System.Drawing.Point(531, 54);
+            this.txtest.Location = new System.Drawing.Point(650, 54);
             this.txtest.Name = "txtest";
             this.txtest.Size = new System.Drawing.Size(110, 26);
             this.txtest.TabIndex = 17;
@@ -217,7 +217,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Gold;
-            this.label9.Location = new System.Drawing.Point(527, 31);
+            this.label9.Location = new System.Drawing.Point(646, 31);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(74, 23);
             this.label9.TabIndex = 16;
@@ -226,7 +226,7 @@
             // btagregar
             // 
             this.btagregar.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btagregar.Location = new System.Drawing.Point(177, 393);
+            this.btagregar.Location = new System.Drawing.Point(203, 419);
             this.btagregar.Name = "btagregar";
             this.btagregar.Size = new System.Drawing.Size(191, 56);
             this.btagregar.TabIndex = 20;
@@ -240,7 +240,7 @@
             this.cbbnivel.DataSource = this.nivelBindingSource;
             this.cbbnivel.DisplayMember = "descripcion";
             this.cbbnivel.FormattingEnabled = true;
-            this.cbbnivel.Location = new System.Drawing.Point(291, 280);
+            this.cbbnivel.Location = new System.Drawing.Point(350, 280);
             this.cbbnivel.Name = "cbbnivel";
             this.cbbnivel.Size = new System.Drawing.Size(212, 28);
             this.cbbnivel.TabIndex = 21;
@@ -288,7 +288,7 @@
             this.btcerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btcerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btcerrar.Image = global::ProyectoRestaurante.Properties.Resources.icons8_close_window_32;
-            this.btcerrar.Location = new System.Drawing.Point(808, 8);
+            this.btcerrar.Location = new System.Drawing.Point(1158, 8);
             this.btcerrar.Name = "btcerrar";
             this.btcerrar.Size = new System.Drawing.Size(32, 32);
             this.btcerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -304,7 +304,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(850, 600);
+            this.ClientSize = new System.Drawing.Size(1200, 700);
             this.Controls.Add(this.btcerrar);
             this.Controls.Add(this.cbbnivel);
             this.Controls.Add(this.btagregar);

@@ -30,7 +30,6 @@ namespace ProyectoRestaurante
             cls.Agregar(categoria,tbcat);
             cargardatos();
         }
-
         
         private void cargardatos()
         {
@@ -58,9 +57,7 @@ namespace ProyectoRestaurante
                 MessageBox.Show("Error al cargar datos: " + ex.Message);
             }
 
-        }
-
-        
+        }      
 
         private void buttEdit_Click(object sender, EventArgs e)
         {
@@ -74,46 +71,9 @@ namespace ProyectoRestaurante
             cargardatos();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (dataGridView1.Columns[e.ColumnIndex].Name == "Editar")
-            {
-                textcat.Text = dataGridView1.CurrentRow.Cells["descripcion"].Value.ToString();
-                mivar = dataGridView1.CurrentRow.Cells["id_categoria"].Value.ToString();
-                buttEdit.Visible = true;
-                buttAgreg.Visible = false;
-                
-            }
-            if (dataGridView1.Columns[e.ColumnIndex].Name == "Eliminar")
-            {
-                mensaje ms = new mensaje();
-                
-                if (ms.ShowDialog() == DialogResult.OK)
-                {
-                    mivar = dataGridView1.CurrentRow.Cells["id_categoria"].Value.ToString();
-                    Conectar cls = new Conectar();
-                    string tbl = "categorias";
-                    string id = "id_categoria = '" + mivar + "'";
-                    cls.eliminar(tbl,id);
-                    cargardatos();
-                }
-
-            }
-        }
-
         private void buttBuscar_Click(object sender, EventArgs e)
         {
-            string valorABuscar = textBuscar.Text;
-            foreach (DataGridViewRow row in dataGridView1.Rows)
-            {
-                if (row.Cells[3].Value != null &&
-                row.Cells[3].Value.ToString().Equals(valorABuscar, StringComparison.OrdinalIgnoreCase))
-                {
-                    dataGridView1.CurrentCell = row.Cells[3];
-                    dataGridView1.FirstDisplayedScrollingRowIndex = row.Index;
-                    break;
-                }
-            }
+            
         }
 
         private void btcerrar_Click(object sender, EventArgs e)
@@ -128,6 +88,25 @@ namespace ProyectoRestaurante
             textcat.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             txtest.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             buttEdit.Visible = true;
+        }
+
+        private void textBuscar_TextChanged(object sender, EventArgs e)
+        {
+            string valorABuscar = textBuscar.Text;
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (row.Cells[1].Value != null &&
+                row.Cells[1].Value.ToString().Contains(valorABuscar))
+                {
+                    dataGridView1.CurrentCell = row.Cells[1];
+                    dataGridView1.FirstDisplayedScrollingRowIndex = row.Index;
+                    break;
+                }
+                else if (row.Cells[1].Value == null)
+                {
+                    MessageBox.Show("Datos no encontrados");
+                }
+            }
         }
     }
 }

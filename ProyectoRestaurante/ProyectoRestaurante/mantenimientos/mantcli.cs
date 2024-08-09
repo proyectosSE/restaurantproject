@@ -32,52 +32,7 @@ namespace ProyectoRestaurante
             cls.Agregar(datos,tabla);
             limpiar.LimpiarTextBoxes(this);
         }
-
-        private void Buscar(int pId)
-        {
-           
-            string query = "SELECT * FROM clientes WHERE id_cliente = "+pId+"";
-
-            using (SqlConnection connection = new SqlConnection(rutadb.conexion))
-            {
-                try
-                {
-                    connection.Open();
-
-                    
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        
-                        command.Parameters.AddWithValue("id_cliente", pId);
-
-                        
-                        using (SqlDataReader reader = command.ExecuteReader())
-                        {
-                            
-                            if (reader.Read())
-                            {
-                                
-                                txtnom.Text = reader["nomcliente"].ToString();
-                                txtapell.Text = reader["apellidocliente"].ToString();
-                                txtdirec.Text = reader["direccliente"].ToString();
-                                txtemail.Text = reader["emailcliente"].ToString();
-                                txtlimicre.Text = reader["limitecredito"].ToString();
-                                fechain.Text = reader["fechaingreso"].ToString();
-                            }
-                            else
-                            {
-                                MessageBox.Show("No se encontró el registro.");
-                            }
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    
-                    MessageBox.Show(ex.Message);
-                }
-            }
-        }
+        
 
         private void txtnom_DoubleClick(object sender, EventArgs e)
         {

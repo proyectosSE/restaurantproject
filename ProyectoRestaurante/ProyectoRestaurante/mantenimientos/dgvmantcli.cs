@@ -19,7 +19,6 @@ namespace ProyectoRestaurante.mantenimientos
             InitializeComponent();
             cargardatos();
         }
-
         
 
         private string mivar;
@@ -86,6 +85,25 @@ namespace ProyectoRestaurante.mantenimientos
             mantcli.buttAgregar.Visible = false;
             this.Close();
 
+        }
+
+        private void txtbuscar_TextChanged(object sender, EventArgs e)
+        {
+            string valorABuscar = txtbuscar.Text;
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (row.Cells[1].Value != null &&
+                row.Cells[1].Value.ToString().Contains(valorABuscar))
+                {
+                    dataGridView1.CurrentCell = row.Cells[1];
+                    dataGridView1.FirstDisplayedScrollingRowIndex = row.Index;
+                    break;
+                }
+                else if (row.Cells[1].Value == null)
+                {
+                    MessageBox.Show("Datos no encontrados");
+                }
+            }
         }
     }
 }

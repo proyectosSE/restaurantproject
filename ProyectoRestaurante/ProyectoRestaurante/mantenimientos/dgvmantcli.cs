@@ -19,9 +19,6 @@ namespace ProyectoRestaurante.mantenimientos
             InitializeComponent();
             cargardatos();
         }
-        
-
-        private string mivar;
 
         private void cargardatos()
         {
@@ -72,8 +69,7 @@ namespace ProyectoRestaurante.mantenimientos
         private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             mantcli mantcli = Owner as mantcli;
-            mivar = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            mantcli.mvar = mivar;
+            mantcli.mvar = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             mantcli.txtnom.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             mantcli.txtapell.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             mantcli.txtdirec.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();

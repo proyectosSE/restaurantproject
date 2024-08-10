@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoRestaurante.clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,16 +21,16 @@ namespace ProyectoRestaurante
             buttEdit.Visible = false;
             cargardatos();
         }
-        private string mivar;
-        private void button1_Click(object sender, EventArgs e)
+        string mvar;
+        private void btagregar_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();
-            string datos = "'"+txtsalas.Text+"','"+fechasala.Text+"','"+txtestado.Text+"'";
+            string datos = "'" + txtsalas.Text + "','" + fechasala.Text + "','" + txtestado.Text + "'";
             string tabla = "salas";
             cls.Agregar(datos, tabla);
             cargardatos();
+            limpiar.LimpiarTextBoxes(this);
         }
-
         private void cargardatos()
         {
             String consulta = "SELECT * FROM salas";
@@ -66,55 +67,31 @@ namespace ProyectoRestaurante
         private void buttEdit_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();
-            string up = "nomsala ='" + txtsalas.Text + "', fecha = "+"'"+fechasala.Text +"'";
+            string up = "nomsala ='" + txtsalas.Text + "', fecha = "+"'"+fechasala.Text +"', estado= '"+txtestado.Text+"'";
             string tbl = "salas";
-            string id = "id_sala = '" + mivar + "'";
+            string id = "id_sala = '" + mvar + "'";
             cls.Actualizar(up, tbl, id);
 
             buttEdit.Visible = false;
             cargardatos();
-            button1.Visible = true;
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (dataGridView1.Columns[e.ColumnIndex].Name == "Editar")
-            {
-                txtsalas.Text = dataGridView1.CurrentRow.Cells["nomsala"].Value.ToString();
-                fechasala.Text = dataGridView1.CurrentRow.Cells["fecha"].Value.ToString();
-                mivar = dataGridView1.CurrentRow.Cells["id_sala"].Value.ToString();
-                buttEdit.Visible = true;
-                button1.Visible = false;
-
-            }
-            if (dataGridView1.Columns[e.ColumnIndex].Name == "Eliminar")
-            {
-                mensaje ms = new mensaje();
-
-                if (ms.ShowDialog() == DialogResult.OK)
-                {
-                    mivar = dataGridView1.CurrentRow.Cells["id_sala"].Value.ToString();
-                    Conectar cls = new Conectar();
-                    string tbl = "salas";
-                    string id = "id_sala = '" + mivar + "'";
-                    cls.eliminar(tbl, id);
-                    cargardatos();
-                }
-            }
+            btagregar.Visible = true;
+            limpiar.LimpiarTextBoxes(this);
         }
 
         private void btcerrar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-        string mvar;
+                
         private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             mvar = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             txtsalas.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             fechasala.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             txtestado.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            buttEdit.Visible = true;
+            btagregar.Visible = false;
         }
+                
     }
 }

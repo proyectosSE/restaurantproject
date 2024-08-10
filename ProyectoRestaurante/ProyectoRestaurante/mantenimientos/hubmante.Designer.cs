@@ -380,6 +380,8 @@
             this.btproveedor.TabIndex = 7;
             this.btproveedor.Text = "Proveedores";
             this.btproveedor.UseVisualStyleBackColor = true;
+            this.btproveedor.MouseEnter += new System.EventHandler(this.btproveedor_MouseEnter);
+            this.btproveedor.MouseLeave += new System.EventHandler(this.btproveedor_MouseLeave);
             // 
             // pictureBox8
             // 
@@ -411,6 +413,8 @@
             this.btimpuesto.TabIndex = 7;
             this.btimpuesto.Text = "Impuestos";
             this.btimpuesto.UseVisualStyleBackColor = true;
+            this.btimpuesto.MouseEnter += new System.EventHandler(this.btimpuesto_MouseEnter);
+            this.btimpuesto.MouseLeave += new System.EventHandler(this.btimpuesto_MouseLeave);
             // 
             // pictureBox9
             // 
@@ -442,6 +446,8 @@
             this.btmoneda.TabIndex = 6;
             this.btmoneda.Text = "Monedas";
             this.btmoneda.UseVisualStyleBackColor = true;
+            this.btmoneda.MouseEnter += new System.EventHandler(this.btmoneda_MouseEnter);
+            this.btmoneda.MouseLeave += new System.EventHandler(this.btmoneda_MouseLeave);
             // 
             // pictureBox10
             // 
@@ -473,6 +479,8 @@
             this.btproducto.TabIndex = 5;
             this.btproducto.Text = "Productos";
             this.btproducto.UseVisualStyleBackColor = true;
+            this.btproducto.MouseEnter += new System.EventHandler(this.btproducto_MouseEnter);
+            this.btproducto.MouseLeave += new System.EventHandler(this.btproducto_MouseLeave);
             // 
             // pictureBox11
             // 

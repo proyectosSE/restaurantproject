@@ -30,10 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Editar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Eliminar = new System.Windows.Forms.DataGridViewImageColumn();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btagregar = new System.Windows.Forms.Button();
             this.txtmesa = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -74,9 +72,6 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Editar,
-            this.Eliminar});
             this.dataGridView1.Location = new System.Drawing.Point(30, 268);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -84,29 +79,7 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(1135, 381);
             this.dataGridView1.TabIndex = 10;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // Editar
-            // 
-            this.Editar.HeaderText = "Editar";
-            this.Editar.Image = global::ProyectoRestaurante.Properties.Resources.editVer;
-            this.Editar.MinimumWidth = 8;
-            this.Editar.Name = "Editar";
-            this.Editar.ReadOnly = true;
-            this.Editar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Editar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Editar.Width = 75;
-            // 
-            // Eliminar
-            // 
-            this.Eliminar.HeaderText = "Eliminar";
-            this.Eliminar.Image = global::ProyectoRestaurante.Properties.Resources.deleRoj;
-            this.Eliminar.MinimumWidth = 8;
-            this.Eliminar.Name = "Eliminar";
-            this.Eliminar.ReadOnly = true;
-            this.Eliminar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Eliminar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Eliminar.Width = 75;
+            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
             // 
             // label1
             // 
@@ -119,17 +92,17 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Seleccione la sala";
             // 
-            // button1
+            // btagregar
             // 
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(250, 183);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 32);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button2_Click);
+            this.btagregar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btagregar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btagregar.Location = new System.Drawing.Point(250, 183);
+            this.btagregar.Name = "btagregar";
+            this.btagregar.Size = new System.Drawing.Size(98, 32);
+            this.btagregar.TabIndex = 14;
+            this.btagregar.Text = "Agregar";
+            this.btagregar.UseVisualStyleBackColor = true;
+            this.btagregar.Click += new System.EventHandler(this.btagregar_Click);
             // 
             // txtmesa
             // 
@@ -137,7 +110,6 @@
             this.txtmesa.Name = "txtmesa";
             this.txtmesa.Size = new System.Drawing.Size(235, 26);
             this.txtmesa.TabIndex = 13;
-            this.txtmesa.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -306,7 +278,7 @@
             this.Controls.Add(this.cbbsala);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btagregar);
             this.Controls.Add(this.txtmesa);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
@@ -331,24 +303,17 @@
         #endregion
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txtmesa;
+        private System.Windows.Forms.Button btagregar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cbbsala;
         private ProyectoRestauranteDataSet proyectoRestauranteDataSet;
         private ProyectoRestauranteDataSetTableAdapters.salasTableAdapter salasTableAdapter;
         private ProyectoRestauranteDataSet1 proyectoRestauranteDataSet1;
         private ProyectoRestauranteDataSet1TableAdapters.salasTableAdapter salasTableAdapter1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker fechamesa;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtestado;
-        private System.Windows.Forms.TextBox txtasientos;
         private ProyectoRestauranteDataSet3 proyectoRestauranteDataSet3;
         private ProyectoRestauranteDataSet3TableAdapters.salasTableAdapter salasTableAdapter2;
-        private System.Windows.Forms.DataGridViewImageColumn Editar;
-        private System.Windows.Forms.DataGridViewImageColumn Eliminar;
         private System.Windows.Forms.Button buttEdit;
         private ProyectoRestauranteDataSet14 proyectoRestauranteDataSet14;
         private ProyectoRestauranteDataSet14TableAdapters.salasTableAdapter salasTableAdapter3;
@@ -356,5 +321,10 @@
         private System.Windows.Forms.BindingSource salasBindingSource;
         private ProyectoRestauranteDataSet16TableAdapters.salasTableAdapter salasTableAdapter4;
         private System.Windows.Forms.PictureBox btcerrar;
+        public System.Windows.Forms.TextBox txtmesa;
+        public System.Windows.Forms.ComboBox cbbsala;
+        public System.Windows.Forms.DateTimePicker fechamesa;
+        public System.Windows.Forms.TextBox txtestado;
+        public System.Windows.Forms.TextBox txtasientos;
     }
 }

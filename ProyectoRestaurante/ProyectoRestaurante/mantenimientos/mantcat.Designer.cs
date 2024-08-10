@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textcat = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.buttAgreg = new System.Windows.Forms.Button();
+            this.btagregar = new System.Windows.Forms.Button();
             this.buttEdit = new System.Windows.Forms.Button();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
@@ -79,16 +79,16 @@
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
             // 
-            // buttAgreg
+            // btagregar
             // 
-            this.buttAgreg.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttAgreg.Location = new System.Drawing.Point(46, 121);
-            this.buttAgreg.Name = "buttAgreg";
-            this.buttAgreg.Size = new System.Drawing.Size(104, 32);
-            this.buttAgreg.TabIndex = 3;
-            this.buttAgreg.Text = "Agregar";
-            this.buttAgreg.UseVisualStyleBackColor = true;
-            this.buttAgreg.Click += new System.EventHandler(this.button1_Click);
+            this.btagregar.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btagregar.Location = new System.Drawing.Point(46, 121);
+            this.btagregar.Name = "btagregar";
+            this.btagregar.Size = new System.Drawing.Size(104, 32);
+            this.btagregar.TabIndex = 3;
+            this.btagregar.Text = "Agregar";
+            this.btagregar.UseVisualStyleBackColor = true;
+            this.btagregar.Click += new System.EventHandler(this.btagregar_Click);
             // 
             // buttEdit
             // 
@@ -182,7 +182,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBuscar);
             this.Controls.Add(this.buttEdit);
-            this.Controls.Add(this.buttAgreg);
+            this.Controls.Add(this.btagregar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textcat);
             this.Controls.Add(this.label1);
@@ -201,7 +201,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button buttAgreg;
+        private System.Windows.Forms.Button btagregar;
         private System.Windows.Forms.Button buttEdit;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;

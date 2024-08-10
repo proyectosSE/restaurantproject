@@ -58,6 +58,7 @@
             this.nivelTableAdapter1 = new ProyectoRestaurante.ProyectoRestauranteDataSet15TableAdapters.nivelTableAdapter();
             this.btcerrar = new System.Windows.Forms.PictureBox();
             this.nivelTableAdapter2 = new ProyectoRestaurante.ProyectoRestauranteDataSet17TableAdapters.nivelTableAdapter();
+            this.bteditar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nivelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet7)).BeginInit();
@@ -226,7 +227,7 @@
             // btagregar
             // 
             this.btagregar.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btagregar.Location = new System.Drawing.Point(203, 419);
+            this.btagregar.Location = new System.Drawing.Point(102, 380);
             this.btagregar.Name = "btagregar";
             this.btagregar.Size = new System.Drawing.Size(191, 56);
             this.btagregar.TabIndex = 20;
@@ -300,11 +301,23 @@
             // 
             this.nivelTableAdapter2.ClearBeforeFill = true;
             // 
+            // bteditar
+            // 
+            this.bteditar.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bteditar.Location = new System.Drawing.Point(350, 380);
+            this.bteditar.Name = "bteditar";
+            this.bteditar.Size = new System.Drawing.Size(191, 56);
+            this.bteditar.TabIndex = 23;
+            this.bteditar.Text = "Editar";
+            this.bteditar.UseVisualStyleBackColor = true;
+            this.bteditar.Click += new System.EventHandler(this.bteditar_Click);
+            // 
             // mantusua
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1200, 700);
+            this.Controls.Add(this.bteditar);
             this.Controls.Add(this.btcerrar);
             this.Controls.Add(this.cbbnivel);
             this.Controls.Add(this.btagregar);
@@ -344,24 +357,14 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtnom;
-        private System.Windows.Forms.TextBox txtsex;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtdirec;
         private System.Windows.Forms.Label lblsx;
-        private System.Windows.Forms.TextBox txttel;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtusua;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtpassw;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtest;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button btagregar;
-        private System.Windows.Forms.ComboBox cbbnivel;
         private ProyectoRestauranteDataSet7 proyectoRestauranteDataSet7;
         private ProyectoRestauranteDataSet7TableAdapters.nivelTableAdapter nivelTableAdapter;
         private ProyectoRestauranteDataSet8 proyectoRestauranteDataSet8;
@@ -372,5 +375,16 @@
         private ProyectoRestauranteDataSet17 proyectoRestauranteDataSet17;
         private System.Windows.Forms.BindingSource nivelBindingSource;
         private ProyectoRestauranteDataSet17TableAdapters.nivelTableAdapter nivelTableAdapter2;
+        public System.Windows.Forms.TextBox txtnom;
+        public System.Windows.Forms.TextBox txtsex;
+        public System.Windows.Forms.TextBox txtdirec;
+        public System.Windows.Forms.TextBox txttel;
+        public System.Windows.Forms.TextBox txtemail;
+        public System.Windows.Forms.TextBox txtusua;
+        public System.Windows.Forms.TextBox txtpassw;
+        public System.Windows.Forms.TextBox txtest;
+        public System.Windows.Forms.ComboBox cbbnivel;
+        public System.Windows.Forms.Button bteditar;
+        public System.Windows.Forms.Button btagregar;
     }
 }

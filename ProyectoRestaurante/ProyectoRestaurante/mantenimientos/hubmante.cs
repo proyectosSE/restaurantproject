@@ -185,5 +185,45 @@ namespace ProyectoRestaurante
         {
             btmedida.BackColor= Color.Black;
         }
+
+        private void btproveedor_MouseEnter(object sender, EventArgs e)
+        {
+            btproveedor.BackColor = Color.Gray;
+        }
+
+        private void btproveedor_MouseLeave(object sender, EventArgs e)
+        {
+            btproveedor.BackColor= Color.Black;
+        }
+
+        private void btproducto_MouseEnter(object sender, EventArgs e)
+        {
+            btproducto.BackColor = Color.Gray;
+        }
+
+        private void btproducto_MouseLeave(object sender, EventArgs e)
+        {
+            btproducto.BackColor= Color.Black;
+        }
+
+        private void btmoneda_MouseEnter(object sender, EventArgs e)
+        {
+            btmoneda.BackColor = Color.Gray;
+        }
+
+        private void btmoneda_MouseLeave(object sender, EventArgs e)
+        {
+            btmoneda.BackColor= Color.Black;
+        }
+
+        private void btimpuesto_MouseEnter(object sender, EventArgs e)
+        {
+            btimpuesto.BackColor = Color.Gray;
+        }
+
+        private void btimpuesto_MouseLeave(object sender, EventArgs e)
+        {
+            btimpuesto.BackColor= Color.Black;
+        }
     }
 }

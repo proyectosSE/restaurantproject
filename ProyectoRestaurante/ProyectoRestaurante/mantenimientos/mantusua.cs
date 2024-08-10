@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoRestaurante.clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,7 @@ namespace ProyectoRestaurante
         public mantusua()
         {
             InitializeComponent();
+            bteditar.Visible = false;
         }
 
         public mantusua(int pId)
@@ -27,9 +29,10 @@ namespace ProyectoRestaurante
         private void btagregar_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();
-            string datos = "'"+txtnom.Text+"','"+txtsex.Text+"','"+txtdirec.Text+"','"+txttel.Text+"','"+txtemail.Text+"','"+txtusua.Text+"','"+txtpassw.Text+"',"+cbbnivel.SelectedValue+","+txtest.Text+"";
+            string datos = "'"+txtnom.Text+"','"+txtsex.Text+"','"+txtdirec.Text+"','"+txttel.Text+"','"+txtemail.Text+"','"+txtusua.Text+"','"+txtpassw.Text+"',"+cbbnivel.SelectedValue+",'"+txtest.Text+"'";
             string tabla = "usuarios";
             cls.Agregar(datos, tabla);
+            limpiar.LimpiarTextBoxes(this);
         }
 
         private void mantusua_Load(object sender, EventArgs e)
@@ -90,6 +93,7 @@ namespace ProyectoRestaurante
         private void txtnom_DoubleClick(object sender, EventArgs e)
         {
             dvgmantusua dvgusua = new dvgmantusua();
+            AddOwnedForm(dvgusua);
             dvgusua.FormBorderStyle = FormBorderStyle.None;
             dvgusua.TopLevel = false;
             dvgusua.Dock = DockStyle.Fill;
@@ -103,6 +107,19 @@ namespace ProyectoRestaurante
         private void btcerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        public string mvar;
+        private void bteditar_Click(object sender, EventArgs e)
+        {
+            Conectar cls = new Conectar();
+            string up = "nombres= '"+txtnom.Text+"', sexo= '"+txtsex.Text+"', direccion= '"+txtdirec.Text+"', telefono= '"+txttel.Text+"', email= '"+txtemail.Text+"', usuario= '"+txtusua.Text+"', password= '"+txtpassw.Text+"', id_nivel= "+cbbnivel.SelectedValue+", estado= '"+txtest.Text+"'";
+            string tabla = "usuarios";
+            string id = "id_usuario= '"+mvar+"'";
+            cls.Actualizar(up,tabla,id);
+            bteditar.Visible = false;
+            btagregar.Visible = true;
+            limpiar.LimpiarTextBoxes(this);
         }
     }
 }

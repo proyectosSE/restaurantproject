@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoRestaurante.clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,16 +22,17 @@ namespace ProyectoRestaurante
             cargardatos();
         }
 
-        private string mivar;
-        private void button1_Click(object sender, EventArgs e)
+        string mvar;
+        private void btagregar_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();
-            string categoria = "'" + textcat.Text + "','"+txtest.Text+"'";
+            string categoria = "'" + textcat.Text + "','" + txtest.Text + "'";
             string tbcat = "categorias";
-            cls.Agregar(categoria,tbcat);
+            cls.Agregar(categoria, tbcat);
             cargardatos();
+            limpiar.LimpiarTextBoxes(this);
         }
-        
+
         private void cargardatos()
         {
            
@@ -66,14 +68,10 @@ namespace ProyectoRestaurante
             string tbl = "categorias";
             string id = "id_categoria = '"+mvar+"'";
             cls.Actualizar(up, tbl,id);
-            buttAgreg.Visible = true;
+            btagregar.Visible = true;
             buttEdit.Visible = false;
             cargardatos();
-        }
-
-        private void buttBuscar_Click(object sender, EventArgs e)
-        {
-            
+            limpiar.LimpiarTextBoxes(this);
         }
 
         private void btcerrar_Click(object sender, EventArgs e)
@@ -81,7 +79,7 @@ namespace ProyectoRestaurante
             this.Close();
         }
 
-        string mvar;
+        
         private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             mvar = dataGridView1.CurrentRow.Cells[0].Value.ToString();
@@ -108,5 +106,6 @@ namespace ProyectoRestaurante
                 }
             }
         }
+                
     }
 }

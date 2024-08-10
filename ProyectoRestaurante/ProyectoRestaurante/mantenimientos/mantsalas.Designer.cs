@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btagregar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtsalas = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,16 +42,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.btcerrar)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btagregar
             // 
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(334, 118);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 32);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btagregar.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btagregar.Location = new System.Drawing.Point(334, 118);
+            this.btagregar.Name = "btagregar";
+            this.btagregar.Size = new System.Drawing.Size(105, 32);
+            this.btagregar.TabIndex = 7;
+            this.btagregar.Text = "Agregar";
+            this.btagregar.UseVisualStyleBackColor = true;
+            this.btagregar.Click += new System.EventHandler(this.btagregar_Click);
             // 
             // dataGridView1
             // 
@@ -68,7 +68,6 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(1087, 461);
             this.dataGridView1.TabIndex = 6;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
             // 
             // txtsalas
@@ -160,7 +159,7 @@
             this.Controls.Add(this.buttEdit);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.fechasala);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btagregar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtsalas);
             this.Controls.Add(this.label1);
@@ -177,7 +176,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btagregar;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

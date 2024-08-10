@@ -23,6 +23,7 @@ namespace ProyectoRestaurante
             bteditar.Visible = false;
                         
         }
+        public string mvar;
 
         private void buttAgregar_Click(object sender, EventArgs e)
         {
@@ -52,8 +53,6 @@ namespace ProyectoRestaurante
             this.Close();
         }
 
-
-        public string mvar;
         private void bteditar_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();

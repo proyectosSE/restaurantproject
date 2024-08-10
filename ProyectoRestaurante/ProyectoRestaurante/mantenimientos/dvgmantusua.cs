@@ -19,8 +19,6 @@ namespace ProyectoRestaurante
             cargadatos();
         }
 
-        private string mivar;
-
         private void cargadatos()
         {
             string consulta = "SELECT * FROM usuarios";
@@ -59,30 +57,57 @@ namespace ProyectoRestaurante
             }
         }
 
-        private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dataGridView.Columns[e.ColumnIndex].Name == "editar")
-            {
-                mivar = dataGridView.CurrentRow.Cells["id_usuario"].Value.ToString();
-                int id = Convert.ToInt32(mivar);
-                mantusua mt = new mantusua(id);
-                mt.ShowDialog();
+            mantusua ms = Owner as mantusua;
+            ms.mvar = dataGridView.CurrentRow.Cells[0].Value.ToString();
+            ms.txtnom.Text = dataGridView.CurrentRow.Cells[1].Value.ToString();
+            ms.txtsex.Text = dataGridView.CurrentRow.Cells[2].Value.ToString();
+            ms.txtdirec.Text = dataGridView.CurrentRow.Cells[3].Value.ToString();
+            ms.txttel.Text = dataGridView.CurrentRow.Cells[4].Value.ToString();
+            ms.txtemail.Text = dataGridView.CurrentRow.Cells[5].Value.ToString();
+            ms.txtusua.Text = dataGridView.CurrentRow.Cells[6].Value.ToString();
+            ms.txtpassw.Text = dataGridView.CurrentRow.Cells[7].Value.ToString();
+            ms.cbbnivel.SelectedValue = dataGridView.CurrentRow.Cells[8].Value.ToString();
+            ms.txtest.Text = dataGridView.CurrentRow.Cells[9].Value.ToString();
+            ms.bteditar.Visible = true;
+            ms.btagregar.Visible = false;
+            this.Close();
+            
+        }
 
-            }
-            if (dataGridView.Columns[e.ColumnIndex].Name == "eliminar")
+        private void txtbuscar_TextChanged(object sender, EventArgs e)
+        {
+            string valorABuscar = txtbuscar.Text;
+            foreach (DataGridViewRow row in dataGridView.Rows)
             {
-                mensaje ms = new mensaje();
-
-                if (ms.ShowDialog() == DialogResult.OK)
+                if (row.Cells[1].Value != null &&
+                row.Cells[1].Value.ToString().Contains(valorABuscar))
                 {
-                    mivar = dataGridView.CurrentRow.Cells["id_usuario"].Value.ToString();
-                    Conectar cls = new Conectar();
-                    string tbl = "usuarios";
-                    string id = "id_usuario = '" + mivar + "'";
-                    cls.eliminar(tbl, id);
+                    dataGridView.CurrentCell = row.Cells[1];
+                    dataGridView.FirstDisplayedScrollingRowIndex = row.Index;
+                    break;
+                }
+                else if (row.Cells[1].Value == null)
+                {
+                    MessageBox.Show("Datos no encontrados");
                 }
             }
+        }
 
+        private void btcerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btcerrar_MouseEnter(object sender, EventArgs e)
+        {
+            btcerrar.BackColor = Color.Gray;
+        }
+
+        private void btcerrar_MouseLeave(object sender, EventArgs e)
+        {
+            btcerrar.BackColor = Color.Black;
         }
     }
 }

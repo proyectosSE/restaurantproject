@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoRestaurante.clases;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,6 +18,7 @@ namespace ProyectoRestaurante.mantenimientos
         public dgvmantcli()
         {
             InitializeComponent();
+            formatoDGV.FormatearDataGridViews(this);
             cargardatos();
         }
 
@@ -36,10 +38,10 @@ namespace ProyectoRestaurante.mantenimientos
                         adapter.Fill(dt);
                         dataGridView1.DataSource = dt;
 
-                        foreach (DataGridViewColumn cl in dataGridView1.Columns)
+                        /*foreach (DataGridViewColumn cl in dataGridView1.Columns)
                         {
                             cl.Width = 126;
-                        }
+                        }*/
 
                         if (dataGridView1.Columns.Contains("id_cliente")) dataGridView1.Columns["id_cliente"].DisplayIndex = 0;
                         if (dataGridView1.Columns.Contains("nomcliente")) dataGridView1.Columns["nomcliente"].DisplayIndex = 1;
@@ -76,7 +78,15 @@ namespace ProyectoRestaurante.mantenimientos
             mantcli.txtemail.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
             mantcli.txtlimicre.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
             mantcli.fechain.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
-            mantcli.txtest.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
+            mantcli.estado = dataGridView1.CurrentRow.Cells[7].Value.ToString();
+            if(mantcli.estado == "A")
+            {
+                mantcli.rjToggleButton1.Checked = true;
+            }
+            else
+            {
+                mantcli.rjToggleButton1.Checked = false;
+            }
             mantcli.bteditar.Visible = true;
             mantcli.buttAgregar.Visible = false;
             this.Close();

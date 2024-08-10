@@ -24,11 +24,13 @@ namespace ProyectoRestaurante
                         
         }
         public string mvar;
+        public string estado;
+
 
         private void buttAgregar_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();
-            string datos = "'"+txtnom.Text+"','"+txtapell.Text+"','"+txtdirec.Text+"','"+txtemail.Text+"',"+txtlimicre.Text+",'"+fechain.Text+"','"+txtest.Text+"'";
+            string datos = "'"+txtnom.Text+"','"+txtapell.Text+"','"+txtdirec.Text+"','"+txtemail.Text+"',"+txtlimicre.Text+",'"+fechain.Text+"','"+estado+"'";
             string tabla = "clientes";
             cls.Agregar(datos,tabla);
             limpiar.LimpiarTextBoxes(this);
@@ -56,13 +58,26 @@ namespace ProyectoRestaurante
         private void bteditar_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();
-            string up = "nomcliente= '"+txtnom.Text+"', apellidocliente= '"+txtapell.Text+"', direccliente= '"+txtdirec.Text+"', emailcliente= '"+txtemail.Text+"', limitecredito= "+txtlimicre.Text+", fechaingreso= '"+fechain.Text+"', estado= '"+txtest.Text+"'";
+            string up = "nomcliente= '"+txtnom.Text+"', apellidocliente= '"+txtapell.Text+"', direccliente= '"+txtdirec.Text+"', emailcliente= '"+txtemail.Text+"', limitecredito= "+txtlimicre.Text+", fechaingreso= '"+fechain.Text+"', estado= '"+estado+"'";
             string tabla = "clientes";
             string id = "id_cliente= '"+mvar+"'";
             cls.Actualizar(up,tabla,id);
             bteditar.Visible = false;
             buttAgregar.Visible = true;
             limpiar.LimpiarTextBoxes(this);
+                        
+        }
+
+        private void rjToggleButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rjToggleButton1.Checked)
+            {
+                estado = "A";
+            }
+            else
+            {
+                estado = "I";
+            }
         }
     }
 }

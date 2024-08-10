@@ -28,48 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttCon = new System.Windows.Forms.Button();
-            this.buttCan = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.rjButton1 = new AP4_2.RJControls.RJButton();
+            this.rjButton2 = new AP4_2.RJControls.RJButton();
             this.SuspendLayout();
-            // 
-            // buttCon
-            // 
-            this.buttCon.Location = new System.Drawing.Point(121, 144);
-            this.buttCon.Name = "buttCon";
-            this.buttCon.Size = new System.Drawing.Size(91, 46);
-            this.buttCon.TabIndex = 0;
-            this.buttCon.Text = "Confirmar";
-            this.buttCon.UseVisualStyleBackColor = true;
-            this.buttCon.Click += new System.EventHandler(this.buttCon_Click);
-            // 
-            // buttCan
-            // 
-            this.buttCan.Location = new System.Drawing.Point(267, 144);
-            this.buttCan.Name = "buttCan";
-            this.buttCan.Size = new System.Drawing.Size(91, 46);
-            this.buttCan.TabIndex = 1;
-            this.buttCan.Text = "Cancelar";
-            this.buttCan.UseVisualStyleBackColor = true;
-            this.buttCan.Click += new System.EventHandler(this.buttCan_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(130, 70);
+            this.label1.Font = new System.Drawing.Font("Cooper Black", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(107, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(241, 20);
+            this.label1.Size = new System.Drawing.Size(265, 19);
             this.label1.TabIndex = 2;
             this.label1.Text = "Esta seguro que desea eliminar?";
+            // 
+            // rjButton1
+            // 
+            this.rjButton1.BackColor = System.Drawing.Color.Gold;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.Gold;
+            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton1.BorderRadius = 20;
+            this.rjButton1.BorderSize = 0;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.Font = new System.Drawing.Font("Cooper Black", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton1.ForeColor = System.Drawing.Color.Black;
+            this.rjButton1.Location = new System.Drawing.Point(81, 124);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(150, 40);
+            this.rjButton1.TabIndex = 3;
+            this.rjButton1.Text = "Confirmar";
+            this.rjButton1.TextColor = System.Drawing.Color.Black;
+            this.rjButton1.UseVisualStyleBackColor = false;
+            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
+            // 
+            // rjButton2
+            // 
+            this.rjButton2.BackColor = System.Drawing.Color.Gold;
+            this.rjButton2.BackgroundColor = System.Drawing.Color.Gold;
+            this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton2.BorderRadius = 20;
+            this.rjButton2.BorderSize = 0;
+            this.rjButton2.FlatAppearance.BorderSize = 0;
+            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton2.Font = new System.Drawing.Font("Cooper Black", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton2.ForeColor = System.Drawing.Color.Black;
+            this.rjButton2.Location = new System.Drawing.Point(258, 124);
+            this.rjButton2.Name = "rjButton2";
+            this.rjButton2.Size = new System.Drawing.Size(150, 40);
+            this.rjButton2.TabIndex = 4;
+            this.rjButton2.Text = "Cancelar";
+            this.rjButton2.TextColor = System.Drawing.Color.Black;
+            this.rjButton2.UseVisualStyleBackColor = false;
+            this.rjButton2.Click += new System.EventHandler(this.rjButton2_Click);
             // 
             // mensaje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(519, 245);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(494, 204);
+            this.Controls.Add(this.rjButton2);
+            this.Controls.Add(this.rjButton1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.buttCan);
-            this.Controls.Add(this.buttCon);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "mensaje";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CONFIRMAR?";
@@ -79,9 +102,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button buttCon;
-        private System.Windows.Forms.Button buttCan;
         private System.Windows.Forms.Label label1;
+        private AP4_2.RJControls.RJButton rjButton1;
+        private AP4_2.RJControls.RJButton rjButton2;
     }
 }

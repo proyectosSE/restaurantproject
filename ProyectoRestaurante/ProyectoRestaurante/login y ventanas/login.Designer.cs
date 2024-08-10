@@ -28,32 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btentrar = new System.Windows.Forms.Button();
             this.txtpassword = new System.Windows.Forms.TextBox();
             this.txtlogin = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.rjButton1 = new AP4_2.RJControls.RJButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btentrar
-            // 
-            this.btentrar.Location = new System.Drawing.Point(324, 169);
-            this.btentrar.Name = "btentrar";
-            this.btentrar.Size = new System.Drawing.Size(130, 36);
-            this.btentrar.TabIndex = 11;
-            this.btentrar.Text = "Entrar";
-            this.btentrar.UseVisualStyleBackColor = true;
-            this.btentrar.Click += new System.EventHandler(this.btentrar_Click);
             // 
             // txtpassword
             // 
@@ -91,17 +81,6 @@
             this.panel1.TabIndex = 13;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ProyectoRestaurante.Properties.Resources.image;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(240, 215);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -127,24 +106,50 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.Black;
             this.checkBox1.ForeColor = System.Drawing.Color.LightGray;
             this.checkBox1.Location = new System.Drawing.Point(323, 132);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(173, 24);
             this.checkBox1.TabIndex = 16;
             this.checkBox1.Text = "Mostrar contraseña";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.UseVisualStyleBackColor = false;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Cooper Black", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LightGray;
             this.label3.Location = new System.Drawing.Point(437, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 20);
+            this.label3.Size = new System.Drawing.Size(64, 19);
             this.label3.TabIndex = 19;
             this.label3.Text = "LOGIN";
+            // 
+            // rjButton1
+            // 
+            this.rjButton1.BackColor = System.Drawing.Color.White;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.White;
+            this.rjButton1.BorderColor = System.Drawing.Color.Black;
+            this.rjButton1.BorderRadius = 20;
+            this.rjButton1.BorderSize = 0;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.Font = new System.Drawing.Font("Cooper Black", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton1.ForeColor = System.Drawing.Color.Black;
+            this.rjButton1.Image = global::ProyectoRestaurante.Properties.Resources.icons8_login_ios_17_filled_32;
+            this.rjButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rjButton1.Location = new System.Drawing.Point(324, 172);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(136, 36);
+            this.rjButton1.TabIndex = 20;
+            this.rjButton1.Text = "   LOGIN";
+            this.rjButton1.TextColor = System.Drawing.Color.Black;
+            this.rjButton1.UseVisualStyleBackColor = false;
+            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
+            this.rjButton1.MouseEnter += new System.EventHandler(this.rjButton1_MouseEnter);
+            this.rjButton1.MouseLeave += new System.EventHandler(this.rjButton1_MouseLeave);
             // 
             // pictureBox3
             // 
@@ -168,17 +173,28 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ProyectoRestaurante.Properties.Resources.image;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(240, 215);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
+            // 
             // login
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(680, 220);
+            this.Controls.Add(this.rjButton1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btentrar);
             this.Controls.Add(this.txtpassword);
             this.Controls.Add(this.txtlogin);
             this.Controls.Add(this.label2);
@@ -190,16 +206,15 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.login_FormClosed);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.login_MouseDown);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btentrar;
         private System.Windows.Forms.TextBox txtpassword;
         private System.Windows.Forms.TextBox txtlogin;
         private System.Windows.Forms.Panel panel1;
@@ -210,6 +225,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label3;
+        private AP4_2.RJControls.RJButton rjButton1;
     }
 }
 

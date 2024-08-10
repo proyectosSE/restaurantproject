@@ -17,12 +17,13 @@ namespace ProyectoRestaurante
             InitializeComponent();
         }
 
-        private void buttCon_Click(object sender, EventArgs e)
+       
+        private void rjButton1_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.OK;
         }
 
-        private void buttCan_Click(object sender, EventArgs e)
+        private void rjButton2_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.Cancel;
         }

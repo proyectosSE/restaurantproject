@@ -11,7 +11,34 @@ namespace ProyectoRestaurante.clases
     {
         public static void LimpiarTextBoxes(Form formulario)
         {
+
             foreach (Control control in formulario.Controls)
+            {
+                if (control is TextBox)
+                {
+                    (control as TextBox).Clear();
+                }
+            }
+
+            
+            foreach (Control control in formulario.Controls)
+            {
+                if (control is DateTimePicker)
+                {
+                    (control as DateTimePicker).Value = DateTime.Now;
+                }
+            }
+
+            
+            foreach (Control control in formulario.Controls)
+            {
+                if (control is CheckBox)
+                {
+                    (control as CheckBox).Checked = false;
+                }
+            }
+
+            /* foreach (Control control in formulario.Controls)
             {
                 if (control is TextBox)
                 {
@@ -21,7 +48,7 @@ namespace ProyectoRestaurante.clases
                 {
                     LimpiarTextBoxesRecursivamente(control);
                 }
-            }
+            }*/
         }
 
         private static void LimpiarTextBoxesRecursivamente(Control contenedor)

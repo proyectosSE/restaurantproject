@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Runtime.InteropServices;
 
+
 namespace ProyectoRestaurante
 {
     public partial class login : Form
@@ -27,28 +28,8 @@ namespace ProyectoRestaurante
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
-
-        private void btentrar_Click(object sender, EventArgs e)
-        {
-            conexion.Open();
-            string entrar = "SELECT * FROM usuarios WHERE usuario='" + txtlogin.Text + "' AND password ='" + txtpassword.Text + "'";
-            SqlCommand comando = new SqlCommand(entrar, conexion);
-            SqlDataReader lector;
-            lector = comando.ExecuteReader();
-
-            if (lector.HasRows == true)
-            {
-                menuprincipal men = new menuprincipal();
-                men.Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Usuario o Contraseña incorrectos");
-            }
-            conexion.Close();
-        }
-
+                
+        
         private void login_FormClosed(object sender, FormClosedEventArgs e)
         {
            // conexion.Close();
@@ -97,6 +78,7 @@ namespace ProyectoRestaurante
             if (checkBox1.Checked)
             {
                 txtpassword.UseSystemPasswordChar = false;
+                
             }
             else
             {
@@ -130,6 +112,37 @@ namespace ProyectoRestaurante
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void rjButton1_Click(object sender, EventArgs e)
+        {
+            conexion.Open();
+            string entrar = "SELECT * FROM usuarios WHERE usuario='" + txtlogin.Text + "' AND password ='" + txtpassword.Text + "'";
+            SqlCommand comando = new SqlCommand(entrar, conexion);
+            SqlDataReader lector;
+            lector = comando.ExecuteReader();
+
+            if (lector.HasRows == true)
+            {
+                menuprincipal men = new menuprincipal();
+                men.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Usuario o Contraseña incorrectos");
+            }
+            conexion.Close();
+        }
+
+        private void rjButton1_MouseEnter(object sender, EventArgs e)
+        {
+            rjButton1.BackColor = Color.Gold;
+        }
+
+        private void rjButton1_MouseLeave(object sender, EventArgs e)
+        {
+            rjButton1.BackColor = Color.White;
         }
     }
 }

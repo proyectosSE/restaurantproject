@@ -47,13 +47,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.fechamesa = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtestado = new System.Windows.Forms.TextBox();
             this.txtasientos = new System.Windows.Forms.TextBox();
             this.salasTableAdapter2 = new ProyectoRestaurante.ProyectoRestauranteDataSet3TableAdapters.salasTableAdapter();
             this.buttEdit = new System.Windows.Forms.Button();
             this.salasTableAdapter3 = new ProyectoRestaurante.ProyectoRestauranteDataSet14TableAdapters.salasTableAdapter();
             this.salasTableAdapter4 = new ProyectoRestaurante.ProyectoRestauranteDataSet16TableAdapters.salasTableAdapter();
             this.btcerrar = new System.Windows.Forms.PictureBox();
+            this.rjToggleButton1 = new RJCodeAdvance.RJControls.RJToggleButton();
+            this.proyectoRestauranteDataSet19 = new ProyectoRestaurante.ProyectoRestauranteDataSet19();
+            this.salasBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.salasTableAdapter5 = new ProyectoRestaurante.ProyectoRestauranteDataSet19TableAdapters.salasTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet16)).BeginInit();
@@ -62,6 +65,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btcerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -80,6 +85,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(1135, 381);
             this.dataGridView1.TabIndex = 10;
             this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
+            this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
             // 
             // label1
             // 
@@ -127,7 +133,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gold;
-            this.label3.Location = new System.Drawing.Point(431, 111);
+            this.label3.Location = new System.Drawing.Point(297, 113);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(219, 23);
             this.label3.TabIndex = 17;
@@ -136,7 +142,7 @@
             // cbbsala
             // 
             this.cbbsala.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.salasBindingSource, "id_sala", true));
-            this.cbbsala.DataSource = this.salasBindingSource;
+            this.cbbsala.DataSource = this.salasBindingSource1;
             this.cbbsala.DisplayMember = "nomsala";
             this.cbbsala.FormattingEnabled = true;
             this.cbbsala.Location = new System.Drawing.Point(30, 60);
@@ -206,22 +212,15 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Gold;
-            this.label5.Location = new System.Drawing.Point(297, 111);
+            this.label5.Location = new System.Drawing.Point(582, 39);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(74, 23);
             this.label5.TabIndex = 22;
             this.label5.Text = "Estado";
             // 
-            // txtestado
-            // 
-            this.txtestado.Location = new System.Drawing.Point(301, 134);
-            this.txtestado.Name = "txtestado";
-            this.txtestado.Size = new System.Drawing.Size(85, 26);
-            this.txtestado.TabIndex = 23;
-            // 
             // txtasientos
             // 
-            this.txtasientos.Location = new System.Drawing.Point(435, 134);
+            this.txtasientos.Location = new System.Drawing.Point(301, 136);
             this.txtasientos.Name = "txtasientos";
             this.txtasientos.Size = new System.Drawing.Size(82, 26);
             this.txtasientos.TabIndex = 24;
@@ -263,15 +262,44 @@
             this.btcerrar.TabStop = false;
             this.btcerrar.Click += new System.EventHandler(this.btcerrar_Click_1);
             // 
+            // rjToggleButton1
+            // 
+            this.rjToggleButton1.AutoSize = true;
+            this.rjToggleButton1.Location = new System.Drawing.Point(586, 65);
+            this.rjToggleButton1.MinimumSize = new System.Drawing.Size(72, 33);
+            this.rjToggleButton1.Name = "rjToggleButton1";
+            this.rjToggleButton1.OffBackColor = System.Drawing.Color.Gray;
+            this.rjToggleButton1.OffToggleColor = System.Drawing.Color.White;
+            this.rjToggleButton1.OnBackColor = System.Drawing.Color.Gold;
+            this.rjToggleButton1.OnToggleColor = System.Drawing.Color.White;
+            this.rjToggleButton1.Size = new System.Drawing.Size(72, 33);
+            this.rjToggleButton1.TabIndex = 28;
+            this.rjToggleButton1.UseVisualStyleBackColor = true;
+            this.rjToggleButton1.CheckedChanged += new System.EventHandler(this.rjToggleButton1_CheckedChanged);
+            // 
+            // proyectoRestauranteDataSet19
+            // 
+            this.proyectoRestauranteDataSet19.DataSetName = "ProyectoRestauranteDataSet19";
+            this.proyectoRestauranteDataSet19.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // salasBindingSource1
+            // 
+            this.salasBindingSource1.DataMember = "salas";
+            this.salasBindingSource1.DataSource = this.proyectoRestauranteDataSet19;
+            // 
+            // salasTableAdapter5
+            // 
+            this.salasTableAdapter5.ClearBeforeFill = true;
+            // 
             // mantmesas
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1200, 700);
+            this.Controls.Add(this.rjToggleButton1);
             this.Controls.Add(this.btcerrar);
             this.Controls.Add(this.buttEdit);
             this.Controls.Add(this.txtasientos);
-            this.Controls.Add(this.txtestado);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.fechamesa);
             this.Controls.Add(this.label4);
@@ -295,6 +323,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btcerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -324,7 +354,10 @@
         public System.Windows.Forms.TextBox txtmesa;
         public System.Windows.Forms.ComboBox cbbsala;
         public System.Windows.Forms.DateTimePicker fechamesa;
-        public System.Windows.Forms.TextBox txtestado;
         public System.Windows.Forms.TextBox txtasientos;
+        private RJCodeAdvance.RJControls.RJToggleButton rjToggleButton1;
+        private ProyectoRestauranteDataSet19 proyectoRestauranteDataSet19;
+        private System.Windows.Forms.BindingSource salasBindingSource1;
+        private ProyectoRestauranteDataSet19TableAdapters.salasTableAdapter salasTableAdapter5;
     }
 }

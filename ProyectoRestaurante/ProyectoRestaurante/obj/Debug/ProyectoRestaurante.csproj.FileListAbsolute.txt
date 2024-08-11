@@ -271,6 +271,8 @@ C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\P
 C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\ProyectoRestaurante.exe
 C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\ProyectoRestaurante.pdb
 C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\KenRJControls.dll
+C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\RJCodeAdvance.RJControls.dll
 C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.csproj.AssemblyReference.cache
 C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.concat.resources
 C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.concli.resources
@@ -298,5 +300,3 @@ C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\P
 C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\Proyecto.CE3A958B.Up2Date
 C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.exe
 C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.pdb
-C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\RJCodeAdvance.RJControls.dll
-C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\KenRJControls.dll

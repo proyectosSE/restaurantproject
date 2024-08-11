@@ -19,13 +19,15 @@ namespace ProyectoRestaurante
             InitializeComponent();
             buttEdit.Visible = false;
             cargardatos();
+            formatoDGV.FormatearDataGridViews(this);
         }
 
         string mvar;
+        string estado="I";
         private void btagregar_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();
-            string datos = "'" + txtmedida.Text + "', '" + txtest.Text + "'";
+            string datos = "'" + txtmedida.Text + "', '" + estado + "'";
             string tabla = "medidas";
             cls.Agregar(datos, tabla);
             cargardatos();
@@ -66,7 +68,7 @@ namespace ProyectoRestaurante
         private void buttEdit_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();
-            string up = "descripcion ='"+txtmedida.Text+"', estado= '" + txtest.Text + "'";
+            string up = "descripcion ='"+txtmedida.Text+"', estado= '" + estado + "'";
             string tbl = "medidas";
             string id = "id_medida='"+mvar+"'";
             cls.Actualizar(up, tbl, id);
@@ -89,10 +91,51 @@ namespace ProyectoRestaurante
         {
             mvar = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             txtmedida.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            txtest.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            estado= dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            if (estado == "A")
+            {
+                rjToggleButton1.Checked = true;
+            }
+            else
+            {
+                rjToggleButton1.Checked = false;
+            }
             buttEdit.Visible = true;
             btagregar.Visible = false;
         }
 
+        private void rjToggleButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rjToggleButton1.Checked)
+            {
+                estado = "A";
+            }
+            else
+            {
+                estado = "I";
+            }
+        }
+
+        private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (this.dataGridView1.Columns[e.ColumnIndex].Name == "estado")
+            {
+                if (e.Value != null)
+                {
+                    if (e.Value.GetType() != typeof(System.DBNull))
+                    {
+
+                        if (e.Value.ToString() == "A")
+                        {
+                            this.dataGridView1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.LightGreen;
+                        }
+                        else
+                        {
+                            this.dataGridView1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.LightCoral;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

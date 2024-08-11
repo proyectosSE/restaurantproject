@@ -36,10 +36,10 @@
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtest = new System.Windows.Forms.TextBox();
             this.textBuscar = new System.Windows.Forms.TextBox();
             this.btcerrar = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.rjToggleButton1 = new RJCodeAdvance.RJControls.RJToggleButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btcerrar)).BeginInit();
             this.SuspendLayout();
@@ -78,6 +78,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(1097, 454);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
+            this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
             // 
             // btagregar
             // 
@@ -132,13 +133,6 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Estado";
             // 
-            // txtest
-            // 
-            this.txtest.Location = new System.Drawing.Point(297, 53);
-            this.txtest.Name = "txtest";
-            this.txtest.Size = new System.Drawing.Size(124, 26);
-            this.txtest.TabIndex = 8;
-            // 
             // textBuscar
             // 
             this.textBuscar.Location = new System.Drawing.Point(296, 126);
@@ -171,14 +165,29 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "Buscar";
             // 
+            // rjToggleButton1
+            // 
+            this.rjToggleButton1.AutoSize = true;
+            this.rjToggleButton1.Location = new System.Drawing.Point(295, 56);
+            this.rjToggleButton1.MinimumSize = new System.Drawing.Size(72, 33);
+            this.rjToggleButton1.Name = "rjToggleButton1";
+            this.rjToggleButton1.OffBackColor = System.Drawing.Color.Gray;
+            this.rjToggleButton1.OffToggleColor = System.Drawing.Color.White;
+            this.rjToggleButton1.OnBackColor = System.Drawing.Color.Gold;
+            this.rjToggleButton1.OnToggleColor = System.Drawing.Color.White;
+            this.rjToggleButton1.Size = new System.Drawing.Size(72, 33);
+            this.rjToggleButton1.TabIndex = 11;
+            this.rjToggleButton1.UseVisualStyleBackColor = true;
+            this.rjToggleButton1.CheckedChanged += new System.EventHandler(this.rjToggleButton1_CheckedChanged);
+            // 
             // mantcat
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1200, 700);
+            this.Controls.Add(this.rjToggleButton1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btcerrar);
-            this.Controls.Add(this.txtest);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBuscar);
             this.Controls.Add(this.buttEdit);
@@ -209,7 +218,7 @@
         private System.Windows.Forms.TextBox textBuscar;
         private System.Windows.Forms.PictureBox btcerrar;
         public System.Windows.Forms.TextBox textcat;
-        public System.Windows.Forms.TextBox txtest;
         private System.Windows.Forms.Label label3;
+        private RJCodeAdvance.RJControls.RJToggleButton rjToggleButton1;
     }
 }

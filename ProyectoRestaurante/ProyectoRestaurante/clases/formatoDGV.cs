@@ -19,16 +19,16 @@ namespace ProyectoRestaurante.clases
                 if (control is DataGridView dataGridView)
                 {
                     // Aplica el formato deseado
+                    dataGridView.EnableHeadersVisualStyles=false;
                     dataGridView.BackgroundColor = Color.Black; // Color de fondo
-                    dataGridView.AlternatingRowsDefaultCellStyle.BackColor = Color.LightGray; // Color de fila alterna
                     dataGridView.DefaultCellStyle.ForeColor = Color.Black; // Color del texto
-                    dataGridView.DefaultCellStyle.SelectionBackColor = Color.DarkBlue; // Color de selección
-                    dataGridView.DefaultCellStyle.SelectionForeColor = Color.White; // Color del texto seleccionado
-                    dataGridView.RowHeadersDefaultCellStyle.BackColor = Color.LightGray; // Color de los encabezados de fila
-                    dataGridView.ColumnHeadersDefaultCellStyle.BackColor = Color.DarkGray; // Color de los encabezados de columna
+                    dataGridView.DefaultCellStyle.SelectionBackColor = Color.LightBlue; // Color de selección
+                    dataGridView.DefaultCellStyle.SelectionForeColor = Color.White; // Color del texto seleccionado                   
                     dataGridView.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black; // Color del texto en los encabezados
                     dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; // Ajuste automático de columnas
                     dataGridView.BorderStyle = BorderStyle.FixedSingle; // Estilo de borde
+                    dataGridView.GridColor = Color.Black;
+                    
                 }
             }
         }

@@ -20,13 +20,15 @@ namespace ProyectoRestaurante
             fechamesa.Format = DateTimePickerFormat.Short;
             buttEdit.Visible = false;
             cargardatos();
+            formatoDGV.FormatearDataGridViews(this);
         }
 
         private string mvar;
+        private string estado = "I";
         private void btagregar_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();
-            string datos = "" + cbbsala.SelectedValue + ",'" + txtmesa.Text + "'," + txtasientos.Text + ",'" + fechamesa.Text + "','"+txtestado.Text+"'";
+            string datos = "" + cbbsala.SelectedValue + ",'" + txtmesa.Text + "'," + txtasientos.Text + ",'" + fechamesa.Text + "','"+estado+"'";
             string tabla = "mesas";
             cls.Agregar(datos, tabla);
             cargardatos();
@@ -35,8 +37,9 @@ namespace ProyectoRestaurante
         
         private void mantmesas_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'proyectoRestauranteDataSet16.salas' Puede moverla o quitarla según sea necesario.
-            this.salasTableAdapter4.Fill(this.proyectoRestauranteDataSet16.salas);
+            // TODO: esta línea de código carga datos en la tabla 'proyectoRestauranteDataSet19.salas' Puede moverla o quitarla según sea necesario.
+            this.salasTableAdapter5.Fill(this.proyectoRestauranteDataSet19.salas);
+
 
         }
         private void cargardatos()
@@ -77,7 +80,7 @@ namespace ProyectoRestaurante
         private void buttEdit_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();
-            string up = "id_sala ='" + cbbsala.SelectedValue + "',nommesa = "+"'"+ txtmesa.Text+ "',puestos ="+txtasientos.Text+", fecha ="+"'"+fechamesa.Text+"', estado ='"+txtestado.Text+"'";
+            string up = "id_sala ='" + cbbsala.SelectedValue + "',nommesa = "+"'"+ txtmesa.Text+ "',puestos ="+txtasientos.Text+", fecha ="+"'"+fechamesa.Text+"', estado ='"+estado+"'";
             string tbl = "mesas";
             string id = "id_mesa = '" + mvar + "'";
             cls.Actualizar(up, tbl, id);
@@ -100,10 +103,51 @@ namespace ProyectoRestaurante
             txtmesa.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             txtasientos.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
             fechamesa.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-            txtestado.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+            estado = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+            if (estado == "A")
+            {
+                rjToggleButton1.Checked = true;
+            }
+            else
+            {
+                rjToggleButton1.Checked = false;
+            }
             buttEdit.Visible = true;
             btagregar.Visible = false;
         }
-                
+
+        private void rjToggleButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rjToggleButton1.Checked)
+            {
+                estado = "A";
+            }
+            else
+            {
+                estado = "I";
+            }
+        }
+
+        private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (this.dataGridView1.Columns[e.ColumnIndex].Name == "estado")
+            {
+                if (e.Value != null)
+                {
+                    if (e.Value.GetType() != typeof(System.DBNull))
+                    {
+
+                        if (e.Value.ToString() == "A")
+                        {
+                            this.dataGridView1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.LightGreen;
+                        }
+                        else
+                        {
+                            this.dataGridView1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.LightCoral;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

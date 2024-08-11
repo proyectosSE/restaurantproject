@@ -36,8 +36,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.buttEdit = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtest = new System.Windows.Forms.TextBox();
             this.btcerrar = new System.Windows.Forms.PictureBox();
+            this.rjToggleButton1 = new RJCodeAdvance.RJControls.RJToggleButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btcerrar)).BeginInit();
             this.SuspendLayout();
@@ -69,6 +69,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(1080, 434);
             this.dataGridView1.TabIndex = 10;
             this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
+            this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
             // 
             // txtdepart
             // 
@@ -128,13 +129,6 @@
             this.label3.TabIndex = 15;
             this.label3.Text = "Estado";
             // 
-            // txtest
-            // 
-            this.txtest.Location = new System.Drawing.Point(53, 121);
-            this.txtest.Name = "txtest";
-            this.txtest.Size = new System.Drawing.Size(100, 26);
-            this.txtest.TabIndex = 16;
-            // 
             // btcerrar
             // 
             this.btcerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -148,13 +142,28 @@
             this.btcerrar.TabStop = false;
             this.btcerrar.Click += new System.EventHandler(this.btcerrar_Click);
             // 
+            // rjToggleButton1
+            // 
+            this.rjToggleButton1.AutoSize = true;
+            this.rjToggleButton1.Location = new System.Drawing.Point(57, 134);
+            this.rjToggleButton1.MinimumSize = new System.Drawing.Size(72, 33);
+            this.rjToggleButton1.Name = "rjToggleButton1";
+            this.rjToggleButton1.OffBackColor = System.Drawing.Color.Gray;
+            this.rjToggleButton1.OffToggleColor = System.Drawing.Color.White;
+            this.rjToggleButton1.OnBackColor = System.Drawing.Color.Gold;
+            this.rjToggleButton1.OnToggleColor = System.Drawing.Color.White;
+            this.rjToggleButton1.Size = new System.Drawing.Size(72, 33);
+            this.rjToggleButton1.TabIndex = 18;
+            this.rjToggleButton1.UseVisualStyleBackColor = true;
+            this.rjToggleButton1.CheckedChanged += new System.EventHandler(this.rjToggleButton1_CheckedChanged);
+            // 
             // mantdepar
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1200, 700);
+            this.Controls.Add(this.rjToggleButton1);
             this.Controls.Add(this.btcerrar);
-            this.Controls.Add(this.txtest);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.buttEdit);
             this.Controls.Add(this.label2);
@@ -185,6 +194,6 @@
         private System.Windows.Forms.PictureBox btcerrar;
         public System.Windows.Forms.TextBox txtdepart;
         public System.Windows.Forms.TextBox txtprovincia;
-        public System.Windows.Forms.TextBox txtest;
+        private RJCodeAdvance.RJControls.RJToggleButton rjToggleButton1;
     }
 }

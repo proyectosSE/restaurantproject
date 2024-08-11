@@ -29,7 +29,7 @@ namespace ProyectoRestaurante
         private void btagregar_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();
-            string datos = "'"+txtnom.Text+"','"+txtsex.Text+"','"+txtdirec.Text+"','"+txttel.Text+"','"+txtemail.Text+"','"+txtusua.Text+"','"+txtpassw.Text+"',"+cbbnivel.SelectedValue+",'"+txtest.Text+"'";
+            string datos = "'"+txtnom.Text+"','"+txtsex.Text+"','"+txtdirec.Text+"','"+txttel.Text+"','"+txtemail.Text+"','"+txtusua.Text+"','"+txtpassw.Text+"',"+cbbnivel.SelectedValue+",'"+estado+"'";
             string tabla = "usuarios";
             cls.Agregar(datos, tabla);
             limpiar.LimpiarTextBoxes(this);
@@ -37,8 +37,7 @@ namespace ProyectoRestaurante
 
         private void mantusua_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'proyectoRestauranteDataSet17.nivel' Puede moverla o quitarla según sea necesario.
-            this.nivelTableAdapter2.Fill(this.proyectoRestauranteDataSet17.nivel);
+            
         }
 
         private void Buscar(int pId)
@@ -73,7 +72,7 @@ namespace ProyectoRestaurante
                                 txtusua.Text = reader["usuario"].ToString();
                                 txtpassw.Text = reader["password"].ToString();
                                 cbbnivel.SelectedValue = reader["id_nivel"].ToString();
-                                txtest.Text = reader["status"].ToString();
+                                estado = reader["status"].ToString();
                             }
                             else
                             {
@@ -110,16 +109,29 @@ namespace ProyectoRestaurante
         }
 
         public string mvar;
+        public string estado="I";
         private void bteditar_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();
-            string up = "nombres= '"+txtnom.Text+"', sexo= '"+txtsex.Text+"', direccion= '"+txtdirec.Text+"', telefono= '"+txttel.Text+"', email= '"+txtemail.Text+"', usuario= '"+txtusua.Text+"', password= '"+txtpassw.Text+"', id_nivel= "+cbbnivel.SelectedValue+", estado= '"+txtest.Text+"'";
+            string up = "nombres= '"+txtnom.Text+"', sexo= '"+txtsex.Text+"', direccion= '"+txtdirec.Text+"', telefono= '"+txttel.Text+"', email= '"+txtemail.Text+"', usuario= '"+txtusua.Text+"', password= '"+txtpassw.Text+"', id_nivel= "+cbbnivel.SelectedValue+", estado= '"+estado +"'";
             string tabla = "usuarios";
             string id = "id_usuario= '"+mvar+"'";
             cls.Actualizar(up,tabla,id);
             bteditar.Visible = false;
             btagregar.Visible = true;
             limpiar.LimpiarTextBoxes(this);
+        }
+
+        private void rjToggleButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rjToggleButton1.Checked)
+            {
+                estado = "A";
+            }
+            else
+            {
+                estado = "I";
+            }
         }
     }
 }

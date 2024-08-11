@@ -44,12 +44,13 @@
             this.txtpassw = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtest = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btagregar = new System.Windows.Forms.Button();
             this.cbbnivel = new System.Windows.Forms.ComboBox();
             this.nivelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.proyectoRestauranteDataSet17 = new ProyectoRestaurante.ProyectoRestauranteDataSet17();
+            this.nivelBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.proyectoRestauranteDataSet18 = new ProyectoRestaurante.ProyectoRestauranteDataSet18();
             this.proyectoRestauranteDataSet7 = new ProyectoRestaurante.ProyectoRestauranteDataSet7();
             this.proyectoRestauranteDataSet15 = new ProyectoRestaurante.ProyectoRestauranteDataSet15();
             this.proyectoRestauranteDataSet8 = new ProyectoRestaurante.ProyectoRestauranteDataSet8();
@@ -59,8 +60,12 @@
             this.btcerrar = new System.Windows.Forms.PictureBox();
             this.nivelTableAdapter2 = new ProyectoRestaurante.ProyectoRestauranteDataSet17TableAdapters.nivelTableAdapter();
             this.bteditar = new System.Windows.Forms.Button();
+            this.nivelTableAdapter3 = new ProyectoRestaurante.ProyectoRestauranteDataSet18TableAdapters.nivelTableAdapter();
+            this.rjToggleButton1 = new RJCodeAdvance.RJControls.RJToggleButton();
             ((System.ComponentModel.ISupportInitialize)(this.nivelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nivelBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet8)).BeginInit();
@@ -206,13 +211,6 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "Nivel";
             // 
-            // txtest
-            // 
-            this.txtest.Location = new System.Drawing.Point(650, 54);
-            this.txtest.Name = "txtest";
-            this.txtest.Size = new System.Drawing.Size(110, 26);
-            this.txtest.TabIndex = 17;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -238,7 +236,7 @@
             // cbbnivel
             // 
             this.cbbnivel.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.nivelBindingSource, "id_nivel", true));
-            this.cbbnivel.DataSource = this.nivelBindingSource;
+            this.cbbnivel.DataSource = this.nivelBindingSource1;
             this.cbbnivel.DisplayMember = "descripcion";
             this.cbbnivel.FormattingEnabled = true;
             this.cbbnivel.Location = new System.Drawing.Point(350, 280);
@@ -256,6 +254,16 @@
             // 
             this.proyectoRestauranteDataSet17.DataSetName = "ProyectoRestauranteDataSet17";
             this.proyectoRestauranteDataSet17.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // nivelBindingSource1
+            // 
+            this.nivelBindingSource1.DataMember = "nivel";
+            this.nivelBindingSource1.DataSource = this.proyectoRestauranteDataSet18;
+            // 
+            // proyectoRestauranteDataSet18
+            // 
+            this.proyectoRestauranteDataSet18.DataSetName = "ProyectoRestauranteDataSet18";
+            this.proyectoRestauranteDataSet18.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // proyectoRestauranteDataSet7
             // 
@@ -312,16 +320,35 @@
             this.bteditar.UseVisualStyleBackColor = true;
             this.bteditar.Click += new System.EventHandler(this.bteditar_Click);
             // 
+            // nivelTableAdapter3
+            // 
+            this.nivelTableAdapter3.ClearBeforeFill = true;
+            // 
+            // rjToggleButton1
+            // 
+            this.rjToggleButton1.AutoSize = true;
+            this.rjToggleButton1.Location = new System.Drawing.Point(650, 57);
+            this.rjToggleButton1.MinimumSize = new System.Drawing.Size(72, 33);
+            this.rjToggleButton1.Name = "rjToggleButton1";
+            this.rjToggleButton1.OffBackColor = System.Drawing.Color.Gray;
+            this.rjToggleButton1.OffToggleColor = System.Drawing.Color.White;
+            this.rjToggleButton1.OnBackColor = System.Drawing.Color.Gold;
+            this.rjToggleButton1.OnToggleColor = System.Drawing.Color.White;
+            this.rjToggleButton1.Size = new System.Drawing.Size(72, 33);
+            this.rjToggleButton1.TabIndex = 24;
+            this.rjToggleButton1.UseVisualStyleBackColor = true;
+            this.rjToggleButton1.CheckedChanged += new System.EventHandler(this.rjToggleButton1_CheckedChanged);
+            // 
             // mantusua
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1200, 700);
+            this.Controls.Add(this.rjToggleButton1);
             this.Controls.Add(this.bteditar);
             this.Controls.Add(this.btcerrar);
             this.Controls.Add(this.cbbnivel);
             this.Controls.Add(this.btagregar);
-            this.Controls.Add(this.txtest);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtpassw);
@@ -345,6 +372,8 @@
             this.Load += new System.EventHandler(this.mantusua_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nivelBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nivelBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet8)).EndInit();
@@ -382,9 +411,12 @@
         public System.Windows.Forms.TextBox txtemail;
         public System.Windows.Forms.TextBox txtusua;
         public System.Windows.Forms.TextBox txtpassw;
-        public System.Windows.Forms.TextBox txtest;
         public System.Windows.Forms.ComboBox cbbnivel;
         public System.Windows.Forms.Button bteditar;
         public System.Windows.Forms.Button btagregar;
+        private ProyectoRestauranteDataSet18 proyectoRestauranteDataSet18;
+        private System.Windows.Forms.BindingSource nivelBindingSource1;
+        private ProyectoRestauranteDataSet18TableAdapters.nivelTableAdapter nivelTableAdapter3;
+        public RJCodeAdvance.RJControls.RJToggleButton rjToggleButton1;
     }
 }

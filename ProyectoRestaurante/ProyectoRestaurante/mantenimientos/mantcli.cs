@@ -24,7 +24,7 @@ namespace ProyectoRestaurante
                         
         }
         public string mvar;
-        public string estado;
+        public string estado="I";
 
 
         private void buttAgregar_Click(object sender, EventArgs e)

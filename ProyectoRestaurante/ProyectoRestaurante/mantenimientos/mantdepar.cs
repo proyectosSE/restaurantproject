@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoRestaurante.clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,13 +19,15 @@ namespace ProyectoRestaurante
             InitializeComponent();
             buttEdit.Visible = false;
             cargardatos();
+            formatoDGV.FormatearDataGridViews(this);
         }
 
         private string mivar;
+        private string estado="I";
         private void btagregar_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();
-            string datos = "'" + txtdepart.Text + "'," + txtprovincia.Text + ", '" + txtest.Text + "'";
+            string datos = "'" + txtdepart.Text + "'," + txtprovincia.Text + ", '" + estado + "'";
             string tabla = "departamentos";
             cls.Agregar(datos, tabla);
             cargardatos();
@@ -66,7 +69,7 @@ namespace ProyectoRestaurante
         private void buttEdit_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();
-            string up = "departamento ='" + txtdepart.Text + "', id_provincia = "+ txtprovincia.Text+ ", estado= '"+txtest.Text+"'";
+            string up = "departamento ='" + txtdepart.Text + "', id_provincia = "+ txtprovincia.Text+ ", estado= '"+estado+"'";
             string tbl = "departamentos";
             string id = "id_departamento = '" + mvar + "'";
             cls.Actualizar(up, tbl, id);
@@ -87,10 +90,51 @@ namespace ProyectoRestaurante
             mvar = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             txtdepart.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             txtprovincia.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            txtest.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            estado = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            if (estado == "A")
+            {
+                rjToggleButton1.Checked = true;
+            }
+            else
+            {
+                rjToggleButton1.Checked = false;
+            }
             buttEdit.Visible = true;
             btagregar.Visible = false;
         }
-                
+
+        private void rjToggleButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rjToggleButton1.Checked)
+            {
+                estado = "A";
+            }
+            else
+            {
+                estado = "I";
+            }
+        }
+
+        private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (this.dataGridView1.Columns[e.ColumnIndex].Name == "estado")
+            {
+                if (e.Value != null)
+                {
+                    if (e.Value.GetType() != typeof(System.DBNull))
+                    {
+
+                        if (e.Value.ToString() == "A")
+                        {
+                            this.dataGridView1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.LightGreen;
+                        }
+                        else
+                        {
+                            this.dataGridView1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.LightCoral;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

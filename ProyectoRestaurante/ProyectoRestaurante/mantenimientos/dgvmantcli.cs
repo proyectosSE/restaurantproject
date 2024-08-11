@@ -18,8 +18,9 @@ namespace ProyectoRestaurante.mantenimientos
         public dgvmantcli()
         {
             InitializeComponent();
-            formatoDGV.FormatearDataGridViews(this);
             cargardatos();
+            formatoDGV.FormatearDataGridViews(this);
+            
         }
 
         private void cargardatos()
@@ -111,5 +112,29 @@ namespace ProyectoRestaurante.mantenimientos
                 }
             }
         }
+
+        private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (this.dataGridView1.Columns[e.ColumnIndex].Name == "estado")
+            {
+                if (e.Value != null)
+                {
+                    if (e.Value.GetType() != typeof(System.DBNull))
+                    {
+
+                        if (e.Value.ToString() == "A")
+                        {
+                            this.dataGridView1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.LightGreen;
+                        }
+                        else
+                        {
+                            this.dataGridView1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.LightCoral;
+                        }
+                    }
+                }
+            }
+        }
+
+
     }
 }

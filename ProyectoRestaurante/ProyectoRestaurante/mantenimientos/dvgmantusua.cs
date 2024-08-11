@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using ProyectoRestaurante.clases;
 
 namespace ProyectoRestaurante
 {
@@ -17,6 +18,7 @@ namespace ProyectoRestaurante
         {
             InitializeComponent();
             cargadatos();
+            formatoDGV.FormatearDataGridViews(this);
         }
 
         private void cargadatos()
@@ -69,7 +71,15 @@ namespace ProyectoRestaurante
             ms.txtusua.Text = dataGridView.CurrentRow.Cells[6].Value.ToString();
             ms.txtpassw.Text = dataGridView.CurrentRow.Cells[7].Value.ToString();
             ms.cbbnivel.SelectedValue = dataGridView.CurrentRow.Cells[8].Value.ToString();
-            ms.txtest.Text = dataGridView.CurrentRow.Cells[9].Value.ToString();
+            ms.estado = dataGridView.CurrentRow.Cells[9].Value.ToString();
+            if (ms.estado == "A")
+            {
+                ms.rjToggleButton1.Checked = true;
+            }
+            else
+            {
+                ms.rjToggleButton1.Checked = false;
+            }
             ms.bteditar.Visible = true;
             ms.btagregar.Visible = false;
             this.Close();
@@ -108,6 +118,28 @@ namespace ProyectoRestaurante
         private void btcerrar_MouseLeave(object sender, EventArgs e)
         {
             btcerrar.BackColor = Color.Black;
+        }
+
+        private void dataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (this.dataGridView.Columns[e.ColumnIndex].Name == "estado")
+            {
+                if (e.Value != null)
+                {
+                    if (e.Value.GetType() != typeof(System.DBNull))
+                    {
+
+                        if (e.Value.ToString() == "A")
+                        {
+                            this.dataGridView.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.LightGreen;
+                        }
+                        else
+                        {
+                            this.dataGridView.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.LightCoral;
+                        }
+                    }
+                }
+            }
         }
     }
 }

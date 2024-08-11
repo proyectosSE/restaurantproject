@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panelbtns = new System.Windows.Forms.Panel();
-            this.btmantenimiento = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.contenedor = new System.Windows.Forms.Panel();
-            this.btconsulta = new System.Windows.Forms.Button();
             this.btminimizar = new System.Windows.Forms.PictureBox();
             this.btcerrar = new System.Windows.Forms.PictureBox();
+            this.btconsulta = new System.Windows.Forms.Button();
+            this.btmantenimiento = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelbtns.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -55,20 +55,6 @@
             this.panelbtns.Size = new System.Drawing.Size(200, 700);
             this.panelbtns.TabIndex = 0;
             // 
-            // btmantenimiento
-            // 
-            this.btmantenimiento.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btmantenimiento.FlatAppearance.BorderSize = 0;
-            this.btmantenimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btmantenimiento.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btmantenimiento.Location = new System.Drawing.Point(0, 176);
-            this.btmantenimiento.Name = "btmantenimiento";
-            this.btmantenimiento.Size = new System.Drawing.Size(200, 30);
-            this.btmantenimiento.TabIndex = 2;
-            this.btmantenimiento.Text = "Mantenimientos";
-            this.btmantenimiento.UseVisualStyleBackColor = true;
-            this.btmantenimiento.Click += new System.EventHandler(this.btmantenimiento_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
@@ -88,20 +74,6 @@
             this.contenedor.Name = "contenedor";
             this.contenedor.Size = new System.Drawing.Size(1000, 650);
             this.contenedor.TabIndex = 2;
-            // 
-            // btconsulta
-            // 
-            this.btconsulta.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btconsulta.FlatAppearance.BorderSize = 0;
-            this.btconsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btconsulta.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btconsulta.Location = new System.Drawing.Point(0, 226);
-            this.btconsulta.Name = "btconsulta";
-            this.btconsulta.Size = new System.Drawing.Size(200, 30);
-            this.btconsulta.TabIndex = 3;
-            this.btconsulta.Text = "Consulta             ";
-            this.btconsulta.UseVisualStyleBackColor = true;
-            this.btconsulta.Click += new System.EventHandler(this.btconsulta_Click);
             // 
             // btminimizar
             // 
@@ -130,6 +102,38 @@
             this.btcerrar.Click += new System.EventHandler(this.btcerrar_Click);
             this.btcerrar.MouseEnter += new System.EventHandler(this.btcerrar_MouseEnter);
             this.btcerrar.MouseLeave += new System.EventHandler(this.btcerrar_MouseLeave);
+            // 
+            // btconsulta
+            // 
+            this.btconsulta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btconsulta.FlatAppearance.BorderSize = 0;
+            this.btconsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btconsulta.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btconsulta.Image = global::ProyectoRestaurante.Properties.Resources.icons8_search_32;
+            this.btconsulta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btconsulta.Location = new System.Drawing.Point(-3, 256);
+            this.btconsulta.Name = "btconsulta";
+            this.btconsulta.Size = new System.Drawing.Size(200, 41);
+            this.btconsulta.TabIndex = 3;
+            this.btconsulta.Text = "     Consulta             ";
+            this.btconsulta.UseVisualStyleBackColor = true;
+            this.btconsulta.Click += new System.EventHandler(this.btconsulta_Click);
+            // 
+            // btmantenimiento
+            // 
+            this.btmantenimiento.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btmantenimiento.FlatAppearance.BorderSize = 0;
+            this.btmantenimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btmantenimiento.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btmantenimiento.Image = global::ProyectoRestaurante.Properties.Resources.icons8_tools_32;
+            this.btmantenimiento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btmantenimiento.Location = new System.Drawing.Point(0, 176);
+            this.btmantenimiento.Name = "btmantenimiento";
+            this.btmantenimiento.Size = new System.Drawing.Size(200, 60);
+            this.btmantenimiento.TabIndex = 2;
+            this.btmantenimiento.Text = "      Mantenimientos";
+            this.btmantenimiento.UseVisualStyleBackColor = true;
+            this.btmantenimiento.Click += new System.EventHandler(this.btmantenimiento_Click);
             // 
             // pictureBox1
             // 

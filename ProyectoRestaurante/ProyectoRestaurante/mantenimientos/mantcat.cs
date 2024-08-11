@@ -102,6 +102,7 @@ namespace ProyectoRestaurante
         private void textBuscar_TextChanged(object sender, EventArgs e)
         {
             string valorABuscar = textBuscar.Text;
+            
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
                 if (row.Cells[1].Value != null &&
@@ -117,6 +118,8 @@ namespace ProyectoRestaurante
                 }
             }
         }
+
+        
 
         private void rjToggleButton1_CheckedChanged(object sender, EventArgs e)
         {

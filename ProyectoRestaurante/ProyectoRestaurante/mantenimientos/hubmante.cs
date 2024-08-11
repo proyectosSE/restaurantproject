@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoRestaurante.mantenimientos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -224,6 +225,43 @@ namespace ProyectoRestaurante
         private void btimpuesto_MouseLeave(object sender, EventArgs e)
         {
             btimpuesto.BackColor= Color.Black;
+        }
+
+        private void btproveedor_Click(object sender, EventArgs e)
+        {
+            mantprov mantprov = new mantprov();
+            mantprov.FormBorderStyle = FormBorderStyle.None;
+            mantprov.TopLevel = false;
+            mantprov.Dock = DockStyle.Fill;
+            this.Controls.Add( mantprov);
+            this.Tag = mantprov;
+            mantprov.BringToFront();
+            mantprov.Show();
+
+        }
+
+        private void btmoneda_Click(object sender, EventArgs e)
+        {
+            mantmoneda mantmo = new mantmoneda();
+            mantmo.FormBorderStyle = FormBorderStyle.None;
+            mantmo.TopLevel = false;
+            mantmo.Dock = DockStyle.Fill;
+            this.Controls.Add(mantmo);
+            this.Tag = mantmo;
+            mantmo.BringToFront();
+            mantmo.Show();
+        }
+
+        private void btimpuesto_Click(object sender, EventArgs e)
+        {
+            mantimp mantip = new mantimp();
+            mantip.FormBorderStyle = FormBorderStyle.None;
+            mantip.TopLevel = false;
+            mantip.Dock = DockStyle.Fill;
+            this.Controls.Add(mantip);
+            this.Tag = mantip;
+            mantip.BringToFront();
+            mantip.Show();
         }
     }
 }

@@ -76,7 +76,7 @@ namespace ProyectoRestaurante
 
         private void btconsulta_Click(object sender, EventArgs e)
         {
-            AbrirF(new consultageneral());
+            AbrirF(new consultasG());
         }
     }
 }

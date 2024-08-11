@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoRestaurante.clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace ProyectoRestaurante.consultas
 {
     public partial class conusua : Form
@@ -16,13 +18,15 @@ namespace ProyectoRestaurante.consultas
         public conusua()
         {
             InitializeComponent();
-            cargardatos();
+            cargardatos(est);
+            formatoDGV.FormatearDataGridViews(this);
         }
 
-        private void cargardatos()
+        private string est = "WHERE estado = 'A'";
+        private void cargardatos(string estado)
         {
 
-            String consulta = "SELECT * FROM usuarios";
+            String consulta = $"SELECT * FROM usuarios {estado}";
             try
             {
                 using (SqlConnection conexion = new SqlConnection(rutadb.conexion))
@@ -59,6 +63,42 @@ namespace ProyectoRestaurante.consultas
                 {
                     MessageBox.Show("Datos no encontrados");
                 }
+            }
+        }
+
+        private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (this.dataGridView1.Columns[e.ColumnIndex].Name == "estado")
+            {
+                if (e.Value != null)
+                {
+                    if (e.Value.GetType() != typeof(System.DBNull))
+                    {
+
+                        if (e.Value.ToString() == "A")
+                        {
+                            this.dataGridView1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.LightGreen;
+                        }
+                        else
+                        {
+                            this.dataGridView1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.LightCoral;
+                        }
+                    }
+                }
+            }
+        }
+
+        private void rjToggleButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rjToggleButton1.Checked)
+            {
+                est = "WHERE estado = 'I'";
+                cargardatos(est);
+            }
+            else
+            {
+                est = "WHERE estado = 'A'";
+                cargardatos(est);
             }
         }
     }

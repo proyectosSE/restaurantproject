@@ -114,6 +114,30 @@
     <Compile Include="consultas\consultageneral.Designer.cs">
       <DependentUpon>consultageneral.cs</DependentUpon>
     </Compile>
+    <Compile Include="consultas\consultasG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultas\consultasG.Designer.cs">
+      <DependentUpon>consultasG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientos\mantimp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientos\mantimp.Designer.cs">
+      <DependentUpon>mantimp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientos\mantmoneda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientos\mantmoneda.Designer.cs">
+      <DependentUpon>mantmoneda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientos\mantprov.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientos\mantprov.Designer.cs">
+      <DependentUpon>mantprov.cs</DependentUpon>
+    </Compile>
     <Compile Include="mantenimientos\hubmante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -315,6 +339,9 @@
     <EmbeddedResource Include="consultas\consultageneral.resx">
       <DependentUpon>consultageneral.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="consultas\consultasG.resx">
+      <DependentUpon>consultasG.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="consultas\conusua.resx">
       <DependentUpon>conusua.cs</DependentUpon>
     </EmbeddedResource>
@@ -342,11 +369,20 @@
     <EmbeddedResource Include="mantenimientos\mantdepar.resx">
       <DependentUpon>mantdepar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientos\mantimp.resx">
+      <DependentUpon>mantimp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mantenimientos\mantmedid.resx">
       <DependentUpon>mantmedid.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mantenimientos\mantmesas.resx">
       <DependentUpon>mantmesas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientos\mantmoneda.resx">
+      <DependentUpon>mantmoneda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientos\mantprov.resx">
+      <DependentUpon>mantprov.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mantenimientos\mantsalas.resx">
       <DependentUpon>mantsalas.cs</DependentUpon>
@@ -633,6 +669,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-login-ios-17-filled-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinning-room.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\experiencia-del-cliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-room-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empanada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar-usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\departamento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perdida-de-peso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proveedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proveedores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_4751693.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill_1730347.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tools-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tools-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tools-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -25,6 +25,7 @@ namespace ProyectoRestaurante
 
         private string mvar;
         private string estado = "I";
+
         private void btagregar_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();

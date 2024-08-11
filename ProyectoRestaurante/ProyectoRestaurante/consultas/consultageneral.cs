@@ -20,6 +20,7 @@ namespace ProyectoRestaurante.consultas
             formatoDGV.FormatearDataGridViews(this);
             ComboBox.Items.AddRange(new object[] { "Clientes", "Mesas", "Salas","Categorias","Usuarios","Departamentos","Medidas","Proveedores","Productos","Monedas","Impuestos" });
             ComboBox.SelectedIndex = 0;
+                        
         }
 
         private void btcerrar_Click(object sender, EventArgs e)
@@ -27,7 +28,7 @@ namespace ProyectoRestaurante.consultas
             this.Close();
         }
 
-        int indice;
+        int indice=1;
         string tabla;
         private void cargardatos(string tabla)
         {
@@ -56,26 +57,6 @@ namespace ProyectoRestaurante.consultas
         }
 
 
-
-        private void rjTextBox1__TextChanged(object sender, EventArgs e)
-        {
-             string valorABuscar = txtBuscar.Text;
-             foreach (DataGridViewRow row in dataGridView1.Rows)
-             {
-                 if (row.Cells[indice].Value != null &&
-                 row.Cells[indice].Value.ToString().Contains(valorABuscar))
-                 {
-                     dataGridView1.CurrentCell = row.Cells[indice];
-                     dataGridView1.FirstDisplayedScrollingRowIndex = row.Index;
-                     break;
-                 }
-                 else if (row.Cells[indice].Value == null)
-                 {
-                     MessageBox.Show("Datos no encontrados");
-                 }
-             }
-                       
-        }
 
         private void ComboBox_OnSelectedIndexChanged(object sender, EventArgs e)
         {
@@ -164,6 +145,27 @@ namespace ProyectoRestaurante.consultas
                     }
                 }
             }
+        }
+
+        private void txtBuscar__TextChanged(object sender, EventArgs e)
+        {
+             string valorABuscar = txtBuscar.Text;
+             foreach (DataGridViewRow row in dataGridView1.Rows)
+             {
+                 if (row.Cells[indice].Value != null &&
+                 row.Cells[indice].Value.ToString().Contains(valorABuscar))
+                 {
+                     dataGridView1.CurrentCell = row.Cells[indice];
+                     dataGridView1.FirstDisplayedScrollingRowIndex = row.Index;
+                     break;
+                 }
+                 else if (row.Cells[indice].Value == null)
+                 {
+                     MessageBox.Show("Datos no encontrados");
+                 }
+             }
+
+           
         }
     }
 }

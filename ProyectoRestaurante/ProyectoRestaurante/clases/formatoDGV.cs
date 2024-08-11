@@ -29,6 +29,7 @@ namespace ProyectoRestaurante.clases
                     dataGridView.BorderStyle = BorderStyle.FixedSingle; // Estilo de borde
                     dataGridView.GridColor = Color.Black;
                     
+
                 }
             }
         }

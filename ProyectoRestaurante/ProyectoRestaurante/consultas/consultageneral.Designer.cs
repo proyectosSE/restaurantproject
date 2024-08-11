@@ -70,14 +70,14 @@
             this.txtBuscar.TabIndex = 3;
             this.txtBuscar.Texts = "";
             this.txtBuscar.UnderlinedStyle = false;
-            this.txtBuscar._TextChanged += new System.EventHandler(this.rjTextBox1__TextChanged);
+            this.txtBuscar._TextChanged += new System.EventHandler(this.txtBuscar__TextChanged);
             // 
             // ComboBox
             // 
             this.ComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ComboBox.BorderColor = System.Drawing.Color.Gold;
             this.ComboBox.BorderSize = 1;
-            this.ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBox.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox.ForeColor = System.Drawing.Color.Black;
             this.ComboBox.IconColor = System.Drawing.Color.Gold;

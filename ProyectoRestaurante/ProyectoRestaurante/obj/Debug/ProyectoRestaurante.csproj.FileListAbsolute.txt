@@ -300,3 +300,4 @@ C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\P
 C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\Proyecto.CE3A958B.Up2Date
 C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.exe
 C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.pdb
+C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.consultas.consultageneral.resources

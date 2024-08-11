@@ -108,6 +108,12 @@
     <Compile Include="consultas\conusua.Designer.cs">
       <DependentUpon>conusua.cs</DependentUpon>
     </Compile>
+    <Compile Include="consultas\consultageneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultas\consultageneral.Designer.cs">
+      <DependentUpon>consultageneral.cs</DependentUpon>
+    </Compile>
     <Compile Include="mantenimientos\hubmante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -305,6 +311,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="consultas\consalas.resx">
       <DependentUpon>consalas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consultas\consultageneral.resx">
+      <DependentUpon>consultageneral.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="consultas\conusua.resx">
       <DependentUpon>conusua.cs</DependentUpon>

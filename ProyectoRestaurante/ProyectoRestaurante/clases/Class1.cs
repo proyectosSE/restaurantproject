@@ -14,23 +14,57 @@ namespace ProyectoRestaurante
         
         public void Agregar(string datos, string tabla)
         {
-            conexion.Open();
-            string cadena = $"INSERT INTO {tabla} VALUES({datos});";
-            SqlCommand comando = new SqlCommand(cadena,conexion);
-            comando.ExecuteNonQuery();
-            MessageBox.Show("Datos guardados", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            conexion.Close();
+            try
+            {
+                conexion.Open();
+                string cadena = $"INSERT INTO {tabla} VALUES({datos});";
+                SqlCommand comando = new SqlCommand(cadena, conexion);
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Datos guardados", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (SqlException sqlEx)
+            {
+                MessageBox.Show($"Error de SQL: {sqlEx.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error general: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                if (conexion.State == System.Data.ConnectionState.Open)
+                {
+                    conexion.Close();
+                }
+            }
         }
 
         
         public void Actualizar(string datos,string tabla,string id)
         {
-            conexion.Open();
-            string cadena = $"UPDATE {tabla} SET {datos} WHERE {id};";
-            SqlCommand comando = new SqlCommand(cadena, conexion);
-            comando.ExecuteNonQuery();
-            MessageBox.Show("Datos editados");
-            conexion.Close();
+            try
+            {
+                conexion.Open();
+                string cadena = $"UPDATE {tabla} SET {datos} WHERE {id};";
+                SqlCommand comando = new SqlCommand(cadena, conexion);
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Datos editados", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (SqlException sqlEx)
+            {
+                MessageBox.Show($"Error de SQL: {sqlEx.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error general: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                if (conexion.State == System.Data.ConnectionState.Open)
+                {
+                    conexion.Close();
+                }
+            }
         }
 
         public void eliminar (string tabla, string id)

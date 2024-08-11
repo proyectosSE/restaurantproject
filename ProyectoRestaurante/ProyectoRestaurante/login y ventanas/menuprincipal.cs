@@ -73,5 +73,10 @@ namespace ProyectoRestaurante
         {
             btminimizar.BackColor= Color.Black;
         }
+
+        private void btconsulta_Click(object sender, EventArgs e)
+        {
+            AbrirF(new consultageneral());
+        }
     }
 }

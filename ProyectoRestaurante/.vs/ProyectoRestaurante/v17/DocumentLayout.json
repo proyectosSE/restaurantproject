@@ -1,52 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_restaurant\\proyectorestaurante\\proyectorestaurante\\consultas\\consultasg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\consultas\\consultasg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_restaurant\\proyectorestaurante\\proyectorestaurante\\consultas\\consultasg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\consultas\\consultasg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_restaurant\\proyectorestaurante\\proyectorestaurante\\mantenimientos\\hubmante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\mantenimientos\\hubmante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_restaurant\\proyectorestaurante\\proyectorestaurante\\consultas\\conprov.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\consultas\\conprov.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_restaurant\\proyectorestaurante\\proyectorestaurante\\consultas\\conimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\consultas\\conimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_restaurant\\proyectorestaurante\\proyectorestaurante\\consultas\\conimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\consultas\\conimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_restaurant\\proyectorestaurante\\proyectorestaurante\\consultas\\conmesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\consultas\\conmesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_restaurant\\proyectorestaurante\\proyectorestaurante\\consultas\\conmon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\consultas\\conmon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_restaurant\\proyectorestaurante\\proyectorestaurante\\consultas\\conprov.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\consultas\\conprov.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_restaurant\\proyectorestaurante\\proyectorestaurante\\consultas\\conmon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\consultas\\conmon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_restaurant\\proyectorestaurante\\proyectorestaurante\\consultas\\conmesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\consultas\\conmesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -54,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -71,143 +26,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "hubmante.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\mantenimientos\\hubmante.cs",
-              "RelativeDocumentMoniker": "ProyectoRestaurante\\mantenimientos\\hubmante.cs",
-              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\mantenimientos\\hubmante.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoRestaurante\\mantenimientos\\hubmante.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T14:42:36.02Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "conimp.cs",
-              "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\consultas\\conimp.cs",
-              "RelativeDocumentMoniker": "ProyectoRestaurante\\consultas\\conimp.cs",
-              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\consultas\\conimp.cs",
-              "RelativeToolTip": "ProyectoRestaurante\\consultas\\conimp.cs",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAhwGcAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T14:19:12.255Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "conimp.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\consultas\\conimp.cs",
-              "RelativeDocumentMoniker": "ProyectoRestaurante\\consultas\\conimp.cs",
-              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\consultas\\conimp.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoRestaurante\\consultas\\conimp.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T14:17:10.871Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "conprov.cs",
-              "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\consultas\\conprov.cs",
-              "RelativeDocumentMoniker": "ProyectoRestaurante\\consultas\\conprov.cs",
-              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\consultas\\conprov.cs",
-              "RelativeToolTip": "ProyectoRestaurante\\consultas\\conprov.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T14:13:24.256Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "conprov.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\consultas\\conprov.cs",
-              "RelativeDocumentMoniker": "ProyectoRestaurante\\consultas\\conprov.cs",
-              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\consultas\\conprov.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoRestaurante\\consultas\\conprov.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T14:10:17.318Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "consultasG.cs",
-              "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\consultas\\consultasG.cs",
-              "RelativeDocumentMoniker": "ProyectoRestaurante\\consultas\\consultasG.cs",
-              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\consultas\\consultasG.cs",
-              "RelativeToolTip": "ProyectoRestaurante\\consultas\\consultasG.cs",
-              "ViewState": "AQIAAEwAAAAAAAAAAAAAAFkAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T14:08:17.307Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "consultasG.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\consultas\\consultasG.cs",
-              "RelativeDocumentMoniker": "ProyectoRestaurante\\consultas\\consultasG.cs",
-              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\consultas\\consultasG.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoRestaurante\\consultas\\consultasG.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T14:08:07.639Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "conmon.cs",
-              "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\consultas\\conmon.cs",
-              "RelativeDocumentMoniker": "ProyectoRestaurante\\consultas\\conmon.cs",
-              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\consultas\\conmon.cs",
-              "RelativeToolTip": "ProyectoRestaurante\\consultas\\conmon.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAADsAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T14:05:21.556Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "conmesa.cs",
-              "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\consultas\\conmesa.cs",
-              "RelativeDocumentMoniker": "ProyectoRestaurante\\consultas\\conmesa.cs",
-              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\consultas\\conmesa.cs",
-              "RelativeToolTip": "ProyectoRestaurante\\consultas\\conmesa.cs",
-              "ViewState": "AQIAAFUAAAAAAAAAAAAAAGcAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T14:04:42.94Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "conmesa.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\consultas\\conmesa.cs",
-              "RelativeDocumentMoniker": "ProyectoRestaurante\\consultas\\conmesa.cs",
-              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\consultas\\conmesa.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoRestaurante\\consultas\\conmesa.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T14:02:46.847Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "conmon.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\consultas\\conmon.cs",
-              "RelativeDocumentMoniker": "ProyectoRestaurante\\consultas\\conmon.cs",
-              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\consultas\\conmon.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoRestaurante\\consultas\\conmon.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T14:01:28.568Z",
-              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

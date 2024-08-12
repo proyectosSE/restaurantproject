@@ -121,6 +121,24 @@
     <Compile Include="consultas\consultasG.Designer.cs">
       <DependentUpon>consultasG.cs</DependentUpon>
     </Compile>
+    <Compile Include="consultas\conmon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultas\conmon.Designer.cs">
+      <DependentUpon>conmon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consultas\conprov.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultas\conprov.Designer.cs">
+      <DependentUpon>conprov.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consultas\conimp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultas\conimp.Designer.cs">
+      <DependentUpon>conimp.cs</DependentUpon>
+    </Compile>
     <Compile Include="mantenimientos\mantimp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -328,11 +346,20 @@
     <EmbeddedResource Include="consultas\condepart.resx">
       <DependentUpon>condepart.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="consultas\conimp.resx">
+      <DependentUpon>conimp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="consultas\conmedidas.resx">
       <DependentUpon>conmedidas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="consultas\conmesa.resx">
       <DependentUpon>conmesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consultas\conmon.resx">
+      <DependentUpon>conmon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consultas\conprov.resx">
+      <DependentUpon>conprov.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="consultas\consalas.resx">
       <DependentUpon>consalas.cs</DependentUpon>

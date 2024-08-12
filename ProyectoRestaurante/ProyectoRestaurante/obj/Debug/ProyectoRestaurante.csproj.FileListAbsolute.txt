@@ -305,3 +305,6 @@ C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\P
 C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantenimientos.mantprov.resources
 C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantenimientos.mantmoneda.resources
 C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantenimientos.mantimp.resources
+C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.consultas.conimp.resources
+C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.consultas.conmon.resources
+C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.consultas.conprov.resources

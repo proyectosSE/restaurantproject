@@ -66,20 +66,16 @@ namespace ProyectoRestaurante.consultas
                     AbrirF(new conmedidas());
                     break;
                 case 7:
-                    //tabla = "proveedores";
-                    
+                    AbrirF(new conprov());
                     break;
                 case 8:
-                    //tabla = "productos";
-                    
+                    //productos
                     break;
                 case 9:
-                    //tabla = "tiposmoneda";
-                    
+                    AbrirF(new conmon());
                     break;
                 case 10:
-                    //tabla = "impuestos";
-                    
+                    AbrirF(new conimp());
                     break;
                 default:
                     MessageBox.Show("Ítem desconocido");

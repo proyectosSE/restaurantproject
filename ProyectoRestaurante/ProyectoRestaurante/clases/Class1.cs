@@ -20,7 +20,8 @@ namespace ProyectoRestaurante
                 string cadena = $"INSERT INTO {tabla} VALUES({datos});";
                 SqlCommand comando = new SqlCommand(cadena, conexion);
                 comando.ExecuteNonQuery();
-                MessageBox.Show("Datos guardados", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                mensaje ms = new mensaje("listo", "Datos guardados correctamente");
+                ms.ShowDialog();
             }
             catch (SqlException sqlEx)
             {
@@ -48,7 +49,8 @@ namespace ProyectoRestaurante
                 string cadena = $"UPDATE {tabla} SET {datos} WHERE {id};";
                 SqlCommand comando = new SqlCommand(cadena, conexion);
                 comando.ExecuteNonQuery();
-                MessageBox.Show("Datos editados", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                mensaje ms = new mensaje("listo", "Datos editados correctamente");
+                ms.ShowDialog();
             }
             catch (SqlException sqlEx)
             {

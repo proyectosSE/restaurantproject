@@ -20,6 +20,9 @@ namespace ProyectoRestaurante
         public mensaje(string pTipo, string pMensaje)
         {
             InitializeComponent();
+            plisto.Visible = false;
+            perror.Visible = false;
+            ppregunta.Visible = false;
             
             label1.Text = pMensaje;
             switch (pTipo)

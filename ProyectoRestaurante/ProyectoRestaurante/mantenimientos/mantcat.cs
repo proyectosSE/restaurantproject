@@ -21,6 +21,7 @@ namespace ProyectoRestaurante
             buttEdit.Visible = false;
             cargardatos();
             formatoDGV.FormatearDataGridViews(this);
+            
         }
 
         string mvar;

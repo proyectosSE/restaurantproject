@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_restaurant\\proyectorestaurante\\proyectorestaurante\\mantenimientos\\mantcat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\mantenimientos\\mantcat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_restaurant\\proyectorestaurante\\proyectorestaurante\\login y ventanas\\mensaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\login y ventanas\\mensaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_restaurant\\proyectorestaurante\\proyectorestaurante\\mantenimientos\\mantcat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\mantenimientos\\mantcat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_restaurant\\proyectorestaurante\\proyectorestaurante\\clases\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\clases\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_restaurant\\proyectorestaurante\\proyectorestaurante\\login y ventanas\\mensaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\login y ventanas\\mensaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -39,6 +55,57 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "mantcat.cs",
+              "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\mantenimientos\\mantcat.cs",
+              "RelativeDocumentMoniker": "ProyectoRestaurante\\mantenimientos\\mantcat.cs",
+              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\mantenimientos\\mantcat.cs",
+              "RelativeToolTip": "ProyectoRestaurante\\mantenimientos\\mantcat.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T13:23:23.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "mensaje.cs",
+              "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\mensaje.cs",
+              "RelativeDocumentMoniker": "ProyectoRestaurante\\login y ventanas\\mensaje.cs",
+              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\mensaje.cs",
+              "RelativeToolTip": "ProyectoRestaurante\\login y ventanas\\mensaje.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABYAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T13:21:17.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "mantcat.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\mantenimientos\\mantcat.cs",
+              "RelativeDocumentMoniker": "ProyectoRestaurante\\mantenimientos\\mantcat.cs",
+              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\mantenimientos\\mantcat.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoRestaurante\\mantenimientos\\mantcat.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T13:20:42.447Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\clases\\Class1.cs",
+              "RelativeDocumentMoniker": "ProyectoRestaurante\\clases\\Class1.cs",
+              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\clases\\Class1.cs",
+              "RelativeToolTip": "ProyectoRestaurante\\clases\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADQAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T13:18:04.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "mensaje.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\mensaje.cs",
               "RelativeDocumentMoniker": "ProyectoRestaurante\\login y ventanas\\mensaje.cs",
@@ -50,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "verificar.cs",
               "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_Restaurant\\ProyectoRestaurante\\ProyectoRestaurante\\clases\\verificar.cs",
               "RelativeDocumentMoniker": "ProyectoRestaurante\\clases\\verificar.cs",

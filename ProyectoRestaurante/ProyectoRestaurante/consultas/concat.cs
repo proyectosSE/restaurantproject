@@ -51,7 +51,7 @@ namespace ProyectoRestaurante
 
         private void txtcat_TextChanged(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtcat.))
+            if (string.IsNullOrEmpty(txtcat.Text))
             {
                 dataGridView1.ClearSelection();
             }

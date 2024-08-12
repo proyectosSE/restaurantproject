@@ -28,11 +28,20 @@ namespace ProyectoRestaurante
 
         private void btagregar_Click(object sender, EventArgs e)
         {
-            Conectar cls = new Conectar();
-            string datos = "'"+txtnom.Text+"','"+txtsex.Text+"','"+txtdirec.Text+"','"+txttel.Text+"','"+txtemail.Text+"','"+txtusua.Text+"','"+txtpassw.Text+"',"+cbbnivel.SelectedValue+",'"+estado+"'";
-            string tabla = "usuarios";
-            cls.Agregar(datos, tabla);
-            limpiar.LimpiarTextBoxes(this);
+            if (verificar.campo(this))
+            {
+                mensaje ms = new mensaje("error", "Se encontraron campos vacios");
+                ms.ShowDialog();
+            }
+            else
+            {
+                Conectar cls = new Conectar();
+                string datos = "'" + txtnom.Text + "','" + txtsex.Text + "','" + txtdirec.Text + "','" + txttel.Text + "','" + txtemail.Text + "','" + txtusua.Text + "','" + txtpassw.Text + "'," + cbbnivel.SelectedValue + ",'" + estado + "'";
+                string tabla = "usuarios";
+                cls.Agregar(datos, tabla);
+                limpiar.LimpiarTextBoxes(this);
+            }
+            
         }
 
         private void mantusua_Load(object sender, EventArgs e)
@@ -112,14 +121,23 @@ namespace ProyectoRestaurante
         public string estado="I";
         private void bteditar_Click(object sender, EventArgs e)
         {
-            Conectar cls = new Conectar();
-            string up = "nombres= '"+txtnom.Text+"', sexo= '"+txtsex.Text+"', direccion= '"+txtdirec.Text+"', telefono= '"+txttel.Text+"', email= '"+txtemail.Text+"', usuario= '"+txtusua.Text+"', password= '"+txtpassw.Text+"', id_nivel= "+cbbnivel.SelectedValue+", estado= '"+estado +"'";
-            string tabla = "usuarios";
-            string id = "id_usuario= '"+mvar+"'";
-            cls.Actualizar(up,tabla,id);
-            bteditar.Visible = false;
-            btagregar.Visible = true;
-            limpiar.LimpiarTextBoxes(this);
+            if (verificar.campo(this))
+            {
+                mensaje ms = new mensaje("error", "Se encontraron campos vacios");
+                ms.ShowDialog();
+            }
+            else
+            {
+                Conectar cls = new Conectar();
+                string up = "nombres= '" + txtnom.Text + "', sexo= '" + txtsex.Text + "', direccion= '" + txtdirec.Text + "', telefono= '" + txttel.Text + "', email= '" + txtemail.Text + "', usuario= '" + txtusua.Text + "', password= '" + txtpassw.Text + "', id_nivel= " + cbbnivel.SelectedValue + ", estado= '" + estado + "'";
+                string tabla = "usuarios";
+                string id = "id_usuario= '" + mvar + "'";
+                cls.Actualizar(up, tabla, id);
+                bteditar.Visible = false;
+                btagregar.Visible = true;
+                limpiar.LimpiarTextBoxes(this);
+            }
+                        
         }
 
         private void rjToggleButton1_CheckedChanged(object sender, EventArgs e)

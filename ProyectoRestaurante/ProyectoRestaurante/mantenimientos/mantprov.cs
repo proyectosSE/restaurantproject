@@ -118,19 +118,34 @@ namespace ProyectoRestaurante.mantenimientos
 
         private void btagregar_Click(object sender, EventArgs e)
         {
-           
+            if (verificar.campo(this))
+            {
+                mensaje ms = new mensaje("error", "Se encontraron campos vacios");
+                ms.ShowDialog();
+            }
+            else
+            {
                 Conectar cls = new Conectar();
                 string datos = "'" + txtnombre.Text + "','" + txttel.Text + "','" + txtdirecc.Text + "','" + txtemail.Text + "','" + txtvend.Text + "','" + fechaingreso.Text + "','" + estado + "'";
                 string tabla = "proveedores";
                 cls.Agregar(datos, tabla);
                 cargardatos();
                 limpiar.LimpiarTextBoxes(this);
+            }
+                     
             
         }
 
         private void buttEdit_Click(object sender, EventArgs e)
         {
-            
+
+            if (verificar.campo(this))
+            {
+                mensaje ms = new mensaje("error", "Se encontraron campos vacios");
+                ms.ShowDialog();
+            }
+            else
+            {
                 Conectar cls = new Conectar();
                 string up = "nomproveedor= '" + txtnombre.Text + "', tlfproveedor= '" + txttel.Text + "', direcproveedor= '" + txtdirecc.Text + "', emailproveedor= '" + txtemail.Text + "', vendedor= '" + txtvend.Text + "', fechaingreso= '" + fechaingreso.Text + "', estado= '" + estado + "'";
                 string tbl = "proveedores";
@@ -141,6 +156,8 @@ namespace ProyectoRestaurante.mantenimientos
                 cargardatos();
                 btagregar.Visible = true;
                 limpiar.LimpiarTextBoxes(this);
+            }
+            
             
         }
     }

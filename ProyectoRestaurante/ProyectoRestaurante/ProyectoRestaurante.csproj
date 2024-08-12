@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clases\Class1.cs" />
+    <Compile Include="clases\verificar.cs" />
     <Compile Include="clases\formatoDGV.cs" />
     <Compile Include="clases\limpiar.cs" />
     <Compile Include="clases\rutadb.cs" />
@@ -717,6 +718,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-search-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-error-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-check-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-question-96.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

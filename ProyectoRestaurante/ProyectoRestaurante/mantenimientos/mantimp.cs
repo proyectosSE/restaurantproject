@@ -60,26 +60,46 @@ namespace ProyectoRestaurante.mantenimientos
 
         private void btagregar_Click(object sender, EventArgs e)
         {
-            Conectar cls = new Conectar();
-            string datos = "'" + txtnomimp.Text + "'," + txtvalor.Text + ",'" + fechaimpuesto.Text +"','" + estado + "'";
-            string tabla = "impuestos";
-            cls.Agregar(datos, tabla);
-            cargardatos();
-            limpiar.LimpiarTextBoxes(this);
+            if (verificar.campo(this))
+            {
+                mensaje ms = new mensaje("error", "Se encontraron campos vacios");
+                ms.ShowDialog();
+            }
+            else
+            {
+                Conectar cls = new Conectar();
+                string datos = "'" + txtnomimp.Text + "'," + txtvalor.Text + ",'" + fechaimpuesto.Text + "','" + estado + "'";
+                string tabla = "impuestos";
+                cls.Agregar(datos, tabla);
+                cargardatos();
+                limpiar.LimpiarTextBoxes(this);
+            }
+
+            
         }
 
         private void buttEdit_Click(object sender, EventArgs e)
         {
-            Conectar cls = new Conectar();
-            string up = "nomimpuesto= '" + txtnomimp.Text + "', valorimpuesto= " + txtvalor.Text + ", fechaimpuesto= '" +fechaimpuesto.Text + "', estado= '" + estado + "'";
-            string tbl = "impuestos";
-            string id = "id_impuesto = '" + mvar + "'";
-            cls.Actualizar(up, tbl, id);
+            if (verificar.campo(this))
+            {
+                mensaje ms = new mensaje("error", "Se encontraron campos vacios");
+                ms.ShowDialog();
+            }
+            else
+            {
+                Conectar cls = new Conectar();
+                string up = "nomimpuesto= '" + txtnomimp.Text + "', valorimpuesto= " + txtvalor.Text + ", fechaimpuesto= '" + fechaimpuesto.Text + "', estado= '" + estado + "'";
+                string tbl = "impuestos";
+                string id = "id_impuesto = '" + mvar + "'";
+                cls.Actualizar(up, tbl, id);
 
-            buttEdit.Visible = false;
-            cargardatos();
-            btagregar.Visible = true;
-            limpiar.LimpiarTextBoxes(this);
+                buttEdit.Visible = false;
+                cargardatos();
+                btagregar.Visible = true;
+                limpiar.LimpiarTextBoxes(this);
+            }
+
+            
         }
 
         private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)

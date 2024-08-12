@@ -28,12 +28,21 @@ namespace ProyectoRestaurante
 
         private void btagregar_Click(object sender, EventArgs e)
         {
-            Conectar cls = new Conectar();
-            string datos = "" + cbbsala.SelectedValue + ",'" + txtmesa.Text + "'," + txtasientos.Text + ",'" + fechamesa.Text + "','"+estado+"'";
-            string tabla = "mesas";
-            cls.Agregar(datos, tabla);
-            cargardatos();
-            limpiar.LimpiarTextBoxes(this);
+            if (verificar.campo(this))
+            {
+                mensaje ms = new mensaje("error", "Se encontraron campos vacios");
+                ms.ShowDialog();
+            }
+            else
+            {
+                Conectar cls = new Conectar();
+                string datos = "" + cbbsala.SelectedValue + ",'" + txtmesa.Text + "'," + txtasientos.Text + ",'" + fechamesa.Text + "','" + estado + "'";
+                string tabla = "mesas";
+                cls.Agregar(datos, tabla);
+                cargardatos();
+                limpiar.LimpiarTextBoxes(this);
+            }
+            
         }
         
         private void mantmesas_Load(object sender, EventArgs e)
@@ -80,16 +89,26 @@ namespace ProyectoRestaurante
 
         private void buttEdit_Click(object sender, EventArgs e)
         {
-            Conectar cls = new Conectar();
-            string up = "id_sala ='" + cbbsala.SelectedValue + "',nommesa = "+"'"+ txtmesa.Text+ "',puestos ="+txtasientos.Text+", fecha ="+"'"+fechamesa.Text+"', estado ='"+estado+"'";
-            string tbl = "mesas";
-            string id = "id_mesa = '" + mvar + "'";
-            cls.Actualizar(up, tbl, id);
+            if (verificar.campo(this))
+            {
+                mensaje ms = new mensaje("error", "Se encontraron campos vacios");
+                ms.ShowDialog();
+            }
+            else
+            {
+                Conectar cls = new Conectar();
+                string up = "id_sala ='" + cbbsala.SelectedValue + "',nommesa = " + "'" + txtmesa.Text + "',puestos =" + txtasientos.Text + ", fecha =" + "'" + fechamesa.Text + "', estado ='" + estado + "'";
+                string tbl = "mesas";
+                string id = "id_mesa = '" + mvar + "'";
+                cls.Actualizar(up, tbl, id);
 
-            buttEdit.Visible = false;
-            cargardatos();
-            btagregar.Visible = true;
-            limpiar.LimpiarTextBoxes(this);
+                buttEdit.Visible = false;
+                cargardatos();
+                btagregar.Visible = true;
+                limpiar.LimpiarTextBoxes(this);
+            }
+
+            
         }
 
         private void btcerrar_Click_1(object sender, EventArgs e)

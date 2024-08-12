@@ -17,7 +17,35 @@ namespace ProyectoRestaurante
             InitializeComponent();
         }
 
-       
+        public mensaje(string pTipo, string pMensaje)
+        {
+            InitializeComponent();
+            
+            label1.Text = pMensaje;
+            switch (pTipo)
+            {
+                case "pregunta":
+                    label2.Text = "CONFIRMACION?";                    
+                    ppregunta.Visible = true;
+                    break;
+                case "listo":
+                    label2.Text = "LISTO";                    
+                    plisto.Visible = true;
+                    rjButton2.Visible = false;
+                    break;
+                case "error":
+                    label2.Text = "ERROR";                  
+                    perror.Visible = true;
+                    rjButton2.Visible = false;
+                    break;
+                default:
+                    label2.Text = "ERROR";
+                    break;
+            }
+        }
+
+
+
         private void rjButton1_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.OK;

@@ -27,12 +27,21 @@ namespace ProyectoRestaurante
         string estado = "I";
         private void btagregar_Click(object sender, EventArgs e)
         {
-            Conectar cls = new Conectar();
-            string categoria = "'" + textcat.Text + "','" +estado + "'";
-            string tbcat = "categorias";
-            cls.Agregar(categoria, tbcat);
-            cargardatos();
-            limpiar.LimpiarTextBoxes(this);
+            if (verificar.campo(this))
+            {
+                mensaje ms = new mensaje("error","Se encontraron campos vacios");
+                ms.ShowDialog();
+            }
+            else 
+            {
+                Conectar cls = new Conectar();
+                string categoria = "'" + textcat.Text + "','" + estado + "'";
+                string tbcat = "categorias";
+                cls.Agregar(categoria, tbcat);
+                cargardatos();
+                limpiar.LimpiarTextBoxes(this);
+            }
+            
         }
 
         private void cargardatos()
@@ -65,15 +74,24 @@ namespace ProyectoRestaurante
 
         private void buttEdit_Click(object sender, EventArgs e)
         {
-            Conectar cls = new Conectar();
-            string up = "descripcion ='"+textcat.Text+"', estado= '"+estado+"'";
-            string tbl = "categorias";
-            string id = "id_categoria = '"+mvar+"'";
-            cls.Actualizar(up, tbl,id);
-            btagregar.Visible = true;
-            buttEdit.Visible = false;
-            cargardatos();
-            limpiar.LimpiarTextBoxes(this);
+            if (verificar.campo(this))
+            {
+                mensaje ms = new mensaje("error", "Se encontraron campos vacios");
+                ms.ShowDialog();
+            }
+            else
+            {
+                Conectar cls = new Conectar();
+                string up = "descripcion ='" + textcat.Text + "', estado= '" + estado + "'";
+                string tbl = "categorias";
+                string id = "id_categoria = '" + mvar + "'";
+                cls.Actualizar(up, tbl, id);
+                btagregar.Visible = true;
+                buttEdit.Visible = false;
+                cargardatos();
+                limpiar.LimpiarTextBoxes(this);
+            }
+            
         }
 
         private void btcerrar_Click(object sender, EventArgs e)

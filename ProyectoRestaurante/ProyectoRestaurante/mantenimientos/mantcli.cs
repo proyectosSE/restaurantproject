@@ -29,11 +29,20 @@ namespace ProyectoRestaurante
 
         private void buttAgregar_Click(object sender, EventArgs e)
         {
-            Conectar cls = new Conectar();
-            string datos = "'"+txtnom.Text+"','"+txtapell.Text+"','"+txtdirec.Text+"','"+txtemail.Text+"',"+txtlimicre.Text+",'"+fechain.Text+"','"+estado+"'";
-            string tabla = "clientes";
-            cls.Agregar(datos,tabla);
-            limpiar.LimpiarTextBoxes(this);
+            if (verificar.campo(this))
+            {
+                mensaje ms = new mensaje("error", "Se encontraron campos vacios");
+                ms.ShowDialog();
+            }
+            else
+            {
+                Conectar cls = new Conectar();
+                string datos = "'" + txtnom.Text + "','" + txtapell.Text + "','" + txtdirec.Text + "','" + txtemail.Text + "'," + txtlimicre.Text + ",'" + fechain.Text + "','" + estado + "'";
+                string tabla = "clientes";
+                cls.Agregar(datos, tabla);
+                limpiar.LimpiarTextBoxes(this);
+            }
+                        
         }
         
 
@@ -57,14 +66,23 @@ namespace ProyectoRestaurante
 
         private void bteditar_Click(object sender, EventArgs e)
         {
-            Conectar cls = new Conectar();
-            string up = "nomcliente= '"+txtnom.Text+"', apellidocliente= '"+txtapell.Text+"', direccliente= '"+txtdirec.Text+"', emailcliente= '"+txtemail.Text+"', limitecredito= "+txtlimicre.Text+", fechaingreso= '"+fechain.Text+"', estado= '"+estado+"'";
-            string tabla = "clientes";
-            string id = "id_cliente= '"+mvar+"'";
-            cls.Actualizar(up,tabla,id);
-            bteditar.Visible = false;
-            buttAgregar.Visible = true;
-            limpiar.LimpiarTextBoxes(this);
+            if (verificar.campo(this))
+            {
+                mensaje ms = new mensaje("error", "Se encontraron campos vacios");
+                ms.ShowDialog();
+            }
+            else
+            {
+                Conectar cls = new Conectar();
+                string up = "nomcliente= '" + txtnom.Text + "', apellidocliente= '" + txtapell.Text + "', direccliente= '" + txtdirec.Text + "', emailcliente= '" + txtemail.Text + "', limitecredito= " + txtlimicre.Text + ", fechaingreso= '" + fechain.Text + "', estado= '" + estado + "'";
+                string tabla = "clientes";
+                string id = "id_cliente= '" + mvar + "'";
+                cls.Actualizar(up, tabla, id);
+                bteditar.Visible = false;
+                buttAgregar.Visible = true;
+                limpiar.LimpiarTextBoxes(this);
+            }
+                      
                         
         }
 

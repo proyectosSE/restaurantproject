@@ -24,13 +24,24 @@ namespace ProyectoRestaurante
 
         private string mivar;
         private string estado="I";
+
+
         private void btagregar_Click(object sender, EventArgs e)
         {
-            Conectar cls = new Conectar();
-            string datos = "'" + txtdepart.Text + "'," + txtprovincia.Text + ", '" + estado + "'";
-            string tabla = "departamentos";
-            cls.Agregar(datos, tabla);
-            cargardatos();
+            if (verificar.campo(this))
+            {
+                mensaje ms = new mensaje("error", "Se encontraron campos vacios");
+                ms.ShowDialog();
+            }
+            else
+            {
+                Conectar cls = new Conectar();
+                string datos = "'" + txtdepart.Text + "'," + txtprovincia.Text + ", '" + estado + "'";
+                string tabla = "departamentos";
+                cls.Agregar(datos, tabla);
+                cargardatos();
+            }
+                        
         }
         
         private void cargardatos()
@@ -68,15 +79,24 @@ namespace ProyectoRestaurante
 
         private void buttEdit_Click(object sender, EventArgs e)
         {
-            Conectar cls = new Conectar();
-            string up = "departamento ='" + txtdepart.Text + "', id_provincia = "+ txtprovincia.Text+ ", estado= '"+estado+"'";
-            string tbl = "departamentos";
-            string id = "id_departamento = '" + mvar + "'";
-            cls.Actualizar(up, tbl, id);
+            if (verificar.campo(this))
+            {
+                mensaje ms = new mensaje("error", "Se encontraron campos vacios");
+                ms.ShowDialog();
+            }
+            else
+            {
+                Conectar cls = new Conectar();
+                string up = "departamento ='" + txtdepart.Text + "', id_provincia = " + txtprovincia.Text + ", estado= '" + estado + "'";
+                string tbl = "departamentos";
+                string id = "id_departamento = '" + mvar + "'";
+                cls.Actualizar(up, tbl, id);
+
+                buttEdit.Visible = false;
+                btagregar.Visible = true;
+                cargardatos();
+            }
             
-            buttEdit.Visible = false;
-            btagregar.Visible = true;
-            cargardatos();
         }
 
         private void btcerrar_Click(object sender, EventArgs e)

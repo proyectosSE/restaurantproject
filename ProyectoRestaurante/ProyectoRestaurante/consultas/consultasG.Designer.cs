@@ -34,7 +34,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.contenedor = new System.Windows.Forms.Panel();
+            this.PictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btcerrar)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btcerrar
@@ -94,6 +97,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.PictureBox1);
             this.panel1.Location = new System.Drawing.Point(4, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1082, 69);
@@ -106,7 +110,16 @@
             this.contenedor.Size = new System.Drawing.Size(1082, 606);
             this.contenedor.TabIndex = 9;
             // 
-            // consultas
+            // PictureBox1
+            // 
+            this.PictureBox1.Location = new System.Drawing.Point(779, 10);
+            this.PictureBox1.Name = "PictureBox1";
+            this.PictureBox1.Size = new System.Drawing.Size(75, 50);
+            this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBox1.TabIndex = 0;
+            this.PictureBox1.TabStop = false;
+            // 
+            // consultasG
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
@@ -118,9 +131,11 @@
             this.Controls.Add(this.btcerrar);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "consultas";
+            this.Name = "consultasG";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.btcerrar)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,5 +149,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel contenedor;
+        private System.Windows.Forms.PictureBox PictureBox1;
     }
 }

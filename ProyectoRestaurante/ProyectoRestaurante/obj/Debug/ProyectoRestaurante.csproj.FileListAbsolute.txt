@@ -308,3 +308,16 @@ C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\P
 C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.consultas.conimp.resources
 C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.consultas.conmon.resources
 C:\Users\Asistente\Desktop\lab Programacion3\PJ_Restaurant\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.consultas.conprov.resources
+C:\Users\LIKELIAS\Desktop\Clases 2-2024\Proyecto\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\KenRJControls.dll
+C:\Users\LIKELIAS\Desktop\Clases 2-2024\Proyecto\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\RJCodeAdvance.RJControls.dll
+C:\Users\LIKELIAS\Desktop\Clases 2-2024\Proyecto\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.consultas.conimp.resources
+C:\Users\LIKELIAS\Desktop\Clases 2-2024\Proyecto\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.consultas.conmon.resources
+C:\Users\LIKELIAS\Desktop\Clases 2-2024\Proyecto\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.consultas.conprov.resources
+C:\Users\LIKELIAS\Desktop\Clases 2-2024\Proyecto\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.consultas.consultageneral.resources
+C:\Users\LIKELIAS\Desktop\Clases 2-2024\Proyecto\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.consultas.consultasG.resources
+C:\Users\LIKELIAS\Desktop\Clases 2-2024\Proyecto\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.hubmante.resources
+C:\Users\LIKELIAS\Desktop\Clases 2-2024\Proyecto\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantenimientos.mantimp.resources
+C:\Users\LIKELIAS\Desktop\Clases 2-2024\Proyecto\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantenimientos.mantmoneda.resources
+C:\Users\LIKELIAS\Desktop\Clases 2-2024\Proyecto\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantenimientos.mantproductos.resources
+C:\Users\LIKELIAS\Desktop\Clases 2-2024\Proyecto\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantenimientos.mantprov.resources
+C:\Users\LIKELIAS\Desktop\Clases 2-2024\Proyecto\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantenimientos.dgvprod.resources

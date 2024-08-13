@@ -9,6 +9,6 @@ namespace ProyectoRestaurante
 {
     public static class rutadb
     {
-        public static string conexion = "server=LAPTOP-ASISTENT;Database=ProyectoRestaurante;Integrated Security=true";
+        public static string conexion = "server=ELIASPC;Database=ProyectoRestaurante;Integrated Security=true";
     }
 }

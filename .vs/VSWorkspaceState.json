@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ProyectoRestaurante",
-    "\\ProyectoRestaurante\\ProyectoRestaurante",
-    "\\ProyectoRestaurante\\ProyectoRestaurante\\mantenimientos"
+    "\\ProyectoRestaurante"
   ],
-  "SelectedNode": "\\ProyectoRestaurante\\ProyectoRestaurante\\mantenimientos\\dgvmantcli.cs",
+  "SelectedNode": "\\ProyectoRestaurante\\ProyectoRestaurante.sln",
   "PreviewInSolutionExplorer": false
 }

@@ -263,5 +263,17 @@ namespace ProyectoRestaurante
             mantip.BringToFront();
             mantip.Show();
         }
+
+        private void btproducto_Click(object sender, EventArgs e)
+        {
+            mantproductos mantpr = new mantproductos();
+            mantpr.FormBorderStyle = FormBorderStyle.None;
+            mantpr.TopLevel = false;
+            mantpr.Dock = DockStyle.Fill;
+            this.Controls.Add(mantpr);
+            this.Tag = mantpr;
+            mantpr.BringToFront();
+            mantpr.Show();
+        }
     }
 }

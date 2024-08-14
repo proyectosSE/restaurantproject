@@ -46,12 +46,12 @@ namespace ProyectoRestaurante.mantenimientos
         }
 
         private void btagregar_Click(object sender, EventArgs e)
-        {            
+        {
             Conectar cls = new Conectar();
             MemoryStream ms = new MemoryStream();
-            ImagenProducto.Image.Save(ms,ImageFormat.Jpeg);
+            ImagenProducto.Image.Save(ms, ImageFormat.Jpeg);
             byte[] fotobyte = ms.ToArray();
-            string datos = "'"+txtproducto.Text+"', "+cbbcat.SelectedValue+", "+cbbproveedor.SelectedValue+", "+txtpreciocomp.Text+", "+txtpreciovent.Text+", "+txtstock.Text+", '"+ITBIS+"', "+txtdescuento.Text+", '"+fechaelab.Text+"', '"+preparado+"', @imagen , '"+estado+"'";
+            string datos = "'" + txtproducto.Text + "', " + cbbcat.SelectedValue + ", " + cbbproveedor.SelectedValue + ", " + txtpreciocomp.Text + ", " + txtpreciovent.Text + ", " + txtstock.Text + ", '" + ITBIS + "', " + txtdescuento.Text + ", '" + fechaelab.Text + "', '" + preparado + "', @imagen , '" + estado + "'";
             string tabla = "productos";
             cls.Agregar(datos, tabla, fotobyte);
             limpiar.LimpiarTextBoxes(this);
@@ -125,11 +125,10 @@ namespace ProyectoRestaurante.mantenimientos
 
             string datos = "producto= '" + txtproducto.Text + "', id_categoria= " + cbbcat.SelectedValue + ", id_proveedor= " + cbbproveedor.SelectedValue + ", preciocompra= " + txtpreciocomp.Text + ", precioventa= " + txtpreciovent.Text + ", existencia= " + txtstock.Text + ", itbisproducto= '" + ITBIS + "', descproducto= " + txtdescuento.Text + ", fechaelaboracion= '" + fechaelab.Text + "', preparado= '" + preparado + "', imagen= @imagen, estado= '" + estado + "'";
             string tabla = "productos";
-            string id = "id_producto= '"+mvar+"'";
+            string id = "id_producto= '" + mvar + "'";
             cls.Actualizar(datos, tabla, fotobyte, id);
             btagregar.Visible = true;
             btedit.Visible = false;
-
         }
 
     }

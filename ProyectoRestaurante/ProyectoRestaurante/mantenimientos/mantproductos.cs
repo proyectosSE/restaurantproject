@@ -24,9 +24,10 @@ namespace ProyectoRestaurante.mantenimientos
             fechaelab.Format = DateTimePickerFormat.Short;
             btedit.Visible = false;
         }
-        public string ITBIS;
-        public string preparado;
-        public string estado;
+        public string mvar;
+        public string ITBIS = "N";
+        public string preparado = "N";
+        public string estado = "I";
         private void btcerrar_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -46,27 +47,24 @@ namespace ProyectoRestaurante.mantenimientos
 
         private void btagregar_Click(object sender, EventArgs e)
         {            
+            Conectar cls = new Conectar();
             MemoryStream ms = new MemoryStream();
             ImagenProducto.Image.Save(ms,ImageFormat.Jpeg);
             byte[] fotobyte = ms.ToArray();
-
-            conexion.Open();
-            string datos = "INSERT INTO productos VALUES('"+txtproducto.Text+"', "+cbbcat.SelectedValue+", "+cbbproveedor.SelectedValue+", "+txtpreciocomp.Text+", "+txtpreciovent.Text+", "+txtstock.Text+", '"+ITBIS+"', "+txtdescuento.Text+", '"+fechaelab.Text+"', '"+preparado+"', @imagen , '"+estado+"')";
-            SqlCommand comando = new SqlCommand(datos,conexion);
-            comando.Parameters.AddWithValue("imagen", fotobyte);
-            comando.ExecuteNonQuery();
-            MessageBox.Show("Datos Guardados");
+            string datos = "'"+txtproducto.Text+"', "+cbbcat.SelectedValue+", "+cbbproveedor.SelectedValue+", "+txtpreciocomp.Text+", "+txtpreciovent.Text+", "+txtstock.Text+", '"+ITBIS+"', "+txtdescuento.Text+", '"+fechaelab.Text+"', '"+preparado+"', @imagen , '"+estado+"'";
+            string tabla = "productos";
+            cls.Agregar(datos, tabla, fotobyte);
             limpiar.LimpiarTextBoxes(this);
-            conexion.Close();
+
         }
 
         private void btITBIS_CheckedChanged(object sender, EventArgs e)
         {
-            if(btITBIS.Checked == true)
+            if(btITBIS.Checked)
             {
                 ITBIS = "S";
             }
-            else if(btITBIS.Checked == false)
+            else
             {
                 ITBIS = "N";
             }
@@ -74,11 +72,11 @@ namespace ProyectoRestaurante.mantenimientos
 
         private void btpreparado_CheckedChanged(object sender, EventArgs e)
         {
-            if (btpreparado.Checked == true)
+            if (btpreparado.Checked)
             {
                 preparado = "S";
             }
-            else if(btpreparado.Checked == false)
+            else
             {
                 preparado = "N";
             }
@@ -86,11 +84,11 @@ namespace ProyectoRestaurante.mantenimientos
 
         private void btestado_CheckedChanged(object sender, EventArgs e)
         {
-            if(btestado.Checked == true)
+            if(btestado.Checked)
             {
                 estado = "A";
             }
-            else if(btestado.Checked == false)
+            else
             {
                 estado = "I";
             }
@@ -117,5 +115,22 @@ namespace ProyectoRestaurante.mantenimientos
             prod.BringToFront();
             prod.Show();
         }
+
+        private void btedit_Click(object sender, EventArgs e)
+        {
+            Conectar cls = new Conectar();
+            MemoryStream ms = new MemoryStream();
+            ImagenProducto.Image.Save(ms, ImageFormat.Jpeg);
+            byte[] fotobyte = ms.ToArray();
+
+            string datos = "producto= '" + txtproducto.Text + "', id_categoria= " + cbbcat.SelectedValue + ", id_proveedor= " + cbbproveedor.SelectedValue + ", preciocompra= " + txtpreciocomp.Text + ", precioventa= " + txtpreciovent.Text + ", existencia= " + txtstock.Text + ", itbisproducto= '" + ITBIS + "', descproducto= " + txtdescuento.Text + ", fechaelaboracion= '" + fechaelab.Text + "', preparado= '" + preparado + "', imagen= @imagen, estado= '" + estado + "'";
+            string tabla = "productos";
+            string id = "id_producto= '"+mvar+"'";
+            cls.Actualizar(datos, tabla, fotobyte, id);
+            btagregar.Visible = true;
+            btedit.Visible = false;
+
+        }
+
     }
 }

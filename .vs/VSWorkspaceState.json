@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ProyectoRestaurante"
+    "\\ProyectoRestaurante",
+    "\\ProyectoRestaurante\\ProyectoRestaurante",
+    "\\ProyectoRestaurante\\ProyectoRestaurante\\mantenimientos"
   ],
-  "SelectedNode": "\\ProyectoRestaurante\\ProyectoRestaurante.sln",
+  "SelectedNode": "\\ProyectoRestaurante\\ProyectoRestaurante\\mantenimientos\\mantproductos.cs",
   "PreviewInSolutionExplorer": false
 }

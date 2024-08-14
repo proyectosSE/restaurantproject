@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using ProyectoRestaurante.clases;
+using System.IO;
 
 namespace ProyectoRestaurante.mantenimientos
 {
@@ -16,6 +18,8 @@ namespace ProyectoRestaurante.mantenimientos
         public dgvprod()
         {
             InitializeComponent();
+            cargadatos();
+            formatoDGV.FormatearDataGridViews(this);
         }
 
         public void cargadatos()
@@ -44,7 +48,7 @@ namespace ProyectoRestaurante.mantenimientos
                         if (dataGridView1.Columns.Contains("descproducto")) dataGridView1.Columns["descproducto"].DisplayIndex = 8;
                         if (dataGridView1.Columns.Contains("fechaelaboracion")) dataGridView1.Columns["fechaelaboracion"].DisplayIndex = 9;
                         if (dataGridView1.Columns.Contains("preparado")) dataGridView1.Columns["preparado"].DisplayIndex = 10;
-                        if (dataGridView1.Columns.Contains("imagen")) dataGridView1.Columns["imagen"].DisplayIndex = 11;
+                        if (dataGridView1.Columns.Contains("imagen")) dataGridView1.Columns["imagen"].Visible = false;
                         if (dataGridView1.Columns.Contains("estado")) dataGridView1.Columns["estado"].DisplayIndex = 12;
                     }
 
@@ -55,6 +59,84 @@ namespace ProyectoRestaurante.mantenimientos
                 MessageBox.Show("Error al cargar datos, " + ex);
             }
             
+        }
+
+        private void btcerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (this.dataGridView1.Columns[e.ColumnIndex].Name == "estado")
+            {
+                if (e.Value != null)
+                {
+                    if (e.Value.GetType() != typeof(System.DBNull))
+                    {
+
+                        if (e.Value.ToString() == "A")
+                        {
+                            this.dataGridView1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.LightGreen;
+                        }
+                        else
+                        {
+                            this.dataGridView1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.LightCoral;
+                        }
+                    }
+                }
+            }
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            mantproductos mtprod = Owner as mantproductos;
+            mtprod.mvar = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            mtprod.txtproducto.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            mtprod.cbbcat.SelectedValue = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            mtprod.cbbproveedor.SelectedValue = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            mtprod.txtpreciocomp.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            mtprod.txtpreciovent.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+            mtprod.txtstock.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+            mtprod.ITBIS = dataGridView1.CurrentRow.Cells[7].Value.ToString();
+            if (mtprod.ITBIS == "S")
+            {
+                mtprod.btITBIS.Checked = true;
+            }
+            else
+            {
+                mtprod.btITBIS.Checked = false;
+            }
+            mtprod.txtdescuento.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
+            mtprod.fechaelab.Text = dataGridView1.CurrentRow.Cells[9].Value.ToString();
+            mtprod.preparado = dataGridView1.CurrentRow.Cells[10].Value.ToString();
+            if (mtprod.preparado == "S")
+            {
+                mtprod.btpreparado.Checked = true;
+            }
+            else
+            {
+                mtprod.btpreparado.Checked = false;
+            }
+            byte[] foto = (byte[])dataGridView1.CurrentRow.Cells[11].Value;
+            
+            using (var stream = new MemoryStream(foto))
+            {
+                    mtprod.ImagenProducto.Image = Image.FromStream(stream);
+            }             
+                             
+            mtprod.estado = dataGridView1.CurrentRow.Cells[12].Value.ToString();
+            if (mtprod.estado == "A")
+            {
+                mtprod.btestado.Checked = true;
+            }
+            else
+            {
+                mtprod.btestado.Checked = false;
+            }
+            mtprod.btagregar.Visible = false;
+            mtprod.btedit.Visible = true;
+            this.Close();
         }
     }
 }

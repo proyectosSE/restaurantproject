@@ -379,6 +379,7 @@
             this.btedit.TabIndex = 33;
             this.btedit.Text = "Editar";
             this.btedit.UseVisualStyleBackColor = true;
+            this.btedit.Click += new System.EventHandler(this.btedit_Click);
             // 
             // categoriasTableAdapter
             // 

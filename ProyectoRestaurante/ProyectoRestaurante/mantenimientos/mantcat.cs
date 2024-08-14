@@ -118,25 +118,25 @@ namespace ProyectoRestaurante
             btagregar.Visible=false;
         }
 
-        private void textBuscar_TextChanged(object sender, EventArgs e)
-        {
-            string valorABuscar = textBuscar.Text;
+        //private void textBuscar_TextChanged(object sender, EventArgs e)
+        //{
+        //    string valorABuscar = textBuscar.Text;
             
-            foreach (DataGridViewRow row in dataGridView1.Rows)
-            {
-                if (row.Cells[1].Value != null &&
-                row.Cells[1].Value.ToString().Contains(valorABuscar))
-                {
-                    dataGridView1.CurrentCell = row.Cells[1];
-                    dataGridView1.FirstDisplayedScrollingRowIndex = row.Index;
-                    break;
-                }
-                else if (row.Cells[1].Value == null)
-                {
-                    MessageBox.Show("Datos no encontrados");
-                }
-            }
-        }
+        //    foreach (DataGridViewRow row in dataGridView1.Rows)
+        //    {
+        //        if (row.Cells[1].Value != null &&
+        //        row.Cells[1].Value.ToString().Contains(valorABuscar))
+        //        {
+        //            dataGridView1.CurrentCell = row.Cells[1];
+        //            dataGridView1.FirstDisplayedScrollingRowIndex = row.Index;
+        //            break;
+        //        }
+        //        else if (row.Cells[1].Value == null)
+        //        {
+        //            MessageBox.Show("Datos no encontrados");
+        //        }
+        //    }
+        //}
 
         
 

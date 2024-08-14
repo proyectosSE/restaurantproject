@@ -36,9 +36,7 @@
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBuscar = new System.Windows.Forms.TextBox();
             this.btcerrar = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.rjToggleButton1 = new RJCodeAdvance.RJControls.RJToggleButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btcerrar)).BeginInit();
@@ -78,6 +76,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(1097, 454);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
             this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
             // 
             // btagregar
@@ -133,14 +132,6 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Estado";
             // 
-            // textBuscar
-            // 
-            this.textBuscar.Location = new System.Drawing.Point(296, 126);
-            this.textBuscar.Name = "textBuscar";
-            this.textBuscar.Size = new System.Drawing.Size(198, 26);
-            this.textBuscar.TabIndex = 5;
-            this.textBuscar.TextChanged += new System.EventHandler(this.textBuscar_TextChanged);
-            // 
             // btcerrar
             // 
             this.btcerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -153,17 +144,6 @@
             this.btcerrar.TabIndex = 9;
             this.btcerrar.TabStop = false;
             this.btcerrar.Click += new System.EventHandler(this.btcerrar_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Gold;
-            this.label3.Location = new System.Drawing.Point(500, 126);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 23);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Buscar";
             // 
             // rjToggleButton1
             // 
@@ -186,10 +166,8 @@
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1200, 700);
             this.Controls.Add(this.rjToggleButton1);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.btcerrar);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBuscar);
             this.Controls.Add(this.buttEdit);
             this.Controls.Add(this.btagregar);
             this.Controls.Add(this.dataGridView1);
@@ -215,10 +193,8 @@
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBuscar;
         private System.Windows.Forms.PictureBox btcerrar;
         public System.Windows.Forms.TextBox textcat;
-        private System.Windows.Forms.Label label3;
         private RJCodeAdvance.RJControls.RJToggleButton rjToggleButton1;
     }
 }

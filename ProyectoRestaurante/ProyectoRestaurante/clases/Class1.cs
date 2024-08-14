@@ -40,6 +40,19 @@ namespace ProyectoRestaurante
             }
         }
 
+        public void Agregar(string datos, string tabla, byte[] image)
+        {
+            conexion.Open();
+            string cadena = $"INSERT INTO {tabla} VALUES({datos});";
+            SqlCommand comando = new SqlCommand(cadena, conexion);
+            comando.Parameters.AddWithValue("imagen", image);
+            comando.ExecuteNonQuery();
+            mensaje ms = new mensaje("listo","Datos Guardados");
+            ms.ShowDialog();
+            conexion.Close();
+
+        }
+
         
         public void Actualizar(string datos,string tabla,string id)
         {
@@ -67,6 +80,18 @@ namespace ProyectoRestaurante
                     conexion.Close();
                 }
             }
+        }
+
+        public void Actualizar(string datos, string tabla, byte[] foto, string id)
+        {
+            conexion.Open();
+            string cadena = $"UPDATE {tabla} SET {datos} WHERE {id};";
+            SqlCommand comando = new SqlCommand(cadena, conexion);
+            comando.Parameters.AddWithValue("imagen", foto);
+            comando.ExecuteNonQuery();
+            mensaje ms = new mensaje("listo", "Datos Editados");
+            ms.ShowDialog();
+            conexion.Close();
         }
 
         public void eliminar (string tabla, string id)

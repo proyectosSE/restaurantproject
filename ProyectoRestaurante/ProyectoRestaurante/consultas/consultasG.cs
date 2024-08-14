@@ -78,8 +78,8 @@ namespace ProyectoRestaurante.consultas
                     PictureBox1.Image = Properties.Resources.proveedores;
                     break;
                 case 8:
-                    //productos
-                    //PictureBox1.Image = Properties.Resources.empanada;
+                    AbrirF(new conprod());
+                    PictureBox1.Image = Properties.Resources.empanada;
                     break;
                 case 9:
                     AbrirF(new conmon());

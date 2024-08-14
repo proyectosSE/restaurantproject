@@ -139,6 +139,12 @@
     <Compile Include="consultas\conimp.Designer.cs">
       <DependentUpon>conimp.cs</DependentUpon>
     </Compile>
+    <Compile Include="consultas\conprod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultas\conprod.Designer.cs">
+      <DependentUpon>conprod.cs</DependentUpon>
+    </Compile>
     <Compile Include="mantenimientos\dgvprod.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -384,6 +390,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="consultas\conmon.resx">
       <DependentUpon>conmon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consultas\conprod.resx">
+      <DependentUpon>conprod.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="consultas\conprov.resx">
       <DependentUpon>conprov.cs</DependentUpon>

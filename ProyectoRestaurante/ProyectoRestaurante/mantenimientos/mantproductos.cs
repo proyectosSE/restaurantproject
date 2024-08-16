@@ -16,8 +16,7 @@ namespace ProyectoRestaurante.mantenimientos
 {
     public partial class mantproductos : Form
     {
-        SqlConnection conexion = new SqlConnection("server=ELIASPC;Database=ProyectoRestaurante;Integrated Security=true");
-        
+                
         public mantproductos()
         {
             InitializeComponent();
@@ -36,7 +35,7 @@ namespace ProyectoRestaurante.mantenimientos
         private void btfoto_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "archivos de imagen (*jpg; *png;) |*jpg; *png; ";
+            ofd.Filter = "archivos de imagen (*png;) |*png; ";
             DialogResult rs = ofd.ShowDialog();
 
             if(rs == DialogResult.OK)
@@ -48,9 +47,8 @@ namespace ProyectoRestaurante.mantenimientos
         private void btagregar_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();
-            MemoryStream ms = new MemoryStream();
-            ImagenProducto.Image.Save(ms, ImageFormat.Jpeg);
-            byte[] fotobyte = ms.ToArray();
+            byte[] fotobyte = convertirbytes(ImagenProducto);
+
             string datos = "'" + txtproducto.Text + "', " + cbbcat.SelectedValue + ", " + cbbproveedor.SelectedValue + ", " + txtpreciocomp.Text + ", " + txtpreciovent.Text + ", " + txtstock.Text + ", '" + ITBIS + "', " + txtdescuento.Text + ", '" + fechaelab.Text + "', '" + preparado + "', @imagen , '" + estado + "'";
             string tabla = "productos";
             cls.Agregar(datos, tabla, fotobyte);
@@ -119,9 +117,7 @@ namespace ProyectoRestaurante.mantenimientos
         private void btedit_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();
-            MemoryStream ms = new MemoryStream();
-            ImagenProducto.Image.Save(ms, ImageFormat.Jpeg);
-            byte[] fotobyte = ms.ToArray();
+            byte[] fotobyte = convertirbytes(ImagenProducto);
 
             string datos = "producto= '" + txtproducto.Text + "', id_categoria= " + cbbcat.SelectedValue + ", id_proveedor= " + cbbproveedor.SelectedValue + ", preciocompra= " + txtpreciocomp.Text + ", precioventa= " + txtpreciovent.Text + ", existencia= " + txtstock.Text + ", itbisproducto= '" + ITBIS + "', descproducto= " + txtdescuento.Text + ", fechaelaboracion= '" + fechaelab.Text + "', preparado= '" + preparado + "', imagen= @imagen, estado= '" + estado + "'";
             string tabla = "productos";
@@ -129,6 +125,15 @@ namespace ProyectoRestaurante.mantenimientos
             cls.Actualizar(datos, tabla, fotobyte, id);
             btagregar.Visible = true;
             btedit.Visible = false;
+        }
+
+        public byte[] convertirbytes(PictureBox foto)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                foto.Image.Save(ms, foto.Image.RawFormat);
+                return ms.ToArray();
+            }
         }
 
     }

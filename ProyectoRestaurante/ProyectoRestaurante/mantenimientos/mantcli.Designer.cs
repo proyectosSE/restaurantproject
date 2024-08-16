@@ -66,6 +66,7 @@
             this.txtnom.Size = new System.Drawing.Size(216, 26);
             this.txtnom.TabIndex = 1;
             this.txtnom.DoubleClick += new System.EventHandler(this.txtnom_DoubleClick);
+            this.txtnom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnom_KeyPress);
             // 
             // label2
             // 
@@ -84,6 +85,7 @@
             this.txtapell.Name = "txtapell";
             this.txtapell.Size = new System.Drawing.Size(216, 26);
             this.txtapell.TabIndex = 3;
+            this.txtapell.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtapell_KeyPress);
             // 
             // txtdirec
             // 
@@ -91,6 +93,7 @@
             this.txtdirec.Name = "txtdirec";
             this.txtdirec.Size = new System.Drawing.Size(216, 26);
             this.txtdirec.TabIndex = 4;
+            this.txtdirec.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdirec_KeyPress);
             // 
             // label3
             // 
@@ -138,6 +141,7 @@
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(219, 26);
             this.txtemail.TabIndex = 7;
+            this.txtemail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtemail_KeyPress);
             // 
             // label6
             // 

@@ -365,3 +365,47 @@ C:\Users\LIKELIAS\Desktop\Nueva carpeta\ProyectoRestaurante\ProyectoRestaurante\
 C:\Users\LIKELIAS\Desktop\Nueva carpeta\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.exe
 C:\Users\LIKELIAS\Desktop\Nueva carpeta\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.pdb
 C:\Users\LIKELIAS\Desktop\Nueva carpeta\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.consultas.conprod.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\ProyectoRestaurante.exe.config
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\ProyectoRestaurante.exe
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\ProyectoRestaurante.pdb
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\KenRJControls.dll
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\RJCodeAdvance.RJControls.dll
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.csproj.AssemblyReference.cache
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.concat.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.concli.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.condepart.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.consultas.conimp.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.consultas.conmedidas.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.conmesa.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.consultas.conmon.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.consultas.conprod.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.consultas.conprov.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.consalas.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.consultas.consultageneral.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.consultas.consultasG.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.consultas.conusua.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantenimientos.dgvprod.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.hubmante.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.dvgmantusua.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mensaje.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.login.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantenimientos.dgvmantcli.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantcat.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantcli.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantdepar.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantenimientos.mantimp.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantmedid.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantmesas.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantenimientos.mantmoneda.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantenimientos.mantproductos.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantenimientos.mantprov.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantsalas.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.mantusua.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.menuprincipal.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Properties.Resources.resources
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.csproj.GenerateResource.cache
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.csproj.CoreCompileInputs.cache
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\Proyecto.CE3A958B.Up2Date
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.exe
+C:\Users\LIKELIAS\Desktop\JAJAJA\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.pdb

@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ProyectoRestaurante.mantenimientos
 {
@@ -99,7 +100,7 @@ namespace ProyectoRestaurante.mantenimientos
                         
         }
 
-        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             mvar = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             txtmoneda.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
@@ -116,7 +117,6 @@ namespace ProyectoRestaurante.mantenimientos
             }
             buttEdit.Visible = true;
             btagregar.Visible = false;
-
         }
 
         private void rjToggleButton1_CheckedChanged(object sender, EventArgs e)
@@ -152,5 +152,22 @@ namespace ProyectoRestaurante.mantenimientos
                 }
             }
         }
+
+        private void txtmoneda_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                txtsigla.Focus();
+            }
+        }
+
+        private void txtsigla_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                txtsimbolo.Focus();
+            }
+        }
+
     }
 }

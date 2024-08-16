@@ -69,7 +69,7 @@ namespace ProyectoRestaurante.mantenimientos
             this.Close();
         }
 
-        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             mantcli mantcli = Owner as mantcli;
             mantcli.mvar = dataGridView1.CurrentRow.Cells[0].Value.ToString();
@@ -80,7 +80,7 @@ namespace ProyectoRestaurante.mantenimientos
             mantcli.txtlimicre.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
             mantcli.fechain.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
             mantcli.estado = dataGridView1.CurrentRow.Cells[7].Value.ToString();
-            if(mantcli.estado == "A")
+            if (mantcli.estado == "A")
             {
                 mantcli.rjToggleButton1.Checked = true;
             }
@@ -91,9 +91,8 @@ namespace ProyectoRestaurante.mantenimientos
             mantcli.bteditar.Visible = true;
             mantcli.buttAgregar.Visible = false;
             this.Close();
-
         }
-
+        
         private void txtbuscar_TextChanged(object sender, EventArgs e)
         {
             string valorABuscar = txtbuscar.Text;
@@ -134,7 +133,6 @@ namespace ProyectoRestaurante.mantenimientos
                 }
             }
         }
-
-
+        
     }
 }

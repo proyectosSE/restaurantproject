@@ -90,6 +90,7 @@
             this.txtnom.Size = new System.Drawing.Size(212, 26);
             this.txtnom.TabIndex = 1;
             this.txtnom.DoubleClick += new System.EventHandler(this.txtnom_DoubleClick);
+            this.txtnom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnom_KeyPress);
             // 
             // txtsex
             // 
@@ -97,6 +98,7 @@
             this.txtsex.Name = "txtsex";
             this.txtsex.Size = new System.Drawing.Size(212, 26);
             this.txtsex.TabIndex = 3;
+            this.txtsex.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtsex_KeyPress);
             // 
             // label2
             // 
@@ -115,6 +117,7 @@
             this.txtdirec.Name = "txtdirec";
             this.txtdirec.Size = new System.Drawing.Size(212, 26);
             this.txtdirec.TabIndex = 5;
+            this.txtdirec.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdirec_KeyPress);
             // 
             // lblsx
             // 
@@ -133,6 +136,7 @@
             this.txttel.Name = "txttel";
             this.txttel.Size = new System.Drawing.Size(212, 26);
             this.txttel.TabIndex = 7;
+            this.txttel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txttel_KeyPress);
             // 
             // label4
             // 
@@ -151,6 +155,7 @@
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(212, 26);
             this.txtemail.TabIndex = 9;
+            this.txtemail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtemail_KeyPress);
             // 
             // label5
             // 
@@ -169,6 +174,7 @@
             this.txtusua.Name = "txtusua";
             this.txtusua.Size = new System.Drawing.Size(212, 26);
             this.txtusua.TabIndex = 11;
+            this.txtusua.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtusua_KeyPress);
             // 
             // label6
             // 

@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ProyectoRestaurante.mantenimientos
 {
@@ -60,7 +61,7 @@ namespace ProyectoRestaurante.mantenimientos
             this.Close();
         }
 
-        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             mvar = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             txtnombre.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
@@ -160,5 +161,39 @@ namespace ProyectoRestaurante.mantenimientos
             
             
         }
+
+        private void txtnombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                txttel.Focus();
+            }
+        }
+
+        private void txttel_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                txtdirecc.Focus();
+            }
+        }
+
+        private void txtdirecc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                txtemail.Focus();
+            }
+        }
+
+        private void txtemail_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                txtvend.Focus();
+            }
+        }
+
+        
     }
 }

@@ -53,8 +53,7 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(939, 503);
             this.dataGridView1.TabIndex = 46;
-            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
-            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
             // 
             // rjToggleButton1
@@ -118,6 +117,7 @@
             this.txtsigla.Name = "txtsigla";
             this.txtsigla.Size = new System.Drawing.Size(235, 26);
             this.txtsigla.TabIndex = 49;
+            this.txtsigla.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtsigla_KeyPress);
             // 
             // label2
             // 
@@ -136,6 +136,7 @@
             this.txtmoneda.Name = "txtmoneda";
             this.txtmoneda.Size = new System.Drawing.Size(235, 26);
             this.txtmoneda.TabIndex = 47;
+            this.txtmoneda.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtmoneda_KeyPress);
             // 
             // btcerrar
             // 

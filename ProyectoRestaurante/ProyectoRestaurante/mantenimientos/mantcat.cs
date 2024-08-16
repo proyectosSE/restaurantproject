@@ -100,8 +100,7 @@ namespace ProyectoRestaurante
             this.Close();
         }
 
-        
-        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             mvar = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             textcat.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
@@ -115,31 +114,9 @@ namespace ProyectoRestaurante
                 rjToggleButton1.Checked = false;
             }
             buttEdit.Visible = true;
-            btagregar.Visible=false;
+            btagregar.Visible = false;
         }
-
-        //private void textBuscar_TextChanged(object sender, EventArgs e)
-        //{
-        //    string valorABuscar = textBuscar.Text;
-            
-        //    foreach (DataGridViewRow row in dataGridView1.Rows)
-        //    {
-        //        if (row.Cells[1].Value != null &&
-        //        row.Cells[1].Value.ToString().Contains(valorABuscar))
-        //        {
-        //            dataGridView1.CurrentCell = row.Cells[1];
-        //            dataGridView1.FirstDisplayedScrollingRowIndex = row.Index;
-        //            break;
-        //        }
-        //        else if (row.Cells[1].Value == null)
-        //        {
-        //            MessageBox.Show("Datos no encontrados");
-        //        }
-        //    }
-        //}
-
         
-
         private void rjToggleButton1_CheckedChanged(object sender, EventArgs e)
         {
             if (rjToggleButton1.Checked)
@@ -173,5 +150,6 @@ namespace ProyectoRestaurante
                 }
             }
         }
+
     }
 }

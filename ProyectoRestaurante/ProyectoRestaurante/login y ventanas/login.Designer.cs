@@ -31,6 +31,7 @@
             this.txtpassword = new System.Windows.Forms.TextBox();
             this.txtlogin = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -38,11 +39,10 @@
             this.rjButton1 = new AP4_2.RJControls.RJButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtpassword
@@ -56,6 +56,7 @@
             this.txtpassword.TabIndex = 10;
             this.txtpassword.Text = "PASSWORD";
             this.txtpassword.Enter += new System.EventHandler(this.txtpassword_Enter);
+            this.txtpassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtpassword_KeyPress);
             this.txtpassword.Leave += new System.EventHandler(this.txtpassword_Leave);
             // 
             // txtlogin
@@ -69,6 +70,7 @@
             this.txtlogin.TabIndex = 9;
             this.txtlogin.Text = "USUARIO";
             this.txtlogin.Enter += new System.EventHandler(this.txtlogin_Enter);
+            this.txtlogin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtlogin_KeyPress);
             this.txtlogin.Leave += new System.EventHandler(this.txtlogin_Leave);
             // 
             // panel1
@@ -80,6 +82,17 @@
             this.panel1.Size = new System.Drawing.Size(246, 220);
             this.panel1.TabIndex = 13;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ProyectoRestaurante.Properties.Resources.image;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(240, 215);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
             // 
             // label1
             // 
@@ -173,17 +186,6 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ProyectoRestaurante.Properties.Resources.image;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(240, 215);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
-            // 
             // login
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -206,9 +208,9 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.login_FormClosed);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.login_MouseDown);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

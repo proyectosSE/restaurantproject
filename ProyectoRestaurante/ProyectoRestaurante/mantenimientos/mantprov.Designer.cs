@@ -80,6 +80,7 @@
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(235, 26);
             this.txtnombre.TabIndex = 29;
+            this.txtnombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombre_KeyPress);
             // 
             // label1
             // 
@@ -98,6 +99,7 @@
             this.txttel.Name = "txttel";
             this.txttel.Size = new System.Drawing.Size(235, 26);
             this.txttel.TabIndex = 31;
+            this.txttel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txttel_KeyPress);
             // 
             // label3
             // 
@@ -116,6 +118,7 @@
             this.txtdirecc.Name = "txtdirecc";
             this.txtdirecc.Size = new System.Drawing.Size(235, 26);
             this.txtdirecc.TabIndex = 33;
+            this.txtdirecc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdirecc_KeyPress);
             // 
             // label4
             // 
@@ -134,6 +137,7 @@
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(235, 26);
             this.txtemail.TabIndex = 35;
+            this.txtemail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtemail_KeyPress);
             // 
             // label5
             // 
@@ -230,8 +234,7 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(939, 381);
             this.dataGridView1.TabIndex = 45;
-            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
-            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
             // 
             // mantprov

@@ -104,8 +104,8 @@ namespace ProyectoRestaurante
         {
             this.Close();
         }
-                
-        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             mvar = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             txtsalas.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
@@ -156,5 +156,6 @@ namespace ProyectoRestaurante
                 }
             }
         }
+
     }
 }

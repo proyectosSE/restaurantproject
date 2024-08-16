@@ -129,6 +129,7 @@
             this.txtnomimp.Name = "txtnomimp";
             this.txtnomimp.Size = new System.Drawing.Size(235, 26);
             this.txtnomimp.TabIndex = 59;
+            this.txtnomimp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnomimp_KeyPress);
             // 
             // dataGridView1
             // 
@@ -139,8 +140,7 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(939, 503);
             this.dataGridView1.TabIndex = 58;
-            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
-            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
             // 
             // fechaimpuesto

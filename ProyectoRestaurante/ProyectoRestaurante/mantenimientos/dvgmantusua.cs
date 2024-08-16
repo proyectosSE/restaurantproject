@@ -59,7 +59,7 @@ namespace ProyectoRestaurante
             }
         }
 
-        private void dataGridView_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             mantusua ms = Owner as mantusua;
             ms.mvar = dataGridView.CurrentRow.Cells[0].Value.ToString();
@@ -83,7 +83,6 @@ namespace ProyectoRestaurante
             ms.bteditar.Visible = true;
             ms.btagregar.Visible = false;
             this.Close();
-            
         }
 
         private void txtbuscar_TextChanged(object sender, EventArgs e)
@@ -141,5 +140,6 @@ namespace ProyectoRestaurante
                 }
             }
         }
+        
     }
 }

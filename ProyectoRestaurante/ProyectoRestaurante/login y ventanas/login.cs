@@ -144,5 +144,21 @@ namespace ProyectoRestaurante
         {
             rjButton1.BackColor = Color.White;
         }
+
+        private void txtpassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char) Keys.Enter)
+            {
+                rjButton1_Click(sender, e);
+            }
+        }
+
+        private void txtlogin_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (char) Keys.Enter)
+            {
+                txtpassword.Focus();
+            }
+        }
     }
 }

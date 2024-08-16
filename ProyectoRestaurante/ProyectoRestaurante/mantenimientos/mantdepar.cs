@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ProyectoRestaurante
 {
@@ -105,7 +106,7 @@ namespace ProyectoRestaurante
         }
 
         string mvar;
-        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             mvar = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             txtdepart.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
@@ -156,5 +157,14 @@ namespace ProyectoRestaurante
                 }
             }
         }
+
+        private void txtdepart_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                txtprovincia.Focus();
+            }
+        }
+
     }
 }

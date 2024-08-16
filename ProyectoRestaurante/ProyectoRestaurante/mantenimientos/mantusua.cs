@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ProyectoRestaurante
 {
@@ -149,6 +150,54 @@ namespace ProyectoRestaurante
             else
             {
                 estado = "I";
+            }
+        }
+
+        private void txtnom_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                txtsex.Focus();
+            }
+        }
+
+        private void txtsex_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                txtdirec.Focus();
+            }
+        }
+
+        private void txtdirec_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                txttel.Focus();
+            }
+        }
+
+        private void txttel_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                txtemail.Focus();
+            }
+        }
+
+        private void txtemail_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                txtusua.Focus();
+            }
+        }
+
+        private void txtusua_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                txtpassw.Focus();
             }
         }
     }

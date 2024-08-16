@@ -104,12 +104,11 @@ namespace ProyectoRestaurante
             this.Close();
         }
 
-        
-        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             mvar = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             txtmedida.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            estado= dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            estado = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             if (estado == "A")
             {
                 rjToggleButton1.Checked = true;
@@ -121,7 +120,7 @@ namespace ProyectoRestaurante
             buttEdit.Visible = true;
             btagregar.Visible = false;
         }
-
+        
         private void rjToggleButton1_CheckedChanged(object sender, EventArgs e)
         {
             if (rjToggleButton1.Checked)
@@ -155,5 +154,6 @@ namespace ProyectoRestaurante
                 }
             }
         }
+
     }
 }

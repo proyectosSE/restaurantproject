@@ -68,8 +68,7 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(1080, 434);
             this.dataGridView1.TabIndex = 10;
-            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
-            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
             // 
             // txtdepart
@@ -78,6 +77,7 @@
             this.txtdepart.Name = "txtdepart";
             this.txtdepart.Size = new System.Drawing.Size(235, 26);
             this.txtdepart.TabIndex = 9;
+            this.txtdepart.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdepart_KeyPress);
             // 
             // label1
             // 

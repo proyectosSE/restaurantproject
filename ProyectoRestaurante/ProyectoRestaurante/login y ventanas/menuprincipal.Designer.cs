@@ -33,6 +33,7 @@
             this.contenedor = new System.Windows.Forms.Panel();
             this.btminimizar = new System.Windows.Forms.PictureBox();
             this.btcerrar = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.btconsulta = new System.Windows.Forms.Button();
             this.btmantenimiento = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -46,6 +47,7 @@
             // panelbtns
             // 
             this.panelbtns.BackColor = System.Drawing.Color.Gold;
+            this.panelbtns.Controls.Add(this.button1);
             this.panelbtns.Controls.Add(this.btconsulta);
             this.panelbtns.Controls.Add(this.btmantenimiento);
             this.panelbtns.Controls.Add(this.pictureBox1);
@@ -102,6 +104,22 @@
             this.btcerrar.Click += new System.EventHandler(this.btcerrar_Click);
             this.btcerrar.MouseEnter += new System.EventHandler(this.btcerrar_MouseEnter);
             this.btcerrar.MouseLeave += new System.EventHandler(this.btcerrar_MouseLeave);
+            // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = global::ProyectoRestaurante.Properties.Resources.icons8_front_desk_32;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 330);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(200, 41);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "      Mostrador           ";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btconsulta
             // 
@@ -176,5 +194,6 @@
         private System.Windows.Forms.PictureBox btcerrar;
         private System.Windows.Forms.Button btmantenimiento;
         private System.Windows.Forms.Button btconsulta;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -94,10 +94,11 @@ namespace ProyectoRestaurante.mantenimientos
 
         private void mantproductos_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'proyectoRestauranteDataSet21.proveedores' Puede moverla o quitarla según sea necesario.
-            this.proveedoresTableAdapter.Fill(this.proyectoRestauranteDataSet21.proveedores);
-            // TODO: esta línea de código carga datos en la tabla 'proyectoRestauranteDataSet20.categorias' Puede moverla o quitarla según sea necesario.
-            this.categoriasTableAdapter.Fill(this.proyectoRestauranteDataSet20.categorias);
+            // TODO: esta línea de código carga datos en la tabla 'proyectoRestauranteDataSet24.proveedores' Puede moverla o quitarla según sea necesario.
+            this.proveedoresTableAdapter1.Fill(this.proyectoRestauranteDataSet24.proveedores);
+            // TODO: esta línea de código carga datos en la tabla 'proyectoRestauranteDataSet23.categorias' Puede moverla o quitarla según sea necesario.
+            this.categoriasTableAdapter1.Fill(this.proyectoRestauranteDataSet23.categorias);
+
 
         }
 

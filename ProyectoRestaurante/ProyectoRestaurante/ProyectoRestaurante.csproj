@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clases\Class1.cs" />
+    <Compile Include="clases\DBmesa.cs" />
     <Compile Include="clases\verificar.cs" />
     <Compile Include="clases\formatoDGV.cs" />
     <Compile Include="clases\limpiar.cs" />
@@ -144,6 +145,18 @@
     </Compile>
     <Compile Include="consultas\conprod.Designer.cs">
       <DependentUpon>conprod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login y ventanas\mesas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="login y ventanas\mesas.Designer.cs">
+      <DependentUpon>mesas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login y ventanas\gestionventa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login y ventanas\gestionventa.Designer.cs">
+      <DependentUpon>gestionventa.cs</DependentUpon>
     </Compile>
     <Compile Include="mantenimientos\dgvprod.cs">
       <SubType>Form</SubType>
@@ -335,6 +348,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProyectoRestauranteDataSet22.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProyectoRestauranteDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoRestauranteDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoRestauranteDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoRestauranteDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoRestauranteDataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoRestauranteDataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoRestauranteDataSet26.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoRestauranteDataSet26.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ProyectoRestauranteDataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -408,6 +441,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="consultas\conusua.resx">
       <DependentUpon>conusua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login y ventanas\gestionventa.resx">
+      <DependentUpon>gestionventa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login y ventanas\mesas.resx">
+      <DependentUpon>mesas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mantenimientos\dgvprod.resx">
       <DependentUpon>dgvprod.cs</DependentUpon>
@@ -664,6 +703,50 @@
     <None Include="ProyectoRestauranteDataSet22.xss">
       <DependentUpon>ProyectoRestauranteDataSet22.xsd</DependentUpon>
     </None>
+    <None Include="ProyectoRestauranteDataSet23.xsc">
+      <DependentUpon>ProyectoRestauranteDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProyectoRestauranteDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProyectoRestauranteDataSet23.xss">
+      <DependentUpon>ProyectoRestauranteDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet24.xsc">
+      <DependentUpon>ProyectoRestauranteDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProyectoRestauranteDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProyectoRestauranteDataSet24.xss">
+      <DependentUpon>ProyectoRestauranteDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet25.xsc">
+      <DependentUpon>ProyectoRestauranteDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProyectoRestauranteDataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProyectoRestauranteDataSet25.xss">
+      <DependentUpon>ProyectoRestauranteDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet26.xsc">
+      <DependentUpon>ProyectoRestauranteDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet26.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProyectoRestauranteDataSet26.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProyectoRestauranteDataSet26.xss">
+      <DependentUpon>ProyectoRestauranteDataSet26.xsd</DependentUpon>
+    </None>
     <None Include="ProyectoRestauranteDataSet3.xsc">
       <DependentUpon>ProyectoRestauranteDataSet3.xsd</DependentUpon>
     </None>
@@ -829,6 +912,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-question-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-front-desk-32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

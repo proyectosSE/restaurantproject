@@ -193,6 +193,16 @@ namespace ProyectoRestaurante.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_front_desk_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-front-desk-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_login_ios_17_filled_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-login-ios-17-filled-32", resourceCulture);

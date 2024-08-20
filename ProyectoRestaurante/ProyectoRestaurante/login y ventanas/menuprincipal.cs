@@ -1,4 +1,5 @@
 ﻿using ProyectoRestaurante.consultas;
+using ProyectoRestaurante.login_y_ventanas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -77,6 +78,11 @@ namespace ProyectoRestaurante
         private void btconsulta_Click(object sender, EventArgs e)
         {
             AbrirF(new consultasG());
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AbrirF(new gestionventa());
         }
     }
 }

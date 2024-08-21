@@ -146,12 +146,6 @@
     <Compile Include="consultas\conprod.Designer.cs">
       <DependentUpon>conprod.cs</DependentUpon>
     </Compile>
-    <Compile Include="login y ventanas\pedido.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="login y ventanas\pedido.Designer.cs">
-      <DependentUpon>pedido.cs</DependentUpon>
-    </Compile>
     <Compile Include="login y ventanas\mesas.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -447,9 +441,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="consultas\conusua.resx">
       <DependentUpon>conusua.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="login y ventanas\pedido.resx">
-      <DependentUpon>pedido.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login y ventanas\gestionventa.resx">
       <DependentUpon>gestionventa.cs</DependentUpon>

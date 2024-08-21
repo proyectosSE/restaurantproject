@@ -43,7 +43,7 @@
             this.panel1.Controls.Add(this.mesanom);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(277, 144);
+            this.panel1.Size = new System.Drawing.Size(179, 117);
             this.panel1.TabIndex = 0;
             this.panel1.DoubleClick += new System.EventHandler(this.panel1_DoubleClick);
             // 
@@ -51,7 +51,7 @@
             // 
             this.mesanom.AutoSize = true;
             this.mesanom.Font = new System.Drawing.Font("Cooper Black", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mesanom.Location = new System.Drawing.Point(102, 62);
+            this.mesanom.Location = new System.Drawing.Point(37, 42);
             this.mesanom.Name = "mesanom";
             this.mesanom.Size = new System.Drawing.Size(71, 23);
             this.mesanom.TabIndex = 0;
@@ -62,7 +62,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cooper Black", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(60, 174);
+            this.label2.Location = new System.Drawing.Point(8, 144);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 19);
             this.label2.TabIndex = 1;
@@ -73,7 +73,7 @@
             this.cantasientos.AutoSize = true;
             this.cantasientos.Font = new System.Drawing.Font("Cooper Black", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cantasientos.ForeColor = System.Drawing.Color.Black;
-            this.cantasientos.Location = new System.Drawing.Point(146, 174);
+            this.cantasientos.Location = new System.Drawing.Point(94, 144);
             this.cantasientos.Name = "cantasientos";
             this.cantasientos.Size = new System.Drawing.Size(26, 19);
             this.cantasientos.TabIndex = 2;
@@ -84,7 +84,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cooper Black", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(60, 203);
+            this.label4.Location = new System.Drawing.Point(8, 173);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(19, 19);
             this.label4.TabIndex = 3;
@@ -95,7 +95,7 @@
             this.total.AutoSize = true;
             this.total.Font = new System.Drawing.Font("Cooper Black", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.total.ForeColor = System.Drawing.Color.Black;
-            this.total.Location = new System.Drawing.Point(80, 203);
+            this.total.Location = new System.Drawing.Point(33, 173);
             this.total.Name = "total";
             this.total.Size = new System.Drawing.Size(59, 19);
             this.total.TabIndex = 4;
@@ -112,7 +112,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Name = "mesas";
-            this.Size = new System.Drawing.Size(307, 242);
+            this.Size = new System.Drawing.Size(212, 200);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

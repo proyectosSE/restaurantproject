@@ -51,6 +51,9 @@ namespace ProyectoRestaurante.login_y_ventanas
 
         }
 
+        private void mesas1_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }

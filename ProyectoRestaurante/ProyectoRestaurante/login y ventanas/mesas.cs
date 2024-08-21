@@ -48,13 +48,7 @@ namespace ProyectoRestaurante.login_y_ventanas
 
         private void panel1_DoubleClick(object sender, EventArgs e)
         {
-            menuprincipal menu = new menuprincipal();
-            pedido ped = new pedido();
-            //ped.Size = menu.contenedor.Size;
-            //ped.Location= menu.contenedor.Location;
 
-            ped.Show();                  
-                        
         }
     }
 }

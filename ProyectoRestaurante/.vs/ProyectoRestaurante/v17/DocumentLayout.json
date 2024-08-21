@@ -3,48 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_finalrestaurante\\proyectorestaurante\\proyectorestaurante\\login y ventanas\\gestionventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\login y ventanas\\gestionventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_finalrestaurante\\proyectorestaurante\\proyectorestaurante\\mantenimientos\\mantmesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\mantenimientos\\mantmesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_finalrestaurante\\proyectorestaurante\\proyectorestaurante\\mantenimientos\\mantmesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\mantenimientos\\mantmesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_finalrestaurante\\proyectorestaurante\\proyectorestaurante\\login y ventanas\\gestionventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\login y ventanas\\gestionventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_finalrestaurante\\proyectorestaurante\\proyectorestaurante\\login y ventanas\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\login y ventanas\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_finalrestaurante\\proyectorestaurante\\proyectorestaurante\\login y ventanas\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\login y ventanas\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_finalrestaurante\\proyectorestaurante\\proyectorestaurante\\clases\\dbmesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\clases\\dbmesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_finalrestaurante\\proyectorestaurante\\proyectorestaurante\\login y ventanas\\mesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\login y ventanas\\mesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_finalrestaurante\\proyectorestaurante\\proyectorestaurante\\login y ventanas\\mesas.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\login y ventanas\\mesas.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_finalrestaurante\\proyectorestaurante\\proyectorestaurante\\login y ventanas\\mesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\login y ventanas\\mesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_finalrestaurante\\proyectorestaurante\\proyectorestaurante\\login y ventanas\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\login y ventanas\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_finalrestaurante\\proyectorestaurante\\proyectorestaurante\\consultas\\consultasg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\consultas\\consultasg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_finalrestaurante\\proyectorestaurante\\proyectorestaurante\\login y ventanas\\mesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\login y ventanas\\mesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_finalrestaurante\\proyectorestaurante\\proyectorestaurante\\login y ventanas\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\login y ventanas\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_finalrestaurante\\proyectorestaurante\\proyectorestaurante\\login y ventanas\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\login y ventanas\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_finalrestaurante\\proyectorestaurante\\proyectorestaurante\\login y ventanas\\gestionventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\login y ventanas\\gestionventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_finalrestaurante\\proyectorestaurante\\proyectorestaurante\\login y ventanas\\gestionventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\login y ventanas\\gestionventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\asistente\\desktop\\lab programacion3\\pj_finalrestaurante\\proyectorestaurante\\proyectorestaurante\\login y ventanas\\mesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\login y ventanas\\mesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,64 +70,64 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "mantmesas.cs",
-              "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\mantenimientos\\mantmesas.cs",
-              "RelativeDocumentMoniker": "ProyectoRestaurante\\mantenimientos\\mantmesas.cs",
-              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\mantenimientos\\mantmesas.cs",
-              "RelativeToolTip": "ProyectoRestaurante\\mantenimientos\\mantmesas.cs",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 5,
+              "Title": "menuprincipal.cs",
+              "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\menuprincipal.cs",
+              "RelativeDocumentMoniker": "ProyectoRestaurante\\login y ventanas\\menuprincipal.cs",
+              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\menuprincipal.cs",
+              "RelativeToolTip": "ProyectoRestaurante\\login y ventanas\\menuprincipal.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T02:16:55.349Z",
+              "WhenOpened": "2024-08-20T12:56:03.632Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "mantmesas.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\mantenimientos\\mantmesas.cs",
-              "RelativeDocumentMoniker": "ProyectoRestaurante\\mantenimientos\\mantmesas.cs",
-              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\mantenimientos\\mantmesas.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoRestaurante\\mantenimientos\\mantmesas.cs [Dise\u00F1o]",
+              "DocumentIndex": 4,
+              "Title": "pedido.cs",
+              "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\pedido.cs",
+              "RelativeDocumentMoniker": "ProyectoRestaurante\\login y ventanas\\pedido.cs",
+              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\pedido.cs*",
+              "RelativeToolTip": "ProyectoRestaurante\\login y ventanas\\pedido.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvxYAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T02:16:52.555Z",
+              "WhenOpened": "2024-08-20T12:21:18.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "pedido.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\pedido.cs",
+              "RelativeDocumentMoniker": "ProyectoRestaurante\\login y ventanas\\pedido.cs",
+              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\pedido.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "ProyectoRestaurante\\login y ventanas\\pedido.cs [Dise\u00F1o]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T12:17:13.574Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "DBmesa.cs",
               "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\clases\\DBmesa.cs",
               "RelativeDocumentMoniker": "ProyectoRestaurante\\clases\\DBmesa.cs",
               "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\clases\\DBmesa.cs",
               "RelativeToolTip": "ProyectoRestaurante\\clases\\DBmesa.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAAACAAAAAMAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAADgvyAAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-20T00:22:00.518Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "mesas.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\mesas.Designer.cs",
-              "RelativeDocumentMoniker": "ProyectoRestaurante\\login y ventanas\\mesas.Designer.cs",
-              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\mesas.Designer.cs",
-              "RelativeToolTip": "ProyectoRestaurante\\login y ventanas\\mesas.Designer.cs",
-              "ViewState": "AQIAAIQAAAAAAAAAAAAAAHYAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T00:08:41.738Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "mesas.cs",
               "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\mesas.cs",
               "RelativeDocumentMoniker": "ProyectoRestaurante\\login y ventanas\\mesas.cs",
               "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\mesas.cs",
               "RelativeToolTip": "ProyectoRestaurante\\login y ventanas\\mesas.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAACEAAAAAAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAIAwwDYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-20T00:01:10.986Z",
               "EditorCaption": ""
@@ -154,20 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "menuprincipal.cs",
-              "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\menuprincipal.cs",
-              "RelativeDocumentMoniker": "ProyectoRestaurante\\login y ventanas\\menuprincipal.cs",
-              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\menuprincipal.cs",
-              "RelativeToolTip": "ProyectoRestaurante\\login y ventanas\\menuprincipal.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAIAwwFQAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T23:18:19.182Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "menuprincipal.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\menuprincipal.cs",
               "RelativeDocumentMoniker": "ProyectoRestaurante\\login y ventanas\\menuprincipal.cs",
@@ -179,37 +158,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "consultasG.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\consultas\\consultasG.cs",
-              "RelativeDocumentMoniker": "ProyectoRestaurante\\consultas\\consultasG.cs",
-              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\consultas\\consultasG.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoRestaurante\\consultas\\consultasG.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T22:58:08.658Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "gestionventa.cs",
               "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
               "RelativeDocumentMoniker": "ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
-              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\gestionventa.cs*",
-              "RelativeToolTip": "ProyectoRestaurante\\login y ventanas\\gestionventa.cs*",
-              "ViewState": "AQIAAB8AAAAAAAAAAADwvyUAAABZAAAA",
+              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
+              "RelativeToolTip": "ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAwwB4AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-19T22:56:11.882Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "gestionventa.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
               "RelativeDocumentMoniker": "ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
-              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\gestionventa.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "ProyectoRestaurante\\login y ventanas\\gestionventa.cs [Dise\u00F1o]*",
+              "ToolTip": "C:\\Users\\Asistente\\Desktop\\lab Programacion3\\PJ_FinalRestaurante\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\gestionventa.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoRestaurante\\login y ventanas\\gestionventa.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-19T22:51:03.275Z",
               "EditorCaption": " [Dise\u00F1o]"

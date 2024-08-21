@@ -455,3 +455,4 @@ C:\Users\Asistente\Desktop\lab Programacion3\PJ_FinalRestaurante\ProyectoRestaur
 C:\Users\Asistente\Desktop\lab Programacion3\PJ_FinalRestaurante\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.pdb
 C:\Users\Asistente\Desktop\lab Programacion3\PJ_FinalRestaurante\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.login_y_ventanas.gestionventa.resources
 C:\Users\Asistente\Desktop\lab Programacion3\PJ_FinalRestaurante\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.login_y_ventanas.mesas.resources
+C:\Users\Asistente\Desktop\lab Programacion3\PJ_FinalRestaurante\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.login_y_ventanas.pedido.resources

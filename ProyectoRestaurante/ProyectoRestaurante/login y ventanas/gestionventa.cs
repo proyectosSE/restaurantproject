@@ -27,17 +27,21 @@ namespace ProyectoRestaurante.login_y_ventanas
             db.Llenarbotones(flowLayoutPanel1,consulta);
         }
 
-        
 
         
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
-                
-                consulta = $"SELECT * FROM mesas WHERE id_sala = {comboBox1.SelectedValue}";
-                llenarmesas();
-            
+            for (int i = flowLayoutPanel1.Controls.Count - 1; i >= 0; i--)
+            {
+                Control control = flowLayoutPanel1.Controls[i];
+                flowLayoutPanel1.Controls.Remove(control);
+                control.Dispose(); 
+            }
+
+            consulta = $"SELECT * FROM mesas WHERE id_sala = {comboBox1.SelectedValue}";
+            llenarmesas();              
+                        
         }
 
         private void gestionventa_Load(object sender, EventArgs e)
@@ -46,5 +50,7 @@ namespace ProyectoRestaurante.login_y_ventanas
             this.salasTableAdapter.Fill(this.proyectoRestauranteDataSet26.salas);
 
         }
+
+
     }
 }

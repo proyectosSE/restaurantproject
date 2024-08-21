@@ -33,17 +33,17 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.salasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.proyectoRestauranteDataSet26 = new ProyectoRestaurante.ProyectoRestauranteDataSet26();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btcerrar = new System.Windows.Forms.PictureBox();
-            this.proyectoRestauranteDataSet26 = new ProyectoRestaurante.ProyectoRestauranteDataSet26();
-            this.salasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.salasTableAdapter = new ProyectoRestaurante.ProyectoRestauranteDataSet26TableAdapters.salasTableAdapter();
             this.contenedor.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btcerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btcerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // contenedor
@@ -87,6 +87,16 @@
             this.comboBox1.ValueMember = "id_sala";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // salasBindingSource
+            // 
+            this.salasBindingSource.DataMember = "salas";
+            this.salasBindingSource.DataSource = this.proyectoRestauranteDataSet26;
+            // 
+            // proyectoRestauranteDataSet26
+            // 
+            this.proyectoRestauranteDataSet26.DataSetName = "ProyectoRestauranteDataSet26";
+            this.proyectoRestauranteDataSet26.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -121,16 +131,6 @@
             this.btcerrar.TabIndex = 8;
             this.btcerrar.TabStop = false;
             // 
-            // proyectoRestauranteDataSet26
-            // 
-            this.proyectoRestauranteDataSet26.DataSetName = "ProyectoRestauranteDataSet26";
-            this.proyectoRestauranteDataSet26.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // salasBindingSource
-            // 
-            this.salasBindingSource.DataMember = "salas";
-            this.salasBindingSource.DataSource = this.proyectoRestauranteDataSet26;
-            // 
             // salasTableAdapter
             // 
             this.salasTableAdapter.ClearBeforeFill = true;
@@ -149,9 +149,9 @@
             this.contenedor.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btcerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btcerrar)).EndInit();
             this.ResumeLayout(false);
 
         }

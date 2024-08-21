@@ -36,7 +36,7 @@ namespace ProyectoRestaurante.clases
             {
                 id_mesa = Convert.ToInt32(reader[0]);
                 nommesa = reader[2].ToString();
-                cantasientos = reader[4].ToString();
+                cantasientos = reader[3].ToString();
                 
 
                 mesas btn = new mesas();
@@ -49,6 +49,7 @@ namespace ProyectoRestaurante.clases
             }
 
             conexion.Close(); 
+            conexion.Dispose();
             
         }
 

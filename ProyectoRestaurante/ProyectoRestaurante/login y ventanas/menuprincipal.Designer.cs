@@ -188,12 +188,12 @@
 
         private System.Windows.Forms.Panel panelbtns;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel contenedor;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox btminimizar;
         private System.Windows.Forms.PictureBox btcerrar;
         private System.Windows.Forms.Button btmantenimiento;
         private System.Windows.Forms.Button btconsulta;
         private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Panel contenedor;
     }
 }

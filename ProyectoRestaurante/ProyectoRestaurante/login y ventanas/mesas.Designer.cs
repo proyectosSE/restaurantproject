@@ -45,6 +45,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(277, 144);
             this.panel1.TabIndex = 0;
+            this.panel1.DoubleClick += new System.EventHandler(this.panel1_DoubleClick);
             // 
             // mesanom
             // 
@@ -105,15 +106,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(307, 242);
             this.Controls.Add(this.total);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cantasientos);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
-            //this.BorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "mesas";
-            this.Text = "Form1";
+            this.Size = new System.Drawing.Size(307, 242);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

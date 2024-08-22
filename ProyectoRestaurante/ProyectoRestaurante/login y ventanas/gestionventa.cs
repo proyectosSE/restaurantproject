@@ -210,9 +210,9 @@ namespace ProyectoRestaurante.login_y_ventanas
         }
         public int id_pedido;
 
-        public string id_mesa;
-        public string id_cliente;
-        public string totalpago;
+        public int id_mesa;
+        public int id_cliente;
+        public decimal totalpago;
         public string fecha;
         public string estado = "I";
 
@@ -220,19 +220,19 @@ namespace ProyectoRestaurante.login_y_ventanas
         {
             Conectar cls = new Conectar();
             string tabla = "pedidos";
-            id_mesa = lblidmesa.Text;
-            id_cliente = cbbcliente.SelectedValue.ToString();
+            id_mesa = int.Parse(lblidmesa.Text);
+            id_cliente = int.Parse(cbbcliente.SelectedValue.ToString());
             fecha = fechapedido.Text;
-            totalpago = monttotal.Text;
+            totalpago = decimal.Parse(monttotal.Text);
 
             foreach (DataGridViewRow fila in dataGridView1.Rows)
             {
                 id_pedido = id_pedido + 1;
-                var id_producto = fila.Cells["id_producto"].Value.ToString();
-                var nomproducto = fila.Cells["dgvproducto"].Value.ToString();
-                var cantidad = fila.Cells["dgvcantidad"].Value.ToString();
-                var precioprod = fila.Cells["dgvprecio"].Value.ToString();
-                var preciototal = fila.Cells["dgvtotal"].Value.ToString();
+                int id_producto = int.Parse(fila.Cells["id_producto"].Value.ToString());
+                string nomproducto = fila.Cells["dgvproducto"].Value.ToString();
+                int cantidad = int.Parse(fila.Cells["dgvcantidad"].Value.ToString());
+                decimal precioprod = decimal.Parse(fila.Cells["dgvprecio"].Value.ToString());
+                decimal preciototal = decimal.Parse(fila.Cells["dgvtotal"].Value.ToString());
 
                 string consulta = ""+id_pedido+", "+id_mesa+", "+id_cliente+", "+id_producto+", '"+nomproducto+"', "+cantidad+", "+precioprod+", "+preciototal+", "+totalpago+", '"+fecha+"', '"+estado+"'";
                 cls.Agregar(consulta, tabla);

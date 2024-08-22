@@ -96,20 +96,27 @@ namespace ProyectoRestaurante.login_y_ventanas
 
         private void llenarproductos()
         {
-            consulta2 = $"SELECT * FROM productos WHERE id_categoria = {cbbcat.SelectedValue}";
-            SqlConnection conexion = new SqlConnection(rutadb.conexion);
-            SqlCommand comando = new SqlCommand(consulta2,conexion);
-            SqlDataAdapter ad = new SqlDataAdapter(comando);
-
-            DataTable dt = new DataTable();
-            ad.Fill(dt);
-
-            foreach(DataRow item in dt.Rows)
+            try
             {
-                Byte[] fotoarray = (byte[])item["imagen"];
-                byte[] fotobyte = fotoarray;
+                consulta2 = $"SELECT * FROM productos WHERE id_categoria = {cbbcat.SelectedValue}";
+                SqlConnection conexion = new SqlConnection(rutadb.conexion);
+                SqlCommand comando = new SqlCommand(consulta2, conexion);
+                SqlDataAdapter ad = new SqlDataAdapter(comando);
 
-                addproductos(item["id_producto"].ToString(), item["producto"].ToString(), item["preciocompra"].ToString(), Image.FromStream(new MemoryStream(fotobyte)));
+                DataTable dt = new DataTable();
+                ad.Fill(dt);
+
+                foreach (DataRow item in dt.Rows)
+                {
+                    Byte[] fotoarray = (byte[])item["imagen"];
+                    byte[] fotobyte = fotoarray;
+
+                    addproductos(item["id_producto"].ToString(), item["producto"].ToString(), item["preciocompra"].ToString(), Image.FromStream(new MemoryStream(fotobyte)));
+                }
+            }
+            catch (Exception ex)
+            {
+
             }
 
         }

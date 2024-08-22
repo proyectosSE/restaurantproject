@@ -30,7 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.contenedor = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.monttotal = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.id_producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dvgproducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvcantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvprecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -47,13 +54,6 @@
             this.salasTableAdapter = new ProyectoRestaurante.ProyectoRestauranteDataSet26TableAdapters.salasTableAdapter();
             this.salasTableAdapter1 = new ProyectoRestaurante.ProyectoRestauranteDataSet27TableAdapters.salasTableAdapter();
             this.categoriasTableAdapter = new ProyectoRestaurante.ProyectoRestauranteDataSet28TableAdapters.categoriasTableAdapter();
-            this.id_producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dvgproducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvcantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvprecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.monttotal = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.contenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -78,6 +78,28 @@
             this.contenedor.Size = new System.Drawing.Size(1067, 540);
             this.contenedor.TabIndex = 10;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Gold;
+            this.label3.Location = new System.Drawing.Point(579, 475);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(25, 28);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "$";
+            // 
+            // monttotal
+            // 
+            this.monttotal.AutoSize = true;
+            this.monttotal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.monttotal.ForeColor = System.Drawing.Color.Gold;
+            this.monttotal.Location = new System.Drawing.Point(610, 475);
+            this.monttotal.Name = "monttotal";
+            this.monttotal.Size = new System.Drawing.Size(25, 28);
+            this.monttotal.TabIndex = 3;
+            this.monttotal.Text = "0";
+            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
@@ -101,6 +123,46 @@
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             this.dataGridView1.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellValueChanged);
+            // 
+            // id_producto
+            // 
+            this.id_producto.HeaderText = "id";
+            this.id_producto.MinimumWidth = 8;
+            this.id_producto.Name = "id_producto";
+            this.id_producto.ReadOnly = true;
+            this.id_producto.Width = 80;
+            // 
+            // dvgproducto
+            // 
+            this.dvgproducto.HeaderText = "producto";
+            this.dvgproducto.MinimumWidth = 8;
+            this.dvgproducto.Name = "dvgproducto";
+            this.dvgproducto.ReadOnly = true;
+            this.dvgproducto.Width = 150;
+            // 
+            // dgvcantidad
+            // 
+            this.dgvcantidad.HeaderText = "cantidad";
+            this.dgvcantidad.MinimumWidth = 8;
+            this.dgvcantidad.Name = "dgvcantidad";
+            this.dgvcantidad.ReadOnly = true;
+            this.dgvcantidad.Width = 70;
+            // 
+            // dgvprecio
+            // 
+            this.dgvprecio.HeaderText = "precio";
+            this.dgvprecio.MinimumWidth = 8;
+            this.dgvprecio.Name = "dgvprecio";
+            this.dgvprecio.ReadOnly = true;
+            this.dgvprecio.Width = 75;
+            // 
+            // dgvtotal
+            // 
+            this.dgvtotal.HeaderText = "total";
+            this.dgvtotal.MinimumWidth = 8;
+            this.dgvtotal.Name = "dgvtotal";
+            this.dgvtotal.ReadOnly = true;
+            this.dgvtotal.Width = 70;
             // 
             // flowLayoutPanel2
             // 
@@ -227,68 +289,6 @@
             // categoriasTableAdapter
             // 
             this.categoriasTableAdapter.ClearBeforeFill = true;
-            // 
-            // id_producto
-            // 
-            this.id_producto.HeaderText = "id";
-            this.id_producto.MinimumWidth = 8;
-            this.id_producto.Name = "id_producto";
-            this.id_producto.ReadOnly = true;
-            this.id_producto.Width = 80;
-            // 
-            // dvgproducto
-            // 
-            this.dvgproducto.HeaderText = "producto";
-            this.dvgproducto.MinimumWidth = 8;
-            this.dvgproducto.Name = "dvgproducto";
-            this.dvgproducto.ReadOnly = true;
-            this.dvgproducto.Width = 150;
-            // 
-            // dgvcantidad
-            // 
-            this.dgvcantidad.HeaderText = "cantidad";
-            this.dgvcantidad.MinimumWidth = 8;
-            this.dgvcantidad.Name = "dgvcantidad";
-            this.dgvcantidad.ReadOnly = true;
-            this.dgvcantidad.Width = 70;
-            // 
-            // dgvprecio
-            // 
-            this.dgvprecio.HeaderText = "precio";
-            this.dgvprecio.MinimumWidth = 8;
-            this.dgvprecio.Name = "dgvprecio";
-            this.dgvprecio.ReadOnly = true;
-            this.dgvprecio.Width = 75;
-            // 
-            // dgvtotal
-            // 
-            this.dgvtotal.HeaderText = "total";
-            this.dgvtotal.MinimumWidth = 8;
-            this.dgvtotal.Name = "dgvtotal";
-            this.dgvtotal.ReadOnly = true;
-            this.dgvtotal.Width = 70;
-            // 
-            // monttotal
-            // 
-            this.monttotal.AutoSize = true;
-            this.monttotal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.monttotal.ForeColor = System.Drawing.Color.Gold;
-            this.monttotal.Location = new System.Drawing.Point(610, 475);
-            this.monttotal.Name = "monttotal";
-            this.monttotal.Size = new System.Drawing.Size(25, 28);
-            this.monttotal.TabIndex = 3;
-            this.monttotal.Text = "0";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Gold;
-            this.label3.Location = new System.Drawing.Point(579, 475);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(25, 28);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "$";
             // 
             // gestionventa
             // 

@@ -26,7 +26,7 @@ namespace ProyectoRestaurante.login_y_ventanas
             set {id = value;}
         }
 
-       public string Mesa
+        public string Mesa
         {
             get { return mesanom.Text; }
             set { mesanom.Text = value; }

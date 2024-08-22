@@ -63,8 +63,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clases\Class1.cs" />
-    <Compile Include="clases\DBmesa.cs" />
-    <Compile Include="clases\DBproductos.cs" />
     <Compile Include="clases\verificar.cs" />
     <Compile Include="clases\formatoDGV.cs" />
     <Compile Include="clases\limpiar.cs" />

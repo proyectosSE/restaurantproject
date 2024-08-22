@@ -26,8 +26,27 @@ namespace ProyectoRestaurante.login_y_ventanas
 
         private void llenarmesas ()
         {
-            DBmesa db = new DBmesa();
-            db.Llenarbotones(flowLayoutPanel1,consulta);
+            try
+            {
+                consulta = $"SELECT * FROM mesas WHERE id_sala = {comboBox1.SelectedValue}";
+                SqlConnection conexion = new SqlConnection(rutadb.conexion);
+                SqlCommand comando = new SqlCommand(consulta, conexion);
+                SqlDataAdapter ad = new SqlDataAdapter(comando);
+
+                DataTable dt = new DataTable();
+                ad.Fill(dt);
+
+                foreach (DataRow item in dt.Rows)
+                {
+                    addmesa(item["id_mesa"].ToString(), item["nommesa"].ToString(), item["puestos"].ToString());
+
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+
         }
 
         private void addproductos(string id, string nombre,string precio, Image foto)
@@ -61,6 +80,18 @@ namespace ProyectoRestaurante.login_y_ventanas
                 pagototal();
             };
 
+        }
+
+        private void addmesa(string id, string nommesa, string asientos)
+        {
+            var w = new mesas
+            {
+                Mesa = nommesa,
+                Asientos = asientos,
+                Id = Convert.ToInt32(id)
+            };
+
+            flowLayoutPanel1.Controls.Add(w);
         }
 
         private void llenarproductos()
@@ -105,6 +136,9 @@ namespace ProyectoRestaurante.login_y_ventanas
                 flowLayoutPanel2.Controls.Remove(control);
                 control.Dispose();
             }
+
+            consulta2 = $"SELECT * FROM productos WHERE id_categoria = {cbbcat.SelectedValue}";
+            llenarproductos();
         }
 
         private void gestionventa_Load(object sender, EventArgs e)
@@ -116,6 +150,7 @@ namespace ProyectoRestaurante.login_y_ventanas
 
             flowLayoutPanel2.Controls.Clear();
             llenarproductos();
+            llenarmesas();
         }
 
         private void ocultarcolumna()

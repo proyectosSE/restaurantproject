@@ -102,7 +102,11 @@ namespace ProyectoRestaurante.login_y_ventanas
                 lbmesa.Text = wmesa.Mesa.ToString();
                 lblidmesa.Text = wmesa.Id.ToString();
 
+                RecargarDGV();
+
             };
+            
+
         }
 
         private void llenarproductos()
@@ -219,25 +223,56 @@ namespace ProyectoRestaurante.login_y_ventanas
         private void btdespachar_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();
+            Form1 f = new Form1();
+            f.lbcliente.Text = cbbcliente.Text;
+            f.lbtotal.Text = monttotal.Text;
+            f.lbfecha.Text = fechapedido.Text;
+            f.lbmesa.Text = lbmesa.Text;
+
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (!row.IsNewRow) // Evitar filas vacías
+                {
+                    int rowIndex = f.dataGridView1.Rows.Add();
+                    for (int i = 0; i < row.Cells.Count; i++)
+                    {
+                        f.dataGridView1.Rows[rowIndex].Cells[i].Value = row.Cells[i].Value;
+                    }
+                }
+            }
+            f.ShowDialog();
             string tabla = "pedidos";
             id_mesa = int.Parse(lblidmesa.Text);
             id_cliente = int.Parse(cbbcliente.SelectedValue.ToString());
             fecha = fechapedido.Text;
             totalpago = decimal.Parse(monttotal.Text);
 
-            foreach (DataGridViewRow fila in dataGridView1.Rows)
+
+            if (dataGridView1.Rows.Count > 0)
             {
-                id_pedido = id_pedido + 1;
-                int id_producto = int.Parse(fila.Cells["id_producto"].Value.ToString());
-                string nomproducto = fila.Cells["dgvproducto"].Value.ToString();
-                int cantidad = int.Parse(fila.Cells["dgvcantidad"].Value.ToString());
-                decimal precioprod = decimal.Parse(fila.Cells["dgvprecio"].Value.ToString());
-                decimal preciototal = decimal.Parse(fila.Cells["dgvtotal"].Value.ToString());
 
-                string consulta = ""+id_pedido+", "+id_mesa+", "+id_cliente+", "+id_producto+", '"+nomproducto+"', "+cantidad+", "+precioprod+", "+preciototal+", "+totalpago+", '"+fecha+"', '"+estado+"'";
-                cls.Agregar(consulta, tabla);
 
+                foreach (DataGridViewRow fila in dataGridView1.Rows)
+                {
+                    //id_pedido = id_pedido + 1;
+                    int id_producto = int.Parse(fila.Cells["id_producto"].Value.ToString());
+                    string nomproducto = fila.Cells["dgvproducto"].Value.ToString();
+                    int cantidad = int.Parse(fila.Cells["dgvcantidad"].Value.ToString());
+                    decimal precioprod = decimal.Parse(fila.Cells["dgvprecio"].Value.ToString());
+                    decimal preciototal = decimal.Parse(fila.Cells["dgvtotal"].Value.ToString());
+
+                    string consulta = "" + id_mesa + ", " + id_cliente + ", " + id_producto + ", '" + nomproducto + "', " + cantidad + ", " + precioprod + ", " + preciototal + ", " + totalpago + ", '" + fecha + "', '" + estado + "'";
+                    cls.AgregarProd(consulta, tabla);
+
+                }
             }
+            else
+            {
+                mensaje msg = new mensaje("error", "Ningún producto seleccionado");
+                msg.ShowDialog();
+            }
+            mensaje ms = new mensaje("listo", "Datos guardados correctamente");
+            ms.ShowDialog();
 
 
         }
@@ -251,6 +286,45 @@ namespace ProyectoRestaurante.login_y_ventanas
             else
             {
                 estado = "I";
+            }
+        }
+        public int idprod = 0;
+
+        public void RecargarDGV()
+        {
+
+            dataGridView1.Rows.Clear();
+            
+            string cons = $"SELECT id_producto, nomproducto, cantidad, precioprod, preciototal, id_cliente FROM pedidos WHERE id_mesa= {lblidmesa.Text}";
+            try
+            {
+                using (SqlConnection conexion = new SqlConnection(rutadb.conexion))
+                {
+                    conexion.Open();
+                    SqlCommand comando = new SqlCommand(cons,conexion);
+                    SqlDataReader lect = comando.ExecuteReader();
+
+
+                    while (lect.Read())
+                    {
+                        DataGridViewRow fila = new DataGridViewRow();
+                        fila.CreateCells(dataGridView1);
+
+                        fila.Cells[0].Value = lect["id_producto"].ToString();
+                        fila.Cells[1].Value = lect["nomproducto"].ToString();
+                        fila.Cells[2].Value = lect["cantidad"].ToString();
+                        fila.Cells[3].Value = lect["precioprod"].ToString();
+                        fila.Cells[4].Value = lect["preciototal"].ToString();
+
+                        dataGridView1.Rows.Add(fila);
+                    }
+
+                }
+                
+            }
+            catch (Exception ex)
+            {
+
             }
         }
     }

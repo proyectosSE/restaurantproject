@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clases\Class1.cs" />
+    <Compile Include="clases\imprimir.cs" />
     <Compile Include="clases\verificar.cs" />
     <Compile Include="clases\formatoDGV.cs" />
     <Compile Include="clases\limpiar.cs" />
@@ -144,6 +145,12 @@
     </Compile>
     <Compile Include="consultas\conprod.Designer.cs">
       <DependentUpon>conprod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login y ventanas\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login y ventanas\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="login y ventanas\mesas.cs">
       <SubType>UserControl</SubType>
@@ -403,6 +410,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProyectoRestauranteDataSet31.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProyectoRestauranteDataSet32.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoRestauranteDataSet32.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ProyectoRestauranteDataSet4.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -471,6 +483,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="consultas\conusua.resx">
       <DependentUpon>conusua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login y ventanas\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login y ventanas\gestionventa.resx">
       <DependentUpon>gestionventa.cs</DependentUpon>
@@ -845,6 +860,17 @@
     </None>
     <None Include="ProyectoRestauranteDataSet31.xss">
       <DependentUpon>ProyectoRestauranteDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet32.xsc">
+      <DependentUpon>ProyectoRestauranteDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet32.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProyectoRestauranteDataSet32.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProyectoRestauranteDataSet32.xss">
+      <DependentUpon>ProyectoRestauranteDataSet32.xsd</DependentUpon>
     </None>
     <None Include="ProyectoRestauranteDataSet4.xsc">
       <DependentUpon>ProyectoRestauranteDataSet4.xsd</DependentUpon>

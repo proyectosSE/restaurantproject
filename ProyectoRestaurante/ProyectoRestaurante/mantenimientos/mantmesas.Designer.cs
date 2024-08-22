@@ -36,8 +36,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cbbsala = new System.Windows.Forms.ComboBox();
-            this.salasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.proyectoRestauranteDataSet22 = new ProyectoRestaurante.ProyectoRestauranteDataSet22();
+            this.salasBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.proyectoRestauranteDataSet25 = new ProyectoRestaurante.ProyectoRestauranteDataSet25();
             this.proyectoRestauranteDataSet16 = new ProyectoRestaurante.ProyectoRestauranteDataSet16();
             this.proyectoRestauranteDataSet19 = new ProyectoRestaurante.ProyectoRestauranteDataSet19();
             this.proyectoRestauranteDataSet14 = new ProyectoRestaurante.ProyectoRestauranteDataSet14();
@@ -58,12 +59,14 @@
             this.rjToggleButton1 = new RJCodeAdvance.RJControls.RJToggleButton();
             this.salasTableAdapter5 = new ProyectoRestaurante.ProyectoRestauranteDataSet19TableAdapters.salasTableAdapter();
             this.salasTableAdapter6 = new ProyectoRestaurante.ProyectoRestauranteDataSet22TableAdapters.salasTableAdapter();
-            this.proyectoRestauranteDataSet25 = new ProyectoRestaurante.ProyectoRestauranteDataSet25();
-            this.salasBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.salasTableAdapter7 = new ProyectoRestaurante.ProyectoRestauranteDataSet25TableAdapters.salasTableAdapter();
+            this.proyectoRestauranteDataSet32 = new ProyectoRestaurante.ProyectoRestauranteDataSet32();
+            this.salasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.salasTableAdapter8 = new ProyectoRestaurante.ProyectoRestauranteDataSet32TableAdapters.salasTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet14)).BeginInit();
@@ -71,8 +74,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btcerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -149,7 +152,7 @@
             // cbbsala
             // 
             this.cbbsala.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.salasBindingSource, "id_sala", true));
-            this.cbbsala.DataSource = this.salasBindingSource1;
+            this.cbbsala.DataSource = this.salasBindingSource;
             this.cbbsala.DisplayMember = "nomsala";
             this.cbbsala.FormattingEnabled = true;
             this.cbbsala.Location = new System.Drawing.Point(30, 60);
@@ -158,15 +161,20 @@
             this.cbbsala.TabIndex = 18;
             this.cbbsala.ValueMember = "id_sala";
             // 
-            // salasBindingSource
-            // 
-            this.salasBindingSource.DataMember = "salas";
-            this.salasBindingSource.DataSource = this.proyectoRestauranteDataSet22;
-            // 
             // proyectoRestauranteDataSet22
             // 
             this.proyectoRestauranteDataSet22.DataSetName = "ProyectoRestauranteDataSet22";
             this.proyectoRestauranteDataSet22.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // salasBindingSource1
+            // 
+            this.salasBindingSource1.DataMember = "salas";
+            this.salasBindingSource1.DataSource = this.proyectoRestauranteDataSet25;
+            // 
+            // proyectoRestauranteDataSet25
+            // 
+            this.proyectoRestauranteDataSet25.DataSetName = "ProyectoRestauranteDataSet25";
+            this.proyectoRestauranteDataSet25.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // proyectoRestauranteDataSet16
             // 
@@ -302,19 +310,23 @@
             // 
             this.salasTableAdapter6.ClearBeforeFill = true;
             // 
-            // proyectoRestauranteDataSet25
-            // 
-            this.proyectoRestauranteDataSet25.DataSetName = "ProyectoRestauranteDataSet25";
-            this.proyectoRestauranteDataSet25.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // salasBindingSource1
-            // 
-            this.salasBindingSource1.DataMember = "salas";
-            this.salasBindingSource1.DataSource = this.proyectoRestauranteDataSet25;
-            // 
             // salasTableAdapter7
             // 
             this.salasTableAdapter7.ClearBeforeFill = true;
+            // 
+            // proyectoRestauranteDataSet32
+            // 
+            this.proyectoRestauranteDataSet32.DataSetName = "ProyectoRestauranteDataSet32";
+            this.proyectoRestauranteDataSet32.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // salasBindingSource
+            // 
+            this.salasBindingSource.DataMember = "salas";
+            this.salasBindingSource.DataSource = this.proyectoRestauranteDataSet32;
+            // 
+            // salasTableAdapter8
+            // 
+            this.salasTableAdapter8.ClearBeforeFill = true;
             // 
             // mantmesas
             // 
@@ -341,8 +353,9 @@
             this.Text = "Mesas";
             this.Load += new System.EventHandler(this.mantmesas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet14)).EndInit();
@@ -350,8 +363,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btcerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoRestauranteDataSet32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -385,10 +398,12 @@
         private ProyectoRestauranteDataSet19 proyectoRestauranteDataSet19;
         private ProyectoRestauranteDataSet19TableAdapters.salasTableAdapter salasTableAdapter5;
         private ProyectoRestauranteDataSet22 proyectoRestauranteDataSet22;
-        private System.Windows.Forms.BindingSource salasBindingSource;
         private ProyectoRestauranteDataSet22TableAdapters.salasTableAdapter salasTableAdapter6;
         private ProyectoRestauranteDataSet25 proyectoRestauranteDataSet25;
         private System.Windows.Forms.BindingSource salasBindingSource1;
         private ProyectoRestauranteDataSet25TableAdapters.salasTableAdapter salasTableAdapter7;
+        private ProyectoRestauranteDataSet32 proyectoRestauranteDataSet32;
+        private System.Windows.Forms.BindingSource salasBindingSource;
+        private ProyectoRestauranteDataSet32TableAdapters.salasTableAdapter salasTableAdapter8;
     }
 }

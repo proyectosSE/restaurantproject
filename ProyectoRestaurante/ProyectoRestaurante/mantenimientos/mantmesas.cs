@@ -48,8 +48,8 @@ namespace ProyectoRestaurante
         
         private void mantmesas_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'proyectoRestauranteDataSet25.salas' Puede moverla o quitarla según sea necesario.
-            this.salasTableAdapter7.Fill(this.proyectoRestauranteDataSet25.salas);
+            // TODO: esta línea de código carga datos en la tabla 'proyectoRestauranteDataSet32.salas' Puede moverla o quitarla según sea necesario.
+            this.salasTableAdapter8.Fill(this.proyectoRestauranteDataSet32.salas);
 
 
         }

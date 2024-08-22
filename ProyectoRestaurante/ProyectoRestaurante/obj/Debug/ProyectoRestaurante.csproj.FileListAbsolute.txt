@@ -503,3 +503,4 @@ C:\Users\LIKELIAS\Desktop\Clases 2-2024\Ejemplo_P3\ProyectoRestaurante\ProyectoR
 C:\Users\LIKELIAS\Desktop\Clases 2-2024\Ejemplo_P3\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\Proyecto.CE3A958B.Up2Date
 C:\Users\LIKELIAS\Desktop\Clases 2-2024\Ejemplo_P3\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.exe
 C:\Users\LIKELIAS\Desktop\Clases 2-2024\Ejemplo_P3\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.pdb
+C:\Users\LIKELIAS\Desktop\Clases 2-2024\Ejemplo_P3\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.login_y_ventanas.Form1.resources

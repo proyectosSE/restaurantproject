@@ -104,6 +104,31 @@ namespace ProyectoRestaurante
             conexion.Close();
         }
 
-
+        public void AgregarProd(string datos, string tabla)
+        {
+            try
+            {
+                conexion.Open();
+                string cadena = $"INSERT INTO {tabla} VALUES({datos});";
+                SqlCommand comando = new SqlCommand(cadena, conexion);
+                comando.ExecuteNonQuery();
+                
+            }
+            catch (SqlException sqlEx)
+            {
+                MessageBox.Show($"Error de SQL: {sqlEx.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error general: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                if (conexion.State == System.Data.ConnectionState.Open)
+                {
+                    conexion.Close();
+                }
+            }
+        }
     }
 }

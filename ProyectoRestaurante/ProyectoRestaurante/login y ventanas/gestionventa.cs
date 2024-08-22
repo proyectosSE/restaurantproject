@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ namespace ProyectoRestaurante.login_y_ventanas
         public gestionventa()
         {
             InitializeComponent();
+            ocultarcolumna();
         }
 
         private string consulta;
@@ -28,13 +30,59 @@ namespace ProyectoRestaurante.login_y_ventanas
             db.Llenarbotones(flowLayoutPanel1,consulta);
         }
 
+        private void addproductos(string id, string nombre,string precio, Image foto)
+        {
+            var w = new productos
+            {
+                Producto = nombre,
+                Precio = precio,
+                ImagenProd = foto,
+                Id= Convert.ToInt32(id)
+            };
+
+            flowLayoutPanel2.Controls.Add(w);
+
+            w.seleccion += (ss, ee) =>
+            {
+                var wdgv = (productos)ss;
+
+                foreach (DataGridViewRow item in dataGridView1.Rows)
+                {
+                    if (Convert.ToUInt32(item.Cells["id_producto"].Value) == wdgv.Id)
+                    {
+                        item.Cells["dgvcantidad"].Value = int.Parse(item.Cells["dgvcantidad"].Value.ToString()) + 1;
+                        item.Cells["dgvtotal"].Value = int.Parse(item.Cells["dgvcantidad"].Value.ToString()) * double.Parse(item.Cells["dgvprecio"].Value.ToString());
+
+                        return;
+                    }
+                    
+                }
+                dataGridView1.Rows.Add(new object[] { wdgv.Id, wdgv.Producto, 1,wdgv.Precio, wdgv.Precio });
+                pagototal();
+            };
+
+        }
+
         private void llenarproductos()
         {
-            DBproductos db = new DBproductos();
-            db.LlenarProductos(flowLayoutPanel2, consulta2);
-        }
-                
+            consulta2 = $"SELECT * FROM productos WHERE id_categoria = {cbbcat.SelectedValue}";
+            SqlConnection conexion = new SqlConnection(rutadb.conexion);
+            SqlCommand comando = new SqlCommand(consulta2,conexion);
+            SqlDataAdapter ad = new SqlDataAdapter(comando);
 
+            DataTable dt = new DataTable();
+            ad.Fill(dt);
+
+            foreach(DataRow item in dt.Rows)
+            {
+                Byte[] fotoarray = (byte[])item["imagen"];
+                byte[] fotobyte = fotoarray;
+
+                addproductos(item["id_producto"].ToString(), item["producto"].ToString(), item["preciocompra"].ToString(), Image.FromStream(new MemoryStream(fotobyte)));
+            }
+
+        }
+        
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             for (int i = flowLayoutPanel1.Controls.Count - 1; i >= 0; i--)
@@ -57,9 +105,6 @@ namespace ProyectoRestaurante.login_y_ventanas
                 flowLayoutPanel2.Controls.Remove(control);
                 control.Dispose();
             }
-
-            consulta2 = $"SELECT * FROM productos WHERE id_categoria = {cbbcat.SelectedValue}";
-            llenarproductos();
         }
 
         private void gestionventa_Load(object sender, EventArgs e)
@@ -69,12 +114,44 @@ namespace ProyectoRestaurante.login_y_ventanas
             // TODO: esta línea de código carga datos en la tabla 'proyectoRestauranteDataSet27.salas' Puede moverla o quitarla según sea necesario.
             this.salasTableAdapter1.Fill(this.proyectoRestauranteDataSet27.salas);
 
+            flowLayoutPanel2.Controls.Clear();
+            llenarproductos();
         }
 
-        private void mesas1_Load(object sender, EventArgs e)
+        private void ocultarcolumna()
         {
-
+            if (dataGridView1.Columns.Contains("id_producto")) dataGridView1.Columns["id_producto"].Visible = false;
         }
 
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && !dataGridView1.Rows[e.RowIndex].IsNewRow)
+            {
+                DialogResult resultado = MessageBox.Show("¿Estás seguro de que deseas eliminar este producto?", "Confirmar Eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (resultado == DialogResult.Yes)
+                {
+                    dataGridView1.Rows.RemoveAt(e.RowIndex);
+                }
+            }
+            pagototal();
+        }
+
+        public void pagototal()
+        {
+            double total = 0;
+            monttotal.Text = "";
+
+            foreach (DataGridViewRow item in dataGridView1.Rows)
+            {
+                total += double.Parse(item.Cells["dgvtotal"].Value.ToString());
+            }
+            monttotal.Text = total.ToString("N2");
+        }
+
+        private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            pagototal();
+        }
     }
 }

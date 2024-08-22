@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ProyectoRestaurante",
+    "\\ProyectoRestaurante\\ProyectoRestaurante",
+    "\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas"
   ],
-  "SelectedNode": "\\C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3",
+  "SelectedNode": "\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
   "PreviewInSolutionExplorer": false
 }

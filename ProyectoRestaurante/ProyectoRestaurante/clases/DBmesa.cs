@@ -28,26 +28,32 @@ namespace ProyectoRestaurante.clases
         public void Llenarbotones(FlowLayoutPanel contenedor,string consulta)
         {
             conexion.Open();
-            SqlCommand comando = new SqlCommand(consulta, conexion);
-            comando.CommandType = CommandType.Text;
-            SqlDataReader reader = comando.ExecuteReader();
-
-            while (reader.Read())
+            try
             {
-                id_mesa = Convert.ToInt32(reader[0]);
-                nommesa = reader[2].ToString();
-                cantasientos = reader[3].ToString();
-                
+                SqlCommand comando = new SqlCommand(consulta, conexion);
+                comando.CommandType = CommandType.Text;
+                SqlDataReader reader = comando.ExecuteReader();
 
-                mesas btn = new mesas();
-                btn.Id = id_mesa;
-                btn.Mesa = nommesa;
-                btn.Asientos = cantasientos;
+                while (reader.Read())
+                {
+                    id_mesa = Convert.ToInt32(reader[0]);
+                    nommesa = reader[2].ToString();
+                    cantasientos = reader[3].ToString();
 
 
-                contenedor.Controls.Add(btn);
+                    mesas btn = new mesas();
+                    btn.Id = id_mesa;
+                    btn.Mesa = nommesa;
+                    btn.Asientos = cantasientos;
+
+
+                    contenedor.Controls.Add(btn);
+                }
             }
+            catch (Exception ex)
+            {
 
+            }
             conexion.Close(); 
             conexion.Dispose();
             

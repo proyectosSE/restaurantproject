@@ -25,35 +25,35 @@ namespace ProyectoRestaurante.clases
 
         SqlConnection conexion = new SqlConnection(rutadb.conexion);
 
-        public void LlenarProductos(FlowLayoutPanel Contenedor, string consulta)
-        {
-            conexion.Open();
+        //public void LlenarProductos(FlowLayoutPanel Contenedor, string consulta)
+        //{
+        //    conexion.Open();
 
-            SqlCommand comando = new SqlCommand(consulta,conexion);
-            comando.CommandType = System.Data.CommandType.Text;
-            SqlDataReader rd = comando.ExecuteReader();
+        //    SqlCommand comando = new SqlCommand(consulta,conexion);
+        //    comando.CommandType = System.Data.CommandType.Text;
+        //    SqlDataReader rd = comando.ExecuteReader();
 
-            while(rd.Read())
-            {
-                Id_producto = Convert.ToInt32(rd[0]);
-                producto = Convert.ToString(rd[1]);
-                precio_venta = Convert.ToDecimal(rd[5]);
-                imagen = ((byte[])rd[11]);
+        //    while(rd.Read())
+        //    {
+        //        Id_producto = Convert.ToInt32(rd[0]);
+        //        producto = Convert.ToString(rd[1]);
+        //        precio_venta = Convert.ToDecimal(rd[5]);
+        //        imagen = ((byte[])rd[11]);
 
-                productos prod = new productos();
+        //        productos prod = new productos();
 
-                prod.Id = Id_producto;
-                prod.Producto = producto;
-                prod.Precio = precio_venta.ToString();
+        //        prod.Id = Id_producto;
+        //        prod.Producto = producto;
+        //        prod.Precio = precio_venta.ToString();
 
-                MemoryStream ms = new MemoryStream(imagen);
-                prod.ImagenProd = Image.FromStream(ms);
+        //        MemoryStream ms = new MemoryStream(imagen);
+        //        prod.ImagenProd = Image.FromStream(ms);
 
-                Contenedor.Controls.Add(prod);
-            }
-            conexion.Close();
-            conexion.Dispose();
+        //        Contenedor.Controls.Add(prod);
+        //    }
+        //    conexion.Close();
+        //    conexion.Dispose();
 
-        }
+        //}
     }
 }

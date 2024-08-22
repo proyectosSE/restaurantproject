@@ -18,6 +18,7 @@ namespace ProyectoRestaurante.login_y_ventanas
         {
             InitializeComponent();
         }
+        public event EventHandler seleccion = null;
 
         public int Id
         {
@@ -43,5 +44,9 @@ namespace ProyectoRestaurante.login_y_ventanas
             set { prodimagen.Image = value; }
         }
 
+        public void prodimagen_DoubleClick(object sender, EventArgs e)
+        {
+            seleccion?.Invoke(this, e);
+        }
     }
 }

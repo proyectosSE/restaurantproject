@@ -76,6 +76,7 @@
             this.prodimagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.prodimagen.TabIndex = 0;
             this.prodimagen.TabStop = false;
+            this.prodimagen.DoubleClick += new System.EventHandler(this.prodimagen_DoubleClick);
             // 
             // productos
             // 
@@ -96,8 +97,8 @@
 
         #endregion
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox prodimagen;
-        private System.Windows.Forms.Label precioprod;
-        private System.Windows.Forms.Label nomprod;
+        public System.Windows.Forms.Label precioprod;
+        public System.Windows.Forms.Label nomprod;
+        public System.Windows.Forms.PictureBox prodimagen;
     }
 }

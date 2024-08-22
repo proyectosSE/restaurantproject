@@ -1,24 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\likelias\\desktop\\clases 2-2024\\ejemplo_p3\\proyectorestaurante\\proyectorestaurante\\clases\\dbproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\clases\\dbproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\likelias\\desktop\\clases 2-2024\\ejemplo_p3\\proyectorestaurante\\proyectorestaurante\\login y ventanas\\gestionventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\login y ventanas\\gestionventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\likelias\\desktop\\clases 2-2024\\ejemplo_p3\\proyectorestaurante\\proyectorestaurante\\login y ventanas\\gestionventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\login y ventanas\\gestionventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\likelias\\desktop\\clases 2-2024\\ejemplo_p3\\proyectorestaurante\\proyectorestaurante\\clases\\dbmesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\clases\\dbmesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -26,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,57 +30,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DBproductos.cs",
-              "DocumentMoniker": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\clases\\DBproductos.cs",
-              "RelativeDocumentMoniker": "ProyectoRestaurante\\clases\\DBproductos.cs",
-              "ToolTip": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\clases\\DBproductos.cs",
-              "RelativeToolTip": "ProyectoRestaurante\\clases\\DBproductos.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAgwB4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T02:38:33.816Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DBmesa.cs",
-              "DocumentMoniker": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\clases\\DBmesa.cs",
-              "RelativeDocumentMoniker": "ProyectoRestaurante\\clases\\DBmesa.cs",
-              "ToolTip": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\clases\\DBmesa.cs",
-              "RelativeToolTip": "ProyectoRestaurante\\clases\\DBmesa.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAkwCAAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T02:38:00.478Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "gestionventa.cs",
-              "DocumentMoniker": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
-              "RelativeDocumentMoniker": "ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
-              "ToolTip": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
-              "RelativeToolTip": "ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAtwBIAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T02:20:39.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "gestionventa.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
-              "RelativeDocumentMoniker": "ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
-              "ToolTip": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\gestionventa.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoRestaurante\\login y ventanas\\gestionventa.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T01:49:17.643Z",
-              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

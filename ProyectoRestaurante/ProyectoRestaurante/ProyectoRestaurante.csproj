@@ -398,6 +398,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProyectoRestauranteDataSet30.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProyectoRestauranteDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoRestauranteDataSet31.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ProyectoRestauranteDataSet4.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -829,6 +834,17 @@
     </None>
     <None Include="ProyectoRestauranteDataSet30.xss">
       <DependentUpon>ProyectoRestauranteDataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet31.xsc">
+      <DependentUpon>ProyectoRestauranteDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoRestauranteDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProyectoRestauranteDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProyectoRestauranteDataSet31.xss">
+      <DependentUpon>ProyectoRestauranteDataSet31.xsd</DependentUpon>
     </None>
     <None Include="ProyectoRestauranteDataSet4.xsc">
       <DependentUpon>ProyectoRestauranteDataSet4.xsd</DependentUpon>

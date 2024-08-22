@@ -13,12 +13,12 @@ namespace ProyectoRestaurante.login_y_ventanas
     public partial class mesas : UserControl
     {
         private int id=0;
-        
 
         public mesas()
         {
             InitializeComponent();
         }
+        public event EventHandler seleccion;
 
         public int Id
         {
@@ -48,7 +48,7 @@ namespace ProyectoRestaurante.login_y_ventanas
 
         private void panel1_DoubleClick(object sender, EventArgs e)
         {
-
+            seleccion?.Invoke(this, e);
         }
     }
 }

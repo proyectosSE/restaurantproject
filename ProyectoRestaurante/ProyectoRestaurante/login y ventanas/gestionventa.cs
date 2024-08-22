@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.WebRequestMethods;
 
 namespace ProyectoRestaurante.login_y_ventanas
 {
@@ -19,6 +20,7 @@ namespace ProyectoRestaurante.login_y_ventanas
         {
             InitializeComponent();
             ocultarcolumna();
+            fechapedido.Format = DateTimePickerFormat.Short;
         }
 
         private string consulta;
@@ -92,6 +94,15 @@ namespace ProyectoRestaurante.login_y_ventanas
             };
 
             flowLayoutPanel1.Controls.Add(w);
+
+            w.seleccion += (ss, ee) =>
+            {
+                var wmesa = (mesas)ss;
+
+                lbmesa.Text = wmesa.Mesa.ToString();
+                lblidmesa.Text = wmesa.Id.ToString();
+
+            };
         }
 
         private void llenarproductos()
@@ -150,6 +161,8 @@ namespace ProyectoRestaurante.login_y_ventanas
 
         private void gestionventa_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'proyectoRestauranteDataSet31.clientes' Puede moverla o quitarla según sea necesario.
+            this.clientesTableAdapter.Fill(this.proyectoRestauranteDataSet31.clientes);
             // TODO: esta línea de código carga datos en la tabla 'proyectoRestauranteDataSet28.categorias' Puede moverla o quitarla según sea necesario.
             this.categoriasTableAdapter.Fill(this.proyectoRestauranteDataSet28.categorias);
             // TODO: esta línea de código carga datos en la tabla 'proyectoRestauranteDataSet27.salas' Puede moverla o quitarla según sea necesario.
@@ -194,6 +207,51 @@ namespace ProyectoRestaurante.login_y_ventanas
         private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
             pagototal();
+        }
+        public int id_pedido;
+
+        public string id_mesa;
+        public string id_cliente;
+        public string totalpago;
+        public string fecha;
+        public string estado = "I";
+
+        private void btdespachar_Click(object sender, EventArgs e)
+        {
+            Conectar cls = new Conectar();
+            string tabla = "pedidos";
+            id_mesa = lblidmesa.Text;
+            id_cliente = cbbcliente.SelectedValue.ToString();
+            fecha = fechapedido.Text;
+            totalpago = monttotal.Text;
+
+            foreach (DataGridViewRow fila in dataGridView1.Rows)
+            {
+                id_pedido = id_pedido + 1;
+                var id_producto = fila.Cells["id_producto"].Value.ToString();
+                var nomproducto = fila.Cells["dgvproducto"].Value.ToString();
+                var cantidad = fila.Cells["dgvcantidad"].Value.ToString();
+                var precioprod = fila.Cells["dgvprecio"].Value.ToString();
+                var preciototal = fila.Cells["dgvtotal"].Value.ToString();
+
+                string consulta = ""+id_pedido+", "+id_mesa+", "+id_cliente+", "+id_producto+", '"+nomproducto+"', "+cantidad+", "+precioprod+", "+preciototal+", "+totalpago+", '"+fecha+"', '"+estado+"'";
+                cls.Agregar(consulta, tabla);
+
+            }
+
+
+        }
+
+        private void btestado_CheckedChanged(object sender, EventArgs e)
+        {
+            if (btestado.Checked)
+            {
+                estado = "A";
+            }
+            else
+            {
+                estado = "I";
+            }
         }
     }
 }

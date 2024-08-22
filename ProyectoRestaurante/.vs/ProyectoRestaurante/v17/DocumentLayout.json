@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\likelias\\desktop\\clases 2-2024\\ejemplo_p3\\proyectorestaurante\\proyectorestaurante\\login y ventanas\\gestionventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\login y ventanas\\gestionventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,21 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "gestionventa.cs",
-              "DocumentMoniker": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
-              "RelativeDocumentMoniker": "ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
-              "ToolTip": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
-              "RelativeToolTip": "ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
-              "ViewState": "AQIAAGEAAAAAAAAAAAAIwHYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T03:09:36.145Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"

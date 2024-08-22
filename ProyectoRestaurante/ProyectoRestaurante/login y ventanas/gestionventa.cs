@@ -111,7 +111,7 @@ namespace ProyectoRestaurante.login_y_ventanas
                     Byte[] fotoarray = (byte[])item["imagen"];
                     byte[] fotobyte = fotoarray;
 
-                    addproductos(item["id_producto"].ToString(), item["producto"].ToString(), item["preciocompra"].ToString(), Image.FromStream(new MemoryStream(fotobyte)));
+                    addproductos(item["id_producto"].ToString(), item["producto"].ToString(), item["precioventa"].ToString(), Image.FromStream(new MemoryStream(fotobyte)));
                 }
             }
             catch (Exception ex)

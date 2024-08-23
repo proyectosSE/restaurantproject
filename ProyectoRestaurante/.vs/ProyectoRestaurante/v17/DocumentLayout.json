@@ -7,10 +7,6 @@
       "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\login y ventanas\\gestionventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\likelias\\desktop\\clases 2-2024\\ejemplo_p3\\proyectorestaurante\\proyectorestaurante\\clases\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\clases\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\likelias\\desktop\\clases 2-2024\\ejemplo_p3\\proyectorestaurante\\proyectorestaurante\\login y ventanas\\gestionventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\login y ventanas\\gestionventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,40 +42,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\clases\\Class1.cs",
-              "RelativeDocumentMoniker": "ProyectoRestaurante\\clases\\Class1.cs",
-              "ToolTip": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\clases\\Class1.cs",
-              "RelativeToolTip": "ProyectoRestaurante\\clases\\Class1.cs",
-              "ViewState": "AQIAAFgAAAAAAAAAAAAkwGYAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T16:04:07.998Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "gestionventa.cs",
               "DocumentMoniker": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
               "RelativeDocumentMoniker": "ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
               "ToolTip": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\gestionventa.cs*",
               "RelativeToolTip": "ProyectoRestaurante\\login y ventanas\\gestionventa.cs*",
-              "ViewState": "AQIAAAEBAAAAAAAAAAAIwA0BAAAkAAAA",
+              "ViewState": "AQIAACgBAAAAAAAAAAAmwDgBAABTAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T15:30:34.352Z",
+              "WhenOpened": "2024-08-23T17:40:34.562Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "gestionventa.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
               "RelativeDocumentMoniker": "ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
               "ToolTip": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\gestionventa.cs [Dise\u00F1o]*",
               "RelativeToolTip": "ProyectoRestaurante\\login y ventanas\\gestionventa.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T15:30:29.835Z",
+              "WhenOpened": "2024-08-23T17:40:31.766Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]

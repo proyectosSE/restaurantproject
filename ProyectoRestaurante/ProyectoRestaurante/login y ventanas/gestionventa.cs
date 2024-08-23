@@ -149,7 +149,7 @@ namespace ProyectoRestaurante.login_y_ventanas
             }
 
             consulta = $"SELECT * FROM mesas WHERE id_sala = {comboBox1.SelectedValue}";
-            llenarmesas();              
+            llenarmesas();
                         
         }
 
@@ -304,12 +304,15 @@ namespace ProyectoRestaurante.login_y_ventanas
                         cls.AgregarProd(consulta, tabla);
 
                     }
+                    mensaje msg = new mensaje("listo", "Datos editados correctamente");
+                    msg.ShowDialog();
                 }
                 else
                 {
-                    mensaje msg = new mensaje("error", "Ningún producto seleccionado");
-                    msg.ShowDialog();
+                    mensaje ms = new mensaje("error", "Ningún producto seleccionado");
+                    ms.ShowDialog();
                 }
+                
             }
         }
 

@@ -56,30 +56,30 @@ namespace ProyectoRestaurante
         
         public void Actualizar(string datos,string tabla,string id)
         {
-            try
-            {
+            //try
+            //{
                 conexion.Open();
                 string cadena = $"UPDATE {tabla} SET {datos} WHERE {id};";
                 SqlCommand comando = new SqlCommand(cadena, conexion);
                 comando.ExecuteNonQuery();
                 mensaje ms = new mensaje("listo", "Datos editados correctamente");
                 ms.ShowDialog();
-            }
-            catch (SqlException sqlEx)
-            {
-                MessageBox.Show($"Error de SQL: {sqlEx.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error general: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            finally
-            {
-                if (conexion.State == System.Data.ConnectionState.Open)
-                {
-                    conexion.Close();
-                }
-            }
+            //}
+            //catch (SqlException sqlEx)
+            //{
+            //    MessageBox.Show($"Error de SQL: {sqlEx.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show($"Error general: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
+            //finally
+            //{
+            //    if (conexion.State == System.Data.ConnectionState.Open)
+            //    {
+            //        conexion.Close();
+            //    }
+            //}
         }
 
         public void Actualizar(string datos, string tabla, byte[] foto, string id)

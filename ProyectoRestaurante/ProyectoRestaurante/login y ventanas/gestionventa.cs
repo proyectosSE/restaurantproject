@@ -27,7 +27,6 @@ namespace ProyectoRestaurante.login_y_ventanas
 
         private string consulta;
         private string consulta2;
-        public Boolean indicador;
 
         private void llenarmesas ()
         {
@@ -250,57 +249,28 @@ namespace ProyectoRestaurante.login_y_ventanas
             fecha = fechapedido.Text;
             totalpago = decimal.Parse(monttotal.Text);
 
-
-            if (indicador == false) {
-
-                if (dataGridView1.Rows.Count > 0)
+            if (dataGridView1.Rows.Count > 0)
+            {
+                foreach (DataGridViewRow fila in dataGridView1.Rows)
                 {
-                    foreach (DataGridViewRow fila in dataGridView1.Rows)
-                    {
-                        int id_producto = int.Parse(fila.Cells["id_producto"].Value.ToString());
-                        string nomproducto = fila.Cells["dgvproducto"].Value.ToString();
-                        int cantidad = int.Parse(fila.Cells["dgvcantidad"].Value.ToString());
-                        decimal precioprod = decimal.Parse(fila.Cells["dgvprecio"].Value.ToString());
-                        decimal preciototal = decimal.Parse(fila.Cells["dgvtotal"].Value.ToString());
+                    int id_producto = int.Parse(fila.Cells["id_producto"].Value.ToString());
+                    string nomproducto = fila.Cells["dgvproducto"].Value.ToString();
+                    int cantidad = int.Parse(fila.Cells["dgvcantidad"].Value.ToString());
+                    decimal precioprod = decimal.Parse(fila.Cells["dgvprecio"].Value.ToString());
+                    decimal preciototal = decimal.Parse(fila.Cells["dgvtotal"].Value.ToString());
 
-                        string consulta = "" + id_mesa + ", " + id_cliente + ", " + id_producto + ", '" + nomproducto + "', " + cantidad + ", " + precioprod + ", " + preciototal + ", " + totalpago + ", '" + fecha + "', '" + estado + "'";
-                        cls.AgregarProd(consulta, tabla);
+                    string consulta = "" + id_mesa + ", " + id_cliente + ", " + id_producto + ", '" + nomproducto + "', " + cantidad + ", " + precioprod + ", " + preciototal + ", " + totalpago + ", '" + fecha + "', '" + estado + "'";
+                    cls.AgregarProd(consulta, tabla);
 
-                    }
                 }
-                else
-                {
-                    mensaje msg = new mensaje("error", "Ningún producto seleccionado");
-                    msg.ShowDialog();
-                }
-                mensaje ms = new mensaje("listo", "Datos guardados correctamente");
-                ms.ShowDialog();
             }
             else
             {
-                if (dataGridView1.Rows.Count > 0)
-                {
-                    foreach (DataGridViewRow fila in dataGridView1.Rows)
-                    {
-                        int id_producto = int.Parse(fila.Cells["id_producto"].Value.ToString());
-                        string nomproducto = fila.Cells["dgvproducto"].Value.ToString();
-                        int cantidad = int.Parse(fila.Cells["dgvcantidad"].Value.ToString());
-                        decimal precioprod = decimal.Parse(fila.Cells["dgvprecio"].Value.ToString());
-                        decimal preciototal = decimal.Parse(fila.Cells["dgvtotal"].Value.ToString());
-
-                        string consulta = "id_mesa=" + id_mesa + ", id_cliente= " + id_cliente + ", id_producto=" + id_producto + ", nomproducto= '" + nomproducto + "', cantidad= " + cantidad + ", precioprod= " + precioprod + ", preciototal=" + preciototal + ", totalpago= " + totalpago + ", fecha= '" + fecha + "', estado= '" + estado + "'";
-                        string pp = id_mesa.ToString();
-                        cls.Actualizar(consulta, tabla,pp);
-
-                    }
-                }
-                else
-                {
-                    mensaje msg = new mensaje("error", "Ningún producto seleccionado");
-                    msg.ShowDialog();
-                }
+                mensaje msg = new mensaje("error", "Ningún producto seleccionado");
+                msg.ShowDialog();
             }
-
+            mensaje ms = new mensaje("listo", "Datos guardados correctamente");
+            ms.ShowDialog();
 
         }
 
@@ -361,14 +331,6 @@ namespace ProyectoRestaurante.login_y_ventanas
                         dataGridView1.Rows.Add(fila);
                     }
 
-                }
-                if (dataGridView1.Rows.Count > 0)
-                {
-                    indicador = true;
-                }
-                else
-                {
-                    indicador = false;
                 }
 
 

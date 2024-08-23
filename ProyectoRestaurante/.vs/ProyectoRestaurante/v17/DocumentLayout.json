@@ -1,7 +1,36 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\likelias\\desktop\\clases 2-2024\\ejemplo_p3\\proyectorestaurante\\proyectorestaurante\\login y ventanas\\gestionventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\login y ventanas\\gestionventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\likelias\\desktop\\clases 2-2024\\ejemplo_p3\\proyectorestaurante\\proyectorestaurante\\login y ventanas\\gestionventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\login y ventanas\\gestionventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\likelias\\desktop\\clases 2-2024\\ejemplo_p3\\proyectorestaurante\\proyectorestaurante\\mantenimientos\\mantmesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\mantenimientos\\mantmesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\likelias\\desktop\\clases 2-2024\\ejemplo_p3\\proyectorestaurante\\proyectorestaurante\\mantenimientos\\mantmesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\mantenimientos\\mantmesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\likelias\\desktop\\clases 2-2024\\ejemplo_p3\\proyectorestaurante\\proyectorestaurante\\mantenimientos\\dgvmantcli.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\mantenimientos\\dgvmantcli.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\likelias\\desktop\\clases 2-2024\\ejemplo_p3\\proyectorestaurante\\proyectorestaurante\\mantenimientos\\dgvmantcli.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\mantenimientos\\dgvmantcli.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|c:\\users\\likelias\\desktop\\clases 2-2024\\ejemplo_p3\\proyectorestaurante\\proyectorestaurante\\login y ventanas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{002F563A-B39B-4E99-A267-5CFDCF7B6CEA}|ProyectoRestaurante\\ProyectoRestaurante.csproj|solutionrelative:proyectorestaurante\\login y ventanas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,6 +59,93 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "mantmesas.cs",
+              "DocumentMoniker": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\mantenimientos\\mantmesas.cs",
+              "RelativeDocumentMoniker": "ProyectoRestaurante\\mantenimientos\\mantmesas.cs",
+              "ToolTip": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\mantenimientos\\mantmesas.cs",
+              "RelativeToolTip": "ProyectoRestaurante\\mantenimientos\\mantmesas.cs",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAowHoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T06:11:57.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "mantmesas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\mantenimientos\\mantmesas.cs",
+              "RelativeDocumentMoniker": "ProyectoRestaurante\\mantenimientos\\mantmesas.cs",
+              "ToolTip": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\mantenimientos\\mantmesas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoRestaurante\\mantenimientos\\mantmesas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T06:11:54.893Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "dgvmantcli.cs",
+              "DocumentMoniker": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\mantenimientos\\dgvmantcli.cs",
+              "RelativeDocumentMoniker": "ProyectoRestaurante\\mantenimientos\\dgvmantcli.cs",
+              "ToolTip": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\mantenimientos\\dgvmantcli.cs",
+              "RelativeToolTip": "ProyectoRestaurante\\mantenimientos\\dgvmantcli.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T06:00:27.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "dgvmantcli.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\mantenimientos\\dgvmantcli.cs",
+              "RelativeDocumentMoniker": "ProyectoRestaurante\\mantenimientos\\dgvmantcli.cs",
+              "ToolTip": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\mantenimientos\\dgvmantcli.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoRestaurante\\mantenimientos\\dgvmantcli.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T06:00:24.956Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "gestionventa.cs",
+              "DocumentMoniker": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
+              "RelativeDocumentMoniker": "ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
+              "ToolTip": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
+              "RelativeToolTip": "ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwBUAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T05:44:41.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "gestionventa.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
+              "RelativeDocumentMoniker": "ProyectoRestaurante\\login y ventanas\\gestionventa.cs",
+              "ToolTip": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\gestionventa.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoRestaurante\\login y ventanas\\gestionventa.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T05:39:03.504Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\Form1.cs",
+              "RelativeDocumentMoniker": "ProyectoRestaurante\\login y ventanas\\Form1.cs",
+              "ToolTip": "C:\\Users\\LIKELIAS\\Desktop\\Clases 2-2024\\Ejemplo_P3\\ProyectoRestaurante\\ProyectoRestaurante\\login y ventanas\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoRestaurante\\login y ventanas\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T05:38:41.403Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

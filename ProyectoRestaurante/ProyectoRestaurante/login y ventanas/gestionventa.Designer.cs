@@ -65,6 +65,7 @@
             this.dgvcantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvprecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvpedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -138,7 +139,8 @@
             this.dgvproducto,
             this.dgvcantidad,
             this.dgvprecio,
-            this.dgvtotal});
+            this.dgvtotal,
+            this.dgvpedido});
             this.dataGridView1.Location = new System.Drawing.Point(562, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -415,6 +417,14 @@
             this.dgvtotal.ReadOnly = true;
             this.dgvtotal.Width = 70;
             // 
+            // dgvpedido
+            // 
+            this.dgvpedido.HeaderText = "id_pedido";
+            this.dgvpedido.MinimumWidth = 8;
+            this.dgvpedido.Name = "dgvpedido";
+            this.dgvpedido.ReadOnly = true;
+            this.dgvpedido.Width = 150;
+            // 
             // gestionventa
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -481,5 +491,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvcantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvprecio;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvtotal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvpedido;
     }
 }

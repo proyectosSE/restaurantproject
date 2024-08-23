@@ -20,7 +20,9 @@ namespace ProyectoRestaurante.login_y_ventanas
         {
             InitializeComponent();
             ocultarcolumna();
-            fechapedido.Format = DateTimePickerFormat.Short;
+
+            fechapedido.Format = DateTimePickerFormat.Custom;
+            fechapedido.CustomFormat = "MM/dd/yyyy";
         }
 
         private string consulta;
@@ -223,24 +225,24 @@ namespace ProyectoRestaurante.login_y_ventanas
         private void btdespachar_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();
-            Form1 f = new Form1();
-            f.lbcliente.Text = cbbcliente.Text;
-            f.lbtotal.Text = monttotal.Text;
-            f.lbfecha.Text = fechapedido.Text;
-            f.lbmesa.Text = lbmesa.Text;
+            //Form1 f = new Form1();
+            //f.lbcliente.Text = cbbcliente.Text;
+            //f.lbtotal.Text = monttotal.Text;
+            //f.lbfecha.Text = fechapedido.Text;
+            //f.lbmesa.Text = lbmesa.Text;
 
-            foreach (DataGridViewRow row in dataGridView1.Rows)
-            {
-                if (!row.IsNewRow) // Evitar filas vacías
-                {
-                    int rowIndex = f.dataGridView1.Rows.Add();
-                    for (int i = 0; i < row.Cells.Count; i++)
-                    {
-                        f.dataGridView1.Rows[rowIndex].Cells[i].Value = row.Cells[i].Value;
-                    }
-                }
-            }
-            f.ShowDialog();
+            //foreach (DataGridViewRow row in dataGridView1.Rows)
+            //{
+            //    if (!row.IsNewRow) // Evitar filas vacías
+            //    {
+            //        int rowIndex = f.dataGridView1.Rows.Add();
+            //        for (int i = 0; i < row.Cells.Count; i++)
+            //        {
+            //            f.dataGridView1.Rows[rowIndex].Cells[i].Value = row.Cells[i].Value;
+            //        }
+            //    }
+            //}
+            //f.ShowDialog();
             string tabla = "pedidos";
             id_mesa = int.Parse(lblidmesa.Text);
             id_cliente = int.Parse(cbbcliente.SelectedValue.ToString());
@@ -289,13 +291,12 @@ namespace ProyectoRestaurante.login_y_ventanas
             }
         }
         public int idprod = 0;
-
         public void RecargarDGV()
         {
 
             dataGridView1.Rows.Clear();
             
-            string cons = $"SELECT id_producto, nomproducto, cantidad, precioprod, preciototal, id_cliente FROM pedidos WHERE id_mesa= {lblidmesa.Text}";
+            string cons = $"SELECT id_producto, nomproducto, cantidad, precioprod, preciototal, id_cliente, id_pedido, estado, totalpago, fecha FROM pedidos WHERE id_mesa= {lblidmesa.Text}";
             try
             {
                 using (SqlConnection conexion = new SqlConnection(rutadb.conexion))
@@ -315,12 +316,37 @@ namespace ProyectoRestaurante.login_y_ventanas
                         fila.Cells[2].Value = lect["cantidad"].ToString();
                         fila.Cells[3].Value = lect["precioprod"].ToString();
                         fila.Cells[4].Value = lect["preciototal"].ToString();
+                        fila.Cells[5].Value = lect["id_pedido"].ToString();
+                        estado = lect["estado"].ToString();
+
+                        if (estado=="A")
+                        {
+                            btestado.Checked = true;
+                        }
+                        else
+                        {
+                            btestado.Checked = false;
+                        }
+                        monttotal.Text = lect["totalpago"].ToString();
+                        fechapedido.Text = lect["fecha"].ToString();
+                        cbbcliente.SelectedValue = lect["id_cliente"].ToString();
+
+
 
                         dataGridView1.Rows.Add(fila);
                     }
 
                 }
-                
+                if (dataGridView1.Rows.Count > 0)
+                {
+                    
+                }
+                else
+                {
+
+                }
+
+
             }
             catch (Exception ex)
             {

@@ -34,6 +34,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.monttotal = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.id_producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvproducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvcantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvprecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvpedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -60,12 +66,7 @@
             this.salasTableAdapter1 = new ProyectoRestaurante.ProyectoRestauranteDataSet27TableAdapters.salasTableAdapter();
             this.categoriasTableAdapter = new ProyectoRestaurante.ProyectoRestauranteDataSet28TableAdapters.categoriasTableAdapter();
             this.clientesTableAdapter = new ProyectoRestaurante.ProyectoRestauranteDataSet31TableAdapters.clientesTableAdapter();
-            this.id_producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvproducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvcantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvprecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvpedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btimprimir = new System.Windows.Forms.Button();
             this.contenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -81,6 +82,7 @@
             // 
             // contenedor
             // 
+            this.contenedor.Controls.Add(this.btimprimir);
             this.contenedor.Controls.Add(this.btdespachar);
             this.contenedor.Controls.Add(this.label3);
             this.contenedor.Controls.Add(this.monttotal);
@@ -96,7 +98,7 @@
             // btdespachar
             // 
             this.btdespachar.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btdespachar.Location = new System.Drawing.Point(841, 475);
+            this.btdespachar.Location = new System.Drawing.Point(879, 450);
             this.btdespachar.Name = "btdespachar";
             this.btdespachar.Size = new System.Drawing.Size(134, 36);
             this.btdespachar.TabIndex = 5;
@@ -141,15 +143,63 @@
             this.dgvprecio,
             this.dgvtotal,
             this.dgvpedido});
-            this.dataGridView1.Location = new System.Drawing.Point(562, 3);
+            this.dataGridView1.Location = new System.Drawing.Point(562, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(500, 458);
+            this.dataGridView1.Size = new System.Drawing.Size(500, 448);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             this.dataGridView1.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellValueChanged);
+            // 
+            // id_producto
+            // 
+            this.id_producto.HeaderText = "id_producto";
+            this.id_producto.MinimumWidth = 8;
+            this.id_producto.Name = "id_producto";
+            this.id_producto.ReadOnly = true;
+            this.id_producto.Width = 80;
+            // 
+            // dgvproducto
+            // 
+            this.dgvproducto.HeaderText = "producto";
+            this.dgvproducto.MinimumWidth = 8;
+            this.dgvproducto.Name = "dgvproducto";
+            this.dgvproducto.ReadOnly = true;
+            this.dgvproducto.Width = 150;
+            // 
+            // dgvcantidad
+            // 
+            this.dgvcantidad.HeaderText = "cantidad";
+            this.dgvcantidad.MinimumWidth = 8;
+            this.dgvcantidad.Name = "dgvcantidad";
+            this.dgvcantidad.ReadOnly = true;
+            this.dgvcantidad.Width = 70;
+            // 
+            // dgvprecio
+            // 
+            this.dgvprecio.HeaderText = "precio";
+            this.dgvprecio.MinimumWidth = 8;
+            this.dgvprecio.Name = "dgvprecio";
+            this.dgvprecio.ReadOnly = true;
+            this.dgvprecio.Width = 75;
+            // 
+            // dgvtotal
+            // 
+            this.dgvtotal.HeaderText = "total";
+            this.dgvtotal.MinimumWidth = 8;
+            this.dgvtotal.Name = "dgvtotal";
+            this.dgvtotal.ReadOnly = true;
+            this.dgvtotal.Width = 70;
+            // 
+            // dgvpedido
+            // 
+            this.dgvpedido.HeaderText = "id_pedido";
+            this.dgvpedido.MinimumWidth = 8;
+            this.dgvpedido.Name = "dgvpedido";
+            this.dgvpedido.ReadOnly = true;
+            this.dgvpedido.Width = 150;
             // 
             // flowLayoutPanel2
             // 
@@ -377,53 +427,16 @@
             // 
             this.clientesTableAdapter.ClearBeforeFill = true;
             // 
-            // id_producto
+            // btimprimir
             // 
-            this.id_producto.HeaderText = "id_producto";
-            this.id_producto.MinimumWidth = 8;
-            this.id_producto.Name = "id_producto";
-            this.id_producto.ReadOnly = true;
-            this.id_producto.Width = 80;
-            // 
-            // dgvproducto
-            // 
-            this.dgvproducto.HeaderText = "producto";
-            this.dgvproducto.MinimumWidth = 8;
-            this.dgvproducto.Name = "dgvproducto";
-            this.dgvproducto.ReadOnly = true;
-            this.dgvproducto.Width = 150;
-            // 
-            // dgvcantidad
-            // 
-            this.dgvcantidad.HeaderText = "cantidad";
-            this.dgvcantidad.MinimumWidth = 8;
-            this.dgvcantidad.Name = "dgvcantidad";
-            this.dgvcantidad.ReadOnly = true;
-            this.dgvcantidad.Width = 70;
-            // 
-            // dgvprecio
-            // 
-            this.dgvprecio.HeaderText = "precio";
-            this.dgvprecio.MinimumWidth = 8;
-            this.dgvprecio.Name = "dgvprecio";
-            this.dgvprecio.ReadOnly = true;
-            this.dgvprecio.Width = 75;
-            // 
-            // dgvtotal
-            // 
-            this.dgvtotal.HeaderText = "total";
-            this.dgvtotal.MinimumWidth = 8;
-            this.dgvtotal.Name = "dgvtotal";
-            this.dgvtotal.ReadOnly = true;
-            this.dgvtotal.Width = 70;
-            // 
-            // dgvpedido
-            // 
-            this.dgvpedido.HeaderText = "id_pedido";
-            this.dgvpedido.MinimumWidth = 8;
-            this.dgvpedido.Name = "dgvpedido";
-            this.dgvpedido.ReadOnly = true;
-            this.dgvpedido.Width = 150;
+            this.btimprimir.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btimprimir.Location = new System.Drawing.Point(879, 492);
+            this.btimprimir.Name = "btimprimir";
+            this.btimprimir.Size = new System.Drawing.Size(134, 36);
+            this.btimprimir.TabIndex = 6;
+            this.btimprimir.Text = "Imprimir";
+            this.btimprimir.UseVisualStyleBackColor = true;
+            this.btimprimir.Click += new System.EventHandler(this.btimprimir_Click);
             // 
             // gestionventa
             // 
@@ -492,5 +505,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvprecio;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvtotal;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvpedido;
+        private System.Windows.Forms.Button btimprimir;
     }
 }

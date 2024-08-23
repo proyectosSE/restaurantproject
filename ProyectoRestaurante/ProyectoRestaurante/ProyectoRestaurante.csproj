@@ -63,7 +63,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clases\Class1.cs" />
+    <Compile Include="clases\crearTicket.cs" />
     <Compile Include="clases\imprimir.cs" />
+    <Compile Include="clases\productos2.cs" />
     <Compile Include="clases\verificar.cs" />
     <Compile Include="clases\formatoDGV.cs" />
     <Compile Include="clases\limpiar.cs" />

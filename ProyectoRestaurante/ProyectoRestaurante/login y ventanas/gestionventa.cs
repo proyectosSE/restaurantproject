@@ -226,24 +226,6 @@ namespace ProyectoRestaurante.login_y_ventanas
         private void btdespachar_Click(object sender, EventArgs e)
         {
             Conectar cls = new Conectar();
-            //Form1 f = new Form1();
-            //f.lbcliente.Text = cbbcliente.Text;
-            //f.lbtotal.Text = monttotal.Text;
-            //f.lbfecha.Text = fechapedido.Text;
-            //f.lbmesa.Text = lbmesa.Text;
-
-            //foreach (DataGridViewRow row in dataGridView1.Rows)
-            //{
-            //    if (!row.IsNewRow) // Evitar filas vacías
-            //    {
-            //        int rowIndex = f.dataGridView1.Rows.Add();
-            //        for (int i = 0; i < row.Cells.Count; i++)
-            //        {
-            //            f.dataGridView1.Rows[rowIndex].Cells[i].Value = row.Cells[i].Value;
-            //        }
-            //    }
-            //}
-            //f.ShowDialog();
             string tabla = "pedidos";
             id_mesa = int.Parse(lblidmesa.Text);
             id_cliente = int.Parse(cbbcliente.SelectedValue.ToString());
@@ -287,10 +269,8 @@ namespace ProyectoRestaurante.login_y_ventanas
             {
                 if (dataGridView1.Rows.Count > 0)
                 {
-                    foreach (DataGridViewRow fl in dataGridView1.Rows) {
-                        string mvar = $"id_mesa= {id_mesa.ToString()}";
-                        cls.eliminar(tabla, mvar);
-                    }
+                    string mvar = $"id_mesa= {id_mesa.ToString()}";
+                    cls.eliminar(tabla, mvar);
 
                     foreach (DataGridViewRow fila in dataGridView1.Rows)
                     {                        
@@ -388,6 +368,61 @@ namespace ProyectoRestaurante.login_y_ventanas
             catch (Exception ex)
             {
 
+            }
+        }
+        public DateTime fechahoy = DateTime.Now;
+
+        private void btimprimir_Click(object sender, EventArgs e)
+        {
+            Conectar cls = new Conectar();
+            string tabla = "pedidos";
+
+
+            if (dataGridView1.Rows.Count > 0) {
+
+                crearTicket ticket = new crearTicket();
+                productos2 po = new productos2();
+                ticket.cliente = cbbcliente.Text;
+                ticket.fecha = fechahoy.ToString();
+                ticket.mesa = lbmesa.Text;
+                ticket.logo = Properties.Resources.Logo_Empanadas_Caseras_Moderno_Marrón_y_Naranja__2_;
+                ticket.total = decimal.Parse(monttotal.Text);
+
+                for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                {
+                    po = new productos2();
+                    po.producto = Convert.ToString(dataGridView1.Rows[i].Cells[1].Value);
+                    po.cantidad = Convert.ToInt32(dataGridView1.Rows[i].Cells[2].Value);
+                    po.precio = Convert.ToDouble(dataGridView1.Rows[i].Cells[3].Value);
+                    po.total = Convert.ToDouble(dataGridView1.Rows[i].Cells[4].Value);
+
+
+
+                    ticket.listaProductos.Add(po);
+                }
+
+
+                ticket.imprimir(ticket);
+
+                SqlConnection conexion = new SqlConnection(rutadb.conexion);
+                conexion.Open();
+                string consulta = $"DELETE FROM pedidos WHERE id_mesa= {id_mesa.ToString()};";
+                SqlCommand comando = new SqlCommand(consulta, conexion);
+                comando.ExecuteNonQuery();
+                conexion.Close();
+            }
+            else
+            {
+                mensaje msg = new mensaje("error", "No se puede hacer una factura nula");
+                msg.ShowDialog();
+            }
+
+            for (int i = dataGridView1.Rows.Count - 1; i >= 0; i--)
+            {
+                if (!dataGridView1.Rows[i].IsNewRow)
+                {
+                    dataGridView1.Rows.RemoveAt(i);
+                }
             }
         }
     }

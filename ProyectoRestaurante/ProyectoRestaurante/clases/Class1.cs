@@ -100,7 +100,7 @@ namespace ProyectoRestaurante
             string cadena = $"DELETE FROM {tabla} WHERE {id};";
             SqlCommand comando = new SqlCommand(cadena, conexion);
             comando.ExecuteNonQuery();
-            MessageBox.Show("Elimando correctamente");
+            //MessageBox.Show("Elimando correctamente");
             conexion.Close();
         }
 

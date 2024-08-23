@@ -27,6 +27,7 @@ namespace ProyectoRestaurante.login_y_ventanas
 
         private string consulta;
         private string consulta2;
+        public Boolean identificador;
 
         private void llenarmesas ()
         {
@@ -249,29 +250,67 @@ namespace ProyectoRestaurante.login_y_ventanas
             fecha = fechapedido.Text;
             totalpago = decimal.Parse(monttotal.Text);
 
-            if (dataGridView1.Rows.Count > 0)
+            if (identificador == false)
             {
-                foreach (DataGridViewRow fila in dataGridView1.Rows)
+                if (dataGridView1.Rows.Count > 0)
                 {
-                    int id_producto = int.Parse(fila.Cells["id_producto"].Value.ToString());
-                    string nomproducto = fila.Cells["dgvproducto"].Value.ToString();
-                    int cantidad = int.Parse(fila.Cells["dgvcantidad"].Value.ToString());
-                    decimal precioprod = decimal.Parse(fila.Cells["dgvprecio"].Value.ToString());
-                    decimal preciototal = decimal.Parse(fila.Cells["dgvtotal"].Value.ToString());
+                    foreach (DataGridViewRow fila in dataGridView1.Rows)
+                    {
+                        int id_producto = int.Parse(fila.Cells["id_producto"].Value.ToString());
+                        string nomproducto = fila.Cells["dgvproducto"].Value.ToString();
+                        int cantidad = int.Parse(fila.Cells["dgvcantidad"].Value.ToString());
+                        decimal precioprod = decimal.Parse(fila.Cells["dgvprecio"].Value.ToString());
+                        decimal preciototal = decimal.Parse(fila.Cells["dgvtotal"].Value.ToString());
 
-                    string consulta = "" + id_mesa + ", " + id_cliente + ", " + id_producto + ", '" + nomproducto + "', " + cantidad + ", " + precioprod + ", " + preciototal + ", " + totalpago + ", '" + fecha + "', '" + estado + "'";
-                    cls.AgregarProd(consulta, tabla);
+                        string consulta = "" + id_mesa + ", " + id_cliente + ", " + id_producto + ", '" + nomproducto + "', " + cantidad + ", " + precioprod + ", " + preciototal + ", " + totalpago + ", '" + fecha + "', '" + estado + "'";
+                        cls.AgregarProd(consulta, tabla);
 
+                    }
+                    mensaje ms = new mensaje("listo", "Datos guardados correctamente");
+                    ms.ShowDialog();
+                }
+                else
+                {
+                    mensaje msg = new mensaje("error", "Ningún producto seleccionado");
+                    msg.ShowDialog();
+                }
+                
+                for (int i = dataGridView1.Rows.Count - 1; i >= 0; i--)
+                {
+                    if (!dataGridView1.Rows[i].IsNewRow)
+                    {
+                        dataGridView1.Rows.RemoveAt(i);
+                    }
                 }
             }
             else
             {
-                mensaje msg = new mensaje("error", "Ningún producto seleccionado");
-                msg.ShowDialog();
-            }
-            mensaje ms = new mensaje("listo", "Datos guardados correctamente");
-            ms.ShowDialog();
+                if (dataGridView1.Rows.Count > 0)
+                {
+                    foreach (DataGridViewRow fl in dataGridView1.Rows) {
+                        string mvar = $"id_mesa= {id_mesa.ToString()}";
+                        cls.eliminar(tabla, mvar);
+                    }
 
+                    foreach (DataGridViewRow fila in dataGridView1.Rows)
+                    {                        
+                        int id_producto = int.Parse(fila.Cells["id_producto"].Value.ToString());
+                        string nomproducto = fila.Cells["dgvproducto"].Value.ToString();
+                        int cantidad = int.Parse(fila.Cells["dgvcantidad"].Value.ToString());
+                        decimal precioprod = decimal.Parse(fila.Cells["dgvprecio"].Value.ToString());
+                        decimal preciototal = decimal.Parse(fila.Cells["dgvtotal"].Value.ToString());
+
+                        string consulta = "" + id_mesa + ", " + id_cliente + ", " + id_producto + ", '" + nomproducto + "', " + cantidad + ", " + precioprod + ", " + preciototal + ", " + totalpago + ", '" + fecha + "', '" + estado + "'";
+                        cls.AgregarProd(consulta, tabla);
+
+                    }
+                }
+                else
+                {
+                    mensaje msg = new mensaje("error", "Ningún producto seleccionado");
+                    msg.ShowDialog();
+                }
+            }
         }
 
         private void btestado_CheckedChanged(object sender, EventArgs e)
@@ -331,6 +370,14 @@ namespace ProyectoRestaurante.login_y_ventanas
                         dataGridView1.Rows.Add(fila);
                     }
 
+                }
+                if (dataGridView1.Rows.Count > 0)
+                {
+                    identificador = true;
+                }
+                else
+                {
+                    identificador = false;
                 }
 
 
